@@ -1,0 +1,52 @@
+{% extends 'trains/base.html' %}
+{% block content %}
+		<div>
+			<h1><a href="/">Main Page</a></h1>
+			</div>
+			
+		
+			<h2><a href="">Active Train:</a></h2>
+		<div class="btn-group btn-group-toggle" data-toggle="buttons">
+			<label class="btn btn-secondary active">
+				<input type="radio" name="options" id="Default" autocomplete="off" checked> None
+			  </label>
+		{% for train in trains %}
+		
+			  <label class="btn btn-secondary">
+				<input type="radio" name="options" id="{{ train.pk }}" autocomplete="off"> {{ train.title }}
+			  </label>
+		
+			
+		{% endfor %}	
+		</div>
+		
+		
+		<h2><a href="">Lights:</a></h2>
+		<div class="btn-group btn-group-toggle" data-toggle="buttons">
+			<label class="btn btn-light active">
+				<input type="radio" name="options" id="Lights-off" autocomplete="off" checked>Off
+			  </label>
+			  <label class="btn btn-light">
+				<input type="radio" name="options" id="Lights-on" autocomplete="off"> On
+			  </label>
+		</div>
+		
+		
+		<div class="flex-container">
+
+    {% for train in trains %}
+			
+
+			
+				<div class="post">
+					<h2><a href="">{{ train.title }}</a></h2>
+					<p>{{ train.description|linebreaksbr }}</p>
+					
+				</div>
+				<div>
+				<img src="{{ train.image.url }}" alt="No Image">
+				</div>
+			</div>
+		
+    {% endfor %}
+{% endblock %}

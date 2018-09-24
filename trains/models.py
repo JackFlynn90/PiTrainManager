@@ -7,6 +7,9 @@ class Train(models.Model):
 	address = models.PositiveSmallIntegerField()
 	speed = models.PositiveSmallIntegerField()
 	direction = models.BooleanField()
+	lightsOn = models.BooleanField(default=True)
+	hornIs = models.PositiveSmallIntegerField(default=1)
+	silentRunning = models.BooleanField(default=False)
 	soundOptions = models.PositiveSmallIntegerField()
 	image = models.ImageField()
 	created_date = models.DateTimeField(

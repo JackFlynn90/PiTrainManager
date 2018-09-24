@@ -1,0 +1,30 @@
+{% extends 'trains/base.html' %}
+		<div>
+			<h1><a href="/">Train Listing</a></h1>
+			</div>
+{% block content %}
+    {% for train in trains %}
+
+			
+			<div class="flex-container">
+				<div class="post">
+					<h2><a href="">{{ train.title }}</a></h2>
+					<p>{{ train.description|linebreaksbr }}</p>
+					
+					<ul style="list-style-type:circle">
+					<li>Address: {{ train.address }}</li>
+					<li>Speed: {{ train.speed }}</li>
+					<li>Direction: {{ train.direction }}</li>
+					<li>Lights On: {{ train.lightsOn }}</li>
+					<li>Horn Loc: {{ train.hornIs }}</li>
+					<li>Mute: {{ train.silentRunning }}</li>
+					<li>Numb. Sound Options: {{ train.soundOptions }}</li>
+					</ul>				
+				</div>
+				<div>
+				<img src="{{ train.image.url }}" alt="No Image">
+				</div>
+			</div>
+		
+    {% endfor %}
+{% endblock %}
