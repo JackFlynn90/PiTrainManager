@@ -50,6 +50,8 @@ img{
 	width: 100%;
 }
 
+.centerTable{margin:auto;}
+
 .post {
     margin-bottom: 70px;
 }

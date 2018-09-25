@@ -5,48 +5,77 @@
 			</div>
 			
 		
-			<h2><a href="">Active Train:</a></h2>
+			<h2>Automatic Train Patterns</h2>
 		<div class="btn-group btn-group-toggle" data-toggle="buttons">
 			<label class="btn btn-secondary active">
-				<input type="radio" name="options" id="Default" autocomplete="off" checked> None
+				<input type="radio" name="options" id="Default" autocomplete="off" checked> Manual
 			  </label>
-		{% for train in trains %}
-		
+			  
 			  <label class="btn btn-secondary">
-				<input type="radio" name="options" id="{{ train.pk }}" autocomplete="off"> {{ train.title }}
+				<input type="radio" name="options" id="option2" autocomplete="off"> Pattern 1
 			  </label>
-		
-			
-		{% endfor %}	
+
 		</div>
 		
-		
-		<h2><a href="">Lights:</a></h2>
-		<div class="btn-group btn-group-toggle" data-toggle="buttons">
-			<label class="btn btn-light active">
-				<input type="radio" name="options" id="Lights-off" autocomplete="off" checked>Off
-			  </label>
-			  <label class="btn btn-light">
-				<input type="radio" name="options" id="Lights-on" autocomplete="off"> On
-			  </label>
-		</div>
-		
-		
-		<div class="flex-container">
-
-    {% for train in trains %}
-			
-
-			
-				<div class="post">
-					<h2><a href="">{{ train.title }}</a></h2>
-					<p>{{ train.description|linebreaksbr }}</p>
-					
+	<h2>Manual Train Control:</h2>
+	
+	<div class="row">
+  
+	
+		{% for train in trains %}
+		<div class="{{ trains.count }}">
+		<div class="card" style="width: 38rem;">
+			  <img class="card-img-top" src="{{ train.image.url }}" alt="Card image cap">
+			  <div class="card-body">
+				<h3 class="card-title">{{ train.title }}</h3>
+				<p class="card-text">{{ train.description|linebreaksbr }}</p>
+			  </div>
+			  <div class = "text-center">
+			  <div class="panel-group">
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" href="#collapse{{train.pk}}">Manual Controls</a>
+				  </h4>
 				</div>
-				<div>
-				<img src="{{ train.image.url }}" alt="No Image">
-				</div>
+				
+					<div id="collapse{{train.pk}}" class="panel-collapse collapse">
+					  <ul class="list-group">
+						  <li class="list-group-item">
+							<h4>Lights:</h4>
+								<div class="btn-group btn-group-toggle" data-toggle="buttons">
+								{% if train.lightsOn %}
+									<label class="btn btn-light">
+								{% else %}
+									<label class="btn btn-light active">
+								{% endif %}
+											<input type="radio" name="options" id="Lights-off" autocomplete="off" checked>Off
+										</label>
+								{% if train.lightsOn %}
+									<label class="btn btn-light active">
+								{% else %}
+									<label class="btn btn-light">
+								{% endif %}
+										<input type="radio" name="options" id="Lights-on" autocomplete="off"> On
+									</label>
+								</div>
+							</li>
+							<li class="list-group-item">Two</li>
+							<li class="list-group-item">Three</li>
+					  </ul>
+					  <div class="panel-footer">Footer</div>
+					</div>
+				  </div>
+			  </div>
 			</div>
+			  <div class="card-body">
+				<a href="#" class="card-link">Card link</a>
+				<a href="#" class="card-link">Another link</a>
+			  </div>
+		</div>
+		</div>
+
 		
-    {% endfor %}
+		{% endfor %}
+	</div>
 {% endblock %}
