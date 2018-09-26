@@ -50,6 +50,9 @@ img{
 	width: 100%;
 }
 
+
+.classWithPad { margin:0.5%; padding:0.5%; }
+
 .centerTable{margin:auto;}
 
 .post {

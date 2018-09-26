@@ -1,4 +1,5 @@
 {% load static %}
+{% load staticfiles %}
 <!doctype html>
 <html lang="en">
     <!-- Required meta tags -->
@@ -22,10 +23,8 @@
 		</div>
 		<div class="content container">
 			<div class="row">
-				<div class="col-md-8">
 				{% block content %}
 				{% endblock %}
-				</div>
 			</div>
 		</div>
    <!-- Optional JavaScript -->
