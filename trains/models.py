@@ -14,6 +14,16 @@ class Train(models.Model):
 	image = models.ImageField()
 	created_date = models.DateTimeField(
             default=timezone.now)
-			
+
+class Light(models.Model):
+	title = models.CharField(max_length=200)
+	description = models.TextField()
+	address = models.PositiveSmallIntegerField()
+	type = models.CharField(max_length=200)
+	brightness = models.PositiveSmallIntegerField()
+	colour = models.PositiveSmallIntegerField()
+	lightsState = models.BooleanField(default=True)
+	created_date = models.DateTimeField(
+            default=timezone.now)
 	def __str__(self):
 		return self.title

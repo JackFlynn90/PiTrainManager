@@ -346,10 +346,18 @@ jQuery.ColorPicker = function(container, options) {
     };
     picker.update_sat = picker.update_hue;
     
+	var lastUpdate = 0;
+	
     picker.update = function() {
         picker.update_hex();
         picker.fn.change('#' + picker.color.hex);
-		console.log("Colour change : " + picker.hex());	
+		
+		var d = new Date();
+        var t = d.getTime();
+        if(t - lastUpdate > 200) {
+			console.log("Colour change : " + picker.hex());
+			lastUpdate = t;			 
+        }		
     };
     picker.change = picker.update;
     

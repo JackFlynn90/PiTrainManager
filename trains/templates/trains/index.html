@@ -7,6 +7,7 @@
 <script src="{% static "js/colorpicker/jquery.colorpicker.js" %}"></script>
 
 
+
 			
 			<!-- Main Automated Functions -->
 			
@@ -16,11 +17,11 @@
 			<h2>Automatic Train Patterns</h2>
 			<div class="btn-group btn-group-toggle" data-toggle="buttons">	<!-- Track Pattern toggle/selection -->
 				<label class="btn btn-secondary active">
-					<input type="radio" name="options" id="Default" autocomplete="off" checked> Manual
+					<input type="radio" name="options" id="TrPattern-0" autocomplete="off" checked> Manual
 				  </label>
 				  
 				  <label class="btn btn-secondary">
-					<input type="radio" name="options" id="option2" autocomplete="off"> Pattern 1
+					<input type="radio" name="options" id="TrPattern-1" autocomplete="off"> Pattern 1
 				  </label>
 
 			</div>
@@ -30,15 +31,15 @@
 			<h2>Automatic Lighting Patterns</h2>
 			<div class="btn-group btn-group-toggle" data-toggle="buttons">	<!-- Track Pattern toggle/selection -->
 				<label class="btn btn-secondary active">
-					<input type="radio" name="options" id="Default" autocomplete="off" checked> Manual
+					<input type="radio" name="options" id="LtPattern-0" autocomplete="off" checked> Manual
 				  </label>
 				  
 				  <label class="btn btn-secondary">
-					<input type="radio" name="options" id="option2" autocomplete="off"> Pattern 1
+					<input type="radio" name="options" id="LtPattern-1" autocomplete="off"> Pattern 1
 				  </label>
 				  
 				  <label class="btn btn-secondary">
-					<input type="radio" name="options" id="option3" autocomplete="off"> Pattern 2
+					<input type="radio" name="options" id="LtPattern-2" autocomplete="off"> Pattern 2
 				  </label>
 
 			</div>
@@ -67,50 +68,27 @@
 								</div>
 								<div class="col-lg-6">
 								   <ul class="list-group"> <!--List embedded in the panel -->
+								   {% for light in lights %}
 									  <li class="list-group-item"> <!--Lights button call -->
-											 <h4><i class="material-icons">highlight</i> Ambient LEDs:</h4> 
+											 <h4><i class="material-icons">highlight</i>{{light.title}}</h4> 
 												<div class="btn-group btn-group-toggle" data-toggle="buttons">
-													<label class="btn btn-light active">
-															<input type="radio" name="options" id="Lights-off" autocomplete="off" checked>Off
+													<label class="btn btn-light active" >
+													{% if light.lightsState %}
+															<input type="radio" name="options" autocomplete="off" id="Light_{{light.address}}_off">Off
+													{% else %}
+															<input type="radio" name="options" autocomplete="off" id="Light_{{light.address}}_off" checked>Off
+													{% endif %}
 														</label>
 													<label class="btn btn-light">
-														<input type="radio" name="options" id="Lights-on" autocomplete="off"> On
+													{% if light.lightsState %}
+															<input type="radio" name="options" id="Light_{{light.address}}_on" autocomplete="off" checked> On
+													{% else %}
+														<input type="radio" name="options" id="Light_{{light.address}}_on" autocomplete="off"> On
+													{% endif %}
 													</label>
 												</div>
 										</li>
-									  <li class="list-group-item"> <!--Lights button call -->
-											 <h4><i class="material-icons">highlight</i> Street Lights:</h4> 
-												<div class="btn-group btn-group-toggle" data-toggle="buttons">
-													<label class="btn btn-light active">
-															<input type="radio" name="options" id="Lights-off" autocomplete="off" checked>Off
-														</label>
-													<label class="btn btn-light">
-														<input type="radio" name="options" id="Lights-on" autocomplete="off"> On
-													</label>
-												</div>
-										</li>
-									  <li class="list-group-item"> <!--Lights button call -->
-											 <h4><i class="material-icons">highlight</i> Car Lights:</h4> 
-												<div class="btn-group btn-group-toggle" data-toggle="buttons">
-													<label class="btn btn-light active">
-															<input type="radio" name="options" id="Lights-off" autocomplete="off" checked>Off
-														</label>
-													<label class="btn btn-light">
-														<input type="radio" name="options" id="Lights-on" autocomplete="off"> On
-													</label>
-												</div>
-										</li>
-									  <li class="list-group-item"> <!--Lights button call -->
-											 <h4><i class="material-icons">highlight</i> House Lights:</h4> 
-												<div class="btn-group btn-group-toggle" data-toggle="buttons">
-													<label class="btn btn-light active">
-															<input type="radio" name="options" id="Lights-off" autocomplete="off" checked>Off
-														</label>
-													<label class="btn btn-light">
-														<input type="radio" name="options" id="Lights-on" autocomplete="off"> On
-													</label>
-												</div>
-										</li>
+									{% endfor %}
 										
 								  </ul>
 								</div>
@@ -153,14 +131,14 @@
 												{% else %}
 													<label class="btn btn-light active">
 												{% endif %}
-															<input type="radio" name="options" id="Lights-off" autocomplete="off" checked>Off
+															<input type="radio" name="options" id="Lights-offTR{{train.pk}}" autocomplete="off" checked>Off
 														</label>
 												{% if train.lightsOn %}
 													<label class="btn btn-light active">
 												{% else %}
 													<label class="btn btn-light">
 												{% endif %}
-														<input type="radio" name="options" id="Lights-on" autocomplete="off"> On
+														<input type="radio" name="options" id="Lights-onTR{{train.pk}}" autocomplete="off"> On
 													</label>
 												</div>
 										</li>
@@ -168,7 +146,7 @@
 											<i class="material-icons">slow_motion_video</i>
 											<h4>Speed:</h4>
 											<input class="knob" data-width="150" data-angleArc=250 data-angleOffset=-125 data-fgcolor="#222222" data-thickness=".3" value="{{train.speed}}" data-min="0" data-max="255">
-											<div><button type="button" class="btn btn-danger btn-sm">Stop!</button></div>
+											<div><button type="button" class="btn btn-danger btn-sm" id="Stop-{{train.pk}}">Stop!</button></div>
 										</li>
 										<li class="list-group-item">
 											<i class="material-icons">compare_arrows</i>
@@ -179,27 +157,27 @@
 												{% else %}
 													<label class="btn btn-light active">
 												{% endif %}
-															<input type="radio" name="options" id="dir-for" autocomplete="off" checked>Forward
+															<input type="radio" name="options" id="dir-forTR{{train.pk}}" autocomplete="off" checked>Forward
 														</label>
 												{% if train.direction %}
 													<label class="btn btn-light active">
 												{% else %}
 													<label class="btn btn-light">
 												{% endif %}
-														<input type="radio" name="options" id="dir-back" autocomplete="off">Backward
+														<input type="radio" name="options" id="dir-backTR{{train.pk}}" autocomplete="off">Backward
 													</label>
 												</div>
 										</li>
 										<li class="list-group-item"><!--Horn button call -->
 											<div><i class="material-icons">volume_up</i></div>
-											<button type="button" class="btn btn-success btn-lg">Horn </button>
+											<button type="button" class="btn btn-success btn-lg" id="Horn-{{train.pk}}" >Horn </button>
 										</li> 
 										<li class="list-group-item"> <!--Sound button call generated from number of sound options available according to the database value -->
 											<i class="material-icons">volume_up</i>
 											<div class="row row-buffer">
 												{% with ''|center:train.soundOptions as range %}
 												{% for _ in range %}
-													<div class = "classWithPad"> <button type="button" class="btn btn-success btn-lg">Sound{{ forloop.counter }} </button> </div>
+													<div class = "classWithPad"> <button type="button" class="btn btn-success btn-lg" id="Snd-{{train.pk}}-{{forloop.counter0}}" >Sound{{ forloop.counter }} </button> </div>
 												{% endfor %}
 												{% endwith %}
 											</div>
@@ -214,14 +192,14 @@
 												{% else %}
 													<label class="btn btn-light active">
 												{% endif %}
-															<input type="radio" name="options" id="dir-for" autocomplete="off" checked>Muted
+															<input type="radio" name="options" id="mute-onTR{{train.pk}}" autocomplete="off" checked>Muted
 														</label>
 												{% if train.silentRunning %}
 													<label class="btn btn-light active">
 												{% else %}
 													<label class="btn btn-light">
 												{% endif %}
-														<input type="radio" name="options" id="dir-back" autocomplete="off">Unmuted
+														<input type="radio" name="options" id="mute-offTR{{train.pk}}" autocomplete="off">Unmuted
 													</label>
 												</div>
 										</li>
@@ -238,5 +216,7 @@
 		{% endfor %}
 	</div>
 </div>
+
+<script type="text/javascript" src="{% static "js/buttons/buttonHandler.js" %}"></script>
 		
 {% endblock %}
