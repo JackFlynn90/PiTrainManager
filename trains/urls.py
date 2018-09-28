@@ -6,5 +6,6 @@ from . import views
 urlpatterns = [
 	path('', views.main_page, name='main_page'),
     path('trains/', views.train_list, name='train_list'),
+	path('commands/', views.command_ajax, name='command_ajax'),
 	
 ]

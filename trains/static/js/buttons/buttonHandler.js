@@ -2,9 +2,15 @@ $(document).ready(function() {
 
 	$('input:radio').change(function(){
 		console.log("Radio Button clicked detected. Id;" + this.id);
+		$.post("/commands/",
+		{datatype:"command", command:this.id}
+			);
 	});
 	
-		$('button').click(function(){
+	$('button').click(function(){
 		console.log("Button clicked detected. Id;" + this.id);
+		$.post("/commands/",
+		{datatype:"command", command:this.id}
+			);
 	});
 });

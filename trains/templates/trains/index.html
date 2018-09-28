@@ -74,16 +74,16 @@
 												<div class="btn-group btn-group-toggle" data-toggle="buttons">
 													<label class="btn btn-light active" >
 													{% if light.lightsState %}
-															<input type="radio" name="options" autocomplete="off" id="Light_{{light.address}}_off">Off
+															<input type="radio" name="options" autocomplete="off" id="Light_{{light.address}}_0">Off
 													{% else %}
-															<input type="radio" name="options" autocomplete="off" id="Light_{{light.address}}_off" checked>Off
+															<input type="radio" name="options" autocomplete="off" id="Light_{{light.address}}_0" checked>Off
 													{% endif %}
 														</label>
 													<label class="btn btn-light">
 													{% if light.lightsState %}
-															<input type="radio" name="options" id="Light_{{light.address}}_on" autocomplete="off" checked> On
+															<input type="radio" name="options" id="Light_{{light.address}}_1" autocomplete="off" checked> On
 													{% else %}
-														<input type="radio" name="options" id="Light_{{light.address}}_on" autocomplete="off"> On
+														<input type="radio" name="options" id="Light_{{light.address}}_1" autocomplete="off"> On
 													{% endif %}
 													</label>
 												</div>
