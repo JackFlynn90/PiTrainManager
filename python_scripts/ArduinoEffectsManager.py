@@ -22,7 +22,7 @@ ser.write(dataOut.encode())
 r = redis.StrictRedis(host='localhost', port=6379)                          # Connect to local Redis instance
 
 p = r.pubsub()                                                              # See https://github.com/andymccurdy/redis-py/#publish--subscribe
-p.subscribe('buttonPress')                                                 # Subscribe to startScripts channel
+p.subscribe('buttonPress')                                           # Subscribe to startScripts channel
 
 RUN = True
 
@@ -38,7 +38,6 @@ while RUN:
 			
 			print("command is")
 			print(type(command))
-			
 			if type(command) is int:
 				print("Sub connected")
 			else:
@@ -49,7 +48,19 @@ while RUN:
 				print("command list is")
 				print(type(commandList))
 				
-				if commandList[0] == "Light":
+				if commandList[0] == "#":
+					print("Hex value received")
+					hex = commandList[1]
+					r = int(hex[0] + hex[1], 16)
+					g = int(hex[2] + hex[3], 16)
+					b = int(hex[4] + hex[5], 16)
+					
+					dataOut = ":1," + str(r) + "," + str(g) + "," + str(b) + ",\n"
+					print("Sending Out;")
+					print(dataOut)
+					ser.write(dataOut.encode())
+				
+				elif commandList[0] == "Light":
 					dataOut = ":" + commandList[1] + "," + commandList[2] + ",\n"
 					print("Sending Out;")
 					print(dataOut)
@@ -59,7 +70,7 @@ while RUN:
 			feedback=ser.readline()
 			print(feedback)
 			
-		time.sleep(1)
+		time.sleep(0.3)
 	except Exception as e:
 		print("!!!!!!!!!! EXCEPTION !!!!!!!!!")
 		print(str(e))

@@ -33,5 +33,6 @@ def command_ajax(request):
 			r.publish('buttonPress', data)
 		elif datatype == "hex":
 			data = request.POST.get('data')
+			r.publish('buttonPress', data)
 			print("Hex value;" + data)
 		return HttpResponse("ok")

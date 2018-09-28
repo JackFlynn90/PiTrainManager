@@ -23,6 +23,7 @@ class Light(models.Model):
 	brightness = models.PositiveSmallIntegerField()
 	colour = models.PositiveSmallIntegerField()
 	lightsState = models.BooleanField(default=True)
+	hexValue = models.CharField(max_length=200)
 	created_date = models.DateTimeField(
             default=timezone.now)
 	def __str__(self):
