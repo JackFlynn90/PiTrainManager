@@ -1,0 +1,8 @@
+myvenv/
+.vs/
+__vm/
+Debug/
+redis-stable/
+__pychache__/
+.out
+migrations/
