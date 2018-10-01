@@ -1,0 +1,18 @@
+/*
+ * ArduinoEffectsManager.cpp
+ *
+ * Created: 26/09/2018 16:03:46
+ * Author : Admin
+ */ 
+
+#include <avr/io.h>
+
+
+int main(void)
+{
+    /* Replace with your application code */
+    while (1) 
+    {
+    }
+}
+
