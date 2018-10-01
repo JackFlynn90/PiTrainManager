@@ -14,7 +14,9 @@ class Train(models.Model):
 	image = models.ImageField()
 	created_date = models.DateTimeField(
             default=timezone.now)
-
+	def __str__(self):
+		return self.title
+		
 class Light(models.Model):
 	title = models.CharField(max_length=200)
 	description = models.TextField()
