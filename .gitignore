@@ -3,6 +3,6 @@ myvenv/
 __vm/
 Debug/
 redis-stable/
-__pychache__/
-.out
+*/__pychache__
+*.out
 migrations/
