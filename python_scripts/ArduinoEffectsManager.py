@@ -2,42 +2,34 @@ import serial
 import time
 import redis
 import pickle
+from DebugPrint import debugging
 
 import re
 import subprocess
 from subprocess import PIPE, run
+
+debugLevel = 4
+debug = debugging()
+
+debug.setLevel(debugLevel)
+
+r = redis.StrictRedis(host='localhost', port=6379)                          # Connect to local Redis instance
+
+p = r.pubsub()                                                              # See https://github.com/andymccurdy/redis-py/#publish--subscribe
+p.subscribe('buttonPress')                                           # Subscribe to startScripts channel
 
 while True:
 	try:
 		while True:
 			try:
 				ser = serial.Serial('/dev/ttyACM0', 9600, timeout=10)
-				print("Serial port opened")
+				debug.Print("Serial port opened",3)
 				break
 			except:
-				print("Waiting for Serial port open")
+				debug.Print("Waiting for Serial port open",4)
 				time.sleep(5)
 				
 
-
-		state = 1
-
-		time.sleep(.500)
-
-		dataOut = ":2,1,\n"
-		print("Sending Out;")
-		print(dataOut)
-		ser.write(dataOut.encode())
-
-		dataOut = ":1,255,0,0,\n"
-		print("Sending Out;")
-		print(dataOut)
-		ser.write(dataOut.encode())
-
-		r = redis.StrictRedis(host='localhost', port=6379)                          # Connect to local Redis instance
-
-		p = r.pubsub()                                                              # See https://github.com/andymccurdy/redis-py/#publish--subscribe
-		p.subscribe('buttonPress')                                           # Subscribe to startScripts channel
 
 		RUN = True
 		newMessage = True
@@ -45,49 +37,46 @@ while True:
 		while RUN:
 			try:# Will stay in loop until START message received
 				if newMessage is True: 
-					print("Waiting For new redis data")
+					debug.Print("Waiting For new redis data",2)
 					newMessage = False
 					
 				message = p.get_message()			# Checks for message
 				
 				if message:
 					command = message['data']	# Get data from message
-					print("PUBSUB Received")
-					print (message['data'])
+					debug.Print("PUBSUB Received   " + str(message['data']) ,4)
 					
-					print("command is")
-					print(type(command))
+					debug.Print("command is",1)
+					debug.Print(type(command),1)
 					if type(command) is int:
-						print("Sub connected")
+						debug.Print("Sub connected",2)
 					else:
 						commandList = command.decode("utf-8")
 						commandList = commandList.split("_")
-						print("Command list" + str(commandList))
+						debug.Print("Command list" + str(commandList),3)
 						
-						print("command list is")
-						print(type(commandList))
+						debug.Print("command list is",1)
+						debug.Print(type(commandList),1)
 						
 						if commandList[0] == "#":
-							print("Hex value received")
+							debug.Print("Hex value received",2)
 							hex = commandList[1]
 							r = int(hex[0] + hex[1], 16)
 							g = int(hex[2] + hex[3], 16)
 							b = int(hex[4] + hex[5], 16)
 							
 							dataOut = ":1," + str(r) + "," + str(g) + "," + str(b) + ",\n"
-							print("Sending Out;")
-							print(dataOut)
+							debug.Print("Sending Out;" + dataOut,4)
 							ser.write(dataOut.encode())
 						
 						elif commandList[0] == "Light":
 							dataOut = ":" + commandList[1] + "," + commandList[2] + ",\n"
-							print("Sending Out;")
-							print(dataOut)
+							debug.Print("Sending Out;" + dataOut,4)
 							ser.write(dataOut.encode())
 					
 				while ser.inWaiting():
 					feedback=ser.readline()
-					print(feedback)
+					debug.Print(feedback,2)
 					
 				#time.sleep(0.3)
 			except Exception as e:
@@ -100,4 +89,6 @@ while True:
 		print("!!!!!!!!!! EXCEPTION !!!!!!!!!")
 		print(str(e))
 		exit()
+
+	
 

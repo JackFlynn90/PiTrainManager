@@ -1,8 +1,8 @@
 {% extends 'trains/base.html' %}
 {% block content %}
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-<script src="https://rawgit.com/aterrien/jQuery-Knob/master/js/jquery.knob.js"></script>
 {% load static %}
+<script src="{% static "js/jquery.knob.js" %}"></script>
 <script type="text/javascript" src="{% static "js/cursor.js" %}"></script>
 <script src="{% static "js/colorpicker/jquery.colorpicker.js" %}"></script>
 
@@ -131,22 +131,22 @@
 												{% else %}
 													<label class="btn btn-light active">
 												{% endif %}
-															<input type="radio" name="options" id="Lights-offTR{{train.pk}}" autocomplete="off" checked>Off
+															<input type="radio" name="radio_train" id="Tr_{{train.address}}_Lights_Off" autocomplete="off" checked>Off
 														</label>
 												{% if train.lightsOn %}
 													<label class="btn btn-light active">
 												{% else %}
 													<label class="btn btn-light">
 												{% endif %}
-														<input type="radio" name="options" id="Lights-onTR{{train.pk}}" autocomplete="off"> On
+														<input type="radio" name="radio_train" id="Tr_{{train.address}}_Lights_On" autocomplete="off"> On
 													</label>
 												</div>
 										</li>
 										<li class="list-group-item"> <!--Speed Jquery knob -->
 											<i class="material-icons">slow_motion_video</i>
 											<h4>Speed:</h4>
-											<input class="knob" data-width="150" data-angleArc=250 data-angleOffset=-125 data-fgcolor="#222222" data-thickness=".3" value="{{train.speed}}" data-min="0" data-max="255">
-											<div><button type="button" class="btn btn-danger btn-sm" id="Stop-{{train.pk}}">Stop!</button></div>
+											<input class="knob" data-id="Tr_{{train.address}}_Speed_" data-width="150" data-angleArc=250 data-angleOffset=-125 data-fgcolor="#222222" data-thickness=".3" value="{{train.speed}}" data-min="0" data-max="255">
+											<div><button type="button" name="radio_train" class="btn btn-danger btn-sm" id="Stop-{{train.pk}}">Stop!</button></div>
 										</li>
 										<li class="list-group-item">
 											<i class="material-icons">compare_arrows</i>
@@ -157,27 +157,27 @@
 												{% else %}
 													<label class="btn btn-light active">
 												{% endif %}
-															<input type="radio" name="options" id="dir-forTR{{train.pk}}" autocomplete="off" checked>Forward
+															<input type="radio" name="radio_train" id="Tr_{{train.address}}_Dir_FWD" autocomplete="off" checked>Forward
 														</label>
 												{% if train.direction %}
 													<label class="btn btn-light active">
 												{% else %}
 													<label class="btn btn-light">
 												{% endif %}
-														<input type="radio" name="options" id="dir-backTR{{train.pk}}" autocomplete="off">Backward
+														<input type="radio" name="radio_train" id="Tr_{{train.address}}_Dir_BWD" autocomplete="off">Backward
 													</label>
 												</div>
 										</li>
 										<li class="list-group-item"><!--Horn button call -->
 											<div><i class="material-icons">volume_up</i></div>
-											<button type="button" class="btn btn-success btn-lg" id="Horn-{{train.pk}}" >Horn </button>
+											<button type="button" class="btn btn-success btn-lg" id="Tr_{{train.address}}_Horn_On" >Horn </button>
 										</li> 
 										<li class="list-group-item"> <!--Sound button call generated from number of sound options available according to the database value -->
 											<i class="material-icons">volume_up</i>
 											<div class="row row-buffer">
 												{% with ''|center:train.soundOptions as range %}
 												{% for _ in range %}
-													<div class = "classWithPad"> <button type="button" class="btn btn-success btn-lg" id="Snd-{{train.pk}}-{{forloop.counter0}}" >Sound{{ forloop.counter }} </button> </div>
+													<div class = "classWithPad"> <button type="button" name="radio_train" class="btn btn-success btn-lg" id="Tr_{{train.address}}_SND_{{forloop.counter0}}" >Sound{{ forloop.counter }} </button> </div>
 												{% endfor %}
 												{% endwith %}
 											</div>
@@ -192,14 +192,14 @@
 												{% else %}
 													<label class="btn btn-light active">
 												{% endif %}
-															<input type="radio" name="options" id="mute-onTR{{train.pk}}" autocomplete="off" checked>Muted
+															<input type="radio" name="radio_train" id="Tr_{{train.address}}_Mute_On" autocomplete="off" checked>Muted
 														</label>
 												{% if train.silentRunning %}
 													<label class="btn btn-light active">
 												{% else %}
 													<label class="btn btn-light">
 												{% endif %}
-														<input type="radio" name="options" id="mute-offTR{{train.pk}}" autocomplete="off">Unmuted
+														<input type="radio" name="radio_train" id="Tr_{{train.address}}_Mute_Off" autocomplete="off">Unmuted
 													</label>
 												</div>
 										</li>

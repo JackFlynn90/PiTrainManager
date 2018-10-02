@@ -1,12 +1,19 @@
         $(function($) {
-
+			
+			
             $(".knob").knob({
+							
                 change : function (value) {
                     //console.log("change : " + value);
                 },
                 release : function (value) {
                     //console.log(this.$.attr('value'));
-                    console.log("release : " + value);
+                    console.log("release : " + this.o.id + value);
+					var dataOut = this.o.id + value
+					
+					$.post("/command_trains/",
+					{datatype:"command", command:dataOut}
+					);
                 },
                 cancel : function () {
                     console.log("cancel : ", this);

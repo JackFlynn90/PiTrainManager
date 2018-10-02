@@ -4,7 +4,6 @@ from django.http import HttpResponse
 from .models import Train, Light
 from django.views.decorators.csrf import csrf_exempt
 import redis
-import pickle
 
 def train_list(request):
 	trains = Train.objects.all()
@@ -29,10 +28,24 @@ def command_ajax(request):
 		if datatype == "command":
 			data = request.POST.get('command')
 			print("GOT This: " + data)
-			pickledData = pickle.dumps(data)
 			r.publish('buttonPress', data)
 		elif datatype == "hex":
 			data = request.POST.get('data')
 			r.publish('buttonPress', data)
 			print("Hex value;" + data)
+		return HttpResponse("ok")
+
+@csrf_exempt
+def command_ajax_trains(request):
+	if request.method == 'POST':
+		datatype = request.POST.get('datatype')
+		
+		r = redis.StrictRedis(host='localhost', port=6379)
+		p = r.pubsub()
+		
+		
+		if datatype == "command":
+			data = request.POST.get('command')
+			print("GOT This: " + data)
+			r.publish('trainData', data)
 		return HttpResponse("ok")
