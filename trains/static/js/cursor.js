@@ -11,7 +11,7 @@
                     console.log("release : " + this.o.id + value);
 					var dataOut = this.o.id + value
 					
-					$.post("/command_trains/",
+					$.post("/commands/",
 					{datatype:"command", command:dataOut}
 					);
                 },
