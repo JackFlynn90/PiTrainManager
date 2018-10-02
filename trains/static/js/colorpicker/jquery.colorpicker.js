@@ -354,7 +354,7 @@ jQuery.ColorPicker = function(container, options) {
 		
 		var d = new Date();
         var t = d.getTime();
-        if(t - lastUpdate > 500) {
+        if(t - lastUpdate > 100) {
 			console.log("Colour change : " + picker.hex());
 			$.post("/commands/",
 				{datatype:"hex", data:picker.hex}

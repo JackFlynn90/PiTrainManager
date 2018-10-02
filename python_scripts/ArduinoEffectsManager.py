@@ -89,7 +89,7 @@ while True:
 					feedback=ser.readline()
 					print(feedback)
 					
-				time.sleep(0.3)
+				#time.sleep(0.3)
 			except Exception as e:
 				print("!!!!!!!!!! EXCEPTION !!!!!!!!!")
 				print(str(e))
