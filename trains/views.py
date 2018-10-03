@@ -27,12 +27,12 @@ def command_ajax(request):
 		
 		if datatype == "command":
 			data = request.POST.get('command')
-			print("GOT This: " + data)
-			r.publish('buttonPress', data)
+			print("Lighting GOT This: " + data)
+			r.publish('lightCommand', data)
 		elif datatype == "hex":
 			data = request.POST.get('data')
-			r.publish('buttonPress', data)
-			print("Hex value;" + data)
+			r.publish('lightCommand', data)
+			print("Lighting GOT This Hex value;" + data)
 		return HttpResponse("ok")
 
 @csrf_exempt
@@ -46,6 +46,6 @@ def command_ajax_trains(request):
 		
 		if datatype == "command":
 			data = request.POST.get('command')
-			print("GOT This: " + data)
-			r.publish('trainData', data)
+			print("Trains GOT This: " + data)
+			r.publish('trainCommand', data)
 		return HttpResponse("ok")

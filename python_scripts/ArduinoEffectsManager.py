@@ -16,7 +16,7 @@ debug.setLevel(debugLevel)
 r = redis.StrictRedis(host='localhost', port=6379)                          # Connect to local Redis instance
 
 p = r.pubsub()                                                              # See https://github.com/andymccurdy/redis-py/#publish--subscribe
-p.subscribe('buttonPress')                                           # Subscribe to startScripts channel
+p.subscribe('lightCommand')                                           # Subscribe to startScripts channel
 
 while True:
 	try:
@@ -74,11 +74,11 @@ while True:
 							debug.Print("Sending Out;" + dataOut,4)
 							ser.write(dataOut.encode())
 					
-				while ser.inWaiting():
+				while ser.inWaiting() > 0:
 					feedback=ser.readline()
 					debug.Print(feedback,2)
 					
-				#time.sleep(0.3)
+				time.sleep(0.01)
 			except Exception as e:
 				print("!!!!!!!!!! EXCEPTION !!!!!!!!!")
 				print(str(e))
