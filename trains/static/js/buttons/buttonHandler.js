@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	
-		//Radio Button capture for Lighting Data
+		//Radio Button capture for Automation Data
 	$(".AutoButton").change(function(){
 		console.log("Auto Radio Button clicked detected. Id;" + this.id);
 	});
