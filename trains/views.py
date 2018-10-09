@@ -3,7 +3,7 @@ from django.utils import timezone
 from django.http import HttpResponse
 from .models import Train, Light
 from django.views.decorators.csrf import csrf_exempt
-import redis
+#import redis
 
 def train_list(request):
 	trains = Train.objects.all()
@@ -21,17 +21,17 @@ def command_ajax(request):
 	if request.method == 'POST':
 		datatype = request.POST.get('datatype')
 		
-		r = redis.StrictRedis(host='localhost', port=6379)
-		p = r.pubsub()
+		# r = redis.StrictRedis(host='localhost', port=6379)
+		# p = r.pubsub()
 		
 		
 		if datatype == "command":
 			data = request.POST.get('command')
-			print("Lighting GOT This: " + data)
+			# print("Lighting GOT This: " + data)
 			r.publish('lightCommand', data)
 		elif datatype == "hex":
 			data = request.POST.get('data')
-			r.publish('lightCommand', data)
+			# r.publish('lightCommand', data)
 			print("Lighting GOT This Hex value;" + data)
 		return HttpResponse("ok")
 
@@ -40,12 +40,12 @@ def command_ajax_trains(request):
 	if request.method == 'POST':
 		datatype = request.POST.get('datatype')
 		
-		r = redis.StrictRedis(host='localhost', port=6379)
-		p = r.pubsub()
+		# r = redis.StrictRedis(host='localhost', port=6379)
+		# p = r.pubsub()
 		
 		
 		if datatype == "command":
 			data = request.POST.get('command')
 			print("Trains GOT This: " + data)
-			r.publish('trainCommand', data)
+			# r.publish('trainCommand', data)
 		return HttpResponse("ok")
