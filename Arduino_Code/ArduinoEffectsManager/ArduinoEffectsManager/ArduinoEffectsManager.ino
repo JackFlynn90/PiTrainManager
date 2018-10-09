@@ -11,6 +11,7 @@
 Comms_SerialExtendedClass USBSerial;
 
 HW_PinClass TeensyLED;
+HW_PinClass TestLED;
 	
 #define pinRGB_r 21
 #define pinRGB_g 23
@@ -20,7 +21,13 @@ void setup()
 {
 	RGBManager.setup(pinRGB_r,pinRGB_g,pinRGB_b);
 	USBSerial.setup();
-	
+
+  pinMode(20, OUTPUT);
+  pinMode(3, OUTPUT);
+    pinMode(4, OUTPUT);
+      pinMode(5, OUTPUT);
+
+  
 	TeensyLED.setup(13);
 	TeensyLED.SetPin(LOW);
 	
@@ -53,7 +60,30 @@ void loop()
 		Serial.println("USB Handshake");
 		timer_handshake = millis();
 	}
-	
+
+  for (int i = 0; i < 255; i++)
+  {
+    analogWrite(20,i);
+    analogWrite(3,i);
+        analogWrite(4,i);
+            analogWrite(5,i);
+    delay(10);
+    Serial.print("Brightness Up;");
+    Serial.println(i);
+  }
+
+  
+  for (int i = 0; i < 255; i++)
+  {
+    analogWrite(20,255-i);
+    analogWrite(3,255-i);
+        analogWrite(4,255-i);
+            analogWrite(5,255-i);
+    delay(10);
+    
+    Serial.print("Brightness Down;");
+    Serial.println(255-i);
+  }
 
 }
 
