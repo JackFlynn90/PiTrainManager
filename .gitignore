@@ -6,3 +6,10 @@ redis-stable/
 */__pychache__
 *.out
 migrations/
+*.pyc
+*~
+__pycache__
+myvenv
+db.sqlite3
+/static
+.DS_Store
