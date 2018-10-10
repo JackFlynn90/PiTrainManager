@@ -36,10 +36,11 @@ void HW_PinClass::toggle()
 	digitalWriteFast(_PinNum,_CurrentValue);
 }
 
-//Analogue Pin enable 
+//Analogue Pin enable
 // -Doesn't currently check if pin has analogue support
-void HW_PinClass::setup(int PinNumber, boolean PWMEnable)
+void HW_PinClass::setup(int PinNumber, boolean PWMEnable, float FadeRate)
 {
+	_FadeRate = FadeRate;
 	_PinNum = PinNumber;
 	_CurrentValue = 0;
 	_PWMEnable = PWMEnable;
@@ -51,8 +52,13 @@ void HW_PinClass::setup(int PinNumber, boolean PWMEnable)
 // relies on hardware PWM analogue write
 void HW_PinClass::setAnalogueValue(int analogueSet)
 {
-	_CurrentValue = analogueSet;
-	analogWrite(_PinNum,_CurrentValue);
+	if(_FadeEnable)
+	_FadetargetValue = analogueSet;
+	else
+	{
+		_CurrentValue = analogueSet;
+		analogWrite(_PinNum,_CurrentValue);
+	}
 }
 
 //Digital blink rate
@@ -80,6 +86,12 @@ void HW_PinClass::refresh()
 		{
 			if(_PWMEnable)
 			{
+				if(_FadeEnable)
+				{
+					_FadeValue = _FadeValue + (_FadetargetValue - _FadeValue)/_FadeRate;
+					_CurrentValue = _FadeValue;	
+				}
+				
 				analogWrite(_PinNum, _CurrentValue);
 				
 			}else
@@ -90,7 +102,8 @@ void HW_PinClass::refresh()
 		}
 	}else
 	{
-	
+		_FadeValue = 0;
+		
 		if(_PWMEnable)
 		analogWrite(_PinNum,0);
 		else

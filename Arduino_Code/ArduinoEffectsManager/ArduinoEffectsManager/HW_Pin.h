@@ -24,9 +24,13 @@ class HW_PinClass
 	boolean _BlinkEnable = false;
 	boolean _enabled = true;
 
+	float _FadeValue = 0.0;
+	int _FadetargetValue;
+	float _FadeRate = 50.0;
+	boolean _FadeEnable = true;
  public:
 	void setup(int PinNumber); //Plain setup for easy on/off toggling of pin
-	void setup(int PinNumber, boolean PWMEnable); //PWM enable setup for allowing PWM usage
+	void setup(int PinNumber, boolean PWMEnable, float FadeRate); //PWM enable setup for allowing PWM usage
  
 	void setPin(int Value); //Set pin state digital
 	void setAnalogueValue(int analogueSet); //Set pin state PWM

@@ -21,14 +21,15 @@ class LED_GroupClass
 	int _PinNums[20];
 	int _PWMValues[20];
 	int _Enables[20];
-	boolean _GroupEnable;
-	int _GroupBrightness;
+	boolean _GroupEnable = true;
+	int _GroupBrightness = 128;
 	int _numPins;
+	float _FadeRate = 50.0;
 	
 	HW_PinClass _StoredHWPins[20];
 	
 	public:
-	void setup(int *PinNumbers, int *PWMValues, int numberofPins); //Plain setup for easy on/off toggling of pin
+	void setup(int *PinNumbers, int *PWMValues, int numberofPins, float FadeRate); //Plain setup for easy on/off toggling of pin
 	
 	void setSinglePWM(int GroupAddress, int analogueSet); //Set single pin state PWM - to be updated
 	void setSingleEnable(int GroupAddress, int analogueSet); //Set single pin enable state - to be updated

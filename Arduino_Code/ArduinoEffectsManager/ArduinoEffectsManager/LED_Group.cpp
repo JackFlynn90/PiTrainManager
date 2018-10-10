@@ -5,8 +5,10 @@
 #include "LED_Group.h"
 
 //General initial setup for class
-void LED_GroupClass::setup(int *PinNumbers, int *PWMValues, int numberofPins)
+void LED_GroupClass::setup(int *PinNumbers, int *PWMValues, int numberofPins, float FadeRate)
 {
+	_FadeRate = FadeRate;
+	
 	_numPins = numberofPins;
 	
 	for (int i = 0; i < numberofPins; i++)
@@ -14,7 +16,7 @@ void LED_GroupClass::setup(int *PinNumbers, int *PWMValues, int numberofPins)
 	_PinNums[i] = PinNumbers[i];
 	_PWMValues[i] = PWMValues[i];
 	
-	_StoredHWPins[i].setup(PinNumbers[i],true);
+	_StoredHWPins[i].setup(PinNumbers[i],true, _FadeRate);
 	_StoredHWPins[i].setAnalogueValue(PWMValues[i]);
 	}
 }

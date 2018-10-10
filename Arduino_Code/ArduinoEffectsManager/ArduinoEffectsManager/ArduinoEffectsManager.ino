@@ -17,11 +17,13 @@ HW_PinClass TeensyLED;
 LED_GroupClass StreetLights;
 LED_GroupClass HouseLights;
 
-
+#define StreetLightFadeRate 500
+#define HouseLightFadeRate 50
+#define RGBFadeRate 20
 
 void setup()
 {
-	RGBManager.setup(pinRGB_r,pinRGB_g,pinRGB_b);
+	RGBManager.setup(pinRGB_r,pinRGB_g,pinRGB_b, RGBFadeRate);
 	USBSerial.setup();
 
 	
@@ -29,13 +31,13 @@ void setup()
 	int StreetLightPinList[] = {pinStreet1LED, pinStreet2LED};
 	int StreetLightBrightnessList[] = {255,10};
 	
-	StreetLights.setup(StreetLightPinList,StreetLightBrightnessList,numbStreetLights);	
+	StreetLights.setup(StreetLightPinList,StreetLightBrightnessList,numbStreetLights, StreetLightFadeRate);
 	
 	int numbHouseLights = 2;
 	int HouseLightsPinList[] = {pinHouseTopLED, pinHouseBotLED};
 	int HouseLightsBrightnessList[] = {255,128};
 	
-	HouseLights.setup(HouseLightsPinList,HouseLightsBrightnessList,numbHouseLights);
+	HouseLights.setup(HouseLightsPinList,HouseLightsBrightnessList,numbHouseLights, HouseLightFadeRate);
 	
 	
 	TeensyLED.setup(13);
@@ -62,8 +64,17 @@ void loop()
 			default: Serial.println("Command Not Recognised. Data received;"); USBSerial.printLastPacket(); break;
 		}
 	}
+	
+	
+	static unsigned long timer_LEDRefresh = millis();
+	if(millis() - timer_LEDRefresh > 50)
+	{
 
-	RGBManager.Refresh();
+		RGBManager.Refresh();
+		StreetLights.refresh();
+		HouseLights.refresh();
+		timer_LEDRefresh = millis();
+	}
 	
 	static unsigned long timer_handshake = millis();
 	
