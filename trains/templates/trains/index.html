@@ -75,19 +75,25 @@
 												<div class="btn-group btn-group-toggle" data-toggle="buttons">
 													<label class="btn btn-light active" >
 													{% if light.lightsState %}
-															<input type="radio" class="LightingButton" name="options" autocomplete="off" id="Light_{{light.address}}_0">Off
+															<input type="radio" class="LightingButton" name="options" autocomplete="off" id="Light_4_{{light.address}}_0">Off
 													{% else %}
-															<input type="radio" class="LightingButton" name="options" autocomplete="off" id="Light_{{light.address}}_0" checked>Off
+															<input type="radio" class="LightingButton" name="options" autocomplete="off" id="Light_4_{{light.address}}_0" checked>Off
 													{% endif %}
 														</label>
 													<label class="btn btn-light">
 													{% if light.lightsState %}
-															<input type="radio" class="LightingButton" name="options" id="Light_{{light.address}}_1" autocomplete="off" checked> On
+															<input type="radio" class="LightingButton" name="options" id="Light_4_{{light.address}}_1" autocomplete="off" checked> On
 													{% else %}
-														<input type="radio" class="LightingButton" name="options" id="Light_{{light.address}}_1" autocomplete="off"> On
+														<input type="radio" class="LightingButton" name="options" id="Light_4_{{light.address}}_1" autocomplete="off"> On
 													{% endif %}
 													</label>
 												</div>
+												{% if light.type == "Single-Group" %}
+												 <h5>Brightness:</h5> 
+												<div class="slidecontainer">
+													<input type="range" min="0" max="255" value="{{light.brightness}}" class="slider" id="Light_5_{{light.address}}">
+												</div>
+												{% endif %}
 										</li>
 									{% endfor %}
 										

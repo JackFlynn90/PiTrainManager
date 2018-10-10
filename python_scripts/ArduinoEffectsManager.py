@@ -8,7 +8,7 @@ import re
 import subprocess
 from subprocess import PIPE, run
 
-debugLevel = 4
+debugLevel = 3
 debug = debugging()
 
 debug.setLevel(debugLevel)
@@ -70,7 +70,7 @@ while True:
 							ser.write(dataOut.encode())
 						
 						elif commandList[0] == "Light":
-							dataOut = ":" + commandList[1] + "," + commandList[2] + ",\n"
+							dataOut = ":" + commandList[1] + "," + commandList[2] + "," + commandList[3] + ",\n"
 							debug.Print("Sending Out;" + dataOut,4)
 							ser.write(dataOut.encode())
 					

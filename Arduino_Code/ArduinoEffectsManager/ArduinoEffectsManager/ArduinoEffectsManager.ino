@@ -57,6 +57,7 @@ void loop()
 			case 2: RGBOutput_state(); break;
 			case 3: debug_LEDState(); break;
 			case 4: LEDManager_State();break;
+			case 5: LEDManager_Brightness();break;
 			
 			default: Serial.println("Command Not Recognised. Data received;"); USBSerial.printLastPacket(); break;
 		}

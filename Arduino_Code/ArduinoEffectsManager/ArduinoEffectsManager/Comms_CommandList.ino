@@ -17,7 +17,7 @@ void RGBHex_Received()
 // Enable/Disable the RGB LED output. Passes to RGBManager class
 void RGBOutput_state()
 {
-	boolean enable = USBSerial.parseInt(PacketPosition1);
+	boolean enable = USBSerial.parseInt(PacketPosition2);
 	Serial.print("RGB Output State;");
 	Serial.println(enable? "Enabled" : "Disabled");
 	
@@ -44,16 +44,36 @@ void LEDManager_State()
 {
 	int _LEDChoice = USBSerial.parseInt(PacketPosition1);
 	int _enable = USBSerial.parseInt(PacketPosition2);
-	int _brightness = USBSerial.parseInt(PacketPosition3);
+	
 	
 	Serial.print("LED Group Change, Grouping Selected;"); Serial.print(_LEDChoice);
-	Serial.print(", enable;"); Serial.print(_enable);
+	Serial.print(", enable;"); Serial.println(_enable);
+
+	
+	switch(_LEDChoice)
+	{
+		case 0: RGBOutput_state(); break;
+		case 1: HouseLights.setAllEnables(_enable); HouseLights.refresh(); break;
+		case 2: StreetLights.setAllEnables(_enable); StreetLights.refresh();break;
+	}
+	
+	
+}
+
+//LED Manager for multiple LEDs State command
+void LEDManager_Brightness()
+{
+	int _LEDChoice = USBSerial.parseInt(PacketPosition1);
+	int _brightness = USBSerial.parseInt(PacketPosition2);
+	
+	Serial.print("LED Group Change, Grouping Selected;"); Serial.print(_LEDChoice);
 	Serial.print(", brightness;"); Serial.println(_brightness);
 	
 	switch(_LEDChoice)
 	{
-		case 1: HouseLights.setAllEnables(_enable); HouseLights.setAllBrightness(_brightness); HouseLights.refresh(); break;
-		case 2: StreetLights.setAllEnables(_enable); StreetLights.setAllBrightness(_brightness); StreetLights.refresh();break;
+		case 0: RGBOutput_state(); break;
+		case 1: HouseLights.setAllBrightness(_brightness); HouseLights.refresh(); break;
+		case 2: StreetLights.setAllBrightness(_brightness); StreetLights.refresh();break;
 	}
 	
 	
