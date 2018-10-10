@@ -27,7 +27,7 @@ void RGBOutput_state()
 	RGBManager.Disable();
 }
 
-//LED State command
+//Debug LED State command
 void debug_LEDState()
 {
 	boolean newState = USBSerial.parseInt(PacketPosition1);
@@ -40,6 +40,7 @@ void debug_LEDState()
 
 
 //LED Manager for multiple LEDs State command
+ // Used to parse which LED group is being effected and update the groups enable state
 void LEDManager_State()
 {
 	int _LEDChoice = USBSerial.parseInt(PacketPosition1);
@@ -60,7 +61,8 @@ void LEDManager_State()
 	
 }
 
-//LED Manager for multiple LEDs State command
+//LED Manager for multiple LEDs brightness command
+// Used to parse which LED group is being effected and update the groups brightness level
 void LEDManager_Brightness()
 {
 	int _LEDChoice = USBSerial.parseInt(PacketPosition1);

@@ -14,6 +14,9 @@
 /*
 LED Grouping
 	Allows for bulk changing of LEDs without single addressing each one.
+	Array for StoredHWPins class is default to 20 held pins. Not likely to require more
+	however eventually this class will be updated to handle buffer chips for more complex
+	led control
 */
 class LED_GroupClass
 {

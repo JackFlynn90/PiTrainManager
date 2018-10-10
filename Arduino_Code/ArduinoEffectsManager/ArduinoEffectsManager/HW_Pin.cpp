@@ -4,12 +4,7 @@
 
 #include "HW_Pin.h"
 
-void HW_PinClass::init()
-{
-
-
-}
-
+//******************************************************************
 //Basic digital setup
 // Defaults pin state to false
 void HW_PinClass::setup(int PinNum)
@@ -22,6 +17,7 @@ void HW_PinClass::setup(int PinNum)
 	digitalWriteFast(_PinNum, _CurrentValue);
 }
 
+//******************************************************************
 //Basic digital setting of pin value
 void HW_PinClass::setPin(int Value)
 {
@@ -29,6 +25,7 @@ void HW_PinClass::setPin(int Value)
 	digitalWriteFast(_PinNum,_CurrentValue);
 }
 
+//******************************************************************
 //Basic digital flipping of pin state
 void HW_PinClass::toggle()
 {
@@ -36,7 +33,8 @@ void HW_PinClass::toggle()
 	digitalWriteFast(_PinNum,_CurrentValue);
 }
 
-//Analogue Pin enable
+//******************************************************************
+//Analogue Pin Setup
 // -Doesn't currently check if pin has analogue support
 void HW_PinClass::setup(int PinNumber, boolean PWMEnable, float FadeRate)
 {
@@ -48,8 +46,10 @@ void HW_PinClass::setup(int PinNumber, boolean PWMEnable, float FadeRate)
 	analogWrite(_PinNum,_CurrentValue);
 }
 
+//******************************************************************
 //Analogue write value
-// relies on hardware PWM analogue write
+// Relies on hardware PWM analogue write
+// When fading is used it sets the target fade value which is reached during refresh()
 void HW_PinClass::setAnalogueValue(int analogueSet)
 {
 	if(_FadeEnable)
@@ -61,6 +61,8 @@ void HW_PinClass::setAnalogueValue(int analogueSet)
 	}
 }
 
+
+//******************************************************************
 //Digital blink rate
 // Allows for easy blinking of LED
 void HW_PinClass::setBlinkRate(int Rate)
@@ -69,14 +71,15 @@ void HW_PinClass::setBlinkRate(int Rate)
 	_BlinkRate = 1000/Rate;
 }
 
+//******************************************************************
 //Refresh function handles all possible pin states and updates accordingly
 void HW_PinClass::refresh()
 {
-	if(_enabled)
+	if(_enabled) //Hard on/off state
 	{
 		if(_BlinkEnable)
 		{
-			if(millis() - _lastBlink > _BlinkRate)
+			if(millis() - _lastBlink > _BlinkRate) //Timer used for blinking
 			{
 				_CurrentValue = !_CurrentValue;
 				digitalWriteFast(_PinNum,_CurrentValue);
@@ -84,9 +87,9 @@ void HW_PinClass::refresh()
 			}
 		}else
 		{
-			if(_PWMEnable)
+			if(_PWMEnable)// PWM analogue usage
 			{
-				if(_FadeEnable)
+				if(_FadeEnable) //Fading effect achieved by moving current value towards the target value at "fade rate"
 				{
 					_FadeValue = _FadeValue + (_FadetargetValue - _FadeValue)/_FadeRate;
 					_CurrentValue = _FadeValue;	
@@ -94,13 +97,13 @@ void HW_PinClass::refresh()
 				
 				analogWrite(_PinNum, _CurrentValue);
 				
-			}else
+			}else //Plain digital on/off
 			{
 				digitalWriteFast(_PinNum,_CurrentValue);
 			}
 			
 		}
-	}else
+	}else // Hard off state
 	{
 		_FadeValue = 0;
 		
