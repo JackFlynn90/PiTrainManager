@@ -19,5 +19,7 @@
 #define pinRGB_g 23
 #define pinRGB_b 22
 
+#define pin_in_PhotoRes 14
+
 #endif
 
