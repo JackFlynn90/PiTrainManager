@@ -46,16 +46,14 @@ void LEDManager_State()
 	int _enable = USBSerial.parseInt(PacketPosition2);
 	int _brightness = USBSerial.parseInt(PacketPosition3);
 	
-	Serial.print("LED Value Change, LED Selected;"); Serial.print(_LEDChoice);
+	Serial.print("LED Group Change, Grouping Selected;"); Serial.print(_LEDChoice);
 	Serial.print(", enable;"); Serial.print(_enable);
 	Serial.print(", brightness;"); Serial.println(_brightness);
 	
 	switch(_LEDChoice)
 	{
-		case 1: HouseTopLED.setEnable(_enable); HouseTopLED.setAnalogueValue(_brightness); break;
-		case 2: HouseBottomLED.setEnable(_enable); HouseBottomLED.setAnalogueValue(_brightness); break;
-		case 3: Street1LED.setEnable(_enable); Street1LED.setAnalogueValue(_brightness); break;
-		case 4: Street2LED.setEnable(_enable); Street2LED.setAnalogueValue(_brightness); break;
+		case 1: HouseLights.setAllEnables(_enable); HouseLights.setAllBrightness(_brightness); HouseLights.refresh(); break;
+		case 2: StreetLights.setAllEnables(_enable); StreetLights.setAllBrightness(_brightness); StreetLights.refresh();break;
 	}
 	
 	

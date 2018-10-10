@@ -1,3 +1,5 @@
+#include "Defines_PinList.h"
+#include "LED_Group.h"
 #include "RGBManager.h"
 /*
 * ArduinoEffectsManager.ino
@@ -11,31 +13,30 @@
 Comms_SerialExtendedClass USBSerial;
 
 HW_PinClass TeensyLED;
-HW_PinClass HouseTopLED;
-HW_PinClass HouseBottomLED;
-HW_PinClass Street1LED;
-HW_PinClass Street2LED;
 
-#define pinHouseTopLED 20
-#define pinHouseBotLED 3
-#define pinStreet1LED 4
-#define pinStreet2LED 5
+LED_GroupClass StreetLights;
+LED_GroupClass HouseLights;
 
 
-#define pinRGB_r 21
-#define pinRGB_g 23
-#define pinRGB_b 22
 
 void setup()
 {
 	RGBManager.setup(pinRGB_r,pinRGB_g,pinRGB_b);
 	USBSerial.setup();
 
-	HouseTopLED.setup(pinHouseTopLED, true);
-	HouseBottomLED.setup(pinHouseBotLED, true);
-	Street1LED.setup(pinStreet1LED, true);
-	Street2LED.setup(pinStreet2LED, true);
-
+	
+	int numbStreetLights = 2;
+	int StreetLightPinList[] = {pinStreet1LED, pinStreet2LED};
+	int StreetLightBrightnessList[] = {255,10};
+	
+	StreetLights.setup(StreetLightPinList,StreetLightBrightnessList,numbStreetLights);	
+	
+	int numbHouseLights = 2;
+	int HouseLightsPinList[] = {pinHouseTopLED, pinHouseBotLED};
+	int HouseLightsBrightnessList[] = {255,128};
+	
+	HouseLights.setup(HouseLightsPinList,HouseLightsBrightnessList,numbHouseLights);
+	
 	
 	TeensyLED.setup(13);
 	TeensyLED.setPin(LOW);
@@ -71,34 +72,6 @@ void loop()
 		timer_handshake = millis();
 	}
 
-	for (int i = 0; i < 255; i++)
-	{
-		HouseTopLED.setAnalogueValue(i);
-		HouseBottomLED.setAnalogueValue(i);
-		Street1LED.setAnalogueValue(i);
-		Street2LED.setAnalogueValue(i);
-		delay(10);
-		Serial.print("Brightness Up;");
-		Serial.println(i);
-	}
-
-	delay(500);
-	
-	for (int j = 0; j < 255; j++)
-	{
-		int i = 255-j;
-		
-		HouseTopLED.setAnalogueValue(i);
-		HouseBottomLED.setAnalogueValue(i);
-		Street1LED.setAnalogueValue(i);
-		Street2LED.setAnalogueValue(i);
-		delay(10);
-		
-		Serial.print("Brightness Down;");
-		Serial.println(255-i);
-	}
-	
-	delay(500);
 }
 
 
