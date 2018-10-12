@@ -2,6 +2,7 @@
 #include "Defines_PinList.h"
 #include "LED_Group.h"
 #include "RGBManager.h"
+#include "PhotoResLEDManager_Group.h"
 /*
 * ArduinoEffectsManager.ino
 *
@@ -18,7 +19,9 @@ HW_PinClass TeensyLED;
 LED_GroupClass StreetLights;
 LED_GroupClass HouseLights;
 
-PhotoResistorTriggerClass LDRGroup_Block1; // Photoresistor wrapper class
+PhotoResistorTriggerClass LDR_Block1; // Photoresistor wrapper class
+LED_GroupClass *LEDs_Block1[2] = {&StreetLights, &HouseLights}; //group list for block 1 related to LDR
+PhotoResLEDManager_GroupClass AutoManager_LDR_Block1; // LDR and LED group manager for automation
 
 #define StreetLightFadeRate 500
 #define HouseLightFadeRate 50
@@ -44,13 +47,14 @@ void setup()
 	HouseLights.setup(HouseLightsPinList,HouseLightsBrightnessList,numbHouseLights, HouseLightFadeRate);
 	
 	//Setup for LDR classes
-	LDRGroup_Block1.setup(pin_in_PhotoRes, 700);
+	LDR_Block1.setup(pin_in_PhotoRes, 700);
+	
+	//Setup for LED-LDR automation linker manager
+	AutoManager_LDR_Block1.setup(LDR_Block1,LEDs_Block1, 2);
 	
 	//Debug LED setup
 	TeensyLED.setup(13);
 	TeensyLED.setPin(LOW);
-	
-	pinMode(pin_in_PhotoRes, INPUT_PULLUP);
 	
 	Serial.println("Hello World from ArduinoEffectsManager");
 	
@@ -82,8 +86,10 @@ void loop()
 		RGBManager.Refresh();
 		StreetLights.refresh();
 		HouseLights.refresh();
+		
+		AutoManager_LDR_Block1.refresh();//Automation testing of using Photoresistor (LDR) to trigger LEDs on off
+		
 		timer_LEDRefresh = millis();
-		LDRTrigger_LEDs();
 			
 	}
 	
@@ -98,28 +104,6 @@ void loop()
 	
 }
 
-//Automation testing of using Photoresistor (LDR) to trigger LEDs on off
-void LDRTrigger_LEDs()
-{
-	static boolean LDRTrigger = false;
-	
-	if(LDRTrigger != LDRGroup_Block1.refresh())
-	{
-		if(LDRGroup_Block1.getState())
-		{
-			HouseLights.setAllEnables(true);
-			StreetLights.setAllEnables(true);
-		}else
-		{
-			HouseLights.setAllEnables(false);
-			StreetLights.setAllEnables(false);
-		}
-		LDRTrigger = LDRGroup_Block1.getState();
-		
-		Serial.print("LDR Block1 state change. New state;"); Serial.println(LDRGroup_Block1.getState());
-	}
-	
-	
-}
+
 
 

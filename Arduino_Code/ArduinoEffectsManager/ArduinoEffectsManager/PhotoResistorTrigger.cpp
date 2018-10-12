@@ -11,7 +11,9 @@ void PhotoResistorTriggerClass::setup(int pinNumber, int TriggerThreshold)
 	pinMode(_pinNumber, INPUT_PULLUP);
 }
 
-boolean PhotoResistorTriggerClass::refresh()
+//Photresistor Update
+// Updates local variables for triggering
+boolean PhotoResistorTriggerClass::upDate()
 {
 	_currentValue = analogRead(_pinNumber);
 	
@@ -24,5 +26,6 @@ boolean PhotoResistorTriggerClass::refresh()
 }
 
 
-PhotoResistorTriggerClass PhotoResistorTrigger;
+
+
 

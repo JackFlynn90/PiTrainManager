@@ -25,14 +25,12 @@ class PhotoResistorTriggerClass
  public:
 	void init();
 	void setup(int pinNumber, int TriggerThreshold); //General setup of pin assignment and threshold
-	boolean refresh(); //Return if triggered
+	boolean upDate(); //Refresh current states of group LEDs
 	boolean getState(){return _triggerOn;};
 	int getValue(){return _currentValue;};
 	
 	
 };
-
-extern PhotoResistorTriggerClass PhotoResistorTrigger;
 
 #endif
 
