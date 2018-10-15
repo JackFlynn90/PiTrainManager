@@ -1,6 +1,6 @@
-// 
-// 
-// 
+//
+//
+//
 
 #include "PhotoResLEDManager_Group.h"
 
@@ -11,18 +11,19 @@ void PhotoResLEDManager_GroupClass::setup(PhotoResistorTriggerClass LDR, LED_Gro
 	_numLEDs = NumberOfLEDGroups;
 	
 	for(int i = 0; i < _numLEDs; i++)
-		_LEDs[i] = LEDGroupList[i];
+	_LEDs[i] = LEDGroupList[i];
 
-/*	_LEDs = *LEDGroupList;*/
+	/*	_LEDs = *LEDGroupList;*/
 	LDR = _LDR;
 
 }
 
-//Refresh 
+//Refresh
 // Handles LDR reading and updates LED enable state based on LDR results
 void PhotoResLEDManager_GroupClass::refresh()
 {
-		
+	if(_isEnabled)
+	{
 		if(_LDRState != _LDR.upDate())
 		{
 			if(_LDR.getState())
@@ -38,7 +39,7 @@ void PhotoResLEDManager_GroupClass::refresh()
 			
 			Serial.print("LDR state change. New state;"); Serial.println(_LDR.getState());
 		}
-		
+	}
 }
 
 

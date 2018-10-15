@@ -1,6 +1,6 @@
 //RGB Hex value command
 // Changes stored colour values for RGB Manager class
-void RGBHex_Received()
+void Command_RGBHex_Received()
 {
 	byte hexVal[3] = {USBSerial.parseInt(PacketPosition1),USBSerial.parseInt(PacketPosition2),USBSerial.parseInt(PacketPosition3)};
 	
@@ -15,7 +15,7 @@ void RGBHex_Received()
 
 //RGB Output control command
 // Enable/Disable the RGB LED output. Passes to RGBManager class
-void RGBOutput_state()
+void Command_RGBOutput_state()
 {
 	boolean enable = USBSerial.parseInt(PacketPosition2);
 	Serial.print("RGB Output State;");
@@ -28,7 +28,7 @@ void RGBOutput_state()
 }
 
 //Debug LED State command
-void debug_LEDState()
+void Command_debug_LEDState()
 {
 	boolean newState = USBSerial.parseInt(PacketPosition1);
 	
@@ -41,7 +41,7 @@ void debug_LEDState()
 
 //LED Manager for multiple LEDs State command
  // Used to parse which LED group is being effected and update the groups enable state
-void LEDManager_State()
+void Command_LEDManager_State()
 {
 	int _LEDChoice = USBSerial.parseInt(PacketPosition1);
 	int _enable = USBSerial.parseInt(PacketPosition2);
@@ -53,7 +53,7 @@ void LEDManager_State()
 	
 	switch(_LEDChoice)
 	{
-		case 0: RGBOutput_state(); break;
+		case 0: Command_RGBOutput_state(); break;
 		case 1: HouseLights.setAllEnables(_enable); HouseLights.refresh(); break;
 		case 2: StreetLights.setAllEnables(_enable); StreetLights.refresh();break;
 	}
@@ -63,7 +63,7 @@ void LEDManager_State()
 
 //LED Manager for multiple LEDs brightness command
 // Used to parse which LED group is being effected and update the groups brightness level
-void LEDManager_Brightness()
+void Command_LEDManager_Brightness()
 {
 	int _LEDChoice = USBSerial.parseInt(PacketPosition1);
 	int _brightness = USBSerial.parseInt(PacketPosition2);
@@ -73,10 +73,26 @@ void LEDManager_Brightness()
 	
 	switch(_LEDChoice)
 	{
-		case 0: RGBOutput_state(); break;
+		case 0: Command_RGBOutput_state(); break;
 		case 1: HouseLights.setAllBrightness(_brightness); HouseLights.refresh(); break;
 		case 2: StreetLights.setAllBrightness(_brightness); StreetLights.refresh();break;
 	}
 	
 	
+}
+
+//LDR block state manager
+// Used to control the enable state of the LDR blocks which control the local LED states
+void Command_LDRBlockManager_State()
+{
+	int LDRBlockChoice = USBSerial.parseInt(PacketPosition1);
+	boolean newState = USBSerial.parseInt(PacketPosition2);
+	
+	Serial.print("LDR Block state change, LDR selected;"); Serial.print(LDRBlockChoice);
+	Serial.print(", New state;"); Serial.println(newState);
+	
+	switch (LDRBlockChoice)
+	{
+		case 0: AutoManager_LDR_Block1.setEnable(newState); AutoManager_LDR_Block1.refresh(); break;
+	}
 }

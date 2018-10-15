@@ -67,11 +67,12 @@ void loop()
 	{
 		switch(USBSerial.parseCommand()) //Parses packet for "Command" from first position. This launches the appropriate function based on the command received
 		{
-			case 1: RGBHex_Received(); break; //RGB Colour Handling
-			case 2: RGBOutput_state(); break; //RGB on/off state
-			case 3: debug_LEDState(); break; // Debug LED on/off state
-			case 4: LEDManager_State();break; // Group LED on/off states
-			case 5: LEDManager_Brightness();break; // Grouping LED brightness levels
+			case 1: Command_RGBHex_Received(); break; //RGB Colour Handling
+			case 2: Command_RGBOutput_state(); break; //RGB on/off state
+			case 3: Command_debug_LEDState(); break; // Debug LED on/off state
+			case 4: Command_LEDManager_State();break; // Group LED on/off states
+			case 5: Command_LEDManager_Brightness();break; // Grouping LED brightness levels
+			case 6: Command_LDRBlockManager_State();break; //LDR grouping manager 
 			
 			default: Serial.println("Command Not Recognised. Data received;"); USBSerial.printLastPacket(); break; //Fall back exception
 		}
