@@ -17,7 +17,7 @@ django.setup()
 from  trains.models import Train
 
 
-byPassSerial = True
+byPassSerial = False
 
 trains = Train.objects.all()
 
@@ -31,7 +31,11 @@ activeTrain.speed = speedOut
 activeTrain.save()
 
 #Speed command packet builder
-def Packet_Command_SpeedDir(Traddress, speed, direction):
+def Packet_Command_SpeedDir(activeTrain):
+	
+	address = activeTrain.address
+	speed = activeTrain.speed
+	
 	if address < 10 :
 		strAddress = "0" + str(address)
 	else:
@@ -40,19 +44,13 @@ def Packet_Command_SpeedDir(Traddress, speed, direction):
 	if speed is "1": #A "1" value is used as emergency stop in DCC terms. Increment the value by 1 to 2 to prevent sudden stop at low speed
 		speed = "2"
 
-	if direction is 'BWD' and speed is 0:
+	if activeTrain.direction is False and speed is 0:
 		speedOut = int(128)
 
-	if direction is 'FWD':
+	if activeTrain.direction is True:
 		speedOut = int(speed) + 128
 	else:
 		speedOut = int(speed)
-	
-	activeTrain = Train.objects.get(address = Traddress)
-	debug.Print("Active train address is;" + str(activeTrain.address),3)
-	debug.Print("New speed value is;" + str(speed), 3)
-	activeTrain.speed = speed
-	activeTrain.save()
 
 	if speedOut > 10:
 		speedStr = str(format((speedOut),'x'))
@@ -155,17 +153,38 @@ while True:
 						debug.Print("command list is",1)
 						debug.Print(type(commandList),1)
 						
-						if commandList[0] == "Tr":
-							address = int(commandList[1])
-							speed = int(commandList[3])
-							debug.Print("New speed Out;" + str(speed),4)
+						if commandList[2] == "Speed":
 							
-							#packet layout is "O" "Address" "3F" Speed "checksum"
+							speed = commandList[3]
 							
-							packet = Packet_Command_SpeedDir(address,speed,direction)
+							activeTrain = Train.objects.get(address = Traddress)
+							debug.Print("Active train address is;" + str(activeTrain.address),3)
+							debug.Print("New speed value is;" + str(speed), 3)
+							activeTrain.speed = speed
+							activeTrain.save()
+	
+							packet = Packet_Command_SpeedDir(activeTrain)
 
 							sprogWritePacket(packet)
 							
+							print ("Packet out; " + packet)
+						
+						if commandList[2] == "Dir":
+							
+							if commandList[3] == "FWD":
+								dir = True
+							elif commandList[3] == "BWD":
+								dir = False
+								
+							activeTrain = Train.objects.get(address = Traddress)
+							debug.Print("Active train address is;" + str(activeTrain.address),3)
+							debug.Print("New direction value is;" + str(commandList[3]), 3)
+							activeTrain.direction = dir
+							activeTrain.save()
+							
+							packet = Packet_Command_SpeedDir(activeTrain)
+
+							sprogWritePacket(packet)
 							
 							print ("Packet out; " + packet)
 
