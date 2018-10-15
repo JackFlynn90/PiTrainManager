@@ -7,28 +7,113 @@ import re
 import subprocess
 from subprocess import PIPE, run
 
+import os
+import sys
+sys.path.append('/share/djangoTrain')
+os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+import django
+from django.conf import settings
+django.setup()
+from  trains.models import Train
+
+
+byPassSerial = True
+
+trains = Train.objects.all()
+
+speedOut = 10
+Traddress = 3
+
+activeTrain = Train.objects.get(address = Traddress)
+print ("Active train address is;" + str(activeTrain.address))
+print ("New speed value is;" + str(speedOut))
+activeTrain.speed = speedOut
+activeTrain.save()
+
+#Speed command packet builder
+def Packet_Command_SpeedDir(Traddress, speed, direction):
+	if address < 10 :
+		strAddress = "0" + str(address)
+	else:
+		strAddress = str(address)
+		
+	if speed is "1": #A "1" value is used as emergency stop in DCC terms. Increment the value by 1 to 2 to prevent sudden stop at low speed
+		speed = "2"
+
+	if direction is 'BWD' and speed is 0:
+		speedOut = int(128)
+
+	if direction is 'FWD':
+		speedOut = int(speed) + 128
+	else:
+		speedOut = int(speed)
+	
+	activeTrain = Train.objects.get(address = Traddress)
+	debug.Print("Active train address is;" + str(activeTrain.address),3)
+	debug.Print("New speed value is;" + str(speed), 3)
+	activeTrain.speed = speed
+	activeTrain.save()
+
+	if speedOut > 10:
+		speedStr = str(format((speedOut),'x'))
+	else:
+		speedStr = "0" + str(format((speedOut),'x'))
+		
+	checksum = speedOut ^ address ^ 63
+
+	checksum = format(checksum,'x')
+
+	packet = "O " + strAddress + " 3F " + speedStr + " " + str(checksum) + "\r\n"
+	
+	return packet
+	
+def sprogWritePacket(packet):
+	if byPassSerial is True:
+		debug.Print("Packet write;" + packet, 5)
+	else:
+		ser.write(packet.encode())
+	
+def sprogPrintFeedback():
+	if byPassSerial is True:
+		return
+	else:
+		try:				
+			while ser.inWaiting() > 0:
+				feedback=ser.read()
+				debug.Print(feedback,2)
+				time.sleep(0.01)
+					
+		except Exception as e:
+			print("!!!!!!!!!! EXCEPTION !!!!!!!!!")
+			print(str(e))
+			RUN = False
+			ser.close()
+	
+
 sprogPort = '/dev/ttyACM1'
 
 debugLevel = 2
 debug = debugging()
 
-debug.setLevel(debugLevel)
+debug.setLevel(debugLevel) #Debug printing setup. Change level to get different message outputs
 
 r = redis.StrictRedis(host='localhost', port=6379)                          # Connect to local Redis instance
 
 p = r.pubsub()                                                              # See https://github.com/andymccurdy/redis-py/#publish--subscribe
 p.subscribe('trainCommand')                                           # Subscribe to startScripts channel
 
-speed = 13
-direction = 'BWD'
+direction = 'FWD'
 dir_FWD = 'FWD'
 dir_BWD = 'BWD'
-address = 3
+
 
 while True:
 	try:
 		while True:
 			try:
+				if byPassSerial is True:
+					break
+				
 				ser = serial.Serial(sprogPort, 9600, timeout=10)
 				debug.Print("Serial port opened",3)
 				pack1 = "+ \r\n"
@@ -71,45 +156,21 @@ while True:
 						debug.Print(type(commandList),1)
 						
 						if commandList[0] == "Tr":
+							address = int(commandList[1])
 							speed = int(commandList[3])
 							debug.Print("New speed Out;" + str(speed),4)
+							
 							#packet layout is "O" "Address" "3F" Speed "checksum"
+							
+							packet = Packet_Command_SpeedDir(address,speed,direction)
 
-							if address < 10 :
-								strAddress = "0" + str(address)
-							else:
-								strAddress = str(address)
+							sprogWritePacket(packet)
 							
-							if direction is 'BWD' and speed is 0:
-								speedOut = int(128)
-							
-							if direction is 'FWD':
-								speedOut = int(speed) + 128
-							else:
-								speedOut = int(speed)
-							
-							
-							if speedOut > 10:
-								speedStr = str(format((speedOut),'x'))
-							else:
-								speedStr = "0" + str(format((speedOut),'x'))
-								
-							data = speedOut ^ address ^ 63
-							
-							checksum = format(data,'x')
-							
-							packet = "O " + strAddress + " 3F " + speedStr + " " + str(checksum) + "\r\n"
-							
-							ser.write(packet.encode())
 							
 							print ("Packet out; " + packet)
 
-					
-				while ser.inWaiting() > 0:
-					feedback=ser.read()
-					debug.Print(feedback,2)
-					time.sleep(0.01)
-					
+				sprogPrintFeedback()
+
 			except Exception as e:
 				print("!!!!!!!!!! EXCEPTION !!!!!!!!!")
 				print(str(e))
@@ -121,5 +182,4 @@ while True:
 		print(str(e))
 		exit()
 
-	
 
