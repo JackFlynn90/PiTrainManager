@@ -116,9 +116,9 @@ while True:
 				print(str(e))
 				RUN = False
 			
-	except Exception as e:
-		print("!!!!!!!!!! EXCEPTION !!!!!!!!!")
-		print(str(e))
+	except KeyboardInterrupt:
+		print("Keyboard Shutdown")
+		sprog.shutdown()
 		exit()
 
 

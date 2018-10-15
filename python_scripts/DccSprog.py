@@ -74,6 +74,14 @@ class SprogDevice():
 				time.sleep(5)
 			
 			return True
+			
+	def shutdown(self):
+		pack1 = "- \r\n" #packet turns off the DCC power to the rails
+		self.ser.write(pack1.encode())
+		self.ser.write(pack1.encode())
+		self.ser.write(pack1.encode())
+		self.ser.close()
+		
 
 		
 
