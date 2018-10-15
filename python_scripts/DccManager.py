@@ -8,6 +8,7 @@ import subprocess
 from subprocess import PIPE, run
 
 from DccSprog import SprogDevice
+from DccPacketHandler import PacketBuilder
 
 import os
 import sys
@@ -21,41 +22,6 @@ from  trains.models import Train
 
 
 byPassSerial = False
-
-#Speed command packet builder
-def Packet_Command_SpeedDir(activeTrain):
-	
-	address = activeTrain.address
-	speed = activeTrain.speed
-	
-	if address < 10 :
-		strAddress = "0" + str(address)
-	else:
-		strAddress = str(address)
-		
-	if speed is "1": #A "1" value is used as emergency stop in DCC terms. Increment the value by 1 to 2 to prevent sudden stop at low speed
-		speed = "2"
-
-	if activeTrain.direction is False and speed is 0:
-		speedOut = int(128)
-
-	if activeTrain.direction is True:
-		speedOut = int(speed) + 128
-	else:
-		speedOut = int(speed)
-
-	if speedOut > 10:
-		speedStr = str(format((speedOut),'x'))
-	else:
-		speedStr = "0" + str(format((speedOut),'x'))
-		
-	checksum = speedOut ^ address ^ 63
-
-	checksum = format(checksum,'x')
-
-	packet = "O " + strAddress + " 3F " + speedStr + " " + str(checksum) + "\r\n"
-	
-	return packet
 	
 	
 
@@ -72,6 +38,8 @@ p = r.pubsub()                                                              # Se
 p.subscribe('trainCommand')                                           # Subscribe to startScripts channel
 
 sprog = SprogDevice(sprogPort,debugLevel,byPassSerial)
+
+packetMaker = PacketBuilder(debugLevel)
 
 while True:
 	try:
@@ -115,7 +83,7 @@ while True:
 							activeTrain.speed = speed
 							activeTrain.save()
 	
-							packet = Packet_Command_SpeedDir(activeTrain)
+							packet = packetMaker.SpeedDir(activeTrain)
 
 							sprog.WritePacket(packet)
 							
@@ -135,7 +103,7 @@ while True:
 							activeTrain.direction = dir
 							activeTrain.save()
 							
-							packet = Packet_Command_SpeedDir(activeTrain)
+							packet = packetMaker.SpeedDir(activeTrain)
 
 							sprog.WritePacket(packet)
 							

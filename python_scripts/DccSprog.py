@@ -2,13 +2,16 @@ import serial
 import time
 from DebugPrint import *
 
-
+#Sprog DCC driver class.
+# Handler for the serial port to the Sprog
 class SprogDevice():
 	
 	ser = serial
 	debug = debugging()
 	byPassSerial = False
 	
+	#Class setup. 
+	#Requires port for the sprog, debug print level for printing outputs and allows for bypassing the serial port during testing
 	def __init__(self, serialPort, debuglevel, bypassSerial):
 		self.sprogPort = serialPort
 
@@ -18,17 +21,21 @@ class SprogDevice():
 		self.debug.setLevel(debugLevel) #Debug printing setup. Change level to get different message outputs
 		self.byPassSerial = bypassSerial
 		
+	#Packet output to the Sprog via serial port
 	def WritePacket(self,packet):
+		#Serial port bypass for debugging without sprog connected
 		if self.byPassSerial is True:
 			self.debug.Print("Packet write;" + packet, 5)
 		else:
 			try:
 				self.ser.write(packet.encode())
-			except:
+			except: #exception catch when serial port is disconnected
 				print("!!!!!!!!!! EXCEPTION !!!!!!!!!")
 				print(str(e))
 				return False
-		
+	
+	
+	#Print out of feedback data from the Sprog via serial
 	def PrintFeedback(self):
 		if self.byPassSerial is True:
 			return
@@ -46,6 +53,7 @@ class SprogDevice():
 				self.ser.close()
 				return False
 		
+	#Open port at startup. Blocking until port opens unless it's debugging bypass
 	def openPort(self):
 		while True:
 			try:
@@ -54,7 +62,8 @@ class SprogDevice():
 				
 				self.ser = serial.Serial(self.sprogPort, 9600, timeout=10)
 				self.debug.Print("Serial port opened",3)
-				pack1 = "+ \r\n"
+				
+				pack1 = "+ \r\n" #packet turns on the DCC power to the rails
 				time.sleep(0.1)
 				self.ser.write(pack1.encode())
 				self.ser.write(pack1.encode())
