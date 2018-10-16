@@ -66,48 +66,42 @@ while True:
 					if type(command) is int:
 						debug.Print("Sub connected",2)
 					else:
+						#decode command data into a seperated list. seperate by "_" character
 						commandList = command.decode("utf-8")
 						commandList = commandList.split("_")
 						debug.Print("Command list" + str(commandList),3)
 						
-						debug.Print("command list is",1)
-						debug.Print(type(commandList),1)
+						debug.Print("command list is" + str(type(commandList)),1)
 						
+						Traddress = commandList[1] # get train address from packet 
+						activeTrain = Train.objects.get(address = Traddress)
+						
+						#Speed command parse data and updates database
 						if commandList[2] == "Speed":
-							Traddress = commandList[1]
+							
 							speed = commandList[3]
-							
-							activeTrain = Train.objects.get(address = Traddress)
-							debug.Print("Active train address is;" + str(activeTrain.address),3)
-							debug.Print("New speed value is;" + str(speed), 3)
+							debug.Print("Active train address is;" + str(activeTrain.address) + ", New speed value is;" + str(speed),3)
 							activeTrain.speed = speed
-							activeTrain.save()
-	
-							packet = packetMaker.SpeedDir(activeTrain)
-
-							sprog.WritePacket(packet)
 							
-							print ("Packet out; " + packet)
-						
+						#Direction command parse data and updates database
 						if commandList[2] == "Dir":
-							Traddress = commandList[1]
 							
 							if commandList[3] == "FWD":
 								dir = True
 							elif commandList[3] == "BWD":
 								dir = False
-								
-							activeTrain = Train.objects.get(address = Traddress)
-							debug.Print("Active train address is;" + str(activeTrain.address),3)
-							debug.Print("New direction value is;" + str(commandList[3]), 3)
+							debug.Print("Active train address is;" + str(activeTrain.address) + ", New direction value is;" + str(commandList[3]),3)
 							activeTrain.direction = dir
-							activeTrain.save()
 							
-							packet = packetMaker.SpeedDir(activeTrain)
+						#Save changes to db	
+						activeTrain.save() 	
+						
+						#Send out data to train
+						packet = packetMaker.SpeedDir(activeTrain)# creates packet for sprog
 
-							sprog.WritePacket(packet)
-							
-							print ("Packet out; " + packet)
+						sprog.WritePacket(packet) # Sending packet to sprog
+						
+						debug.Print("Packet out; " + packet,3) 
 
 				sprog.PrintFeedback()
 
@@ -115,7 +109,8 @@ while True:
 				print("!!!!!!!!!! EXCEPTION !!!!!!!!!")
 				print(str(e))
 				RUN = False
-			
+				
+	#Clean exit on keyboard close of script. Shuts down track power
 	except KeyboardInterrupt:
 		print("Keyboard Shutdown")
 		sprog.shutdown()
