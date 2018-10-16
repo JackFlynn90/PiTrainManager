@@ -29,9 +29,11 @@ class SprogDevice():
 		else:
 			try:
 				self.ser.write(packet.encode())
+				return True
 			except: #exception catch when serial port is disconnected
 				print("!!!!!!!!!! EXCEPTION !!!!!!!!!")
 				print(str(e))
+				self.ser.close()
 				return False
 	
 	
@@ -45,7 +47,8 @@ class SprogDevice():
 					feedback= self.ser.read()
 					self.debug.Print(feedback,2)
 					time.sleep(0.01)
-						
+				
+				return True
 			except Exception as e:
 				print("!!!!!!!!!! EXCEPTION !!!!!!!!!")
 				print(str(e))
@@ -68,12 +71,14 @@ class SprogDevice():
 				self.ser.write(pack1.encode())
 				self.ser.write(pack1.encode())
 				self.ser.write(pack1.encode())
-				break
+				return True
 			except:
 				self.debug.Print("Waiting for Serial port open",4)
 				time.sleep(5)
 			
-			return True
+			
+	def close(self):
+		self.ser.close()
 			
 	def shutdown(self):
 		pack1 = "- \r\n" #packet turns off the DCC power to the rails

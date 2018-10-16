@@ -132,14 +132,14 @@
 										  <i class="material-icons">highlight</i> 
 											<h4>Lights:</h4> 
 												<div class="btn-group btn-group-toggle" data-toggle="buttons">
-												{% if train.lightsOn %}
-													<label class="btn btn-light">
-												{% else %}
+												{% if train.lightsOn == False %}
 													<label class="btn btn-light active">
+												{% else %}
+													<label class="btn btn-light">
 												{% endif %}
 															<input type="radio" class="TrainButton" name="radio_train" id="Tr_{{train.address}}_Lights_Off" autocomplete="off" checked>Off
 														</label>
-												{% if train.lightsOn %}
+												{% if train.lightsOn == True%}
 													<label class="btn btn-light active">
 												{% else %}
 													<label class="btn btn-light">
@@ -158,14 +158,14 @@
 											<i class="material-icons">compare_arrows</i>
 											<h4>Direction:</h4>  <!--Direction button call -->
 												<div class="btn-group btn-group-toggle" data-toggle="buttons">
-												{% if train.direction %}
-													<label class="btn btn-light">
-												{% else %}
+												{% if train.direction == True %}
 													<label class="btn btn-light active">
+												{% else %}
+													<label class="btn btn-light">
 												{% endif %}
 															<input type="radio" class="TrainButton" id="Tr_{{train.address}}_Dir_FWD" autocomplete="off" checked>Forward
 														</label>
-												{% if train.direction %}
+												{% if train.direction == False %}
 													<label class="btn btn-light active">
 												{% else %}
 													<label class="btn btn-light">
@@ -174,41 +174,43 @@
 													</label>
 												</div>
 										</li>
-										<li class="list-group-item"><!--Horn button call -->
-											<div><i class="material-icons">volume_up</i></div>
-											<button type="button" class="btn btn-success btn-lg TrainButton" id="Tr_{{train.address}}_Horn_On" >Horn </button>
-										</li> 
-										<li class="list-group-item"> <!--Sound button call generated from number of sound options available according to the database value -->
-											<i class="material-icons">volume_up</i>
-											<div class="row row-buffer">
-												{% with ''|center:train.soundOptions as range %}
-												{% for _ in range %}
-													<div class = "classWithPad"> <button type="button" class="btn btn-success btn-lg TrainButton" id="Tr_{{train.address}}_SND_{{forloop.counter0}}" >Sound{{ forloop.counter }} </button> </div>
-												{% endfor %}
-												{% endwith %}
-											</div>
-										</li>
-										
-										<li class="list-group-item"> <!--Mutting sound button call -->
-											<i class="material-icons">volume_off</i> 
-											<h4>Mute:</h4> 
-												<div class="btn-group btn-group-toggle" data-toggle="buttons">
-												{% if train.silentRunning %}
-													<label class="btn btn-light">
-												{% else %}
-													<label class="btn btn-light active">
-												{% endif %}
-															<input type="radio" class="TrainButton" id="Tr_{{train.address}}_Mute_On" autocomplete="off" checked>Muted
-														</label>
-												{% if train.silentRunning %}
-													<label class="btn btn-light active">
-												{% else %}
-													<label class="btn btn-light">
-												{% endif %}
-														<input type="radio" class="TrainButton" id="Tr_{{train.address}}_Mute_Off" autocomplete="off">Unmuted
-													</label>
+										{% if train.soundOptions > 0 %}
+											<li class="list-group-item"><!--Horn button call -->
+												<div><i class="material-icons">volume_up</i></div>
+												<button type="button" class="btn btn-success btn-lg TrainButton" id="Tr_{{train.address}}_Horn_On" >Horn </button>
+											</li> 
+											<li class="list-group-item"> <!--Sound button call generated from number of sound options available according to the database value -->
+												<i class="material-icons">volume_up</i>
+												<div class="row row-buffer">
+													{% with ''|center:train.soundOptions as range %}
+													{% for _ in range %}
+														<div class = "classWithPad"> <button type="button" class="btn btn-success btn-lg TrainButton" id="Tr_{{train.address}}_SND_{{forloop.counter0}}" >Sound{{ forloop.counter }} </button> </div>
+													{% endfor %}
+													{% endwith %}
 												</div>
-										</li>
+											</li>
+											
+											<li class="list-group-item"> <!--Mutting sound button call -->
+												<i class="material-icons">volume_off</i> 
+												<h4>Mute:</h4> 
+													<div class="btn-group btn-group-toggle" data-toggle="buttons">
+													{% if train.silentRunning %}
+														<label class="btn btn-light">
+													{% else %}
+														<label class="btn btn-light active">
+													{% endif %}
+																<input type="radio" class="TrainButton" id="Tr_{{train.address}}_Mute_On" autocomplete="off" checked>Muted
+															</label>
+													{% if train.silentRunning %}
+														<label class="btn btn-light active">
+													{% else %}
+														<label class="btn btn-light">
+													{% endif %}
+															<input type="radio" class="TrainButton" id="Tr_{{train.address}}_Mute_Off" autocomplete="off">Unmuted
+														</label>
+													</div>
+											</li>
+										{% endif %}
 										
 								  </ul>
 								  <div class="panel-footer">Footer</div>

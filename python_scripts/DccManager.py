@@ -66,6 +66,7 @@ while True:
 					if type(command) is int:
 						debug.Print("Sub connected",2)
 					else:
+						commandisValid = False
 						#decode command data into a seperated list. seperate by "_" character
 						commandList = command.decode("utf-8")
 						commandList = commandList.split("_")
@@ -78,36 +79,59 @@ while True:
 						
 						#Speed command parse data and updates database
 						if commandList[2] == "Speed":
-							
+							commandisValid = True
 							speed = commandList[3]
 							debug.Print("Active train address is;" + str(activeTrain.address) + ", New speed value is;" + str(speed),3)
 							activeTrain.speed = speed
 							
 						#Direction command parse data and updates database
 						if commandList[2] == "Dir":
-							
+							commandisValid = True
 							if commandList[3] == "FWD":
 								dir = True
 							elif commandList[3] == "BWD":
 								dir = False
 							debug.Print("Active train address is;" + str(activeTrain.address) + ", New direction value is;" + str(commandList[3]),3)
 							activeTrain.direction = dir
+						
+						#Train light command parse data and updates database 
+						if commandList[2] == "Lights":
+						
+							#commandisValid = True
+							if commandList[3] == "On":
+								lightState = True
+							elif commandList[3] == "Off":
+								lightState = False
+								
+							debug.Print("Active train address is;" + str(activeTrain.address) + ", New lights value is;" + str(commandList[3]),3)
 							
-						#Save changes to db	
-						activeTrain.save() 	
-						
-						#Send out data to train
-						packet = packetMaker.SpeedDir(activeTrain)# creates packet for sprog
+							activeTrain.lightsOn = lightState
+							
+							packet = packetMaker.Functions(activeTrain)# creates packet for sprog
 
-						sprog.WritePacket(packet) # Sending packet to sprog
-						
-						debug.Print("Packet out; " + packet,3) 
+							RUN = sprog.WritePacket(packet) # Sending packet to sprog
+							
+							debug.Print("Packet out; " + packet,3) 
+							
+						if commandisValid is True:
+							#Save changes to db	
+							activeTrain.save() 	
+							
+							#Send out data to train
+							packet = packetMaker.SpeedDir(activeTrain)# creates packet for sprog
 
-				sprog.PrintFeedback()
+							RUN = sprog.WritePacket(packet) # Sending packet to sprog
+							
+							debug.Print("Packet out; " + packet,3) 
+						else:
+							debug.Print("Invalid command received;" + str(commandList), 4)
+							
+				RUN = sprog.PrintFeedback()
 
 			except Exception as e:
 				print("!!!!!!!!!! EXCEPTION !!!!!!!!!")
 				print(str(e))
+				sprog.close()
 				RUN = False
 				
 	#Clean exit on keyboard close of script. Shuts down track power

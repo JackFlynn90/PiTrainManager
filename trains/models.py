@@ -30,3 +30,20 @@ class Light(models.Model):
             default=timezone.now)
 	def __str__(self):
 		return self.title
+		
+class Functions(models.Model):
+	title = models.CharField(max_length=200)
+	description = models.TextField()
+	train = models.ForeignKey(
+        Train,
+        on_delete=models.CASCADE,)
+	address = models.PositiveSmallIntegerField()
+	constant_send = models.BooleanField()
+	current_state = models.BooleanField()
+	is_active = models.BooleanField()
+
+	created_date = models.DateTimeField(
+            default=timezone.now)
+	def __str__(self):
+		return self.title
+		

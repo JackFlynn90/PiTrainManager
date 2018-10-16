@@ -67,6 +67,39 @@ class PacketBuilder():
 		packet = "O " + strAddress + " 3F " + speedStr + " " + str(checksum) + "\r\n"
 		
 		return packet
+	
+	def Functions(self,activeTrain):
+	
+		#Pull details from train object
+		address = activeTrain.address
+		
+		lightstate = activeTrain.lightsOn
+		
+		if lightstate is True:
+			lightValue = 144 
+		else:
+			lightValue = 128
+		
+		#Build address part of the packet
+		if address < 10 :
+			strAddress = "0" + str(address)
+		else:
+			strAddress = str(address)
+		
+		print("before check sum light is;" + str(lightValue) + " , and address is;" + str(address))
+			
+		#Basic 8 bit checksum xor. only of data sent
+		checksum = address ^ lightValue
+				
+		strLight = str(format((lightValue),'x'))
+		
+		checksum = format(checksum,'x')
+		
+			
+		#Packet format "O" -seperated by spaces- address -- packetexpanded -- speed -- checksum -- carriage return
+		packet = "O " + strAddress + " " + strLight + " " + str(checksum) + "\r\n"
+		
+		return packet
 		
 		
 
