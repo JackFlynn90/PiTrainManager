@@ -1,125 +1,93 @@
 import serial
 import time
-import redis
-from DebugPrint import debugging
+from DebugPrint import *
 
-import re
-import subprocess
-from subprocess import PIPE, run
+#Sprog DCC driver class.
+# Handler for the serial port to the Sprog
+class SprogDevice():
+	
+	ser = serial
+	debug = debugging()
+	byPassSerial = False
+	
+	#Class setup. 
+	#Requires port for the sprog, debug print level for printing outputs and allows for bypassing the serial port during testing
+	def __init__(self, serialPort, debuglevel, bypassSerial):
+		self.sprogPort = serialPort
 
-sprogPort = '/dev/ttyACM1'
+		debugLevel = debuglevel
+		self.debug = debugging()
 
-debugLevel = 2
-debug = debugging()
-
-debug.setLevel(debugLevel)
-
-r = redis.StrictRedis(host='localhost', port=6379)                          # Connect to local Redis instance
-
-p = r.pubsub()                                                              # See https://github.com/andymccurdy/redis-py/#publish--subscribe
-p.subscribe('trainCommand')                                           # Subscribe to startScripts channel
-
-speed = 13
-direction = 'BWD'
-dir_FWD = 'FWD'
-dir_BWD = 'BWD'
-address = 3
-
-while True:
-	try:
-		while True:
+		self.debug.setLevel(debugLevel) #Debug printing setup. Change level to get different message outputs
+		self.byPassSerial = bypassSerial
+		
+	#Packet output to the Sprog via serial port
+	def WritePacket(self,packet):
+		#Serial port bypass for debugging without sprog connected
+		if self.byPassSerial is True:
+			self.debug.Print("Packet write;" + packet, 5)
+		else:
 			try:
-				ser = serial.Serial(sprogPort, 9600, timeout=10)
-				debug.Print("Serial port opened",3)
-				pack1 = "+ \r\n"
-				time.sleep(0.1)
-				ser.write(pack1.encode())
-				ser.write(pack1.encode())
-				ser.write(pack1.encode())
-				break
-			except:
-				debug.Print("Waiting for Serial port open",4)
-				time.sleep(5)
-				
-
-		
-		RUN = True
-		newMessage = True
-		
-		while RUN:
-			try:# Will stay in loop until START message received
-				if newMessage is True: 
-					debug.Print("Waiting For new redis data",2)
-					newMessage = False
-					
-				message = p.get_message()			# Checks for message
-				
-				if message:
-					command = message['data']	# Get data from message
-					debug.Print("PUBSUB Received   " + str(message['data']) ,4)
-					
-					debug.Print("command is",1)
-					debug.Print(type(command),1)
-					if type(command) is int:
-						debug.Print("Sub connected",2)
-					else:
-						commandList = command.decode("utf-8")
-						commandList = commandList.split("_")
-						debug.Print("Command list" + str(commandList),3)
-						
-						debug.Print("command list is",1)
-						debug.Print(type(commandList),1)
-						
-						if commandList[0] == "Tr":
-							speed = int(commandList[3])
-							debug.Print("New speed Out;" + str(speed),4)
-							#packet layout is "O" "Address" "3F" Speed "checksum"
-
-							if address < 10 :
-								strAddress = "0" + str(address)
-							else:
-								strAddress = str(address)
-							
-							if direction is 'BWD' and speed is 0:
-								speedOut = int(128)
-							
-							if direction is 'FWD':
-								speedOut = int(speed) + 128
-							else:
-								speedOut = int(speed)
-							
-							
-							if speedOut > 10:
-								speedStr = str(format((speedOut),'x'))
-							else:
-								speedStr = "0" + str(format((speedOut),'x'))
-								
-							data = speedOut ^ address ^ 63
-							
-							checksum = format(data,'x')
-							
-							packet = "O " + strAddress + " 3F " + speedStr + " " + str(checksum) + "\r\n"
-							
-							ser.write(packet.encode())
-							
-							print ("Packet out; " + packet)
-
-					
-				while ser.inWaiting() > 0:
-					feedback=ser.read()
-					debug.Print(feedback,2)
+				self.ser.write(packet.encode())
+				return True
+			except: #exception catch when serial port is disconnected
+				print("!!!!!!!!!! EXCEPTION !!!!!!!!!")
+				print(str(e))
+				self.ser.close()
+				return False
+	
+	
+	#Print out of feedback data from the Sprog via serial
+	def PrintFeedback(self):
+		if self.byPassSerial is True:
+			return
+		else:
+			try:				
+				while self.ser.inWaiting() > 0:
+					feedback= self.ser.read()
+					self.debug.Print(feedback,2)
 					time.sleep(0.01)
-					
+				
+				return True
 			except Exception as e:
 				print("!!!!!!!!!! EXCEPTION !!!!!!!!!")
 				print(str(e))
 				RUN = False
-				ser.close()
+				self.ser.close()
+				return False
+		
+	#Open port at startup. Blocking until port opens unless it's debugging bypass
+	def openPort(self):
+		while True:
+			try:
+				if self.byPassSerial is True:
+					break
+				
+				self.ser = serial.Serial(self.sprogPort, 9600, timeout=10)
+				self.debug.Print("Serial port opened",3)
+				
+				pack1 = "+ \r\n" #packet turns on the DCC power to the rails
+				time.sleep(0.1)
+				self.ser.write(pack1.encode())
+				self.ser.write(pack1.encode())
+				self.ser.write(pack1.encode())
+				return True
+			except:
+				self.debug.Print("Waiting for Serial port open",4)
+				time.sleep(5)
 			
-	except Exception as e:
-		print("!!!!!!!!!! EXCEPTION !!!!!!!!!")
-		print(str(e))
-		exit()
+			
+	def close(self):
+		self.ser.close()
+			
+	def shutdown(self):
+		pack1 = "- \r\n" #packet turns off the DCC power to the rails
+		self.ser.write(pack1.encode())
+		self.ser.write(pack1.encode())
+		self.ser.write(pack1.encode())
+		self.ser.close()
+		
 
-	
+		
+
 

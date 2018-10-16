@@ -21,6 +21,15 @@ $(document).ready(function() {
 			);
 	});
 	
+	//Slider Capture for lighting brightness data
+	$(".slider").change(function(){
+		console.log("Slider value changed Id;" + this.id + ", Value;" + this.value);
+		data = this.id + "_" + this.value;
+		$.post("/commands/",
+			{datatype:"command", command:data}
+		);
+	});		
+	
 	//Radio Button capture for Train Data
 	$(".TrainButton").change(function(){
 		console.log("Train Radio Button change detected. Id;" + this.id);
