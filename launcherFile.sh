@@ -3,7 +3,7 @@ set -x #echo on
 cd ~ #go to pi root
 cd /share/djangoTrain #go to our shared development folder
 source myvenv/bin/activate #activate the virtual environement
-nohup python manage.py runserver 0:8080 & #run django in backround 
+nohup python manage.py runserver 0:8080 &> Djangoserver.log& #run django in backround 
 cd python_scripts # move to python scripts store
-nohup python ArduinoEffectsManager.py & #run our Effects manager script
-nohup python DccManager.py & #run our Dcc manager script
+nohup python ArduinoEffectsManager.py &> ArdEffMan.log& #run our Effects manager script
+nohup python DccManager.py &> DccMan.log& #run our Dcc manager script

@@ -73,7 +73,7 @@ class SprogDevice():
 				self.ser.write(pack1.encode())
 				return True
 			except:
-				self.debug.Print("Waiting for Serial port open",4)
+				self.debug.Print("Sprog - Waiting for Serial port open",3)
 				time.sleep(5)
 			
 			

@@ -27,7 +27,7 @@ byPassSerial = False
 
 sprogPort = '/dev/ttyACM1'
 
-debugLevel = 2
+debugLevel = 4
 debug = debugging()
 
 debug.setLevel(debugLevel) #Debug printing setup. Change level to get different message outputs

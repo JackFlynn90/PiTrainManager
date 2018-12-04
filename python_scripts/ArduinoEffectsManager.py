@@ -26,7 +26,7 @@ while True:
 				debug.Print("Serial port opened",3)
 				break
 			except:
-				debug.Print("Waiting for Serial port open",4)
+				debug.Print("Arduino - Waiting for Serial port open",2)
 				time.sleep(5)
 				
 
