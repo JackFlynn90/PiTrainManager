@@ -1,8 +1,29 @@
+//Main Serial comms function. Checks for incoming data and parses accordingly
+void SerialUSBCommands()
+{
+	//USB Data handling code
+	if(USBSerial.Read())
+	{
+		switch(USBSerial.parseCommand()) //Parses packet for "Command" from first position. This launches the appropriate function based on the command received
+		{
+			case 1: Command_RGBHex_Received(); break; //RGB Colour Handling
+			case 2: Command_RGBOutput_state(); break; //RGB on/off state
+			case 3: Command_debug_LEDState(); break; // Debug LED on/off state
+			case 4: Command_LEDManager_State();break; // Group LED on/off states
+			case 5: Command_LEDManager_Brightness();break; // Grouping LED brightness levels
+			case 6: Command_LDRBlockManager_State();break; //LDR grouping manager
+			
+			default: Serial.println("Command Not Recognised. Data received;"); USBSerial.printLastPacket(); break; //Fall back exception
+		}
+	}
+	
+}
+
 //RGB Hex value command
 // Changes stored colour values for RGB Manager class
 void Command_RGBHex_Received()
 {
-	byte hexVal[3] = {USBSerial.parseInt(PacketPosition1),USBSerial.parseInt(PacketPosition2),USBSerial.parseInt(PacketPosition3)};
+	byte hexVal[3] = {(byte)USBSerial.parseInt(PacketPosition1),(byte)USBSerial.parseInt(PacketPosition2),(byte)USBSerial.parseInt(PacketPosition3)};
 	
 	Serial.print("Hex value received;");
 	for (int i = 0; i <3; i++)
@@ -40,7 +61,7 @@ void Command_debug_LEDState()
 
 
 //LED Manager for multiple LEDs State command
- // Used to parse which LED group is being effected and update the groups enable state
+// Used to parse which LED group is being effected and update the groups enable state
 void Command_LEDManager_State()
 {
 	int _LEDChoice = USBSerial.parseInt(PacketPosition1);
@@ -54,8 +75,8 @@ void Command_LEDManager_State()
 	switch(_LEDChoice)
 	{
 		case 0: Command_RGBOutput_state(); break;
-		case 1: HouseLights.setAllEnables(_enable); HouseLights.refresh(); break;
-		case 2: StreetLights.setAllEnables(_enable); StreetLights.refresh();break;
+		case 1: _HouseLights.setAllEnables(_enable); _HouseLights.refresh(); break;
+		case 2: _StreetLights.setAllEnables(_enable); _StreetLights.refresh();break;
 	}
 	
 	
@@ -74,8 +95,8 @@ void Command_LEDManager_Brightness()
 	switch(_LEDChoice)
 	{
 		case 0: Command_RGBOutput_state(); break;
-		case 1: HouseLights.setAllBrightness(_brightness); HouseLights.refresh(); break;
-		case 2: StreetLights.setAllBrightness(_brightness); StreetLights.refresh();break;
+		case 1: _HouseLights.setAllBrightness(_brightness); _HouseLights.refresh(); break;
+		case 2: _StreetLights.setAllBrightness(_brightness); _StreetLights.refresh();break;
 	}
 	
 	

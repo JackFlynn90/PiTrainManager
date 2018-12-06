@@ -16,7 +16,7 @@ class PhotoResLEDManager_GroupClass
 {
  protected:
 	PhotoResistorTriggerClass _LDR;
-	LED_GroupClass *_LEDs[20];
+	LED_GroupClass *_LEDGroups[20];
 	int _numLEDs;
 	boolean _LDRState = false;
 	boolean _isEnabled = true;
