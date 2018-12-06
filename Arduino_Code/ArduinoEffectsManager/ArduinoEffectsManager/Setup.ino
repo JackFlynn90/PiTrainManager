@@ -6,7 +6,6 @@ void setup()
 	//Serial Comms setup
 	USBSerial.setup(); //Custom USB serial comms class for handling incomming packets
 	USBSerial._PacketLayout.StartChar = ':';
-	USBSerial._PrintIncomming = true; //Debug echo incomming serial data
 	
 	
 	//***************************************************************************************************************

@@ -31,13 +31,13 @@ class LED_GroupClass
 	protected:
 	Adafruit_PWMServoDriver *_i2cDriver;
 	
-	int _PinNums[MaxNoLEDs];
-	int _PWMCurrentValues[MaxNoLEDs]; //Current PWM Value
-	int _PWMTargetValues[MaxNoLEDs]; //Fade Target value for PWM mode
-	int _Enables[MaxNoLEDs];
+	byte _PinNums[MaxNoLEDs];
+	byte _PWMCurrentValues[MaxNoLEDs]; //Current PWM Value
+	byte _PWMTargetValues[MaxNoLEDs]; //Fade Target value for PWM mode
+	byte _Enables[MaxNoLEDs];
 	boolean _GroupEnable = true;
-	int _GroupBrightness = 128;
-	int _numPins;
+	byte _GroupBrightness = 128;
+	byte _numPins;
 	float _FadeRate = 50.0;
 	boolean _FadeEnable = true; // Flag for fading
 	
@@ -46,24 +46,24 @@ class LED_GroupClass
 	boolean _isi2c = false; //flag for using i2c servo board
 	
 	//Set whole group brightness value
-	void i2cGroupSetValue(int PWMValue);
+	void i2cGroupSetValue(byte PWMValue);
 	//Refresh LED pin values
 	void i2cGroupRefresh();
 	
 	public:
-	void setup(int *PinNumbers, int *PWMValues, int numberofPins, float FadeRate); //Plain setup for easy on/off toggling of pin
+	void setup(byte *PinNumbers, byte *PWMValues, byte numberofPins, float FadeRate); //Plain setup for easy on/off toggling of pin
 	
-	void setSinglePWM(int LEDAddress, int analogueSet) {_PWMTargetValues[LEDAddress] = analogueSet;}; //Set single pin state PWM - to be updated
-	void setSingleEnable(int LedAddress, int analogueSet); //Set single pin enable state - to be updated
+	void setSinglePWM(byte LEDAddress, byte analogueSet) {_PWMTargetValues[LEDAddress] = analogueSet;}; //Set single pin state PWM - to be updated
+	void setSingleEnable(byte LedAddress, byte analogueSet); //Set single pin enable state - to be updated
 	
 	void setAllEnables(boolean Enable){_GroupEnable = Enable;}; //Group setting
-	void setAllBrightness(int Brightness){_GroupBrightness = Brightness;}; // group setting
+	void setAllBrightness(byte Brightness){_GroupBrightness = Brightness;}; // group setting
 	
 	int getState(){return _GroupEnable;};// Return current state
 	
 	void refresh();//Refresh the current state of the group pins
 	
-	void setupi2c(Adafruit_PWMServoDriver *i2cDriver,const int *LedAddress, int *PWMValues,const int numberofLEDs, float FadeRate); // New setup for PWM servo board handling LEDs
+	void setupi2c(Adafruit_PWMServoDriver *i2cDriver,const byte *LedAddress, byte *PWMValues,const byte numberofLEDs, float FadeRate); // New setup for PWM servo board handling LEDs
 
 };
 

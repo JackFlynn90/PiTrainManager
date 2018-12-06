@@ -5,7 +5,7 @@
 #include "PhotoResLEDManager_Group.h"
 
 //Setup passes main LDR sensor and related LED groupings for LDR location
-void PhotoResLEDManager_GroupClass::setup(PhotoResistorTriggerClass LDR, LED_GroupClass *LEDGroupList[], int NumberOfLEDGroups)
+void PhotoResLEDManager_GroupClass::setup(PhotoResistorTriggerClass LDR, LED_GroupClass *LEDGroupList[], byte NumberOfLEDGroups)
 {
 	
 	_numLEDs = NumberOfLEDGroups;

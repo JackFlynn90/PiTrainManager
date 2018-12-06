@@ -19,12 +19,12 @@ class PhotoResistorTriggerClass
  protected:
 	boolean _triggerOn = false;
 	int _triggerValue = 512;
-	int _pinNumber;
+	byte _pinNumber;
 	int _currentValue;
 		
  public:
 	void init();
-	void setup(int pinNumber, int TriggerThreshold); //General setup of pin assignment and threshold
+	void setup(byte pinNumber, int TriggerThreshold); //General setup of pin assignment and threshold
 	boolean upDate(); //Refresh current states of group LEDs
 	boolean getState(){return _triggerOn;};
 	int getValue(){return _currentValue;};

@@ -41,7 +41,7 @@ void loop()
 	static unsigned long timer_handshake = millis();
 	if(millis() - timer_handshake > 15000)
 	{
-		Serial.println("USB Handshake");
+		Serial.println(F("USB Handshake"));
 		timer_handshake = millis();
 	}
 	

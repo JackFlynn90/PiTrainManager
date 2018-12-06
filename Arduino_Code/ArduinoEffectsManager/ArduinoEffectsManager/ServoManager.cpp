@@ -4,7 +4,7 @@
 
 #include "ServoManager.h"
 
-void ServoManagerClass::setupi2c(Adafruit_PWMServoDriver *i2cDriver, int *DeviceAddress)
+void ServoManagerClass::setupi2c(Adafruit_PWMServoDriver *i2cDriver, byte *DeviceAddress)
 {
 	
 	_i2cDriver = i2cDriver;

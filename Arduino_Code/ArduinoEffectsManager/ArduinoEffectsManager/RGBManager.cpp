@@ -11,7 +11,7 @@ void RGBManagerClass::init()
 }
 
 //General setup of class with pin defines for RGB led output.
-void RGBManagerClass::setup(int pinR, int pinG, int pinB, float FadeRate)
+void RGBManagerClass::setup(byte pinR, byte pinG, byte pinB, float FadeRate)
 {
 	_FadeRate = FadeRate;
 	
@@ -26,7 +26,7 @@ void RGBManagerClass::setup(int pinR, int pinG, int pinB, float FadeRate)
 }
 
 //Fast LED Setup
-void RGBManagerClass::setup(int LEDPIN, int Brightness, float FadeRate)
+void RGBManagerClass::setup(byte LEDPIN, byte Brightness, float FadeRate)
 {
 	_FadeRate = FadeRate;
 	_isFastLED = true;

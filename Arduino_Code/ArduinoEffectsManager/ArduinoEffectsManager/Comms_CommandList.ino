@@ -26,8 +26,8 @@ void Command_RGBHex_Received()
 {
 	byte hexVal[3] = {(byte)USBSerial.parseInt(PacketPosition1),(byte)USBSerial.parseInt(PacketPosition2),(byte)USBSerial.parseInt(PacketPosition3)};
 	
-	Serial.print("Hex value received;");
-	for (int i = 0; i <3; i++)
+	Serial.print(F("Hex value received;"));
+	for (byte i = 0; i <3; i++)
 	Serial.print(hexVal[i]);
 	Serial.println();
 	
@@ -40,7 +40,7 @@ void Command_RGBHex_Received()
 void Command_RGBOutput_state()
 {
 	boolean enable = USBSerial.parseInt(PacketPosition2);
-	Serial.print("RGB Output State;");
+	Serial.print(F("RGB Output State;"));
 	Serial.println(enable? "Enabled" : "Disabled");
 	
 	if(enable)
@@ -56,7 +56,7 @@ void Command_debug_LEDState()
 	
 	TeensyLED.setPin(newState);
 	
-	Serial.print("Teensy LED State Change;");
+	Serial.print(F("Teensy LED State Change;"));
 	Serial.println(TeensyLED.getState()? "On" : "Off");
 }
 
@@ -69,8 +69,8 @@ void Command_LEDManager_State()
 	int _enable = USBSerial.parseInt(PacketPosition2);
 	
 	
-	Serial.print("LED Group Change, Grouping Selected;"); Serial.print(_LEDChoice);
-	Serial.print(", enable;"); Serial.println(_enable);
+	Serial.print(F("LED Group Change, Grouping Selected;")); Serial.print(_LEDChoice);
+	Serial.print(F(", enable;")); Serial.println(_enable? "On" : "Off");
 
 	
 	switch(_LEDChoice)
@@ -87,11 +87,11 @@ void Command_LEDManager_State()
 // Used to parse which LED group is being effected and update the groups brightness level
 void Command_LEDManager_Brightness()
 {
-	int _LEDChoice = USBSerial.parseInt(PacketPosition1);
+	byte _LEDChoice = (byte)USBSerial.parseInt(PacketPosition1);
 	int _brightness = USBSerial.parseInt(PacketPosition2);
 	
-	Serial.print("LED Group Change, Grouping Selected;"); Serial.print(_LEDChoice);
-	Serial.print(", brightness;"); Serial.println(_brightness);
+	Serial.print(F("LED Group Change, Grouping Selected;")); Serial.print(_LEDChoice);
+	Serial.print(F(", brightness;")); Serial.println(_brightness);
 	
 	switch(_LEDChoice)
 	{
@@ -107,11 +107,11 @@ void Command_LEDManager_Brightness()
 // Used to control the enable state of the LDR blocks which control the local LED states
 void Command_LDRBlockManager_State()
 {
-	int LDRBlockChoice = USBSerial.parseInt(PacketPosition1);
+	byte LDRBlockChoice = (byte)USBSerial.parseInt(PacketPosition1);
 	boolean newState = USBSerial.parseInt(PacketPosition2);
 	
-	Serial.print("LDR Block state change, LDR selected;"); Serial.print(LDRBlockChoice);
-	Serial.print(", New state;"); Serial.println(newState);
+	Serial.print(F("LDR Block state change, LDR selected;")); Serial.print(LDRBlockChoice);
+	Serial.print(F(", New state;")); Serial.println(newState? "On" : "Off");
 	
 	switch (LDRBlockChoice)
 	{
@@ -123,11 +123,11 @@ void Command_LDRBlockManager_State()
 // Used to control the position of servo states on the track
 void Command_ServoPosition()
 {
-	int ServoBlockChoise = USBSerial.parseInt(PacketPosition1);
-	boolean newState = USBSerial.parseInt(PacketPosition2);
+	byte ServoBlockChoise = (byte)USBSerial.parseInt(PacketPosition1);
+	boolean newState = (boolean)USBSerial.parseInt(PacketPosition2);
 	
-	Serial.print("Servo block state change, Servos selected;"); Serial.print(ServoBlockChoise);
-	Serial.print(", New state;"); Serial.println(newState? "Open":"Close");
+	Serial.print(F("Servo block state change, Servos selected;")); Serial.print(ServoBlockChoise);
+	Serial.print(F(", New state;")); Serial.println(newState? "Open":"Close");
 	
 	switch (ServoBlockChoise)
 	{

@@ -15,7 +15,7 @@
 #define Strip_NUM_LEDS    144
 #define LED_TYPE    WS2812B
 #define COLOR_ORDER GRB
-#define BRIGHTNESS  255
+#define BRIGHTNESS  128
 
 class RGBManagerClass
 {
@@ -24,12 +24,12 @@ class RGBManagerClass
 	
 	CRGB leds[Strip_NUM_LEDS];
 	
-	int _pinR;
-	int _pinG;
-	int _pinB;
+	byte _pinR;
+	byte _pinG;
+	byte _pinB;
 	
 	boolean _isFastLED = false; //New support for RGB FastLED lib
-	int _numLEDs;
+	byte _numLEDs;
 	
 	//Fading effect values used to create a proportional error method of fading LED colours
 	byte _Targetr, _Targetg, _Targetb;
@@ -42,8 +42,8 @@ class RGBManagerClass
 	
  public:
 	void init();
-	void setup(int pinR, int pinG, int pinB, float FadeRate);//General setup call
-	void setup(int LEDPIN, int Brightness, float FadeRate);//Setup for FastLED lib function
+	void setup(byte pinR, byte pinG, byte pinB, float FadeRate);//General setup call
+	void setup(byte LEDPIN, byte Brightness, float FadeRate);//Setup for FastLED lib function
 	void Enable(){_isEnable = true;};//Enable output;
 	void Disable(){_isEnable = false;};//Disable output
 	void Refresh(); // Refresh latest values for PWM and Enable. Run Often for fading effect.

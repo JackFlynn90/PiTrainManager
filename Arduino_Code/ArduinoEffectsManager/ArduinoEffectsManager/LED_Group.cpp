@@ -5,7 +5,7 @@
 #include "LED_Group.h"
 
 //General initial setup for class
-void LED_GroupClass::setup(int *PinNumbers, int *PWMValues, int numberofPins, float FadeRate)
+void LED_GroupClass::setup(byte *PinNumbers, byte *PWMValues, byte numberofPins, float FadeRate)
 {
 	_FadeRate = FadeRate;
 	
@@ -22,7 +22,7 @@ void LED_GroupClass::setup(int *PinNumbers, int *PWMValues, int numberofPins, fl
 }
 
 //General initial setup for class
-void LED_GroupClass::setupi2c(Adafruit_PWMServoDriver *i2cDriver, const int *LedAddress, int *PWMValues, const int numberofLEDs, float FadeRate)
+void LED_GroupClass::setupi2c(Adafruit_PWMServoDriver *i2cDriver, const byte *LedAddress, byte *PWMValues, const byte numberofLEDs, float FadeRate)
 {
 	_isi2c = true;
 	
@@ -56,7 +56,7 @@ void LED_GroupClass::refresh()
 	}
 	else
 	{
-		for (int i = 0; i < _numPins; i++)
+		for (byte i = 0; i < _numPins; i++)
 		{
 			_StoredHWPins[i].setEnable(_GroupEnable);
 			_StoredHWPins[i].setAnalogueValue(_GroupBrightness);
@@ -68,9 +68,9 @@ void LED_GroupClass::refresh()
 
 
 //Set whole group to use PWM target
-void LED_GroupClass::i2cGroupSetValue(int PWMValue)
+void LED_GroupClass::i2cGroupSetValue(byte PWMValue)
 {
-	for (int i = 0; i < _numPins; i++)
+	for (byte i = 0; i < _numPins; i++)
 	{
 		_PWMTargetValues[i] = PWMValue;
 	}

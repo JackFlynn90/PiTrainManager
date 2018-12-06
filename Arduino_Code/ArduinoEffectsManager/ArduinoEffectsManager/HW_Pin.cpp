@@ -7,7 +7,7 @@
 //******************************************************************
 //Basic digital setup
 // Defaults pin state to false
-void HW_PinClass::setup(int PinNum)
+void HW_PinClass::setup(byte PinNum)
 {
 	_PinNum = PinNum;
 	_CurrentValue = false;
@@ -19,7 +19,7 @@ void HW_PinClass::setup(int PinNum)
 
 //******************************************************************
 //Basic digital setting of pin value
-void HW_PinClass::setPin(int Value)
+void HW_PinClass::setPin(byte Value)
 {
 	_CurrentValue = Value;
 	digitalWriteFast(_PinNum,_CurrentValue);
@@ -36,9 +36,9 @@ void HW_PinClass::toggle()
 //******************************************************************
 //Analogue Pin Setup
 // -Doesn't currently check if pin has analogue support
-void HW_PinClass::setup(int PinNumber, boolean PWMEnable, float FadeRate)
+void HW_PinClass::setup(byte PinNumber, boolean PWMEnable, float FadeRate)
 {
-	_FadeRate = FadeRate;
+	_FadeRate = (byte)FadeRate;
 	_PinNum = PinNumber;
 	_CurrentValue = 0;
 	_PWMEnable = PWMEnable;
@@ -50,7 +50,7 @@ void HW_PinClass::setup(int PinNumber, boolean PWMEnable, float FadeRate)
 //Analogue write value
 // Relies on hardware PWM analogue write
 // When fading is used it sets the target fade value which is reached during refresh()
-void HW_PinClass::setAnalogueValue(int analogueSet)
+void HW_PinClass::setAnalogueValue(byte analogueSet)
 {
 	if(_FadeEnable)
 	_FadetargetValue = analogueSet;
@@ -65,7 +65,7 @@ void HW_PinClass::setAnalogueValue(int analogueSet)
 //******************************************************************
 //Digital blink rate
 // Allows for easy blinking of LED
-void HW_PinClass::setBlinkRate(int Rate)
+void HW_PinClass::setBlinkRate(byte Rate)
 {
 	_BlinkEnable = true;
 	_BlinkRate = 1000/Rate;

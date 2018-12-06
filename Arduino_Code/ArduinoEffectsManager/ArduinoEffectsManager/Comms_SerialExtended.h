@@ -9,12 +9,15 @@
 #include "WProgram.h"
 #endif
 
-#define StringBufferSize 200
+#define StringBufferSize 64
 #define _SerialUSB Serial
 
 #define PacketPosition1 1
 #define PacketPosition2 2
 #define PacketPosition3 3
+
+//#define _PrintIncomming true;
+//#define useSerial
 
 struct PacketLayout
 {
@@ -42,7 +45,7 @@ class Comms_SerialExtendedClass
 	int _FinalSeperatorCount;
 	int _FinalCharIndex;
 	
-	boolean _PrintIncomming = false;
+	
 	
 	unsigned long _Timeout;
 	char _LastValidPacket[StringBufferSize];

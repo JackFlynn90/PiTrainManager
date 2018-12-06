@@ -79,8 +79,10 @@ boolean Comms_SerialExtendedClass::ReadUSB()
 	// Check if any data in port. Return if no data waiting;
 	if(Serial.available() > 0)
 	{
-		if(_PrintIncomming)
+		#ifdef _PrintIncomming
 		Serial.print("+,Echo ;");
+		#endif
+		
 		// Timeout while loop - gives data time to arrive in buffer
 		while(millis() - timeouttimer < _Timeout || Serial.available())
 		{
@@ -98,9 +100,10 @@ boolean Comms_SerialExtendedClass::ReadUSB()
 					else
 					aChar = _SerialPort->read();
 
-					
-					if(_PrintIncomming && aChar != ':')
+					#ifdef _PrintIncomming
+					if(aChar != ':')
 					Serial.print(aChar); //Print debug
+					#endif
 					
 					// Start character valid
 					if ((aChar == _PacketLayout.StartChar  || _PacketLayout.StartChar == NULL) && _index == 0)
@@ -163,7 +166,7 @@ boolean Comms_SerialExtendedClass::ReadUSB()
 					// Error Case:
 					
 					// clear buffer and report issue with data read - prevents flooding of serial causing crashes
-					Serial.print("@,Serial USB Instruction too long. Index over flow. Invalid Input");
+					Serial.print(F("@,Serial USB Instruction too long. Index over flow. Invalid Input"));
 					//Serial_Clear_USB();
 					isValid = false;
 					_StartCharValid = false; // start character detected
@@ -176,9 +179,9 @@ boolean Comms_SerialExtendedClass::ReadUSB()
 			}
 		}
 
-		if(_PrintIncomming)
+		#ifdef _PrintIncomming
 		{
-			Serial.print("+,Serial USB Data timeout. Incomplete Packet Read;\n");
+			Serial.print(F("+,Serial USB Data timeout. Incomplete Packet Read;\n"));
 			Serial.print("+,Echo;");
 			
 			for (int i = 1; i < _index && i < StringBufferSize; i++)
@@ -186,12 +189,14 @@ boolean Comms_SerialExtendedClass::ReadUSB()
 			
 			Serial.print("\n");
 		}
-		
+		#endif
 	}
 	return isNewData;
 }//**************************************************************************************************
 boolean Comms_SerialExtendedClass::ReadSerial()
 {
+	#ifdef useSerial
+	
 	boolean isNewData = false;
 	
 	boolean isValid = false; // start and end characters detected in correct order
@@ -201,8 +206,10 @@ boolean Comms_SerialExtendedClass::ReadSerial()
 	// Check if any data in port. Return if no data waiting;
 	if(_SerialPort->available() > 0)
 	{
-		if(_PrintIncomming)
+		#ifdef _PrintIncomming
 		Serial.print("+,Echo ;");
+		#endif
+		
 		// Timeout while loop - gives data time to arrive in buffer
 		while(millis() - timeouttimer < _Timeout || _SerialPort->available())
 		{
@@ -218,9 +225,10 @@ boolean Comms_SerialExtendedClass::ReadSerial()
 
 					aChar = _SerialPort->read();
 
-					
-					if(_PrintIncomming && aChar != ':')
+					#ifdef _PrintIncomming
+					if(aChar != ':')
 					Serial.print(aChar); //Print debug
+					#endif
 					
 					// Start character valid
 					if ((aChar == _PacketLayout.StartChar  || _PacketLayout.StartChar == NULL) && _index == 0)
@@ -283,7 +291,7 @@ boolean Comms_SerialExtendedClass::ReadSerial()
 					// Error Case:
 					
 					// clear buffer and report issue with data read - prevents flooding of serial causing crashes
-					Serial.print("@,Serial Port Read Instruction too long. Index over flow. Invalid Input");
+					Serial.print(F("@,Serial Port Read Instruction too long. Index over flow. Invalid Input"));
 					//Serial_Clear_USB();
 					isValid = false;
 					_StartCharValid = false; // start character detected
@@ -296,8 +304,8 @@ boolean Comms_SerialExtendedClass::ReadSerial()
 			}
 		}
 
-		if(_PrintIncomming)
-		{
+		#ifdef _PrintIncomming
+
 			Serial.print("+,Serial Port Data timeout. Incomplete Packet Read;\n");
 			Serial.print("+,Echo;");
 			
@@ -305,10 +313,12 @@ boolean Comms_SerialExtendedClass::ReadSerial()
 			Serial.print(_CurrentPacket[i]);
 			
 			Serial.print("\n");
-		}
+		#endif
 		
 	}
 	return isNewData;
+	
+	#endif
 }
 //**************************************************************************************************
 
@@ -339,7 +349,7 @@ int Comms_SerialExtendedClass::parseInt(int ArrayLocation)
 		return returnVal;
 		
 	}else
-	Serial.print("~,Comms Extended Serial Error - Parsing data out of bounds\n");
+	Serial.print(F("~,Comms Extended Serial Error - Parsing data out of bounds\n"));
 	
 	return -999;
 }
@@ -369,7 +379,7 @@ unsigned long Comms_SerialExtendedClass::parseUL(int ArrayLocation)
 		return returnVal;
 		
 	}else
-	Serial.print("~,Comms Extended Serial Error - Parsing data out of bounds\n");
+	Serial.print(F("~,Comms Extended Serial Error - Parsing data out of bounds\n"));
 	
 	return -999;
 }
@@ -400,7 +410,7 @@ float Comms_SerialExtendedClass::parseFloat(int ArrayLocation)
 		return returnVal;
 		
 	}else
-	Serial.print("~,Comms Extended Serial Error - Parsing data out of bounds\n");
+	Serial.print(F("~,Comms Extended Serial Error - Parsing data out of bounds\n"));
 	
 	return -255;
 }
@@ -459,10 +469,10 @@ void Comms_SerialExtendedClass::Clear_USB()
 void Comms_SerialExtendedClass::Clear_USBForDelay(unsigned long delayTime)
 {
 	unsigned long startTime = millis();
-	if(_PrintIncomming)
-	{
+	
+	#ifdef _PrintIncomming
 		Serial.print("+,Clearing Serial USB Buffer for Delay;"); Serial.println(delayTime);
-	}
+	#endif
 	
 	while(millis() - startTime < delayTime)
 	{

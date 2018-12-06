@@ -4,7 +4,7 @@
 
 #include "PhotoResistorTrigger.h"
 
-void PhotoResistorTriggerClass::setup(int pinNumber, int TriggerThreshold)
+void PhotoResistorTriggerClass::setup(byte pinNumber, int TriggerThreshold)
 {
 	_pinNumber = pinNumber;
 	_triggerValue = TriggerThreshold;

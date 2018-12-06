@@ -16,14 +16,14 @@ class PhotoResLEDManager_GroupClass
 {
  protected:
 	PhotoResistorTriggerClass _LDR;
-	LED_GroupClass *_LEDGroups[20];
-	int _numLEDs;
+	LED_GroupClass *_LEDGroups[5];
+	byte _numLEDs;
 	boolean _LDRState = false;
 	boolean _isEnabled = true;
 	
  public:
 	void init();
-	void setup(PhotoResistorTriggerClass LDR, LED_GroupClass *LEDGroupList[], int NumberOfLEDGroups);//Setup passes main LDR sensor and related LED groupings for LDR location
+	void setup(PhotoResistorTriggerClass LDR, LED_GroupClass *LEDGroupList[], byte NumberOfLEDGroups);//Setup passes main LDR sensor and related LED groupings for LDR location
 	void refresh();// Handles LDR reading and updates LED enable state based on LDR results
 	void setEnable(boolean newState){_isEnabled = newState;};
 	boolean getEnable(){return _isEnabled;};

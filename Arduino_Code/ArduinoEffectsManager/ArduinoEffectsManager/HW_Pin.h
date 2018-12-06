@@ -22,10 +22,10 @@ Refresh must be called consistently for effects to take place
 class HW_PinClass
 {
  protected:
-	int _PinNum; //Teensy Pin Number
-	int _CurrentValue; //Current pin state value 0/1 for digital 0/255 for analogue
+	byte _PinNum; //Teensy Pin Number
+	byte _CurrentValue; //Current pin state value 0/1 for digital 0/255 for analogue
 	
-	int _analogueValue; // Analogue value for PWM
+	byte _analogueValue; // Analogue value for PWM
 	boolean _PWMEnable = false; //Flag for PWM usage
 	
 	unsigned long _BlinkRate = 0; //Manual blinking using digital on/off
@@ -35,17 +35,17 @@ class HW_PinClass
 	boolean _enabled = true; //Pin output hard on/off without changing effects states
 
 	float _FadeValue = 0.0; //Fading current value
-	int _FadetargetValue; // Fading target value to achieve
+	byte _FadetargetValue; // Fading target value to achieve
 	float _FadeRate = 50.0; // Rate of change for Fading
 	boolean _FadeEnable = true; // Flag for fading
 	
  public:
-	void setup(int PinNumber); //Plain setup for easy on/off toggling of pin
-	void setup(int PinNumber, boolean PWMEnable, float FadeRate); //PWM enable setup for allowing PWM usage
+	void setup(byte PinNumber); //Plain setup for easy on/off toggling of pin
+	void setup(byte PinNumber, boolean PWMEnable, float FadeRate); //PWM enable setup for allowing PWM usage
  
-	void setPin(int Value); //Set pin state digital
-	void setAnalogueValue(int analogueSet); //Set pin state PWM
-	void setBlinkRate(int Rate); // Set pin to blinking mode at rate measured in Rate/s
+	void setPin(byte Value); //Set pin state digital
+	void setAnalogueValue(byte analogueSet); //Set pin state PWM
+	void setBlinkRate(byte Rate); // Set pin to blinking mode at rate measured in Rate/s
 	void setEnable(boolean enable){_enabled = enable;};// Hard enable change
 	
 	int getState(){return _CurrentValue;};// Return current state

@@ -19,13 +19,13 @@ class ServoManagerClass
 	protected:
 	Adafruit_PWMServoDriver *_i2cDriver;
 	
-	int _ServoAddress;
-	int _CurrentPosition; //Current PWM Value
-	int _TargetPosition; //Fade Target value for PWM mode
-	int _Enable = true;
+	byte _ServoAddress;
+	byte _CurrentPosition; //Current PWM Value
+	byte _TargetPosition; //Fade Target value for PWM mode
+	boolean _Enable = true;
 	
-	int _LEDGreenAddress;
-	int _LEDRedAddress; 
+	byte _LEDGreenAddress;
+	byte _LEDRedAddress; 
 	
 	int _MaxServoPos = 600;
 	int _MinServoPos = 150;
@@ -36,7 +36,7 @@ class ServoManagerClass
 	
 	public:
 	
-	void setPosition(int NewPosition) {_TargetPosition = NewPosition;}; //Set servo target position
+	void setPosition(byte NewPosition) {_TargetPosition = NewPosition;}; //Set servo target position
 	
 	void setAllEnables(boolean Enable){_Enable = Enable;}; //Group setting
 	
@@ -44,7 +44,7 @@ class ServoManagerClass
 	
 	void refresh();//Refresh the current state of the servo
 	
-	void setupi2c(Adafruit_PWMServoDriver *i2cDriver, int *DeviceAddress); // Setup for PWM servo board
+	void setupi2c(Adafruit_PWMServoDriver *i2cDriver, byte *DeviceAddress); // Setup for PWM servo board
 
 };
 
