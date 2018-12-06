@@ -63,7 +63,7 @@ void RGBManagerClass::Refresh()
 //FastLED colour update based on RGB values
 void RGBManagerClass::setStripColour()
 {
-	for(int i =0; i < _numLEDs; i++)
+	for(byte i =0; i < _numLEDs; i++)
 	leds[i].setRGB(_r,_g,_b);
 	
 	FastLED.show();

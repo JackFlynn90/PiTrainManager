@@ -10,7 +10,7 @@ void PhotoResLEDManager_GroupClass::setup(PhotoResistorTriggerClass LDR, LED_Gro
 	
 	_numLEDs = NumberOfLEDGroups;
 	
-	for(int i = 0; i < _numLEDs; i++)
+	for(byte i = 0; i < _numLEDs; i++)
 	_LEDGroups[i] = LEDGroupList[i];
 
 	/*	_LEDGroups = *LEDGroupList;*/
@@ -28,11 +28,11 @@ void PhotoResLEDManager_GroupClass::refresh()
 		{
 			if(_LDR.getState())
 			{
-				for(int i = 0; i < _numLEDs; i++)
+				for(byte i = 0; i < _numLEDs; i++)
 				_LEDGroups[i]->setAllEnables(true);
 			}else
 			{
-				for(int i = 0; i < _numLEDs; i++)
+				for(byte i = 0; i < _numLEDs; i++)
 				_LEDGroups[i]->setAllEnables(false);
 			}
 			_LDRState = _LDR.getState();

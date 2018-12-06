@@ -8,11 +8,13 @@
 <script src="{% static "js/colorpicker/jquery.colorpicker.js" %}"></script>
 
 
-
-			
+<div class="col-lg-12">
+	<img class="card-img-top" src="/media/Tracklayout.jpg" alt="Card image cap"> <!-- Image pulled from database -->			
 			
 <!-- Main Automation Control-->	
-		<div class="col-lg-4">
+	<div class="col-lg-12">
+	
+		<div class ="col-lg-4">
 			<h2>Automatic Train Patterns</h2>
 			<div class="btn-group btn-group-toggle" data-toggle="buttons">	<!-- Track Pattern toggle/selection -->
 				<label class="btn btn-secondary active">
@@ -44,6 +46,7 @@
 			</div>
 		</div>
 		
+
 		
 <!-- ******************************************************************************************************************************* -->		
 <!-- Main LED Lighting Control -->
@@ -100,6 +103,61 @@
 										
 								  </ul>
 								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		
+<!-- ******************************************************************************************************************************* -->		
+<!-- Main Track Servo Control -->		
+		
+	<div class="col-lg-12">
+		
+	</div>
+	<div class="col-lg-12">
+					<h2>Manual Servo Track Switching</h2> <!--Collapsable panel title to fill the rest of the card -->
+					
+					<div class="panel-group">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4><a data-toggle="collapse" href="#collapseServo">Controls</a></h4> <!--Collapsable panel title to fill the rest of the card -->
+							</div>
+							<div id="collapseServo" class="panel-collapse collapse"><!--Collapsable panel to fill the rest of the card -->
+								
+
+									<h2>Track Layout</h2>
+										<img class="card-img-top" src="/media/Tracklayout.jpg" alt="Card image cap"> <!-- Image pulled from database -->
+								
+						
+								   {% for light in lights %}
+									<div class="col-lg-4">  
+											 <h4><i class="material-icons">highlight</i>{{light.title}}</h4> 
+												<div class="btn-group btn-group-toggle" data-toggle="buttons">
+													<label class="btn btn-light active" >
+													{% if light.lightsState %}
+															<input type="radio" class="LightingButton" name="options" autocomplete="off" id="Light_4_{{light.address}}_0">Off
+													{% else %}
+															<input type="radio" class="LightingButton" name="options" autocomplete="off" id="Light_4_{{light.address}}_0" checked>Off
+													{% endif %}
+														</label>
+													<label class="btn btn-light">
+													{% if light.lightsState %}
+															<input type="radio" class="LightingButton" name="options" id="Light_4_{{light.address}}_1" autocomplete="off" checked> On
+													{% else %}
+														<input type="radio" class="LightingButton" name="options" id="Light_4_{{light.address}}_1" autocomplete="off"> On
+													{% endif %}
+													</label>
+												</div>
+												{% if light.type == "Single-Group" %}
+												 <h5>Brightness:</h5> 
+												<div class="slidecontainer">
+													<input type="range" min="0" max="255" value="{{light.brightness}}" class="slider" id="Light_5_{{light.address}}">
+												</div>
+												{% endif %}
+									</div>
+									{% endfor %}
+										
+								
 							</div>
 					</div>
 				</div>
@@ -224,6 +282,9 @@
 				</div>		
 		{% endfor %}
 	</div>
+	</div>
+
+</div>
 </div>
 
 <script type="text/javascript" src="{% static "js/buttons/buttonHandler.js" %}"></script>
