@@ -20,6 +20,7 @@
 #include "Comms_SerialExtended.h"
 #include "HW_Pin.h"
 #include "AdafruitPWMLib/Adafruit_PWMServoDriver.h"
+#include "ServoManager.h"
 
 //******************************************************************
 //Serial Comms Handler Class
@@ -35,31 +36,42 @@ HW_PinClass TeensyLED;
 #define LEDDriver2_Add 0x41
 #define LEDDriver3_Add 0x42
 #define LEDDriver4_Add 0x43
-#define LEDDriver5_Add 0x44
+#define ServoDriver_Add 0x44
 //******************************************************************
 //Hardware I2C Servo and LED controllers
-Adafruit_PWMServoDriver _LEDDriver1(LEDDriver1_Add);
-Adafruit_PWMServoDriver _LEDDriver2(LEDDriver2_Add);
-Adafruit_PWMServoDriver _LEDDriver3(LEDDriver3_Add);
-Adafruit_PWMServoDriver _LEDDriver4(LEDDriver4_Add);
-Adafruit_PWMServoDriver _LEDDriver5(LEDDriver5_Add);
+Adafruit_PWMServoDriver _LEDDriver1 = Adafruit_PWMServoDriver(LEDDriver1_Add);
+Adafruit_PWMServoDriver _LEDDriver2 = Adafruit_PWMServoDriver(LEDDriver2_Add);
+Adafruit_PWMServoDriver _LEDDriver3 = Adafruit_PWMServoDriver(LEDDriver3_Add);
+Adafruit_PWMServoDriver _LEDDriver4 = Adafruit_PWMServoDriver(LEDDriver4_Add);
+
+Adafruit_PWMServoDriver _ServoDriver = Adafruit_PWMServoDriver(ServoDriver_Add);
 
 #define MaxDriverChannels 16
 
 //******************************************************************
 //LED Group Classes for grouping LED functionality
 LED_GroupClass _StreetLights;
-int _numbStreetLights = 2;
-int _StreetLightAddressList[] = {pinStreet1LED, pinStreet2LED};
-int _StreetLightBrightnessList[] = {255,10};
+const int _numbStreetLights = 6;
+const int _StreetLightAddressList[] = {DR2_STL1, DR2_STL2,DR2_STL3,DR2_STL4,DR2_STL5,DR2_STL6};
+int _StreetLightBrightnessList[_numbStreetLights];
 #define StreetLightFadeRate 500
+#define StreetLightDriver _LEDDriver2
 
 
 LED_GroupClass _HouseLights;
-int _numbHouseLights = 2;
-int _HouseLightsAddressList[] = {pinHouseTopLED, pinHouseBotLED};
-int _HouseLightsBrightnessList[] = {255,128};
+const int _numbHouseLights = 6;
+const int _HouseLightsAddressList[] = {DR1_Building1T, DR1_Building1B,DR1_Building2T,DR1_Building2B,DR1_Building3T,DR1_Building3B};
+int _HouseLightsBrightnessList[_numbHouseLights];
 #define HouseLightFadeRate 50
+#define HouseLightDriver _LEDDriver1
+
+//******************************************************************
+//Servo Classes for grouping servo functionality
+ServoManagerClass _Servo1;
+int _ServoAndLEDAddressList1[] = {Servo1,Servo1_LEDG,Servo1_LEDR,Servo2,Servo2_LEDG,Servo2_LEDR};
+#define ServoDriver _ServoDriver
+
+
 //******************************************************************
 //Top Level LED grouping for grouping LED sets together by area on the layout
 LED_GroupClass *LEDs_Block1[2] = {&_StreetLights, &_HouseLights}; //group list for block 1 related to LDR
@@ -73,8 +85,9 @@ PhotoResistorTriggerClass LDR_Block1; // Photoresistor wrapper class
 PhotoResLEDManager_GroupClass AutoManager_LDR_Block1; // LDR and LED group manager for automation
 
 //******************************************************************
-//Class Defines for LED fade rates
-
+//Class Defines for RGB LEDs
+#define RGBFastLEDPin 17
+#define RGBBrightness 255
 #define RGBFadeRate 20
 
 

@@ -22,7 +22,7 @@ void LED_GroupClass::setup(int *PinNumbers, int *PWMValues, int numberofPins, fl
 }
 
 //General initial setup for class
-void LED_GroupClass::setupi2c(Adafruit_PWMServoDriver *i2cDriver, int *LedAddress, int *PWMValues, int numberofLEDs, float FadeRate)
+void LED_GroupClass::setupi2c(Adafruit_PWMServoDriver *i2cDriver, const int *LedAddress, int *PWMValues, const int numberofLEDs, float FadeRate)
 {
 	_isi2c = true;
 	

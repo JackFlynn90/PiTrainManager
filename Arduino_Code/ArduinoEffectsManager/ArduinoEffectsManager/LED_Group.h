@@ -63,7 +63,7 @@ class LED_GroupClass
 	
 	void refresh();//Refresh the current state of the group pins
 	
-	void setupi2c(Adafruit_PWMServoDriver *i2cDriver, int *LedAddress, int *PWMValues, int numberofLEDs, float FadeRate); // New setup for PWM servo board handling LEDs
+	void setupi2c(Adafruit_PWMServoDriver *i2cDriver,const int *LedAddress, int *PWMValues,const int numberofLEDs, float FadeRate); // New setup for PWM servo board handling LEDs
 
 };
 

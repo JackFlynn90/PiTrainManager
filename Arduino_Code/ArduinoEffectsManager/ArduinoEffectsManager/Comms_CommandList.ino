@@ -12,6 +12,7 @@ void SerialUSBCommands()
 			case 4: Command_LEDManager_State();break; // Group LED on/off states
 			case 5: Command_LEDManager_Brightness();break; // Grouping LED brightness levels
 			case 6: Command_LDRBlockManager_State();break; //LDR grouping manager
+			case 7: Command_ServoPosition();break; //Servo position change command
 			
 			default: Serial.println("Command Not Recognised. Data received;"); USBSerial.printLastPacket(); break; //Fall back exception
 		}
@@ -115,5 +116,21 @@ void Command_LDRBlockManager_State()
 	switch (LDRBlockChoice)
 	{
 		case 0: AutoManager_LDR_Block1.setEnable(newState); AutoManager_LDR_Block1.refresh(); break;
+	}
+}
+
+//Servo Position Handler
+// Used to control the position of servo states on the track
+void Command_ServoPosition()
+{
+	int ServoBlockChoise = USBSerial.parseInt(PacketPosition1);
+	boolean newState = USBSerial.parseInt(PacketPosition2);
+	
+	Serial.print("Servo block state change, Servos selected;"); Serial.print(ServoBlockChoise);
+	Serial.print(", New state;"); Serial.println(newState? "Open":"Close");
+	
+	switch (ServoBlockChoise)
+	{
+		case 0: _Servo1.setPosition(newState); break;
 	}
 }

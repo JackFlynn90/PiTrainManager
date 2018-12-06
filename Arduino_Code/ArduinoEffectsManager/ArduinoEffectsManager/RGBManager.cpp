@@ -22,32 +22,59 @@ void RGBManagerClass::setup(int pinR, int pinG, int pinB, float FadeRate)
 	pinMode(OUTPUT, _pinR);
 	pinMode(OUTPUT, _pinG);
 	pinMode(OUTPUT, _pinB);
+
+}
+
+//Fast LED Setup
+void RGBManagerClass::setup(int LEDPIN, int Brightness, float FadeRate)
+{
+	_FadeRate = FadeRate;
+	_isFastLED = true;
+	_numLEDs = Strip_NUM_LEDS;
+	LEDS.addLeds<LED_TYPE, LED_PIN, COLOR_ORDER>(leds, Strip_NUM_LEDS);
+	FastLED.setBrightness(Brightness);
 }
 
 //Refresh RGB status. Call often to ensure no missing changes
 void RGBManagerClass::Refresh()
 {
-	if(_isEnable)//PWM LEDs
+	
+	if(_isEnable)//Fade into Target colour
 	{
-		_FadeR = _FadeR + (_Targetr - _FadeR)/_FadeRate;
-		_r = _FadeR;
-		_FadeB = _FadeB + (_Targetb - _FadeB)/_FadeRate;
-		_b = _FadeB;
-		_FadeG = _FadeG + (_Targetg - _FadeG)/_FadeRate;
-		_g = _FadeG;
-		
-		analogWrite(_pinR, _r);
-		analogWrite(_pinG, _g);
-		analogWrite(_pinB, _b);
+		_r = _r + (_Targetr - _r)/_FadeRate;
+
+		_b = _b + (_Targetb - _b)/_FadeRate;
+
+		_g = _g + (_Targetg - _g)/_FadeRate;
+
 	}else //Turn off LEDs
 	{
-		_FadeR = 0;
-		_FadeG = 0;
-		_FadeB = 0;
-		analogWrite(_pinR, 0);
-		analogWrite(_pinG, 0);
-		analogWrite(_pinB, 0);
+		_r = 0;
+		_b = 0;
+		_g = 0;
 	}
+	
+	if(_isFastLED)
+	setStripColour();
+	else
+	setPinColour();
+}
+
+//FastLED colour update based on RGB values
+void RGBManagerClass::setStripColour()
+{
+	for(int i =0; i < _numLEDs; i++)
+	leds[i].setRGB(_r,_g,_b);
+	
+	FastLED.show();
+}
+
+//Simple pin state based on RGB values via PWM writing
+void RGBManagerClass::setPinColour()
+{
+	analogWrite(_pinR, _r);
+	analogWrite(_pinG, _g);
+	analogWrite(_pinB, _b);
 }
 RGBManagerClass RGBManager;
 

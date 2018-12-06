@@ -11,8 +11,8 @@ void setup()
 	
 	//***************************************************************************************************************
 	//RGB LED Setup
-	RGBManager.setup(pinRGB_r,pinRGB_g,pinRGB_b, RGBFadeRate);//RGB LED class for handling RGB single LED colour
-	
+	//RGBManager.setup(pinRGB_r,pinRGB_g,pinRGB_b, RGBFadeRate);//RGB LED class for handling RGB single LED colour
+	RGBManager.setup(RGBFastLEDPin,RGBBrightness,RGBFadeRate);//RGB LED class for handling RGB strip via FASTLED
 	
 	//***************************************************************************************************************
 	//i2c Driver Setup
@@ -22,6 +22,9 @@ void setup()
 	_LEDDriver2.begin();
 	_LEDDriver2.setPWMFreq(60);
 	
+	_ServoDriver.begin();
+	_ServoDriver.setPWMFreq(60);
+	
 	//***************************************************************************************************************
 	//LED Group setups. Grouped LEDs allow for easy control of groupings such as "Street lights" or housing
 
@@ -29,6 +32,12 @@ void setup()
 	
 	_HouseLights.setupi2c(&_LEDDriver2,_HouseLightsAddressList,_HouseLightsBrightnessList,_numbHouseLights,HouseLightFadeRate);
 	
+	
+	//***************************************************************************************************************
+	//Setup for Servo Manager Classes
+	_Servo1.setupi2c(&_ServoDriver,_ServoAndLEDAddressList1);
+	_Servo1.setPosition(ServoPosClose);
+	_Servo1.refresh();
 	
 	//***************************************************************************************************************
 	//Setup for LDR classes

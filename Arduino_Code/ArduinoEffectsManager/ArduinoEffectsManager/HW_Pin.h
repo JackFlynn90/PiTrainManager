@@ -28,7 +28,7 @@ class HW_PinClass
 	int _analogueValue; // Analogue value for PWM
 	boolean _PWMEnable = false; //Flag for PWM usage
 	
-	int _BlinkRate = 0; //Manual blinking using digital on/off
+	unsigned long _BlinkRate = 0; //Manual blinking using digital on/off
 	unsigned long _lastBlink = 0; // Timer for blinking
 	boolean _BlinkEnable = false; // Flag for Blinking
 	
