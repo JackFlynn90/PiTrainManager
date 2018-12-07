@@ -29,14 +29,14 @@ def command_ajax(request):
 		if datatype == "command":
 			data = request.POST.get('command')
 			print("Effects got This: " + data)
-			r.publish('lightCommand', data)
+			r.publish('EffectsCommand', data)
 		elif datatype == "hex":
 			data = request.POST.get('data')
-			r.publish('lightCommand', data)
+			r.publish('EffectsCommand', data)
 			print("Effects got This Hex value;" + data)
 		elif datatype == "servo":
 			data = request.POST.get('servo')
-			r.publish('lightCommand', data)
+			r.publish('EffectsCommand', data)
 			print("Servo Effects got This value;" + data)
 		return HttpResponse("ok")
 
