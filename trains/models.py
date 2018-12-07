@@ -31,6 +31,17 @@ class Light(models.Model):
 	def __str__(self):
 		return self.title
 		
+class Servo(models.Model):
+	title = models.CharField(max_length=200)
+	description = models.TextField()
+	address = models.PositiveSmallIntegerField()
+	type = models.CharField(max_length=200)
+	state = models.BooleanField(default=True)
+	created_date = models.DateTimeField(
+            default=timezone.now)
+	def __str__(self):
+		return self.title
+		
 class Functions(models.Model):
 	title = models.CharField(max_length=200)
 	description = models.TextField()

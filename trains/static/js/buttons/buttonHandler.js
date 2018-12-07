@@ -13,6 +13,14 @@ $(document).ready(function() {
 			);
 	});
 	
+		//Radio Button capture for Lighting Data
+	$(".ServoButton").change(function(){
+		console.log("Servo Radio Button clicked detected. Id;" + this.id);
+		$.post("/commands/",
+		{datatype:"servo", servo:this.id}
+			);
+	});
+	
 	//Pressed Button capture for Lighting Data
 	$(".LightingButton").click(function(){
 		console.log("Light Button clicked detected. Id;" + this.id);

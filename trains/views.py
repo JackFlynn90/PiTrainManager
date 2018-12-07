@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.utils import timezone
 from django.http import HttpResponse
-from .models import Train, Light
+from .models import Train, Light, Servo
 from django.views.decorators.csrf import csrf_exempt
 import redis
 
@@ -13,8 +13,9 @@ def train_list(request):
 def main_page(request):
 	trains = Train.objects.all()
 	lights = Light.objects.all()
-
-	return render(request, 'trains/index.html', {'trains': trains, 'lights' : lights})
+	servos = Servo.objects.all()
+	
+	return render(request, 'trains/index.html', {'trains': trains, 'lights' : lights, 'servos':servos})
 	
 @csrf_exempt
 def command_ajax(request):
@@ -27,12 +28,16 @@ def command_ajax(request):
 		
 		if datatype == "command":
 			data = request.POST.get('command')
-			print("Lighting GOT This: " + data)
+			print("Effects got This: " + data)
 			r.publish('lightCommand', data)
 		elif datatype == "hex":
 			data = request.POST.get('data')
 			r.publish('lightCommand', data)
-			print("Lighting GOT This Hex value;" + data)
+			print("Effects got This Hex value;" + data)
+		elif datatype == "servo":
+			data = request.POST.get('servo')
+			r.publish('lightCommand', data)
+			print("Servo Effects got This value;" + data)
 		return HttpResponse("ok")
 
 @csrf_exempt
