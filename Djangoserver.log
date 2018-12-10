@@ -1255,3 +1255,22 @@ Not Found: /favicon.ico
 [10/Dec/2018 14:05:10] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1698
 [10/Dec/2018 14:05:10] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1692
 [10/Dec/2018 14:05:10] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1683
+[10/Dec/2018 14:09:36] "GET / HTTP/1.1" 200 19159
+[10/Dec/2018 14:09:36] "GET /static/js/colorpicker/jquery.colorpicker.js HTTP/1.1" 304 0
+[10/Dec/2018 14:09:37] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1698
+[10/Dec/2018 14:09:37] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1683
+[10/Dec/2018 14:09:37] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1692
+[10/Dec/2018 14:18:41] "GET /media/Tracklayout%20-%20Servo.png HTTP/1.1" 200 925696
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 594, in write
+    return self._sock.send(b)
+TimeoutError: [Errno 110] Connection timed out
+[10/Dec/2018 14:18:41] "GET /media/Tracklayout%20-%20Servo.png HTTP/1.1" 500 59

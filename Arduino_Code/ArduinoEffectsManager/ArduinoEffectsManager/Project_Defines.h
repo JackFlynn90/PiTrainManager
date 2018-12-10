@@ -68,7 +68,8 @@ byte _HouseLightsBrightnessList[_numbHouseLights];
 //******************************************************************
 //Servo Classes for grouping servo functionality
 ServoManagerClass _Servo1;
-byte _ServoAndLEDAddressList1[6] = {Servo1,Servo1_LEDG,Servo1_LEDR,Servo2,Servo2_LEDG,Servo2_LEDR};
+byte _ServoAndLEDAddressList1[3] = {Servo1,Servo1_LEDG,Servo1_LEDR};
+byte _ServoAndLEDAddressList2[3] = {Servo2,Servo2_LEDG,Servo2_LEDR};
 #define ServoDriver _ServoDriver
 
 
