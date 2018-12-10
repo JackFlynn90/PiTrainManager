@@ -6,3 +6,4 @@ redis-stable/
 */__pychache__
 *.out
 migrations/
+*.log
