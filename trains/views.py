@@ -15,7 +15,9 @@ def main_page(request):
 	lights = Light.objects.all()
 	servos = Servo.objects.all()
 	
-	return render(request, 'trains/index.html', {'trains': trains, 'lights' : lights, 'servos':servos})
+	rgbLight = Light.objects.get(type__startswith="RGB")
+	
+	return render(request, 'trains/index.html', {'trains': trains, 'lights' : lights, 'servos':servos, 'rgbLight':rgbLight})
 	
 @csrf_exempt
 def command_ajax(request):

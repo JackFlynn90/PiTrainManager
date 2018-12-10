@@ -348,19 +348,23 @@ jQuery.ColorPicker = function(container, options) {
     
 	var lastUpdate = 0;
 	
+	var firstLoad = 1;
+	
     picker.update = function() {
         picker.update_hex();
         picker.fn.change('#' + picker.color.hex);
 		
 		var d = new Date();
         var t = d.getTime();
-        if(t - lastUpdate > 100) {
+        if((t - lastUpdate > 100) && picker.firstLoad == 0) {
 			console.log("Colour change : " + picker.hex());
 			$.post("/commands/",
 				{datatype:"hex", data:picker.hex}
 			);
 			lastUpdate = t;				
         }		
+		
+		picker.firstLoad = 0;
     };
     picker.change = picker.update;
     

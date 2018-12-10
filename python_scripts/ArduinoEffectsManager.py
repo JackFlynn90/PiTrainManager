@@ -8,6 +8,16 @@ import re
 import subprocess
 from subprocess import PIPE, run
 
+#Imported django parts to allow updates to database 
+import os
+import sys
+sys.path.append('/share/djangoTrain')
+os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
+import django
+from django.conf import settings
+django.setup()
+from  trains.models import Light, Servo
+
 debugLevel = 2 #Debug print class used to handle what level of debug statements we want
 debug = debugging()
 
@@ -18,7 +28,7 @@ r = redis.StrictRedis(host='localhost', port=6379)                          # Co
 p = r.pubsub()                                                              # See https://github.com/andymccurdy/redis-py/#publish--subscribe
 p.subscribe('EffectsCommand')                                           # Subscribe to Effects channel
 
-Serialbypass = False #Debug serial port bypass. Sends all serial data out as a debug print instead
+Serialbypass = True#False #Debug serial port bypass. Sends all serial data out as a debug print instead
 
 ser = serial #global serial port
 
@@ -104,18 +114,51 @@ while True:
 	
 							debug.Print("Sending Out;" + dataOut,4)
 							SendSerial(dataOut)
+							
+							activeLight = Light.objects.get(type = "RGB") #database object
+							activeLight.hexValue = hex
+							activeLight.save()
 						
 						#LED Light group command
 						elif commandList[0] == "Light":
-							dataOut = ":" + commandList[1] + "," + commandList[2] + "," + commandList[3] + ",\n"
+							Lightaddress = commandList[2] # get light address from packet 
+							
+							dataOut = ":" + commandList[1] + "," + commandList[2] + "," + commandList[3] + ",\n" #construct packet
+							
+							activeLight = Light.objects.get(address = Lightaddress) #database object
+							
+							if commandList[1] == "4": #On/Off state change database value
+								if commandList[3] == "1":
+									activeLight.lightsState = True
+								else:
+									activeLight.lightsState = False
+							
+							elif commandList[1] == "5": #Brigthness change database value
+								activeLight.brightness = commandList[3]
+								
 							debug.Print("Sending Out;" + dataOut,4)
-							SendSerial(dataOut)
-						
+							SendSerial(dataOut) #Send out data to arduino
+							
+							activeLight.save()# Save database changes
+							
 						#Servo positional on/off command
 						elif commandList[0] == "Servo":
-							dataOut = ":" + commandList[1] + "," + commandList[2] + "," + commandList[3] + ",\n"
+						
+							Servoaddress = commandList[2] # get servo address from packet 
+						
+							activeServo = Servo.objects.get(address = Servoaddress) #get related database object
+
+							dataOut = ":" + commandList[1] + "," + commandList[2] + "," + commandList[3] + ",\n" # Construct packet
+							
+							if commandList[3] == "1": #Update database values
+								activeServo.state = True
+							else:
+								activeServo.state = False
+								
 							debug.Print("Sending Out;" + dataOut,4)
-							SendSerial(dataOut)
+							SendSerial(dataOut) #Send out serial command
+							
+							activeServo.save() 	#Update database changes
 					
 				ReadSerial() #readback any serial data from the Arduino
 					
