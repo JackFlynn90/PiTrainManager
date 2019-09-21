@@ -25,7 +25,7 @@ byPassSerial = False
 
 
 
-sprogPort = '/dev/ttyACM0'
+sprogPort = '/dev/ttyACM1'
 
 debugLevel = 1
 debug = debugging()
