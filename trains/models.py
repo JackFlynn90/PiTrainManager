@@ -16,10 +16,11 @@ class Train(models.Model):
             default=timezone.now)
 	def __str__(self):
 		return self.title
-		
+
 class Light(models.Model):
 	title = models.CharField(max_length=200)
 	description = models.TextField()
+	boardAddress = models.PositiveSmallIntegerField()
 	address = models.PositiveSmallIntegerField()
 	type = models.CharField(max_length=200)
 	brightness = models.PositiveSmallIntegerField()
@@ -30,7 +31,7 @@ class Light(models.Model):
             default=timezone.now)
 	def __str__(self):
 		return self.title
-		
+
 class Servo(models.Model):
 	title = models.CharField(max_length=200)
 	description = models.TextField()
@@ -41,7 +42,7 @@ class Servo(models.Model):
             default=timezone.now)
 	def __str__(self):
 		return self.title
-		
+
 class Functions(models.Model):
 	title = models.CharField(max_length=200)
 	description = models.TextField()
@@ -57,4 +58,3 @@ class Functions(models.Model):
             default=timezone.now)
 	def __str__(self):
 		return self.title
-		

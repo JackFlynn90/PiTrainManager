@@ -20,15 +20,15 @@ class ServoManagerClass
 	Adafruit_PWMServoDriver *_i2cDriver;
 	
 	byte _ServoAddress;
-	byte _CurrentPosition; //Current PWM Value
+	byte _CurrentPosition = 255; //Current PWM Value
 	byte _TargetPosition; //Fade Target value for PWM mode
 	boolean _Enable = true;
 	
 	byte _LEDGreenAddress;
 	byte _LEDRedAddress; 
 	
-	int _MaxServoPos = 600;
-	int _MinServoPos = 150;
+	int _MaxServoPos = 300;
+	int _MinServoPos = 200;
 	int _LEDOnPulseLength = 512;
 	
 	void close(); // Close servo position, light leds

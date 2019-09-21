@@ -21,22 +21,28 @@ void setup()
 	_LEDDriver2.begin();
 	_LEDDriver2.setPWMFreq(60);
 	
-	_ServoDriver.begin();
-	_ServoDriver.setPWMFreq(60);
+	_LEDDriver3.begin();
+	_LEDDriver3.setPWMFreq(60);
+	
+	_LEDDriver4.begin();
+	_LEDDriver4.setPWMFreq(60);
+	
+	_LEDDriver5.begin();
+	_LEDDriver5.setPWMFreq(60);
 	
 	//***************************************************************************************************************
 	//LED Group setups. Grouped LEDs allow for easy control of groupings such as "Street lights" or housing
 
-	_StreetLights.setupi2c(&_LEDDriver1,_StreetLightAddressList, _StreetLightBrightnessList,_numbStreetLights,StreetLightFadeRate);
+	//_StreetLights.setupi2c(&_LEDDriver1,_StreetLightAddressList, _StreetLightBrightnessList,_numbStreetLights,StreetLightFadeRate);
 	
-	_HouseLights.setupi2c(&_LEDDriver2,_HouseLightsAddressList,_HouseLightsBrightnessList,_numbHouseLights,HouseLightFadeRate);
+	//_HouseLights.setupi2c(&_LEDDriver2,_HouseLightsAddressList,_HouseLightsBrightnessList,_numbHouseLights,HouseLightFadeRate);
 	
 	
 	//***************************************************************************************************************
 	//Setup for Servo Manager Classes
-	_Servo1.setupi2c(&_ServoDriver,_ServoAndLEDAddressList1);
-	_Servo1.setPosition(ServoPosClose);
-	_Servo1.refresh();
+	//_Servo1.setupi2c(&_ServoDriver,_ServoAndLEDAddressList1);
+	//_Servo1.setPosition(ServoPosClose);
+	//_Servo1.refresh();
 	
 	//***************************************************************************************************************
 	//Setup for LDR classes

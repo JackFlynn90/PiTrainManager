@@ -65,39 +65,99 @@ void Command_debug_LEDState()
 // Used to parse which LED group is being effected and update the groups enable state
 void Command_LEDManager_State()
 {
-	int _LEDChoice = USBSerial.parseInt(PacketPosition1);
-	int _enable = USBSerial.parseInt(PacketPosition2);
+	byte _LEDChoice = USBSerial.parseInt(PacketPosition1);
+	byte _boardAdd = USBSerial.parseInt(PacketPosition2);
+	byte _brightness = USBSerial.parseInt(PacketPosition3);
+	byte _enable = USBSerial.parseInt(4);
 	
 	
-	Serial.print(F("LED Group Change, Grouping Selected;")); Serial.print(_LEDChoice);
+	Serial.print(F("LED Single Change, Selected pin;")); Serial.println(_LEDChoice);
+	Serial.print(F("LED Single Change, Selected board;")); Serial.println(_boardAdd);
+	Serial.print(F("LED Single Change, brightness ;")); Serial.println(_brightness);
 	Serial.print(F(", enable;")); Serial.println(_enable? "On" : "Off");
 
 	
-	switch(_LEDChoice)
+	switch(_boardAdd)
 	{
-		case 0: Command_RGBOutput_state(); break;
-		case 1: _HouseLights.setAllEnables(_enable); _HouseLights.refresh(); break;
-		case 2: _StreetLights.setAllEnables(_enable); _StreetLights.refresh();break;
+		case 0: cycleLEDs(); break;
+		case 1: if(_enable)_LEDDriver1.setPWM(_LEDChoice, _brightness*4, 4095);else _LEDDriver1.setPWM(_LEDChoice, 0, 4095);break;
+		case 2: if(_enable)_LEDDriver2.setPWM(_LEDChoice, _brightness*4, 4095);else _LEDDriver2.setPWM(_LEDChoice, 0, 4095);break;
+		case 3: if(_enable)_LEDDriver3.setPWM(_LEDChoice, _brightness*4, 4095);else _LEDDriver3.setPWM(_LEDChoice, 0, 4095);break;
+		case 4: if(_enable)_LEDDriver4.setPWM(_LEDChoice, _brightness*4, 4095);else _LEDDriver4.setPWM(_LEDChoice, 0, 4095);break;
+		case 5: if(_enable)_LEDDriver5.setPWM(_LEDChoice, _brightness*4, 4095);else _LEDDriver5.setPWM(_LEDChoice, 0, 4095);break;
 	}
 	
 	
 }
 
+void cycleLEDs()
+{
+		int state = 128;
+		while(true)
+		{
+			
+			for (int i = 0; i < 16; i++)
+			{
+				_LEDDriver1.setPWM(i, state*8, 4095);
+				delay(250);
+			}
+			
+			for (int i = 0; i < 16; i++)
+			{
+				_LEDDriver2.setPWM(i, state*8, 4095);
+				delay(250);
+			}
+			
+
+			for (int i = 0; i < 16; i++)
+			{
+				_LEDDriver3.setPWM(i, state*8, 4095);
+				delay(250);
+			}
+			
+			for (int i = 0; i < 16; i++)
+			{
+				_LEDDriver4.setPWM(i, state*8, 4095);
+				delay(250);
+			}
+			
+			for (int i = 0; i < 16; i++)
+			{
+				_LEDDriver5.setPWM(i, state*8, 4095);
+				delay(250);
+			}
+			
+			
+			if(state == 128)
+			state = 0;
+			else
+			state = 128;
+
+		}
+}
 //LED Manager for multiple LEDs brightness command
 // Used to parse which LED group is being effected and update the groups brightness level
 void Command_LEDManager_Brightness()
 {
-	byte _LEDChoice = (byte)USBSerial.parseInt(PacketPosition1);
-	int _brightness = USBSerial.parseInt(PacketPosition2);
+	byte _LEDChoice = USBSerial.parseInt(PacketPosition1);
+	byte _boardAdd = USBSerial.parseInt(PacketPosition2);
+	byte _brightness = USBSerial.parseInt(PacketPosition3);
+	byte _enable = USBSerial.parseInt(4);
 	
-	Serial.print(F("LED Group Change, Grouping Selected;")); Serial.print(_LEDChoice);
-	Serial.print(F(", brightness;")); Serial.println(_brightness);
 	
-	switch(_LEDChoice)
+	Serial.print(F("LED Single Change, Selected pin;")); Serial.println(_LEDChoice);
+	Serial.print(F("LED Single Change, Selected board;")); Serial.println(_boardAdd);
+	Serial.print(F("LED Single Change, brightness ;")); Serial.println(_brightness);
+	Serial.print(F(", enable;")); Serial.println(_enable? "On" : "Off");
+
+	switch(_boardAdd)
 	{
 		case 0: Command_RGBOutput_state(); break;
-		case 1: _HouseLights.setAllBrightness(_brightness); _HouseLights.refresh(); break;
-		case 2: _StreetLights.setAllBrightness(_brightness); _StreetLights.refresh();break;
+		case 1: if(_enable)_LEDDriver1.setPWM(_LEDChoice, _brightness*4, 4095);else _LEDDriver1.setPWM(_LEDChoice, 0, 4095);break;
+		case 2: if(_enable)_LEDDriver2.setPWM(_LEDChoice, _brightness*4, 4095);else _LEDDriver2.setPWM(_LEDChoice, 0, 4095);break;
+		case 3: if(_enable)_LEDDriver3.setPWM(_LEDChoice, _brightness*4, 4095);else _LEDDriver3.setPWM(_LEDChoice, 0, 4095);break;
+		case 4: if(_enable)_LEDDriver4.setPWM(_LEDChoice, _brightness*4, 4095);else _LEDDriver4.setPWM(_LEDChoice, 0, 4095);break;
+		case 5: if(_enable)_LEDDriver5.setPWM(_LEDChoice, _brightness*4, 4095);else _LEDDriver5.setPWM(_LEDChoice, 0, 4095);break;
 	}
 	
 	
@@ -131,6 +191,6 @@ void Command_ServoPosition()
 	
 	switch (ServoBlockChoise)
 	{
-		case 0: _Servo1.setPosition(newState); break;
+		//case 0: _Servo1.setPosition(newState); break;
 	}
 }

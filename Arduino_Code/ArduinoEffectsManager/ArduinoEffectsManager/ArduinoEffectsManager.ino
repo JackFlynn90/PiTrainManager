@@ -14,26 +14,29 @@ void loop()
 {
 	SerialUSBCommands(); //Function for handling USB commands received
 	
+
+	
+	
 	//LEDs are currently refreshed on a timer. Allows for USB packets to adjust values and fading effects to take place based on new values
 	static unsigned long timer_Refresh = millis();
 	if(millis() - timer_Refresh > 50) //Refresh of device states
 	{
 
 		RGBManager.Refresh();
-		_StreetLights.refresh();
-		_HouseLights.refresh();
+		//_StreetLights.refresh();
+		//_HouseLights.refresh();
 		
-		AutoManager_LDR_Block1.refresh();//Automation testing of using Photoresistor (LDR) to trigger LEDs on off
+		//AutoManager_LDR_Block1.refresh();//Automation testing of using Photoresistor (LDR) to trigger LEDs on off
 		
 		
 		//*****************************************************************************************************
 		//Servo Refresh
-		_Servo1.refresh();
+		//_Servo1.refresh();
 		
 		
 		timer_Refresh = millis();
 		
-			
+		
 	}
 	
 

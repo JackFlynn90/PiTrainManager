@@ -90,7 +90,10 @@ void LED_GroupClass::i2cGroupRefresh()
 				_PWMCurrentValues[i] = FadeValue;
 			}
 			
-			_i2cDriver->setPWM(_PinNums[i], _PWMCurrentValues[i]*4, 4095); //write faded PWM values to LEDs
+			if(_PWMTargetValues[i] == 0)
+			_i2cDriver->setPWM(_PinNums[i], 4096, 0);
+			else
+			_i2cDriver->setPWM(_PinNums[i],_PWMCurrentValues[i]*4, 4095); //write faded PWM values to LEDs
 			
 		}else
 		_i2cDriver->setPWM(_PinNums[i], _PWMCurrentValues[i]*4, 4095); // write PWM straight values to LEDs

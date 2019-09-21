@@ -12,7 +12,7 @@
 #include "FastLED/FastLED.h"
 
 #define LED_PIN     17
-#define Strip_NUM_LEDS    144
+#define Strip_NUM_LEDS    300
 #define LED_TYPE    WS2812B
 #define COLOR_ORDER GRB
 #define BRIGHTNESS  128

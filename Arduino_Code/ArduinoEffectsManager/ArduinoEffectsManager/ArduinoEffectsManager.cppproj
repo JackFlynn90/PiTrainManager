@@ -28,16 +28,16 @@
     <BootSegment>0</BootSegment>
     <ExternalProgrammingToolCommand />
     <AsfFrameworkConfig>
-      <framework-data xmlns="">
-        <options />
-        <configurations />
-        <files />
-        <documentation help="" />
-        <offline-documentation help="" />
-        <dependencies>
-          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.27.3" />
-        </dependencies>
-      </framework-data>
+      <framework-data>
+  <options />
+  <configurations />
+  <files />
+  <documentation help="" />
+  <offline-documentation help="" />
+  <dependencies>
+    <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.28.1" />
+  </dependencies>
+</framework-data>
     </AsfFrameworkConfig>
     <preserveEEPROM>true</preserveEEPROM>
     <ResetRule>0</ResetRule>
@@ -56,14 +56,14 @@
   <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
   <avrgcc.compiler.symbols.DefSymbols>
     <ListValues>
-      <Value>__HARDWARE_MK20dx256__</Value>
-      <Value>__HARDWARE_MK20DX256__</Value>
-      <Value>ARDUINO=10805</Value>
+      <Value>__HARDWARE_MKl26z64__</Value>
+      <Value>__HARDWARE_MKL26Z64__</Value>
+      <Value>ARDUINO=10608</Value>
       <Value>ARDUINO_MAIN</Value>
       <Value>printf=iprintf</Value>
       <Value>__TEENSY3__</Value>
-      <Value>__MK20DX256__</Value>
-      <Value>TEENSYDUINO=141</Value>
+      <Value>__MKL26Z64__</Value>
+      <Value>TEENSYDUINO=130</Value>
       <Value>F_CPU={build.fcpu}</Value>
       <Value>{build.usbtype}</Value>
       <Value>LAYOUT_{build.keylayout}</Value>
@@ -72,15 +72,16 @@
   <avrgcc.compiler.directories.IncludePaths>
     <ListValues>
       <Value>../../../ArduinoEffectsManager</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/libraries</Value>
-      <Value>C:/Users/Admin/Documents/Programming/libraries</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/libraries</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3/avr</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3/util</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/tools/arm/arm-none-eabi/include</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/tools/arm/lib/gcc/arm-none-eabi/5.4.1/include</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/libraries/Wire</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/libraries</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/libraries</Value>
+      <Value>C:/Users/JWScotsat/Documents/Scotsat Git/libraries</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3/avr</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3/util</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3/utils</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/../tools/arm/bin/../arm-none-eabi/include</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
   <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
@@ -93,14 +94,14 @@
   <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
   <avrgcccpp.compiler.symbols.DefSymbols>
     <ListValues>
-      <Value>__HARDWARE_MK20dx256__</Value>
-      <Value>__HARDWARE_MK20DX256__</Value>
-      <Value>ARDUINO=10805</Value>
+      <Value>__HARDWARE_MKl26z64__</Value>
+      <Value>__HARDWARE_MKL26Z64__</Value>
+      <Value>ARDUINO=10608</Value>
       <Value>ARDUINO_MAIN</Value>
       <Value>printf=iprintf</Value>
       <Value>__TEENSY3__</Value>
-      <Value>__MK20DX256__</Value>
-      <Value>TEENSYDUINO=141</Value>
+      <Value>__MKL26Z64__</Value>
+      <Value>TEENSYDUINO=130</Value>
       <Value>F_CPU={build.fcpu}</Value>
       <Value>{build.usbtype}</Value>
       <Value>LAYOUT_{build.keylayout}</Value>
@@ -109,15 +110,16 @@
   <avrgcccpp.compiler.directories.IncludePaths>
     <ListValues>
       <Value>../../../ArduinoEffectsManager</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/libraries</Value>
-      <Value>C:/Users/Admin/Documents/Programming/libraries</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/libraries</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3/avr</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3/util</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/tools/arm/arm-none-eabi/include</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/tools/arm/lib/gcc/arm-none-eabi/5.4.1/include</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/libraries/Wire</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/libraries</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/libraries</Value>
+      <Value>C:/Users/JWScotsat/Documents/Scotsat Git/libraries</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3/avr</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3/util</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3/utils</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/../tools/arm/bin/../arm-none-eabi/include</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy</Value>
     </ListValues>
   </avrgcccpp.compiler.directories.IncludePaths>
   <avrgcccpp.compiler.optimization.level>Optimize (-O1)</avrgcccpp.compiler.optimization.level>
@@ -139,11 +141,11 @@
   <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
 </AvrGccCpp>
     </ToolchainSettings>
-    <VMSETTING_IncludePaths>../../../ArduinoEffectsManager;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/libraries;C:/Users/Admin/Documents/Programming/libraries;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/libraries;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3/avr;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3/util;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/tools/arm/arm-none-eabi/include;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/tools/arm/lib/gcc/arm-none-eabi/5.4.1/include;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy;</VMSETTING_IncludePaths>
+    <VMSETTING_IncludePaths>../../../ArduinoEffectsManager;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/libraries;C:/Users/Admin/Documents/Programming/libraries;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/libraries;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3/avr;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3/util;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/tools/arm/arm-none-eabi/include;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/tools/arm/lib/gcc/arm-none-eabi/5.4.1/include;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy;C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/libraries/Wire;C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/libraries;C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/libraries;C:/Users/JWScotsat/Documents/Scotsat Git/libraries;C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3;C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3/avr;C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3/util;C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3/utils;C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/../tools/arm/bin/../arm-none-eabi/include;C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy;</VMSETTING_IncludePaths>
     <VisualMicroSettings>
       <VisualMicroSettings>
         <ValidatedAS7>1</ValidatedAS7>
-        <arduino.upload.port>COM12</arduino.upload.port>
+        <arduino.upload.port>COM4</arduino.upload.port>
       </VisualMicroSettings>
     </VisualMicroSettings>
   </PropertyGroup>
@@ -160,14 +162,14 @@
   <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
   <avrgcc.compiler.symbols.DefSymbols>
     <ListValues>
-      <Value>__HARDWARE_MK20dx256__</Value>
-      <Value>__HARDWARE_MK20DX256__</Value>
-      <Value>ARDUINO=10805</Value>
+      <Value>__HARDWARE_MKl26z64__</Value>
+      <Value>__HARDWARE_MKL26Z64__</Value>
+      <Value>ARDUINO=10608</Value>
       <Value>ARDUINO_MAIN</Value>
       <Value>printf=iprintf</Value>
       <Value>__TEENSY3__</Value>
-      <Value>__MK20DX256__</Value>
-      <Value>TEENSYDUINO=141</Value>
+      <Value>__MKL26Z64__</Value>
+      <Value>TEENSYDUINO=130</Value>
       <Value>F_CPU={build.fcpu}</Value>
       <Value>{build.usbtype}</Value>
       <Value>LAYOUT_{build.keylayout}</Value>
@@ -176,15 +178,16 @@
   <avrgcc.compiler.directories.IncludePaths>
     <ListValues>
       <Value>../../../ArduinoEffectsManager</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/libraries</Value>
-      <Value>C:/Users/Admin/Documents/Programming/libraries</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/libraries</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3/avr</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3/util</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/tools/arm/arm-none-eabi/include</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/tools/arm/lib/gcc/arm-none-eabi/5.4.1/include</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/libraries/Wire</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/libraries</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/libraries</Value>
+      <Value>C:/Users/JWScotsat/Documents/Scotsat Git/libraries</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3/avr</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3/util</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3/utils</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/../tools/arm/bin/../arm-none-eabi/include</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
   <avrgcc.compiler.optimization.level>Optimize (-O1)</avrgcc.compiler.optimization.level>
@@ -197,14 +200,14 @@
   <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
   <avrgcccpp.compiler.symbols.DefSymbols>
     <ListValues>
-      <Value>__HARDWARE_MK20dx256__</Value>
-      <Value>__HARDWARE_MK20DX256__</Value>
-      <Value>ARDUINO=10805</Value>
+      <Value>__HARDWARE_MKl26z64__</Value>
+      <Value>__HARDWARE_MKL26Z64__</Value>
+      <Value>ARDUINO=10608</Value>
       <Value>ARDUINO_MAIN</Value>
       <Value>printf=iprintf</Value>
       <Value>__TEENSY3__</Value>
-      <Value>__MK20DX256__</Value>
-      <Value>TEENSYDUINO=141</Value>
+      <Value>__MKL26Z64__</Value>
+      <Value>TEENSYDUINO=130</Value>
       <Value>F_CPU={build.fcpu}</Value>
       <Value>{build.usbtype}</Value>
       <Value>LAYOUT_{build.keylayout}</Value>
@@ -213,15 +216,16 @@
   <avrgcccpp.compiler.directories.IncludePaths>
     <ListValues>
       <Value>../../../ArduinoEffectsManager</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/libraries</Value>
-      <Value>C:/Users/Admin/Documents/Programming/libraries</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/libraries</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3/avr</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3/util</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/tools/arm/arm-none-eabi/include</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/tools/arm/lib/gcc/arm-none-eabi/5.4.1/include</Value>
-      <Value>C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/libraries/Wire</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/libraries</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/libraries</Value>
+      <Value>C:/Users/JWScotsat/Documents/Scotsat Git/libraries</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3/avr</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3/util</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3/utils</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/../tools/arm/bin/../arm-none-eabi/include</Value>
+      <Value>C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy</Value>
     </ListValues>
   </avrgcccpp.compiler.directories.IncludePaths>
   <avrgcccpp.compiler.optimization.level>Optimize (-O1)</avrgcccpp.compiler.optimization.level>
@@ -243,15 +247,21 @@
   <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
 </AvrGccCpp>
     </ToolchainSettings>
-    <VMSETTING_IncludePaths>../../../ArduinoEffectsManager;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/libraries;C:/Users/Admin/Documents/Programming/libraries;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/libraries;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3/avr;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3/util;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/tools/arm/arm-none-eabi/include;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/tools/arm/lib/gcc/arm-none-eabi/5.4.1/include;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy;</VMSETTING_IncludePaths>
+    <VMSETTING_IncludePaths>../../../ArduinoEffectsManager;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/libraries;C:/Users/Admin/Documents/Programming/libraries;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/libraries;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3/avr;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy/avr/cores/teensy3/util;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/tools/arm/arm-none-eabi/include;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/tools/arm/lib/gcc/arm-none-eabi/5.4.1/include;C:/Users/Admin/Documents/Arduino/arduino-1.8.5/hardware/teensy;C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/libraries/Wire;C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/libraries;C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/libraries;C:/Users/JWScotsat/Documents/Scotsat Git/libraries;C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3;C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3/avr;C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3/util;C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/avr/cores/teensy3/utils;C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy/../tools/arm/bin/../arm-none-eabi/include;C:/Users/JWScotsat/Documents/Arduino Installs/arduino-1.6.8/hardware/teensy;</VMSETTING_IncludePaths>
     <VisualMicroSettings>
       <VisualMicroSettings>
         <ValidatedAS7>1</ValidatedAS7>
-        <arduino.upload.port>COM12</arduino.upload.port>
+        <arduino.upload.port>COM4</arduino.upload.port>
       </VisualMicroSettings>
     </VisualMicroSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AdafruitPWMLib\Adafruit_PWMServoDriver.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="AdafruitPWMLib\Adafruit_PWMServoDriver.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="ArduinoEffectsManager.ino">
       <SubType>compile</SubType>
     </Compile>
@@ -262,6 +272,294 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Defines_PinList.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\bitswap.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\bitswap.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\chipsets.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\color.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\colorpalettes.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\colorpalettes.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\colorutils.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\colorutils.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\controller.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\cpp_compat.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\dmx.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\FastLED.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\FastLED.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\fastled_config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\fastled_delay.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\fastled_progmem.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\fastpin.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\fastspi.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\fastspi_bitbang.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\fastspi_dma.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\fastspi_nop.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\fastspi_ref.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\fastspi_types.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\hsv2rgb.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\hsv2rgb.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\led_sysdefs.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\lib8tion.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\lib8tion.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\lib8tion\math8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\lib8tion\random8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\lib8tion\scale8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\lib8tion\trig8.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\noise.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\noise.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\pixelset.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\pixeltypes.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\common\m0clockless.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\d21\clockless_arm_d21.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\d21\fastled_arm_d21.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\d21\fastpin_arm_d21.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\d21\led_sysdefs_arm_d21.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\k20\clockless_arm_k20.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\k20\clockless_block_arm_k20.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\k20\fastled_arm_k20.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\k20\fastpin_arm_k20.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\k20\fastspi_arm_k20.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\k20\led_sysdefs_arm_k20.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\k20\octows2811_controller.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\k20\smartmatrix_t3.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\k20\ws2812serial_controller.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\k66\clockless_arm_k66.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\k66\clockless_block_arm_k66.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\k66\fastled_arm_k66.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\k66\fastpin_arm_k66.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\k66\fastspi_arm_k66.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\k66\led_sysdefs_arm_k66.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\kl26\clockless_arm_kl26.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\kl26\fastled_arm_kl26.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\kl26\fastpin_arm_kl26.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\kl26\fastspi_arm_kl26.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\kl26\led_sysdefs_arm_kl26.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\nrf51\clockless_arm_nrf51.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\nrf51\fastled_arm_nrf51.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\nrf51\fastpin_arm_nrf51.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\nrf51\fastspi_arm_nrf51.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\nrf51\led_sysdefs_arm_nrf51.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\sam\clockless_arm_sam.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\sam\clockless_block_arm_sam.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\sam\fastled_arm_sam.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\sam\fastpin_arm_sam.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\sam\fastspi_arm_sam.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\sam\led_sysdefs_arm_sam.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\stm32\clockless_arm_stm32.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\stm32\cm3_regs.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\stm32\fastled_arm_stm32.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\stm32\fastpin_arm_stm32.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\arm\stm32\led_sysdefs_arm_stm32.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\avr\clockless_trinket.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\avr\fastled_avr.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\avr\fastpin_avr.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\avr\fastspi_avr.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\avr\led_sysdefs_avr.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\esp\32\clockless_block_esp32.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\esp\32\clockless_esp32.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\esp\32\fastled_esp32.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\esp\32\fastpin_esp32.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\esp\32\led_sysdefs_esp32.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\esp\8266\clockless_block_esp8266.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\esp\8266\clockless_esp8266.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\esp\8266\fastled_esp8266.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\esp\8266\fastpin_esp8266.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\platforms\esp\8266\led_sysdefs_esp8266.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\power_mgt.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\power_mgt.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="FastLED\wiring.cpp">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="HW_Pin.cpp">
@@ -288,10 +586,19 @@
     <Compile Include="PhotoResLEDManager_Group.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="Project_Defines.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="RGBManager.cpp">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="RGBManager.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ServoManager.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ServoManager.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="__vm\.ArduinoEffectsManager.vsarduino.h">
@@ -299,12 +606,96 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AdafruitPWMLib\" />
+    <Folder Include="FastLED\" />
+    <Folder Include="FastLED\docs\" />
+    <Folder Include="FastLED\extras\" />
+    <Folder Include="FastLED\lib8tion\" />
+    <Folder Include="FastLED\platforms\" />
+    <Folder Include="FastLED\platforms\arm\" />
+    <Folder Include="FastLED\platforms\arm\common\" />
+    <Folder Include="FastLED\platforms\arm\d21\" />
+    <Folder Include="FastLED\platforms\arm\k20\" />
+    <Folder Include="FastLED\platforms\arm\k66\" />
+    <Folder Include="FastLED\platforms\arm\kl26\" />
+    <Folder Include="FastLED\platforms\arm\nrf51\" />
+    <Folder Include="FastLED\platforms\arm\sam\" />
+    <Folder Include="FastLED\platforms\arm\stm32\" />
+    <Folder Include="FastLED\platforms\avr\" />
+    <Folder Include="FastLED\platforms\esp\" />
+    <Folder Include="FastLED\platforms\esp\32\" />
+    <Folder Include="FastLED\platforms\esp\8266\" />
     <Folder Include="__vm\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comms_CommandList.ino">
       <SubType>compile</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AdafruitPWMLib\.travis.yml">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="AdafruitPWMLib\library.properties">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="AdafruitPWMLib\license.txt">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="AdafruitPWMLib\README.md">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FastLED\.gitignore">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FastLED\docs\Doxyfile">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FastLED\docs\mainpage.dox">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FastLED\extras\AppleII.s65">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FastLED\extras\FastLED6502.s65">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FastLED\extras\RainbowDemo.bin.zip">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FastLED\extras\RainbowDemo.s65">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FastLED\keywords.txt">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FastLED\library.json">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FastLED\library.properties">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FastLED\LICENSE">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FastLED\platforms\esp\32\clockless_esp32.h.orig">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FastLED\PORTING.md">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FastLED\preview_changes.txt">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FastLED\README.md">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="FastLED\release_notes.md">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="Setup.ino">
+      <SubType>compile</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>

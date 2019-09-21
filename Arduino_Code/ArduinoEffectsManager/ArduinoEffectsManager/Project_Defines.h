@@ -34,9 +34,9 @@ HW_PinClass TeensyLED;
 //Hardware I2C Servo addresses
 #define LEDDriver1_Add 0x40
 #define LEDDriver2_Add 0x41
-#define LEDDriver3_Add 0x42
+#define LEDDriver3_Add 0x45
 #define LEDDriver4_Add 0x43
-#define ServoDriver_Add 0x44
+#define LEDDriver5_Add 0x44
 //******************************************************************
 //Hardware I2C Servo and LED controllers
 Adafruit_PWMServoDriver _LEDDriver1 = Adafruit_PWMServoDriver(LEDDriver1_Add);
@@ -44,18 +44,18 @@ Adafruit_PWMServoDriver _LEDDriver2 = Adafruit_PWMServoDriver(LEDDriver2_Add);
 Adafruit_PWMServoDriver _LEDDriver3 = Adafruit_PWMServoDriver(LEDDriver3_Add);
 Adafruit_PWMServoDriver _LEDDriver4 = Adafruit_PWMServoDriver(LEDDriver4_Add);
 
-Adafruit_PWMServoDriver _ServoDriver = Adafruit_PWMServoDriver(ServoDriver_Add);
+Adafruit_PWMServoDriver _LEDDriver5 = Adafruit_PWMServoDriver(LEDDriver5_Add);
 
 #define MaxDriverChannels 16
 
 //******************************************************************
 //LED Group Classes for grouping LED functionality
 LED_GroupClass _StreetLights;
-const byte _numbStreetLights = 6;
-const byte _StreetLightAddressList[6] = {DR2_STL1, DR2_STL2,DR2_STL3,DR2_STL4,DR2_STL5,DR2_STL6};
+const byte _numbStreetLights = 15;
+const byte _StreetLightAddressList[15] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14};
 byte _StreetLightBrightnessList[_numbStreetLights];
-#define StreetLightFadeRate 500
-#define StreetLightDriver _LEDDriver2
+#define StreetLightFadeRate 10
+#define StreetLightDriver _LEDDriver1
 
 
 LED_GroupClass _HouseLights;
@@ -63,7 +63,7 @@ const byte _numbHouseLights = 6;
 const byte _HouseLightsAddressList[6] = {DR1_Building1T, DR1_Building1B,DR1_Building2T,DR1_Building2B,DR1_Building3T,DR1_Building3B};
 byte _HouseLightsBrightnessList[_numbHouseLights];
 #define HouseLightFadeRate 50
-#define HouseLightDriver _LEDDriver1
+#define HouseLightDriver _LEDDriver2
 
 //******************************************************************
 //Servo Classes for grouping servo functionality
