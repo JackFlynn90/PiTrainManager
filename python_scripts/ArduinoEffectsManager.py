@@ -164,7 +164,7 @@ while True:
 
 				ReadSerial() #readback any serial data from the Arduino
 
-				time.sleep(0.01)
+				time.sleep(0.1)
 
 			#Exception may occur on loss of connection to Arduino
 			except Exception as e:

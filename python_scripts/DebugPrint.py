@@ -16,7 +16,7 @@ class debugging():
 	def Print(self, message, priority):
 		if int(priority) >= int(self._priorityLevel):
 			print(message)
-		self.log(message, False)
+			self.log(message, False)
 
 
 	##***********************************************************************************************************************

@@ -1,0 +1,2510 @@
+2019-10-18 01:19:25:349,PUBSUB Received   b'Tr_3_Speed_61'
+2019-10-18 01:19:25:352,command is
+2019-10-18 01:19:25:353,<class 'bytes'>
+2019-10-18 01:19:25:353,Command list['Tr', '3', 'Speed', '61']
+2019-10-18 01:19:25:354,command list is<class 'list'>
+2019-10-18 01:19:25:372,Active train address is;3, New speed value is;61
+2019-10-18 01:19:25:393,Packet out; O 03 3F bd 81
+
+2019-10-18 01:19:25:399,b'P'
+2019-10-18 01:19:25:410,b'>'
+2019-10-18 01:19:25:420,b' '
+2019-10-18 01:19:58:473,PUBSUB Received   b'Tr_3_Speed_46'
+2019-10-18 01:19:58:473,command is
+2019-10-18 01:19:58:474,<class 'bytes'>
+2019-10-18 01:19:58:475,Command list['Tr', '3', 'Speed', '46']
+2019-10-18 01:19:58:475,command list is<class 'list'>
+2019-10-18 01:19:58:482,Active train address is;3, New speed value is;46
+2019-10-18 01:19:58:502,Packet out; O 03 3F ae 92
+
+2019-10-18 01:19:58:508,b'P'
+2019-10-18 01:19:58:518,b'>'
+2019-10-18 01:19:58:529,b' '
+2019-10-18 01:20:00:337,PUBSUB Received   b'Tr_3_Speed_128'
+2019-10-18 01:20:00:338,command is
+2019-10-18 01:20:00:338,<class 'bytes'>
+2019-10-18 01:20:00:339,Command list['Tr', '3', 'Speed', '128']
+2019-10-18 01:20:00:340,command list is<class 'list'>
+2019-10-18 01:20:00:346,Active train address is;3, New speed value is;128
+2019-10-18 01:20:00:367,Packet out; O 03 3F ff c3
+
+2019-10-18 01:20:00:372,b'P'
+2019-10-18 01:20:00:383,b'>'
+2019-10-18 01:20:00:394,b' '
+2019-10-18 01:20:03:239,PUBSUB Received   b'Tr_3_Speed_92'
+2019-10-18 01:20:03:240,command is
+2019-10-18 01:20:03:241,<class 'bytes'>
+2019-10-18 01:20:03:242,Command list['Tr', '3', 'Speed', '92']
+2019-10-18 01:20:03:242,command list is<class 'list'>
+2019-10-18 01:20:03:249,Active train address is;3, New speed value is;92
+2019-10-18 01:20:03:270,Packet out; O 03 3F dc e0
+
+2019-10-18 01:20:03:272,b'P'
+2019-10-18 01:20:03:283,b'>'
+2019-10-18 01:20:03:294,b' '
+2019-10-18 01:20:04:411,PUBSUB Received   b'Tr_3_Speed_114'
+2019-10-18 01:20:04:412,command is
+2019-10-18 01:20:04:413,<class 'bytes'>
+2019-10-18 01:20:04:414,Command list['Tr', '3', 'Speed', '114']
+2019-10-18 01:20:04:414,command list is<class 'list'>
+2019-10-18 01:20:04:420,Active train address is;3, New speed value is;114
+2019-10-18 01:20:04:439,Packet out; O 03 3F f2 ce
+
+2019-10-18 01:20:04:446,b'P'
+2019-10-18 01:20:04:457,b'>'
+2019-10-18 01:20:04:468,b' '
+2019-10-18 01:20:09:635,PUBSUB Received   b'Tr_3_Speed_109'
+2019-10-18 01:20:09:642,command is
+2019-10-18 01:20:09:643,<class 'bytes'>
+2019-10-18 01:20:09:644,Command list['Tr', '3', 'Speed', '109']
+2019-10-18 01:20:09:644,command list is<class 'list'>
+2019-10-18 01:20:09:650,Active train address is;3, New speed value is;109
+2019-10-18 01:20:09:668,Packet out; O 03 3F ed d1
+
+2019-10-18 01:20:09:671,b'P'
+2019-10-18 01:20:09:682,b'>'
+2019-10-18 01:20:09:693,b' '
+2019-10-18 01:20:56:265,PUBSUB Received   b'Tr_3_Speed_63'
+2019-10-18 01:20:56:266,command is
+2019-10-18 01:20:56:266,<class 'bytes'>
+2019-10-18 01:20:56:267,Command list['Tr', '3', 'Speed', '63']
+2019-10-18 01:20:56:268,command list is<class 'list'>
+2019-10-18 01:20:56:274,Active train address is;3, New speed value is;63
+2019-10-18 01:20:56:291,Packet out; O 03 3F bf 83
+
+2019-10-18 01:20:56:295,b'P'
+2019-10-18 01:20:56:306,b'>'
+2019-10-18 01:20:56:316,b' '
+2019-10-18 01:20:57:291,PUBSUB Received   b'Tr_3_Speed_77'
+2019-10-18 01:20:57:292,command is
+2019-10-18 01:20:57:293,<class 'bytes'>
+2019-10-18 01:20:57:293,Command list['Tr', '3', 'Speed', '77']
+2019-10-18 01:20:57:294,command list is<class 'list'>
+2019-10-18 01:20:57:300,Active train address is;3, New speed value is;77
+2019-10-18 01:20:57:320,Packet out; O 03 3F cd f1
+
+2019-10-18 01:20:57:329,b'P'
+2019-10-18 01:20:57:340,b'>'
+2019-10-18 01:20:57:351,b' '
+2019-10-18 01:20:58:191,PUBSUB Received   b'Tr_3_Lights_On'
+2019-10-18 01:20:58:192,command is
+2019-10-18 01:20:58:192,<class 'bytes'>
+2019-10-18 01:20:58:193,Command list['Tr', '3', 'Lights', 'On']
+2019-10-18 01:20:58:193,command list is<class 'list'>
+2019-10-18 01:20:58:200,Active train address is;3, New lights value is;On
+2019-10-18 01:20:58:201,Packet out; O 03 90 93
+
+2019-10-18 01:20:58:201,Invalid command received;['Tr', '3', 'Lights', 'On']
+2019-10-18 01:20:58:208,b'P'
+2019-10-18 01:20:58:219,b'>'
+2019-10-18 01:20:58:230,b' '
+2019-10-18 01:21:01:759,PUBSUB Received   b'Tr_3_Speed_86'
+2019-10-18 01:21:01:760,command is
+2019-10-18 01:21:01:761,<class 'bytes'>
+2019-10-18 01:21:01:761,Command list['Tr', '3', 'Speed', '86']
+2019-10-18 01:21:01:762,command list is<class 'list'>
+2019-10-18 01:21:01:768,Active train address is;3, New speed value is;86
+2019-10-18 01:21:01:787,Packet out; O 03 3F d6 ea
+
+2019-10-18 01:21:01:789,b'P'
+2019-10-18 01:21:01:799,b'>'
+2019-10-18 01:21:01:810,b' '
+2019-10-18 01:21:02:716,PUBSUB Received   b'Tr_3_Speed_120'
+2019-10-18 01:21:02:717,command is
+2019-10-18 01:21:02:717,<class 'bytes'>
+2019-10-18 01:21:02:718,Command list['Tr', '3', 'Speed', '120']
+2019-10-18 01:21:02:719,command list is<class 'list'>
+2019-10-18 01:21:02:725,Active train address is;3, New speed value is;120
+2019-10-18 01:21:02:743,Packet out; O 03 3F f8 c4
+
+2019-10-18 01:21:02:750,b'P'
+2019-10-18 01:21:02:761,b'>'
+2019-10-18 01:21:02:772,b' '
+2019-10-18 01:21:04:399,PUBSUB Received   b'Tr_3_Dir_BWD'
+2019-10-18 01:21:04:400,command is
+2019-10-18 01:21:04:400,<class 'bytes'>
+2019-10-18 01:21:04:401,Command list['Tr', '3', 'Dir', 'BWD']
+2019-10-18 01:21:04:402,command list is<class 'list'>
+2019-10-18 01:21:04:408,Active train address is;3, New direction value is;BWD
+2019-10-18 01:21:04:428,Packet out; O 03 3F 78 44
+
+2019-10-18 01:21:04:433,b'P'
+2019-10-18 01:21:04:444,b'>'
+2019-10-18 01:21:04:455,b' '
+2019-10-18 01:21:05:269,PUBSUB Received   b'Tr_3_Dir_FWD'
+2019-10-18 01:21:05:270,command is
+2019-10-18 01:21:05:270,<class 'bytes'>
+2019-10-18 01:21:05:271,Command list['Tr', '3', 'Dir', 'FWD']
+2019-10-18 01:21:05:272,command list is<class 'list'>
+2019-10-18 01:21:05:278,Active train address is;3, New direction value is;FWD
+2019-10-18 01:21:05:296,Packet out; O 03 3F f8 c4
+
+2019-10-18 01:21:05:305,b'P'
+2019-10-18 01:21:05:316,b'>'
+2019-10-18 01:21:05:327,b' '
+2019-10-18 01:21:06:497,PUBSUB Received   b'Tr_3_Speed_53'
+2019-10-18 01:21:06:498,command is
+2019-10-18 01:21:06:499,<class 'bytes'>
+2019-10-18 01:21:06:500,Command list['Tr', '3', 'Speed', '53']
+2019-10-18 01:21:06:500,command list is<class 'list'>
+2019-10-18 01:21:06:506,Active train address is;3, New speed value is;53
+2019-10-18 01:21:06:524,Packet out; O 03 3F b5 89
+
+2019-10-18 01:21:06:529,b'P'
+2019-10-18 01:21:06:540,b'>'
+2019-10-18 01:21:06:551,b' '
+2019-10-18 01:25:54:327,PUBSUB Received   b'Tr_4_Speed_69'
+2019-10-18 01:25:54:327,command is
+2019-10-18 01:25:54:328,<class 'bytes'>
+2019-10-18 01:25:54:329,Command list['Tr', '4', 'Speed', '69']
+2019-10-18 01:25:54:329,command list is<class 'list'>
+2019-10-18 01:25:54:335,Active train address is;4, New speed value is;69
+2019-10-18 01:25:54:353,Packet out; O 04 3F c5 fe
+
+2019-10-18 01:25:54:357,b'P'
+2019-10-18 01:25:54:368,b'>'
+2019-10-18 01:25:54:379,b' '
+2019-10-18 01:25:57:003,PUBSUB Received   b'Tr_4_Speed_116'
+2019-10-18 01:25:57:004,command is
+2019-10-18 01:25:57:004,<class 'bytes'>
+2019-10-18 01:25:57:005,Command list['Tr', '4', 'Speed', '116']
+2019-10-18 01:25:57:006,command list is<class 'list'>
+2019-10-18 01:25:57:012,Active train address is;4, New speed value is;116
+2019-10-18 01:25:57:037,Packet out; O 04 3F f4 cf
+
+2019-10-18 01:25:57:038,b'P'
+2019-10-18 01:25:57:049,b'>'
+2019-10-18 01:25:57:060,b' '
+2019-10-18 01:25:58:332,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 01:25:58:333,command is
+2019-10-18 01:25:58:334,<class 'bytes'>
+2019-10-18 01:25:58:334,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 01:25:58:335,command list is<class 'list'>
+2019-10-18 01:25:58:341,Active train address is;4, New speed value is;128
+2019-10-18 01:25:58:361,Packet out; O 04 3F ff c4
+
+2019-10-18 01:25:58:363,b'P'
+2019-10-18 01:25:58:374,b'>'
+2019-10-18 01:25:58:385,b' '
+2019-10-18 01:26:01:701,PUBSUB Received   b'Tr_3_Speed_49'
+2019-10-18 01:26:01:702,command is
+2019-10-18 01:26:01:703,<class 'bytes'>
+2019-10-18 01:26:01:703,Command list['Tr', '3', 'Speed', '49']
+2019-10-18 01:26:01:704,command list is<class 'list'>
+2019-10-18 01:26:01:710,Active train address is;3, New speed value is;49
+2019-10-18 01:26:01:729,Packet out; O 03 3F b1 8d
+
+2019-10-18 01:26:01:737,b'P'
+2019-10-18 01:26:01:748,b'>'
+2019-10-18 01:26:01:758,b' '
+2019-10-18 01:26:06:301,PUBSUB Received   b'Tr_3_Speed_72'
+2019-10-18 01:26:06:302,command is
+2019-10-18 01:26:06:303,<class 'bytes'>
+2019-10-18 01:26:06:303,Command list['Tr', '3', 'Speed', '72']
+2019-10-18 01:26:06:304,command list is<class 'list'>
+2019-10-18 01:26:06:310,Active train address is;3, New speed value is;72
+2019-10-18 01:26:06:328,Packet out; O 03 3F c8 f4
+
+2019-10-18 01:26:06:334,b'P'
+2019-10-18 01:26:06:344,b'>'
+2019-10-18 01:26:06:355,b' '
+2019-10-18 01:26:07:131,PUBSUB Received   b'Tr_3_Speed_95'
+2019-10-18 01:26:07:132,command is
+2019-10-18 01:26:07:132,<class 'bytes'>
+2019-10-18 01:26:07:133,Command list['Tr', '3', 'Speed', '95']
+2019-10-18 01:26:07:133,command list is<class 'list'>
+2019-10-18 01:26:07:140,Active train address is;3, New speed value is;95
+2019-10-18 01:26:07:158,Packet out; O 03 3F df e3
+
+2019-10-18 01:26:07:162,b'P'
+2019-10-18 01:26:07:173,b'>'
+2019-10-18 01:26:07:184,b' '
+2019-10-18 01:26:09:269,PUBSUB Received   b'Tr_3_Speed_128'
+2019-10-18 01:26:09:269,command is
+2019-10-18 01:26:09:270,<class 'bytes'>
+2019-10-18 01:26:09:271,Command list['Tr', '3', 'Speed', '128']
+2019-10-18 01:26:09:271,command list is<class 'list'>
+2019-10-18 01:26:09:278,Active train address is;3, New speed value is;128
+2019-10-18 01:26:09:296,Packet out; O 03 3F ff c3
+
+2019-10-18 01:26:09:304,b'P'
+2019-10-18 01:26:09:315,b'>'
+2019-10-18 01:26:09:326,b' '
+2019-10-18 01:26:10:625,PUBSUB Received   b'Tr_3_Speed_102'
+2019-10-18 01:26:10:626,command is
+2019-10-18 01:26:10:627,<class 'bytes'>
+2019-10-18 01:26:10:627,Command list['Tr', '3', 'Speed', '102']
+2019-10-18 01:26:10:628,command list is<class 'list'>
+2019-10-18 01:26:10:634,Active train address is;3, New speed value is;102
+2019-10-18 01:26:10:652,Packet out; O 03 3F e6 da
+
+2019-10-18 01:26:10:658,b'P'
+2019-10-18 01:26:10:669,b'>'
+2019-10-18 01:26:10:680,b' '
+2019-10-18 01:26:12:139,PUBSUB Received   b'Tr_4_Speed_105'
+2019-10-18 01:26:12:140,command is
+2019-10-18 01:26:12:140,<class 'bytes'>
+2019-10-18 01:26:12:141,Command list['Tr', '4', 'Speed', '105']
+2019-10-18 01:26:12:142,command list is<class 'list'>
+2019-10-18 01:26:12:148,Active train address is;4, New speed value is;105
+2019-10-18 01:26:12:166,Packet out; O 04 3F e9 d2
+
+2019-10-18 01:26:12:169,b'P'
+2019-10-18 01:26:12:180,b'>'
+2019-10-18 01:26:12:191,b' '
+2019-10-18 01:27:27:109,PUBSUB Received   b'Tr_3_Speed_75'
+2019-10-18 01:27:27:110,command is
+2019-10-18 01:27:27:111,<class 'bytes'>
+2019-10-18 01:27:27:112,Command list['Tr', '3', 'Speed', '75']
+2019-10-18 01:27:27:112,command list is<class 'list'>
+2019-10-18 01:27:27:118,Active train address is;3, New speed value is;75
+2019-10-18 01:27:27:137,Packet out; O 03 3F cb f7
+
+2019-10-18 01:27:27:145,b'P'
+2019-10-18 01:27:27:156,b'>'
+2019-10-18 01:27:27:167,b' '
+2019-10-18 01:27:28:493,PUBSUB Received   b'Tr_3_Speed_128'
+2019-10-18 01:27:28:494,command is
+2019-10-18 01:27:28:495,<class 'bytes'>
+2019-10-18 01:27:28:496,Command list['Tr', '3', 'Speed', '128']
+2019-10-18 01:27:28:496,command list is<class 'list'>
+2019-10-18 01:27:28:502,Active train address is;3, New speed value is;128
+2019-10-18 01:27:28:520,Packet out; O 03 3F ff c3
+
+2019-10-18 01:27:28:524,b'P'
+2019-10-18 01:27:28:534,b'>'
+2019-10-18 01:27:28:545,b' '
+2019-10-18 01:27:29:844,PUBSUB Received   b'Tr_3_Lights_Off'
+2019-10-18 01:27:29:845,command is
+2019-10-18 01:27:29:846,<class 'bytes'>
+2019-10-18 01:27:29:846,Command list['Tr', '3', 'Lights', 'Off']
+2019-10-18 01:27:29:847,command list is<class 'list'>
+2019-10-18 01:27:29:853,Active train address is;3, New lights value is;Off
+2019-10-18 01:27:29:854,Packet out; O 03 80 83
+
+2019-10-18 01:27:29:855,Invalid command received;['Tr', '3', 'Lights', 'Off']
+2019-10-18 01:27:29:862,b'P'
+2019-10-18 01:27:29:873,b'>'
+2019-10-18 01:27:29:884,b' '
+2019-10-18 01:27:30:456,PUBSUB Received   b'Tr_3_Lights_On'
+2019-10-18 01:27:30:457,command is
+2019-10-18 01:27:30:457,<class 'bytes'>
+2019-10-18 01:27:30:458,Command list['Tr', '3', 'Lights', 'On']
+2019-10-18 01:27:30:458,command list is<class 'list'>
+2019-10-18 01:27:30:465,Active train address is;3, New lights value is;On
+2019-10-18 01:27:30:466,Packet out; O 03 90 93
+
+2019-10-18 01:27:30:466,Invalid command received;['Tr', '3', 'Lights', 'On']
+2019-10-18 01:27:30:468,b'P'
+2019-10-18 01:27:30:479,b'>'
+2019-10-18 01:27:30:490,b' '
+2019-10-18 01:29:10:430,PUBSUB Received   b'Tr_3_Speed_120'
+2019-10-18 01:29:10:431,command is
+2019-10-18 01:29:10:432,<class 'bytes'>
+2019-10-18 01:29:10:433,Command list['Tr', '3', 'Speed', '120']
+2019-10-18 01:29:10:433,command list is<class 'list'>
+2019-10-18 01:29:10:439,Active train address is;3, New speed value is;120
+2019-10-18 01:29:10:457,Packet out; O 03 3F f8 c4
+
+2019-10-18 01:29:10:463,b'P'
+2019-10-18 01:29:10:474,b'>'
+2019-10-18 01:29:10:484,b' '
+2019-10-18 01:29:36:328,PUBSUB Received   b'Tr_3_Speed_112'
+2019-10-18 01:29:36:328,command is
+2019-10-18 01:29:36:329,<class 'bytes'>
+2019-10-18 01:29:36:330,Command list['Tr', '3', 'Speed', '112']
+2019-10-18 01:29:36:330,command list is<class 'list'>
+2019-10-18 01:29:36:337,Active train address is;3, New speed value is;112
+2019-10-18 01:29:36:355,Packet out; O 03 3F f0 cc
+
+2019-10-18 01:29:36:356,b'P'
+2019-10-18 01:29:36:367,b'>'
+2019-10-18 01:29:36:378,b' '
+2019-10-18 01:29:37:304,PUBSUB Received   b'Tr_3_Speed_128'
+2019-10-18 01:29:37:304,command is
+2019-10-18 01:29:37:305,<class 'bytes'>
+2019-10-18 01:29:37:306,Command list['Tr', '3', 'Speed', '128']
+2019-10-18 01:29:37:306,command list is<class 'list'>
+2019-10-18 01:29:37:313,Active train address is;3, New speed value is;128
+2019-10-18 01:29:37:333,Packet out; O 03 3F ff c3
+
+2019-10-18 01:29:37:333,b'P'
+2019-10-18 01:29:37:344,b'>'
+2019-10-18 01:29:37:355,b' '
+2019-10-18 01:29:43:532,PUBSUB Received   b'Tr_3_Stop'
+2019-10-18 01:29:43:532,command is
+2019-10-18 01:29:43:533,<class 'bytes'>
+2019-10-18 01:29:43:534,Command list['Tr', '3', 'Stop']
+2019-10-18 01:29:43:534,command list is<class 'list'>
+2019-10-18 01:29:43:540,Invalid command received;['Tr', '3', 'Stop']
+2019-10-18 01:30:15:282,PUBSUB Received   b'Tr_3_Stop'
+2019-10-18 01:30:15:283,command is
+2019-10-18 01:30:15:284,<class 'bytes'>
+2019-10-18 01:30:15:284,Command list['Tr', '3', 'Stop']
+2019-10-18 01:30:15:285,command list is<class 'list'>
+2019-10-18 01:30:15:291,Invalid command received;['Tr', '3', 'Stop']
+2019-10-18 01:30:17:584,PUBSUB Received   b'Tr_3_Speed_101'
+2019-10-18 01:30:17:585,command is
+2019-10-18 01:30:17:586,<class 'bytes'>
+2019-10-18 01:30:17:586,Command list['Tr', '3', 'Speed', '101']
+2019-10-18 01:30:17:587,command list is<class 'list'>
+2019-10-18 01:30:17:593,Active train address is;3, New speed value is;101
+2019-10-18 01:30:17:611,Packet out; O 03 3F e5 d9
+
+2019-10-18 01:30:17:614,b'P'
+2019-10-18 01:30:17:624,b'>'
+2019-10-18 01:30:17:635,b' '
+2019-10-18 01:30:23:868,PUBSUB Received   b'Tr_3_Lights_Off'
+2019-10-18 01:30:23:875,command is
+2019-10-18 01:30:23:876,<class 'bytes'>
+2019-10-18 01:30:23:876,Command list['Tr', '3', 'Lights', 'Off']
+2019-10-18 01:30:23:877,command list is<class 'list'>
+2019-10-18 01:30:23:883,Active train address is;3, New lights value is;Off
+2019-10-18 01:30:23:884,Packet out; O 03 80 83
+
+2019-10-18 01:30:23:885,Invalid command received;['Tr', '3', 'Lights', 'Off']
+2019-10-18 01:30:23:889,b'P'
+2019-10-18 01:30:23:900,b'>'
+2019-10-18 01:30:23:911,b' '
+2019-10-18 01:30:26:696,PUBSUB Received   b'Tr_3_Lights_On'
+2019-10-18 01:30:26:697,command is
+2019-10-18 01:30:26:697,<class 'bytes'>
+2019-10-18 01:30:26:698,Command list['Tr', '3', 'Lights', 'On']
+2019-10-18 01:30:26:699,command list is<class 'list'>
+2019-10-18 01:30:26:706,Active train address is;3, New lights value is;On
+2019-10-18 01:30:26:707,Packet out; O 03 90 93
+
+2019-10-18 01:30:26:708,Invalid command received;['Tr', '3', 'Lights', 'On']
+2019-10-18 01:30:26:710,b'P'
+2019-10-18 01:30:26:721,b'>'
+2019-10-18 01:30:26:732,b' '
+2019-10-18 01:30:28:979,PUBSUB Received   b'Tr_3_Speed_128'
+2019-10-18 01:30:28:984,command is
+2019-10-18 01:30:28:985,<class 'bytes'>
+2019-10-18 01:30:28:986,Command list['Tr', '3', 'Speed', '128']
+2019-10-18 01:30:28:986,command list is<class 'list'>
+2019-10-18 01:30:28:993,Active train address is;3, New speed value is;128
+2019-10-18 01:30:29:010,Packet out; O 03 3F ff c3
+
+2019-10-18 01:30:29:011,b'P'
+2019-10-18 01:30:29:022,b'>'
+2019-10-18 01:30:29:033,b' '
+2019-10-18 01:30:31:957,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 01:30:31:957,command is
+2019-10-18 01:30:31:958,<class 'bytes'>
+2019-10-18 01:30:31:959,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 01:30:31:959,command list is<class 'list'>
+2019-10-18 01:30:31:966,Active train address is;4, New speed value is;128
+2019-10-18 01:30:31:984,Packet out; O 04 3F ff c4
+
+2019-10-18 01:30:31:988,b'P'
+2019-10-18 01:30:31:999,b'>'
+2019-10-18 01:30:32:010,b' '
+2019-10-18 01:30:33:902,PUBSUB Received   b'Tr_4_Speed_111'
+2019-10-18 01:30:33:903,command is
+2019-10-18 01:30:33:903,<class 'bytes'>
+2019-10-18 01:30:33:904,Command list['Tr', '4', 'Speed', '111']
+2019-10-18 01:30:33:905,command list is<class 'list'>
+2019-10-18 01:30:33:911,Active train address is;4, New speed value is;111
+2019-10-18 01:30:33:931,Packet out; O 04 3F ef d4
+
+2019-10-18 01:30:33:937,b'P'
+2019-10-18 01:30:33:948,b'>'
+2019-10-18 01:30:33:959,b' '
+2019-10-18 01:30:34:566,PUBSUB Received   b'Tr_4_Speed_123'
+2019-10-18 01:30:34:567,command is
+2019-10-18 01:30:34:568,<class 'bytes'>
+2019-10-18 01:30:34:568,Command list['Tr', '4', 'Speed', '123']
+2019-10-18 01:30:34:569,command list is<class 'list'>
+2019-10-18 01:30:34:575,Active train address is;4, New speed value is;123
+2019-10-18 01:30:34:593,Packet out; O 04 3F fb c0
+
+2019-10-18 01:30:34:594,b'P'
+2019-10-18 01:30:34:605,b'>'
+2019-10-18 01:30:34:616,b' '
+2019-10-18 01:30:35:622,PUBSUB Received   b'Tr_3_Lights_Off'
+2019-10-18 01:30:35:623,command is
+2019-10-18 01:30:35:624,<class 'bytes'>
+2019-10-18 01:30:35:624,Command list['Tr', '3', 'Lights', 'Off']
+2019-10-18 01:30:35:625,command list is<class 'list'>
+2019-10-18 01:30:35:631,Active train address is;3, New lights value is;Off
+2019-10-18 01:30:35:632,Packet out; O 03 80 83
+
+2019-10-18 01:30:35:633,Invalid command received;['Tr', '3', 'Lights', 'Off']
+2019-10-18 01:30:35:640,b'P'
+2019-10-18 01:30:35:650,b'>'
+2019-10-18 01:30:35:661,b' '
+2019-10-18 01:30:36:283,PUBSUB Received   b'Tr_3_Lights_On'
+2019-10-18 01:30:36:283,command is
+2019-10-18 01:30:36:284,<class 'bytes'>
+2019-10-18 01:30:36:285,Command list['Tr', '3', 'Lights', 'On']
+2019-10-18 01:30:36:285,command list is<class 'list'>
+2019-10-18 01:30:36:291,Active train address is;3, New lights value is;On
+2019-10-18 01:30:36:292,Packet out; O 03 90 93
+
+2019-10-18 01:30:36:293,Invalid command received;['Tr', '3', 'Lights', 'On']
+2019-10-18 01:30:36:296,b'P'
+2019-10-18 01:30:36:306,b'>'
+2019-10-18 01:30:36:317,b' '
+2019-10-18 01:30:37:081,PUBSUB Received   b'Tr_3_Lights_Off'
+2019-10-18 01:30:37:082,command is
+2019-10-18 01:30:37:083,<class 'bytes'>
+2019-10-18 01:30:37:083,Command list['Tr', '3', 'Lights', 'Off']
+2019-10-18 01:30:37:084,command list is<class 'list'>
+2019-10-18 01:30:37:090,Active train address is;3, New lights value is;Off
+2019-10-18 01:30:37:091,Packet out; O 03 80 83
+
+2019-10-18 01:30:37:092,Invalid command received;['Tr', '3', 'Lights', 'Off']
+2019-10-18 01:30:37:093,b'P'
+2019-10-18 01:30:37:104,b'>'
+2019-10-18 01:30:37:115,b' '
+2019-10-18 01:30:39:381,PUBSUB Received   b'Tr_3_Speed_118'
+2019-10-18 01:30:39:382,command is
+2019-10-18 01:30:39:382,<class 'bytes'>
+2019-10-18 01:30:39:383,Command list['Tr', '3', 'Speed', '118']
+2019-10-18 01:30:39:383,command list is<class 'list'>
+2019-10-18 01:30:39:390,Active train address is;3, New speed value is;118
+2019-10-18 01:30:39:408,Packet out; O 03 3F f6 ca
+
+2019-10-18 01:30:39:410,b'P'
+2019-10-18 01:30:39:421,b'>'
+2019-10-18 01:30:39:431,b' '
+2019-10-18 01:30:43:468,PUBSUB Received   b'Tr_3_Dir_BWD'
+2019-10-18 01:30:43:469,command is
+2019-10-18 01:30:43:469,<class 'bytes'>
+2019-10-18 01:30:43:470,Command list['Tr', '3', 'Dir', 'BWD']
+2019-10-18 01:30:43:471,command list is<class 'list'>
+2019-10-18 01:30:43:477,Active train address is;3, New direction value is;BWD
+2019-10-18 01:30:43:495,Packet out; O 03 3F 76 4a
+
+2019-10-18 01:30:43:496,b'P'
+2019-10-18 01:30:43:507,b'>'
+2019-10-18 01:30:43:518,b' '
+2019-10-18 01:30:44:574,PUBSUB Received   b'Tr_3_Dir_FWD'
+2019-10-18 01:30:44:575,command is
+2019-10-18 01:30:44:575,<class 'bytes'>
+2019-10-18 01:30:44:576,Command list['Tr', '3', 'Dir', 'FWD']
+2019-10-18 01:30:44:577,command list is<class 'list'>
+2019-10-18 01:30:44:583,Active train address is;3, New direction value is;FWD
+2019-10-18 01:30:44:601,Packet out; O 03 3F f6 ca
+
+2019-10-18 01:30:44:606,b'P'
+2019-10-18 01:30:44:617,b'>'
+2019-10-18 01:30:44:628,b' '
+2019-10-18 01:30:56:992,PUBSUB Received   b'Tr_3_Speed_115'
+2019-10-18 01:30:56:993,command is
+2019-10-18 01:30:56:993,<class 'bytes'>
+2019-10-18 01:30:56:994,Command list['Tr', '3', 'Speed', '115']
+2019-10-18 01:30:56:995,command list is<class 'list'>
+2019-10-18 01:30:57:001,Active train address is;3, New speed value is;115
+2019-10-18 01:30:57:018,Packet out; O 03 3F f3 cf
+
+2019-10-18 01:30:57:020,b'P'
+2019-10-18 01:30:57:031,b'>'
+2019-10-18 01:30:57:042,b' '
+2019-10-18 01:31:00:796,PUBSUB Received   b'Tr_3_Stop'
+2019-10-18 01:31:00:797,command is
+2019-10-18 01:31:00:798,<class 'bytes'>
+2019-10-18 01:31:00:798,Command list['Tr', '3', 'Stop']
+2019-10-18 01:31:00:799,command list is<class 'list'>
+2019-10-18 01:31:00:805,Invalid command received;['Tr', '3', 'Stop']
+2019-10-18 01:31:02:258,PUBSUB Received   b'Tr_3_Stop'
+2019-10-18 01:31:02:266,command is
+2019-10-18 01:31:02:267,<class 'bytes'>
+2019-10-18 01:31:02:268,Command list['Tr', '3', 'Stop']
+2019-10-18 01:31:02:268,command list is<class 'list'>
+2019-10-18 01:31:02:275,Invalid command received;['Tr', '3', 'Stop']
+2019-10-18 01:31:02:514,PUBSUB Received   b'Tr_3_Stop'
+2019-10-18 01:31:02:515,command is
+2019-10-18 01:31:02:515,<class 'bytes'>
+2019-10-18 01:31:02:516,Command list['Tr', '3', 'Stop']
+2019-10-18 01:31:02:517,command list is<class 'list'>
+2019-10-18 01:31:02:523,Invalid command received;['Tr', '3', 'Stop']
+2019-10-18 01:31:02:794,PUBSUB Received   b'Tr_3_Stop'
+2019-10-18 01:31:02:794,command is
+2019-10-18 01:31:02:795,<class 'bytes'>
+2019-10-18 01:31:02:796,Command list['Tr', '3', 'Stop']
+2019-10-18 01:31:02:796,command list is<class 'list'>
+2019-10-18 01:31:02:802,Invalid command received;['Tr', '3', 'Stop']
+2019-10-18 01:31:03:267,PUBSUB Received   b'Tr_3_Stop'
+2019-10-18 01:31:03:268,command is
+2019-10-18 01:31:03:269,<class 'bytes'>
+2019-10-18 01:31:03:269,Command list['Tr', '3', 'Stop']
+2019-10-18 01:31:03:270,command list is<class 'list'>
+2019-10-18 01:31:03:276,Invalid command received;['Tr', '3', 'Stop']
+2019-10-18 01:31:05:209,PUBSUB Received   b'Tr_3_Dir_BWD'
+2019-10-18 01:31:05:210,command is
+2019-10-18 01:31:05:210,<class 'bytes'>
+2019-10-18 01:31:05:211,Command list['Tr', '3', 'Dir', 'BWD']
+2019-10-18 01:31:05:212,command list is<class 'list'>
+2019-10-18 01:31:05:218,Active train address is;3, New direction value is;BWD
+2019-10-18 01:31:05:238,Packet out; O 03 3F 73 4f
+
+2019-10-18 01:31:05:239,b'P'
+2019-10-18 01:31:05:250,b'>'
+2019-10-18 01:31:05:260,b' '
+2019-10-18 01:31:06:055,PUBSUB Received   b'Tr_3_Dir_FWD'
+2019-10-18 01:31:06:056,command is
+2019-10-18 01:31:06:057,<class 'bytes'>
+2019-10-18 01:31:06:057,Command list['Tr', '3', 'Dir', 'FWD']
+2019-10-18 01:31:06:058,command list is<class 'list'>
+2019-10-18 01:31:06:064,Active train address is;3, New direction value is;FWD
+2019-10-18 01:31:06:082,Packet out; O 03 3F f3 cf
+
+2019-10-18 01:31:06:086,b'P'
+2019-10-18 01:31:06:097,b'>'
+2019-10-18 01:31:06:107,b' '
+2019-10-18 01:31:08:914,PUBSUB Received   b'Tr_3_Lights_Off'
+2019-10-18 01:31:08:915,command is
+2019-10-18 01:31:08:915,<class 'bytes'>
+2019-10-18 01:31:08:916,Command list['Tr', '3', 'Lights', 'Off']
+2019-10-18 01:31:08:917,command list is<class 'list'>
+2019-10-18 01:31:08:923,Active train address is;3, New lights value is;Off
+2019-10-18 01:31:08:924,Packet out; O 03 80 83
+
+2019-10-18 01:31:08:925,Invalid command received;['Tr', '3', 'Lights', 'Off']
+2019-10-18 01:31:08:928,b'P'
+2019-10-18 01:31:08:939,b'>'
+2019-10-18 01:31:08:950,b' '
+2019-10-18 01:31:13:707,PUBSUB Received   b'Tr_3_Lights_On'
+2019-10-18 01:31:13:708,command is
+2019-10-18 01:31:13:708,<class 'bytes'>
+2019-10-18 01:31:13:709,Command list['Tr', '3', 'Lights', 'On']
+2019-10-18 01:31:13:710,command list is<class 'list'>
+2019-10-18 01:31:13:716,Active train address is;3, New lights value is;On
+2019-10-18 01:31:13:717,Packet out; O 03 90 93
+
+2019-10-18 01:31:13:718,Invalid command received;['Tr', '3', 'Lights', 'On']
+2019-10-18 01:31:13:719,b'P'
+2019-10-18 01:31:13:730,b'>'
+2019-10-18 01:31:13:741,b' '
+2019-10-18 01:31:17:202,PUBSUB Received   b'Tr_4_Speed_119'
+2019-10-18 01:31:17:203,command is
+2019-10-18 01:31:17:204,<class 'bytes'>
+2019-10-18 01:31:17:204,Command list['Tr', '4', 'Speed', '119']
+2019-10-18 01:31:17:205,command list is<class 'list'>
+2019-10-18 01:31:17:211,Active train address is;4, New speed value is;119
+2019-10-18 01:31:17:229,Packet out; O 04 3F f7 cc
+
+2019-10-18 01:31:17:236,b'P'
+2019-10-18 01:31:17:246,b'>'
+2019-10-18 01:31:17:257,b' '
+2019-10-18 01:31:26:843,PUBSUB Received   b'Tr_3_Lights_Off'
+2019-10-18 01:31:26:844,command is
+2019-10-18 01:31:26:844,<class 'bytes'>
+2019-10-18 01:31:26:845,Command list['Tr', '3', 'Lights', 'Off']
+2019-10-18 01:31:26:846,command list is<class 'list'>
+2019-10-18 01:31:26:852,Active train address is;3, New lights value is;Off
+2019-10-18 01:31:26:853,Packet out; O 03 80 83
+
+2019-10-18 01:31:26:854,Invalid command received;['Tr', '3', 'Lights', 'Off']
+2019-10-18 01:31:26:858,b'P'
+2019-10-18 01:31:26:868,b'>'
+2019-10-18 01:31:26:879,b' '
+2019-10-18 01:31:30:155,PUBSUB Received   b'Tr_3_Speed_128'
+2019-10-18 01:31:30:156,command is
+2019-10-18 01:31:30:156,<class 'bytes'>
+2019-10-18 01:31:30:157,Command list['Tr', '3', 'Speed', '128']
+2019-10-18 01:31:30:158,command list is<class 'list'>
+2019-10-18 01:31:30:164,Active train address is;3, New speed value is;128
+2019-10-18 01:31:30:181,Packet out; O 03 3F ff c3
+
+2019-10-18 01:31:30:185,b'P'
+2019-10-18 01:31:30:195,b'>'
+2019-10-18 01:31:30:206,b' '
+2019-10-18 01:31:38:883,PUBSUB Received   b'Tr_3_Speed_92'
+2019-10-18 01:31:38:884,command is
+2019-10-18 01:31:38:885,<class 'bytes'>
+2019-10-18 01:31:38:885,Command list['Tr', '3', 'Speed', '92']
+2019-10-18 01:31:38:886,command list is<class 'list'>
+2019-10-18 01:31:38:892,Active train address is;3, New speed value is;92
+2019-10-18 01:31:38:910,Packet out; O 03 3F dc e0
+
+2019-10-18 01:31:38:918,b'P'
+2019-10-18 01:31:38:929,b'>'
+2019-10-18 01:31:38:939,b' '
+2019-10-18 01:32:17:085,PUBSUB Received   b'Tr_3_Speed_121'
+2019-10-18 01:32:17:086,command is
+2019-10-18 01:32:17:086,<class 'bytes'>
+2019-10-18 01:32:17:087,Command list['Tr', '3', 'Speed', '121']
+2019-10-18 01:32:17:088,command list is<class 'list'>
+2019-10-18 01:32:17:094,Active train address is;3, New speed value is;121
+2019-10-18 01:32:17:112,Packet out; O 03 3F f9 c5
+
+2019-10-18 01:32:17:118,b'P'
+2019-10-18 01:32:17:129,b'>'
+2019-10-18 01:32:17:139,b' '
+2019-10-18 01:33:09:955,PUBSUB Received   b'Tr_3_Speed_128'
+2019-10-18 01:33:09:956,command is
+2019-10-18 01:33:09:957,<class 'bytes'>
+2019-10-18 01:33:09:957,Command list['Tr', '3', 'Speed', '128']
+2019-10-18 01:33:09:958,command list is<class 'list'>
+2019-10-18 01:33:09:964,Active train address is;3, New speed value is;128
+2019-10-18 01:33:09:984,Packet out; O 03 3F ff c3
+
+2019-10-18 01:33:09:989,b'P'
+2019-10-18 01:33:09:999,b'>'
+2019-10-18 01:33:10:010,b' '
+2019-10-18 01:33:11:348,PUBSUB Received   b'Tr_3_Lights_On'
+2019-10-18 01:33:11:348,command is
+2019-10-18 01:33:11:349,<class 'bytes'>
+2019-10-18 01:33:11:350,Command list['Tr', '3', 'Lights', 'On']
+2019-10-18 01:33:11:350,command list is<class 'list'>
+2019-10-18 01:33:11:357,Active train address is;3, New lights value is;On
+2019-10-18 01:33:11:358,Packet out; O 03 90 93
+
+2019-10-18 01:33:11:358,Invalid command received;['Tr', '3', 'Lights', 'On']
+2019-10-18 01:33:11:360,b'P'
+2019-10-18 01:33:11:371,b'>'
+2019-10-18 01:33:11:382,b' '
+2019-10-18 01:33:15:494,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 01:33:15:495,command is
+2019-10-18 01:33:15:495,<class 'bytes'>
+2019-10-18 01:33:15:496,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 01:33:15:496,command list is<class 'list'>
+2019-10-18 01:33:15:503,Active train address is;4, New speed value is;128
+2019-10-18 01:33:15:519,Packet out; O 04 3F ff c4
+
+2019-10-18 01:33:15:522,b'P'
+2019-10-18 01:33:15:532,b'>'
+2019-10-18 01:33:15:543,b' '
+2019-10-18 01:33:24:248,PUBSUB Received   b'Tr_3_Lights_Off'
+2019-10-18 01:33:24:249,command is
+2019-10-18 01:33:24:250,<class 'bytes'>
+2019-10-18 01:33:24:250,Command list['Tr', '3', 'Lights', 'Off']
+2019-10-18 01:33:24:251,command list is<class 'list'>
+2019-10-18 01:33:24:257,Active train address is;3, New lights value is;Off
+2019-10-18 01:33:24:258,Packet out; O 03 80 83
+
+2019-10-18 01:33:24:259,Invalid command received;['Tr', '3', 'Lights', 'Off']
+2019-10-18 01:33:24:261,b'P'
+2019-10-18 01:33:24:272,b'>'
+2019-10-18 01:33:24:283,b' '
+2019-10-18 01:33:25:636,PUBSUB Received   b'Tr_3_Lights_On'
+2019-10-18 01:33:25:636,command is
+2019-10-18 01:33:25:637,<class 'bytes'>
+2019-10-18 01:33:25:638,Command list['Tr', '3', 'Lights', 'On']
+2019-10-18 01:33:25:638,command list is<class 'list'>
+2019-10-18 01:33:25:645,Active train address is;3, New lights value is;On
+2019-10-18 01:33:25:646,Packet out; O 03 90 93
+
+2019-10-18 01:33:25:646,Invalid command received;['Tr', '3', 'Lights', 'On']
+2019-10-18 01:33:25:647,b'P'
+2019-10-18 01:33:25:658,b'>'
+2019-10-18 01:33:25:669,b' '
+2019-10-18 01:34:10:385,PUBSUB Received   b'Tr_3_Speed_113'
+2019-10-18 01:34:10:385,command is
+2019-10-18 01:34:10:386,<class 'bytes'>
+2019-10-18 01:34:10:387,Command list['Tr', '3', 'Speed', '113']
+2019-10-18 01:34:10:387,command list is<class 'list'>
+2019-10-18 01:34:10:394,Active train address is;3, New speed value is;113
+2019-10-18 01:34:10:411,Packet out; O 03 3F f1 cd
+
+2019-10-18 01:34:10:413,b'P'
+2019-10-18 01:34:10:424,b'>'
+2019-10-18 01:34:10:434,b' '
+2019-10-18 01:34:11:964,PUBSUB Received   b'Tr_3_Speed_128'
+2019-10-18 01:34:11:965,command is
+2019-10-18 01:34:11:965,<class 'bytes'>
+2019-10-18 01:34:11:966,Command list['Tr', '3', 'Speed', '128']
+2019-10-18 01:34:11:966,command list is<class 'list'>
+2019-10-18 01:34:11:973,Active train address is;3, New speed value is;128
+2019-10-18 01:34:11:992,Packet out; O 03 3F ff c3
+
+2019-10-18 01:34:11:998,b'P'
+2019-10-18 01:34:12:009,b'>'
+2019-10-18 01:34:12:020,b' '
+2019-10-18 01:34:15:299,PUBSUB Received   b'Tr_3_Speed_126'
+2019-10-18 01:34:15:300,command is
+2019-10-18 01:34:15:301,<class 'bytes'>
+2019-10-18 01:34:15:301,Command list['Tr', '3', 'Speed', '126']
+2019-10-18 01:34:15:302,command list is<class 'list'>
+2019-10-18 01:34:15:309,Active train address is;3, New speed value is;126
+2019-10-18 01:34:15:328,Packet out; O 03 3F fe c2
+
+2019-10-18 01:34:15:332,b'P'
+2019-10-18 01:34:15:343,b'>'
+2019-10-18 01:34:15:354,b' '
+2019-10-18 01:35:11:508,PUBSUB Received   b'Tr_3_Speed_117'
+2019-10-18 01:35:11:509,command is
+2019-10-18 01:35:11:509,<class 'bytes'>
+2019-10-18 01:35:11:510,Command list['Tr', '3', 'Speed', '117']
+2019-10-18 01:35:11:511,command list is<class 'list'>
+2019-10-18 01:35:11:517,Active train address is;3, New speed value is;117
+2019-10-18 01:35:11:539,Packet out; O 03 3F f5 c9
+
+2019-10-18 01:35:11:546,b'P'
+2019-10-18 01:35:11:557,b'>'
+2019-10-18 01:35:11:568,b' '
+2019-10-18 01:35:14:698,PUBSUB Received   b'Tr_3_Speed_127'
+2019-10-18 01:35:14:698,command is
+2019-10-18 01:35:14:699,<class 'bytes'>
+2019-10-18 01:35:14:700,Command list['Tr', '3', 'Speed', '127']
+2019-10-18 01:35:14:700,command list is<class 'list'>
+2019-10-18 01:35:14:706,Active train address is;3, New speed value is;127
+2019-10-18 01:35:14:724,Packet out; O 03 3F ff c3
+
+2019-10-18 01:35:14:732,b'P'
+2019-10-18 01:35:14:743,b'>'
+2019-10-18 01:35:14:754,b' '
+2019-10-18 01:36:24:262,PUBSUB Received   b'Tr_3_Speed_125'
+2019-10-18 01:36:24:262,command is
+2019-10-18 01:36:24:263,<class 'bytes'>
+2019-10-18 01:36:24:264,Command list['Tr', '3', 'Speed', '125']
+2019-10-18 01:36:24:264,command list is<class 'list'>
+2019-10-18 01:36:24:271,Active train address is;3, New speed value is;125
+2019-10-18 01:36:24:289,Packet out; O 03 3F fd c1
+
+2019-10-18 01:36:24:291,b'P'
+2019-10-18 01:36:24:301,b'>'
+2019-10-18 01:36:24:312,b' '
+2019-10-18 01:37:10:097,PUBSUB Received   b'Tr_3_Speed_121'
+2019-10-18 01:37:10:098,command is
+2019-10-18 01:37:10:099,<class 'bytes'>
+2019-10-18 01:37:10:099,Command list['Tr', '3', 'Speed', '121']
+2019-10-18 01:37:10:100,command list is<class 'list'>
+2019-10-18 01:37:10:106,Active train address is;3, New speed value is;121
+2019-10-18 01:37:10:125,Packet out; O 03 3F f9 c5
+
+2019-10-18 01:37:10:127,b'P'
+2019-10-18 01:37:10:138,b'>'
+2019-10-18 01:37:10:149,b' '
+2019-10-18 01:37:11:334,PUBSUB Received   b'Tr_3_Speed_128'
+2019-10-18 01:37:11:335,command is
+2019-10-18 01:37:11:336,<class 'bytes'>
+2019-10-18 01:37:11:336,Command list['Tr', '3', 'Speed', '128']
+2019-10-18 01:37:11:337,command list is<class 'list'>
+2019-10-18 01:37:11:343,Active train address is;3, New speed value is;128
+2019-10-18 01:37:11:364,Packet out; O 03 3F ff c3
+
+2019-10-18 01:37:11:367,b'P'
+2019-10-18 01:37:11:378,b'>'
+2019-10-18 01:37:11:389,b' '
+2019-10-18 01:37:19:091,PUBSUB Received   b'Tr_3_Speed_125'
+2019-10-18 01:37:19:091,command is
+2019-10-18 01:37:19:092,<class 'bytes'>
+2019-10-18 01:37:19:093,Command list['Tr', '3', 'Speed', '125']
+2019-10-18 01:37:19:093,command list is<class 'list'>
+2019-10-18 01:37:19:099,Active train address is;3, New speed value is;125
+2019-10-18 01:37:19:118,Packet out; O 03 3F fd c1
+
+2019-10-18 01:37:19:126,b'P'
+2019-10-18 01:37:19:137,b'>'
+2019-10-18 01:37:19:148,b' '
+2019-10-18 01:39:29:375,PUBSUB Received   b'Tr_3_Speed_120'
+2019-10-18 01:39:29:376,command is
+2019-10-18 01:39:29:377,<class 'bytes'>
+2019-10-18 01:39:29:377,Command list['Tr', '3', 'Speed', '120']
+2019-10-18 01:39:29:378,command list is<class 'list'>
+2019-10-18 01:39:29:384,Active train address is;3, New speed value is;120
+2019-10-18 01:39:29:402,Packet out; O 03 3F f8 c4
+
+2019-10-18 01:39:29:407,b'P'
+2019-10-18 01:39:29:418,b'>'
+2019-10-18 01:39:29:429,b' '
+2019-10-18 01:39:31:776,PUBSUB Received   b'Tr_3_Speed_128'
+2019-10-18 01:39:31:777,command is
+2019-10-18 01:39:31:777,<class 'bytes'>
+2019-10-18 01:39:31:778,Command list['Tr', '3', 'Speed', '128']
+2019-10-18 01:39:31:779,command list is<class 'list'>
+2019-10-18 01:39:31:785,Active train address is;3, New speed value is;128
+2019-10-18 01:39:31:804,Packet out; O 03 3F ff c3
+
+2019-10-18 01:39:31:805,b'P'
+2019-10-18 01:39:31:816,b'>'
+2019-10-18 01:39:31:826,b' '
+2019-10-18 01:40:51:011,PUBSUB Received   b'Tr_3_Speed_91'
+2019-10-18 01:40:51:012,command is
+2019-10-18 01:40:51:012,<class 'bytes'>
+2019-10-18 01:40:51:013,Command list['Tr', '3', 'Speed', '91']
+2019-10-18 01:40:51:013,command list is<class 'list'>
+2019-10-18 01:40:51:020,Active train address is;3, New speed value is;91
+2019-10-18 01:40:51:038,Packet out; O 03 3F db e7
+
+2019-10-18 01:40:51:040,b'P'
+2019-10-18 01:40:51:051,b'>'
+2019-10-18 01:40:51:061,b' '
+2019-10-18 01:41:00:884,PUBSUB Received   b'Tr_4_Speed_111'
+2019-10-18 01:41:00:885,command is
+2019-10-18 01:41:00:886,<class 'bytes'>
+2019-10-18 01:41:00:886,Command list['Tr', '4', 'Speed', '111']
+2019-10-18 01:41:00:887,command list is<class 'list'>
+2019-10-18 01:41:00:893,Active train address is;4, New speed value is;111
+2019-10-18 01:41:00:911,Packet out; O 04 3F ef d4
+
+2019-10-18 01:41:00:918,b'P'
+2019-10-18 01:41:00:929,b'>'
+2019-10-18 01:41:00:940,b' '
+2019-10-18 01:41:52:845,PUBSUB Received   b'Tr_3_Speed_99'
+2019-10-18 01:41:52:846,command is
+2019-10-18 01:41:52:847,<class 'bytes'>
+2019-10-18 01:41:52:847,Command list['Tr', '3', 'Speed', '99']
+2019-10-18 01:41:52:848,command list is<class 'list'>
+2019-10-18 01:41:52:854,Active train address is;3, New speed value is;99
+2019-10-18 01:41:52:872,Packet out; O 03 3F e3 df
+
+2019-10-18 01:41:52:879,b'P'
+2019-10-18 01:41:52:890,b'>'
+2019-10-18 01:41:52:901,b' '
+2019-10-18 01:42:42:334,PUBSUB Received   b'Tr_4_Speed_107'
+2019-10-18 01:42:42:335,command is
+2019-10-18 01:42:42:336,<class 'bytes'>
+2019-10-18 01:42:42:336,Command list['Tr', '4', 'Speed', '107']
+2019-10-18 01:42:42:337,command list is<class 'list'>
+2019-10-18 01:42:42:343,Active train address is;4, New speed value is;107
+2019-10-18 01:42:42:363,Packet out; O 04 3F eb d0
+
+2019-10-18 01:42:42:364,b'P'
+2019-10-18 01:42:42:375,b'>'
+2019-10-18 01:42:42:386,b' '
+2019-10-18 01:43:25:469,PUBSUB Received   b'Tr_4_Speed_110'
+2019-10-18 01:43:25:470,command is
+2019-10-18 01:43:25:470,<class 'bytes'>
+2019-10-18 01:43:25:471,Command list['Tr', '4', 'Speed', '110']
+2019-10-18 01:43:25:472,command list is<class 'list'>
+2019-10-18 01:43:25:478,Active train address is;4, New speed value is;110
+2019-10-18 01:43:25:496,Packet out; O 04 3F ee d5
+
+2019-10-18 01:43:25:504,b'P'
+2019-10-18 01:43:25:515,b'>'
+2019-10-18 01:43:25:526,b' '
+2019-10-18 01:43:32:360,PUBSUB Received   b'Tr_3_Speed_100'
+2019-10-18 01:43:32:361,command is
+2019-10-18 01:43:32:361,<class 'bytes'>
+2019-10-18 01:43:32:362,Command list['Tr', '3', 'Speed', '100']
+2019-10-18 01:43:32:363,command list is<class 'list'>
+2019-10-18 01:43:32:369,Active train address is;3, New speed value is;100
+2019-10-18 01:43:32:387,Packet out; O 03 3F e4 d8
+
+2019-10-18 01:43:32:393,b'P'
+2019-10-18 01:43:32:404,b'>'
+2019-10-18 01:43:32:415,b' '
+2019-10-18 01:43:40:399,PUBSUB Received   b'Tr_4_Speed_101'
+2019-10-18 01:43:40:399,command is
+2019-10-18 01:43:40:400,<class 'bytes'>
+2019-10-18 01:43:40:401,Command list['Tr', '4', 'Speed', '101']
+2019-10-18 01:43:40:401,command list is<class 'list'>
+2019-10-18 01:43:40:408,Active train address is;4, New speed value is;101
+2019-10-18 01:43:40:425,Packet out; O 04 3F e5 de
+
+2019-10-18 01:43:40:433,b'P'
+2019-10-18 01:43:40:444,b'>'
+2019-10-18 01:43:40:455,b' '
+2019-10-18 01:43:41:481,PUBSUB Received   b'Tr_4_Speed_111'
+2019-10-18 01:43:41:482,command is
+2019-10-18 01:43:41:482,<class 'bytes'>
+2019-10-18 01:43:41:483,Command list['Tr', '4', 'Speed', '111']
+2019-10-18 01:43:41:484,command list is<class 'list'>
+2019-10-18 01:43:41:490,Active train address is;4, New speed value is;111
+2019-10-18 01:43:41:508,Packet out; O 04 3F ef d4
+
+2019-10-18 01:43:41:510,b'P'
+2019-10-18 01:43:41:521,b'>'
+2019-10-18 01:43:41:532,b' '
+2019-10-18 01:43:49:379,PUBSUB Received   b'Tr_3_Speed_128'
+2019-10-18 01:43:49:380,command is
+2019-10-18 01:43:49:380,<class 'bytes'>
+2019-10-18 01:43:49:381,Command list['Tr', '3', 'Speed', '128']
+2019-10-18 01:43:49:382,command list is<class 'list'>
+2019-10-18 01:43:49:388,Active train address is;3, New speed value is;128
+2019-10-18 01:43:49:407,Packet out; O 03 3F ff c3
+
+2019-10-18 01:43:49:410,b'P'
+2019-10-18 01:43:49:421,b'>'
+2019-10-18 01:43:49:432,b' '
+2019-10-18 01:43:51:916,PUBSUB Received   b'Tr_3_Speed_115'
+2019-10-18 01:43:51:917,command is
+2019-10-18 01:43:51:918,<class 'bytes'>
+2019-10-18 01:43:51:919,Command list['Tr', '3', 'Speed', '115']
+2019-10-18 01:43:51:919,command list is<class 'list'>
+2019-10-18 01:43:51:925,Active train address is;3, New speed value is;115
+2019-10-18 01:43:51:944,Packet out; O 03 3F f3 cf
+
+2019-10-18 01:43:51:947,b'P'
+2019-10-18 01:43:51:957,b'>'
+2019-10-18 01:43:51:968,b' '
+2019-10-18 01:43:59:011,PUBSUB Received   b'Tr_4_Speed_103'
+2019-10-18 01:43:59:012,command is
+2019-10-18 01:43:59:013,<class 'bytes'>
+2019-10-18 01:43:59:014,Command list['Tr', '4', 'Speed', '103']
+2019-10-18 01:43:59:014,command list is<class 'list'>
+2019-10-18 01:43:59:020,Active train address is;4, New speed value is;103
+2019-10-18 01:43:59:040,Packet out; O 04 3F e7 dc
+
+2019-10-18 01:43:59:042,b'P'
+2019-10-18 01:43:59:053,b'>'
+2019-10-18 01:43:59:064,b' '
+2019-10-18 01:45:08:487,PUBSUB Received   b'Tr_4_Speed_110'
+2019-10-18 01:45:08:487,command is
+2019-10-18 01:45:08:488,<class 'bytes'>
+2019-10-18 01:45:08:489,Command list['Tr', '4', 'Speed', '110']
+2019-10-18 01:45:08:489,command list is<class 'list'>
+2019-10-18 01:45:08:496,Active train address is;4, New speed value is;110
+2019-10-18 01:45:08:513,Packet out; O 04 3F ee d5
+
+2019-10-18 01:45:08:518,b'P'
+2019-10-18 01:45:08:529,b'>'
+2019-10-18 01:45:08:540,b' '
+2019-10-18 01:45:12:353,PUBSUB Received   b'Tr_4_Speed_90'
+2019-10-18 01:45:12:354,command is
+2019-10-18 01:45:12:355,<class 'bytes'>
+2019-10-18 01:45:12:355,Command list['Tr', '4', 'Speed', '90']
+2019-10-18 01:45:12:356,command list is<class 'list'>
+2019-10-18 01:45:12:362,Active train address is;4, New speed value is;90
+2019-10-18 01:45:12:382,Packet out; O 04 3F da e1
+
+2019-10-18 01:45:12:386,b'P'
+2019-10-18 01:45:12:396,b'>'
+2019-10-18 01:45:12:407,b' '
+2019-10-18 01:45:15:489,PUBSUB Received   b'Tr_3_Speed_119'
+2019-10-18 01:45:15:490,command is
+2019-10-18 01:45:15:490,<class 'bytes'>
+2019-10-18 01:45:15:491,Command list['Tr', '3', 'Speed', '119']
+2019-10-18 01:45:15:492,command list is<class 'list'>
+2019-10-18 01:45:15:498,Active train address is;3, New speed value is;119
+2019-10-18 01:45:15:517,Packet out; O 03 3F f7 cb
+
+2019-10-18 01:45:15:522,b'P'
+2019-10-18 01:45:15:533,b'>'
+2019-10-18 01:45:15:544,b' '
+2019-10-18 01:45:17:776,PUBSUB Received   b'Tr_3_Speed_127'
+2019-10-18 01:45:17:777,command is
+2019-10-18 01:45:17:777,<class 'bytes'>
+2019-10-18 01:45:17:778,Command list['Tr', '3', 'Speed', '127']
+2019-10-18 01:45:17:779,command list is<class 'list'>
+2019-10-18 01:45:17:785,Active train address is;3, New speed value is;127
+2019-10-18 01:45:17:804,Packet out; O 03 3F ff c3
+
+2019-10-18 01:45:17:805,b'P'
+2019-10-18 01:45:17:815,b'>'
+2019-10-18 01:45:17:826,b' '
+2019-10-18 01:45:19:168,PUBSUB Received   b'Tr_3_Speed_126'
+2019-10-18 01:45:19:169,command is
+2019-10-18 01:45:19:169,<class 'bytes'>
+2019-10-18 01:45:19:170,Command list['Tr', '3', 'Speed', '126']
+2019-10-18 01:45:19:170,command list is<class 'list'>
+2019-10-18 01:45:19:177,Active train address is;3, New speed value is;126
+2019-10-18 01:45:19:195,Packet out; O 03 3F fe c2
+
+2019-10-18 01:45:19:201,b'P'
+2019-10-18 01:45:19:212,b'>'
+2019-10-18 01:45:19:223,b' '
+2019-10-18 01:45:24:835,PUBSUB Received   b'Tr_4_Speed_116'
+2019-10-18 01:45:24:843,command is
+2019-10-18 01:45:24:843,<class 'bytes'>
+2019-10-18 01:45:24:844,Command list['Tr', '4', 'Speed', '116']
+2019-10-18 01:45:24:844,command list is<class 'list'>
+2019-10-18 01:45:24:851,Active train address is;4, New speed value is;116
+2019-10-18 01:45:24:868,Packet out; O 04 3F f4 cf
+
+2019-10-18 01:45:24:875,b'P'
+2019-10-18 01:45:24:886,b'>'
+2019-10-18 01:45:24:897,b' '
+2019-10-18 01:45:26:442,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 01:45:26:443,command is
+2019-10-18 01:45:26:443,<class 'bytes'>
+2019-10-18 01:45:26:444,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 01:45:26:445,command list is<class 'list'>
+2019-10-18 01:45:26:451,Active train address is;4, New speed value is;128
+2019-10-18 01:45:26:472,Packet out; O 04 3F ff c4
+
+2019-10-18 01:45:26:476,b'P'
+2019-10-18 01:45:26:487,b'>'
+2019-10-18 01:45:26:498,b' '
+2019-10-18 01:45:28:606,PUBSUB Received   b'Tr_4_Speed_124'
+2019-10-18 01:45:28:607,command is
+2019-10-18 01:45:28:608,<class 'bytes'>
+2019-10-18 01:45:28:608,Command list['Tr', '4', 'Speed', '124']
+2019-10-18 01:45:28:609,command list is<class 'list'>
+2019-10-18 01:45:28:615,Active train address is;4, New speed value is;124
+2019-10-18 01:45:28:636,Packet out; O 04 3F fc c7
+
+2019-10-18 01:45:28:644,b'P'
+2019-10-18 01:45:28:655,b'>'
+2019-10-18 01:45:28:666,b' '
+2019-10-18 01:45:29:361,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 01:45:29:362,command is
+2019-10-18 01:45:29:362,<class 'bytes'>
+2019-10-18 01:45:29:363,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 01:45:29:364,command list is<class 'list'>
+2019-10-18 01:45:29:370,Active train address is;4, New speed value is;128
+2019-10-18 01:45:29:389,Packet out; O 04 3F ff c4
+
+2019-10-18 01:45:29:392,b'P'
+2019-10-18 01:45:29:402,b'>'
+2019-10-18 01:45:29:413,b' '
+2019-10-18 01:45:30:964,PUBSUB Received   b'Tr_4_Speed_119'
+2019-10-18 01:45:30:965,command is
+2019-10-18 01:45:30:965,<class 'bytes'>
+2019-10-18 01:45:30:966,Command list['Tr', '4', 'Speed', '119']
+2019-10-18 01:45:30:967,command list is<class 'list'>
+2019-10-18 01:45:30:973,Active train address is;4, New speed value is;119
+2019-10-18 01:45:30:991,Packet out; O 04 3F f7 cc
+
+2019-10-18 01:45:30:993,b'P'
+2019-10-18 01:45:31:004,b'>'
+2019-10-18 01:45:31:015,b' '
+2019-10-18 01:46:30:034,PUBSUB Received   b'Tr_4_Speed_116'
+2019-10-18 01:46:30:035,command is
+2019-10-18 01:46:30:035,<class 'bytes'>
+2019-10-18 01:46:30:036,Command list['Tr', '4', 'Speed', '116']
+2019-10-18 01:46:30:037,command list is<class 'list'>
+2019-10-18 01:46:30:043,Active train address is;4, New speed value is;116
+2019-10-18 01:46:30:063,Packet out; O 04 3F f4 cf
+
+2019-10-18 01:46:30:064,b'P'
+2019-10-18 01:46:30:075,b'>'
+2019-10-18 01:46:30:085,b' '
+2019-10-18 01:46:35:126,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 01:46:35:133,command is
+2019-10-18 01:46:35:134,<class 'bytes'>
+2019-10-18 01:46:35:134,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 01:46:35:135,command list is<class 'list'>
+2019-10-18 01:46:35:141,Active train address is;4, New speed value is;128
+2019-10-18 01:46:35:159,Packet out; O 04 3F ff c4
+
+2019-10-18 01:46:35:164,b'P'
+2019-10-18 01:46:35:175,b'>'
+2019-10-18 01:46:35:185,b' '
+2019-10-18 01:46:41:191,PUBSUB Received   b'Tr_4_Speed_125'
+2019-10-18 01:46:41:192,command is
+2019-10-18 01:46:41:192,<class 'bytes'>
+2019-10-18 01:46:41:193,Command list['Tr', '4', 'Speed', '125']
+2019-10-18 01:46:41:194,command list is<class 'list'>
+2019-10-18 01:46:41:201,Active train address is;4, New speed value is;125
+2019-10-18 01:46:41:220,Packet out; O 04 3F fd c6
+
+2019-10-18 01:46:41:224,b'P'
+2019-10-18 01:46:41:235,b'>'
+2019-10-18 01:46:41:246,b' '
+2019-10-18 01:46:44:242,PUBSUB Received   b'Tr_4_Speed_119'
+2019-10-18 01:46:44:243,command is
+2019-10-18 01:46:44:243,<class 'bytes'>
+2019-10-18 01:46:44:244,Command list['Tr', '4', 'Speed', '119']
+2019-10-18 01:46:44:245,command list is<class 'list'>
+2019-10-18 01:46:44:251,Active train address is;4, New speed value is;119
+2019-10-18 01:46:44:272,Packet out; O 04 3F f7 cc
+
+2019-10-18 01:46:44:279,b'P'
+2019-10-18 01:46:44:290,b'>'
+2019-10-18 01:46:44:301,b' '
+2019-10-18 01:47:10:529,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 01:47:10:530,command is
+2019-10-18 01:47:10:530,<class 'bytes'>
+2019-10-18 01:47:10:531,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 01:47:10:532,command list is<class 'list'>
+2019-10-18 01:47:10:538,Active train address is;4, New speed value is;128
+2019-10-18 01:47:10:556,Packet out; O 04 3F ff c4
+
+2019-10-18 01:47:10:559,b'P'
+2019-10-18 01:47:10:569,b'>'
+2019-10-18 01:47:10:580,b' '
+2019-10-18 01:47:11:631,PUBSUB Received   b'Tr_4_Speed_125'
+2019-10-18 01:47:11:632,command is
+2019-10-18 01:47:11:633,<class 'bytes'>
+2019-10-18 01:47:11:633,Command list['Tr', '4', 'Speed', '125']
+2019-10-18 01:47:11:634,command list is<class 'list'>
+2019-10-18 01:47:11:640,Active train address is;4, New speed value is;125
+2019-10-18 01:47:11:660,Packet out; O 04 3F fd c6
+
+2019-10-18 01:47:11:666,b'P'
+2019-10-18 01:47:11:677,b'>'
+2019-10-18 01:47:11:688,b' '
+2019-10-18 01:47:28:624,PUBSUB Received   b'Tr_4_Speed_120'
+2019-10-18 01:47:28:625,command is
+2019-10-18 01:47:28:625,<class 'bytes'>
+2019-10-18 01:47:28:626,Command list['Tr', '4', 'Speed', '120']
+2019-10-18 01:47:28:626,command list is<class 'list'>
+2019-10-18 01:47:28:633,Active train address is;4, New speed value is;120
+2019-10-18 01:47:28:651,Packet out; O 04 3F f8 c3
+
+2019-10-18 01:47:28:657,b'P'
+2019-10-18 01:47:28:668,b'>'
+2019-10-18 01:47:28:679,b' '
+2019-10-18 01:47:36:301,PUBSUB Received   b'Tr_4_Speed_119'
+2019-10-18 01:47:36:302,command is
+2019-10-18 01:47:36:303,<class 'bytes'>
+2019-10-18 01:47:36:303,Command list['Tr', '4', 'Speed', '119']
+2019-10-18 01:47:36:304,command list is<class 'list'>
+2019-10-18 01:47:36:310,Active train address is;4, New speed value is;119
+2019-10-18 01:47:36:329,Packet out; O 04 3F f7 cc
+
+2019-10-18 01:47:36:336,b'P'
+2019-10-18 01:47:36:347,b'>'
+2019-10-18 01:47:36:358,b' '
+2019-10-18 01:48:11:727,PUBSUB Received   b'Tr_4_Speed_124'
+2019-10-18 01:48:11:728,command is
+2019-10-18 01:48:11:728,<class 'bytes'>
+2019-10-18 01:48:11:729,Command list['Tr', '4', 'Speed', '124']
+2019-10-18 01:48:11:730,command list is<class 'list'>
+2019-10-18 01:48:11:736,Active train address is;4, New speed value is;124
+2019-10-18 01:48:11:754,Packet out; O 04 3F fc c7
+
+2019-10-18 01:48:11:755,b'P'
+2019-10-18 01:48:11:766,b'>'
+2019-10-18 01:48:11:777,b' '
+2019-10-18 01:48:12:349,PUBSUB Received   b'Tr_4_Speed_127'
+2019-10-18 01:48:12:350,command is
+2019-10-18 01:48:12:351,<class 'bytes'>
+2019-10-18 01:48:12:351,Command list['Tr', '4', 'Speed', '127']
+2019-10-18 01:48:12:352,command list is<class 'list'>
+2019-10-18 01:48:12:358,Active train address is;4, New speed value is;127
+2019-10-18 01:48:12:378,Packet out; O 04 3F ff c4
+
+2019-10-18 01:48:12:388,b'P'
+2019-10-18 01:48:12:399,b'>'
+2019-10-18 01:48:12:409,b' '
+2019-10-18 01:48:14:723,PUBSUB Received   b'Tr_4_Lights_On'
+2019-10-18 01:48:14:724,command is
+2019-10-18 01:48:14:725,<class 'bytes'>
+2019-10-18 01:48:14:725,Command list['Tr', '4', 'Lights', 'On']
+2019-10-18 01:48:14:726,command list is<class 'list'>
+2019-10-18 01:48:14:732,Active train address is;4, New lights value is;On
+2019-10-18 01:48:14:733,Packet out; O 04 90 94
+
+2019-10-18 01:48:14:734,Invalid command received;['Tr', '4', 'Lights', 'On']
+2019-10-18 01:48:14:735,b'P'
+2019-10-18 01:48:14:746,b'>'
+2019-10-18 01:48:14:757,b' '
+2019-10-18 01:48:22:717,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 01:48:22:718,command is
+2019-10-18 01:48:22:718,<class 'bytes'>
+2019-10-18 01:48:22:719,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 01:48:22:720,command list is<class 'list'>
+2019-10-18 01:48:22:726,Active train address is;4, New speed value is;128
+2019-10-18 01:48:22:745,Packet out; O 04 3F ff c4
+
+2019-10-18 01:48:22:750,b'P'
+2019-10-18 01:48:22:761,b'>'
+2019-10-18 01:48:22:772,b' '
+2019-10-18 01:48:25:033,PUBSUB Received   b'Tr_4_Speed_125'
+2019-10-18 01:48:25:033,command is
+2019-10-18 01:48:25:034,<class 'bytes'>
+2019-10-18 01:48:25:035,Command list['Tr', '4', 'Speed', '125']
+2019-10-18 01:48:25:035,command list is<class 'list'>
+2019-10-18 01:48:25:042,Active train address is;4, New speed value is;125
+2019-10-18 01:48:25:060,Packet out; O 04 3F fd c6
+
+2019-10-18 01:48:25:065,b'P'
+2019-10-18 01:48:25:076,b'>'
+2019-10-18 01:48:25:087,b' '
+2019-10-18 01:48:28:506,PUBSUB Received   b'Tr_4_Speed_124'
+2019-10-18 01:48:28:506,command is
+2019-10-18 01:48:28:507,<class 'bytes'>
+2019-10-18 01:48:28:508,Command list['Tr', '4', 'Speed', '124']
+2019-10-18 01:48:28:508,command list is<class 'list'>
+2019-10-18 01:48:28:515,Active train address is;4, New speed value is;124
+2019-10-18 01:48:28:534,Packet out; O 04 3F fc c7
+
+2019-10-18 01:48:28:539,b'P'
+2019-10-18 01:48:28:550,b'>'
+2019-10-18 01:48:28:561,b' '
+2019-10-18 01:48:31:073,PUBSUB Received   b'Tr_4_Speed_121'
+2019-10-18 01:48:31:073,command is
+2019-10-18 01:48:31:074,<class 'bytes'>
+2019-10-18 01:48:31:074,Command list['Tr', '4', 'Speed', '121']
+2019-10-18 01:48:31:075,command list is<class 'list'>
+2019-10-18 01:48:31:081,Active train address is;4, New speed value is;121
+2019-10-18 01:48:31:099,Packet out; O 04 3F f9 c2
+
+2019-10-18 01:48:31:102,b'P'
+2019-10-18 01:48:31:112,b'>'
+2019-10-18 01:48:31:123,b' '
+2019-10-18 01:48:34:131,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 01:48:34:132,command is
+2019-10-18 01:48:34:132,<class 'bytes'>
+2019-10-18 01:48:34:133,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 01:48:34:134,command list is<class 'list'>
+2019-10-18 01:48:34:140,Active train address is;4, New speed value is;128
+2019-10-18 01:48:34:158,Packet out; O 04 3F ff c4
+
+2019-10-18 01:48:34:164,b'P'
+2019-10-18 01:48:34:175,b'>'
+2019-10-18 01:48:34:186,b' '
+2019-10-18 01:48:34:915,PUBSUB Received   b'Tr_4_Speed_116'
+2019-10-18 01:48:34:916,command is
+2019-10-18 01:48:34:917,<class 'bytes'>
+2019-10-18 01:48:34:917,Command list['Tr', '4', 'Speed', '116']
+2019-10-18 01:48:34:918,command list is<class 'list'>
+2019-10-18 01:48:34:924,Active train address is;4, New speed value is;116
+2019-10-18 01:48:34:943,Packet out; O 04 3F f4 cf
+
+2019-10-18 01:48:34:952,b'P'
+2019-10-18 01:48:34:963,b'>'
+2019-10-18 01:48:34:973,b' '
+2019-10-18 01:48:38:461,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 01:48:38:462,command is
+2019-10-18 01:48:38:462,<class 'bytes'>
+2019-10-18 01:48:38:463,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 01:48:38:464,command list is<class 'list'>
+2019-10-18 01:48:38:470,Active train address is;4, New speed value is;128
+2019-10-18 01:48:38:488,Packet out; O 04 3F ff c4
+
+2019-10-18 01:48:38:492,b'P'
+2019-10-18 01:48:38:503,b'>'
+2019-10-18 01:48:38:513,b' '
+2019-10-18 01:48:40:049,PUBSUB Received   b'Tr_4_Speed_127'
+2019-10-18 01:48:40:050,command is
+2019-10-18 01:48:40:050,<class 'bytes'>
+2019-10-18 01:48:40:051,Command list['Tr', '4', 'Speed', '127']
+2019-10-18 01:48:40:052,command list is<class 'list'>
+2019-10-18 01:48:40:058,Active train address is;4, New speed value is;127
+2019-10-18 01:48:40:076,Packet out; O 04 3F ff c4
+
+2019-10-18 01:48:40:084,b'P'
+2019-10-18 01:48:40:095,b'>'
+2019-10-18 01:48:40:106,b' '
+2019-10-18 01:48:45:754,PUBSUB Received   b'Tr_4_Speed_105'
+2019-10-18 01:48:45:761,command is
+2019-10-18 01:48:45:762,<class 'bytes'>
+2019-10-18 01:48:45:762,Command list['Tr', '4', 'Speed', '105']
+2019-10-18 01:48:45:763,command list is<class 'list'>
+2019-10-18 01:48:45:771,Active train address is;4, New speed value is;105
+2019-10-18 01:48:45:793,Packet out; O 04 3F e9 d2
+
+2019-10-18 01:48:45:799,b'P'
+2019-10-18 01:48:45:810,b'>'
+2019-10-18 01:48:45:821,b' '
+2019-10-18 01:49:11:784,PUBSUB Received   b'Tr_4_Horn_On'
+2019-10-18 01:49:11:784,command is
+2019-10-18 01:49:11:785,<class 'bytes'>
+2019-10-18 01:49:11:786,Command list['Tr', '4', 'Horn', 'On']
+2019-10-18 01:49:11:786,command list is<class 'list'>
+2019-10-18 01:49:11:793,Invalid command received;['Tr', '4', 'Horn', 'On']
+2019-10-18 01:49:12:426,PUBSUB Received   b'Tr_4_Horn_On'
+2019-10-18 01:49:12:427,command is
+2019-10-18 01:49:12:428,<class 'bytes'>
+2019-10-18 01:49:12:428,Command list['Tr', '4', 'Horn', 'On']
+2019-10-18 01:49:12:429,command list is<class 'list'>
+2019-10-18 01:49:12:435,Invalid command received;['Tr', '4', 'Horn', 'On']
+2019-10-18 01:49:12:683,PUBSUB Received   b'Tr_4_Horn_On'
+2019-10-18 01:49:12:684,command is
+2019-10-18 01:49:12:684,<class 'bytes'>
+2019-10-18 01:49:12:685,Command list['Tr', '4', 'Horn', 'On']
+2019-10-18 01:49:12:686,command list is<class 'list'>
+2019-10-18 01:49:12:692,Invalid command received;['Tr', '4', 'Horn', 'On']
+2019-10-18 01:49:13:051,PUBSUB Received   b'Tr_4_Horn_On'
+2019-10-18 01:49:13:052,command is
+2019-10-18 01:49:13:053,<class 'bytes'>
+2019-10-18 01:49:13:053,Command list['Tr', '4', 'Horn', 'On']
+2019-10-18 01:49:13:054,command list is<class 'list'>
+2019-10-18 01:49:13:060,Invalid command received;['Tr', '4', 'Horn', 'On']
+2019-10-18 01:49:13:282,PUBSUB Received   b'Tr_4_Horn_On'
+2019-10-18 01:49:13:283,command is
+2019-10-18 01:49:13:283,<class 'bytes'>
+2019-10-18 01:49:13:284,Command list['Tr', '4', 'Horn', 'On']
+2019-10-18 01:49:13:285,command list is<class 'list'>
+2019-10-18 01:49:13:291,Invalid command received;['Tr', '4', 'Horn', 'On']
+2019-10-18 01:49:13:515,PUBSUB Received   b'Tr_4_Horn_On'
+2019-10-18 01:49:13:516,command is
+2019-10-18 01:49:13:517,<class 'bytes'>
+2019-10-18 01:49:13:517,Command list['Tr', '4', 'Horn', 'On']
+2019-10-18 01:49:13:518,command list is<class 'list'>
+2019-10-18 01:49:13:524,Invalid command received;['Tr', '4', 'Horn', 'On']
+2019-10-18 01:49:13:731,PUBSUB Received   b'Tr_4_Horn_On'
+2019-10-18 01:49:13:733,command is
+2019-10-18 01:49:13:734,<class 'bytes'>
+2019-10-18 01:49:13:735,Command list['Tr', '4', 'Horn', 'On']
+2019-10-18 01:49:13:736,command list is<class 'list'>
+2019-10-18 01:49:13:748,Invalid command received;['Tr', '4', 'Horn', 'On']
+2019-10-18 01:49:13:944,PUBSUB Received   b'Tr_4_Horn_On'
+2019-10-18 01:49:13:945,command is
+2019-10-18 01:49:13:946,<class 'bytes'>
+2019-10-18 01:49:13:947,Command list['Tr', '4', 'Horn', 'On']
+2019-10-18 01:49:13:947,command list is<class 'list'>
+2019-10-18 01:49:13:953,Invalid command received;['Tr', '4', 'Horn', 'On']
+2019-10-18 01:49:14:157,PUBSUB Received   b'Tr_4_Horn_On'
+2019-10-18 01:49:14:158,command is
+2019-10-18 01:49:14:159,<class 'bytes'>
+2019-10-18 01:49:14:159,Command list['Tr', '4', 'Horn', 'On']
+2019-10-18 01:49:14:160,command list is<class 'list'>
+2019-10-18 01:49:14:166,Invalid command received;['Tr', '4', 'Horn', 'On']
+2019-10-18 01:49:17:055,PUBSUB Received   b'Tr_4_Speed_117'
+2019-10-18 01:49:17:061,command is
+2019-10-18 01:49:17:062,<class 'bytes'>
+2019-10-18 01:49:17:063,Command list['Tr', '4', 'Speed', '117']
+2019-10-18 01:49:17:063,command list is<class 'list'>
+2019-10-18 01:49:17:069,Active train address is;4, New speed value is;117
+2019-10-18 01:49:17:097,Packet out; O 04 3F f5 ce
+
+2019-10-18 01:49:17:105,b'P'
+2019-10-18 01:49:17:115,b'>'
+2019-10-18 01:49:17:126,b' '
+2019-10-18 01:49:18:053,PUBSUB Received   b'Tr_4_Speed_119'
+2019-10-18 01:49:18:054,command is
+2019-10-18 01:49:18:055,<class 'bytes'>
+2019-10-18 01:49:18:055,Command list['Tr', '4', 'Speed', '119']
+2019-10-18 01:49:18:056,command list is<class 'list'>
+2019-10-18 01:49:18:062,Active train address is;4, New speed value is;119
+2019-10-18 01:49:18:080,Packet out; O 04 3F f7 cc
+
+2019-10-18 01:49:18:082,b'P'
+2019-10-18 01:49:18:093,b'>'
+2019-10-18 01:49:18:104,b' '
+2019-10-18 01:49:20:985,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 01:49:20:986,command is
+2019-10-18 01:49:20:986,<class 'bytes'>
+2019-10-18 01:49:20:987,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 01:49:20:988,command list is<class 'list'>
+2019-10-18 01:49:20:994,Active train address is;4, New speed value is;128
+2019-10-18 01:49:21:015,Packet out; O 04 3F ff c4
+
+2019-10-18 01:49:21:021,b'P'
+2019-10-18 01:49:21:032,b'>'
+2019-10-18 01:49:21:043,b' '
+2019-10-18 01:49:25:963,PUBSUB Received   b'Tr_4_Speed_119'
+2019-10-18 01:49:25:964,command is
+2019-10-18 01:49:25:964,<class 'bytes'>
+2019-10-18 01:49:25:965,Command list['Tr', '4', 'Speed', '119']
+2019-10-18 01:49:25:966,command list is<class 'list'>
+2019-10-18 01:49:25:972,Active train address is;4, New speed value is;119
+2019-10-18 01:49:25:990,Packet out; O 04 3F f7 cc
+
+2019-10-18 01:49:25:997,b'P'
+2019-10-18 01:49:26:008,b'>'
+2019-10-18 01:49:26:019,b' '
+2019-10-18 01:49:28:327,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 01:49:28:327,command is
+2019-10-18 01:49:28:328,<class 'bytes'>
+2019-10-18 01:49:28:329,Command list['Tr', '4', 'Stop']
+2019-10-18 01:49:28:329,command list is<class 'list'>
+2019-10-18 01:49:28:336,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 01:49:28:602,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 01:49:28:602,command is
+2019-10-18 01:49:28:603,<class 'bytes'>
+2019-10-18 01:49:28:604,Command list['Tr', '4', 'Stop']
+2019-10-18 01:49:28:604,command list is<class 'list'>
+2019-10-18 01:49:28:611,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 01:49:29:012,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 01:49:29:013,command is
+2019-10-18 01:49:29:014,<class 'bytes'>
+2019-10-18 01:49:29:014,Command list['Tr', '4', 'Stop']
+2019-10-18 01:49:29:015,command list is<class 'list'>
+2019-10-18 01:49:29:021,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 01:49:29:305,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 01:49:29:306,command is
+2019-10-18 01:49:29:307,<class 'bytes'>
+2019-10-18 01:49:29:307,Command list['Tr', '4', 'Stop']
+2019-10-18 01:49:29:308,command list is<class 'list'>
+2019-10-18 01:49:29:314,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 01:49:29:545,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 01:49:29:546,command is
+2019-10-18 01:49:29:547,<class 'bytes'>
+2019-10-18 01:49:29:547,Command list['Tr', '4', 'Stop']
+2019-10-18 01:49:29:548,command list is<class 'list'>
+2019-10-18 01:49:29:554,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 01:49:29:867,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 01:49:29:868,command is
+2019-10-18 01:49:29:869,<class 'bytes'>
+2019-10-18 01:49:29:869,Command list['Tr', '4', 'Stop']
+2019-10-18 01:49:29:870,command list is<class 'list'>
+2019-10-18 01:49:29:876,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 01:49:30:082,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 01:49:30:082,command is
+2019-10-18 01:49:30:083,<class 'bytes'>
+2019-10-18 01:49:30:084,Command list['Tr', '4', 'Stop']
+2019-10-18 01:49:30:084,command list is<class 'list'>
+2019-10-18 01:49:30:090,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 01:49:30:286,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 01:49:30:287,command is
+2019-10-18 01:49:30:287,<class 'bytes'>
+2019-10-18 01:49:30:288,Command list['Tr', '4', 'Stop']
+2019-10-18 01:49:30:289,command list is<class 'list'>
+2019-10-18 01:49:30:295,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 01:49:30:509,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 01:49:30:510,command is
+2019-10-18 01:49:30:510,<class 'bytes'>
+2019-10-18 01:49:30:511,Command list['Tr', '4', 'Stop']
+2019-10-18 01:49:30:512,command list is<class 'list'>
+2019-10-18 01:49:30:518,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 01:49:30:742,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 01:49:30:742,command is
+2019-10-18 01:49:30:743,<class 'bytes'>
+2019-10-18 01:49:30:744,Command list['Tr', '4', 'Stop']
+2019-10-18 01:49:30:744,command list is<class 'list'>
+2019-10-18 01:49:30:751,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 01:49:30:961,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 01:49:30:962,command is
+2019-10-18 01:49:30:963,<class 'bytes'>
+2019-10-18 01:49:30:963,Command list['Tr', '4', 'Stop']
+2019-10-18 01:49:30:964,command list is<class 'list'>
+2019-10-18 01:49:30:970,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 01:49:31:205,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 01:49:31:212,command is
+2019-10-18 01:49:31:213,<class 'bytes'>
+2019-10-18 01:49:31:213,Command list['Tr', '4', 'Stop']
+2019-10-18 01:49:31:214,command list is<class 'list'>
+2019-10-18 01:49:31:220,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 01:49:31:524,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 01:49:31:525,command is
+2019-10-18 01:49:31:526,<class 'bytes'>
+2019-10-18 01:49:31:526,Command list['Tr', '4', 'Stop']
+2019-10-18 01:49:31:527,command list is<class 'list'>
+2019-10-18 01:49:31:533,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 01:49:33:377,PUBSUB Received   b'Tr_4_Speed_99'
+2019-10-18 01:49:33:378,command is
+2019-10-18 01:49:33:378,<class 'bytes'>
+2019-10-18 01:49:33:379,Command list['Tr', '4', 'Speed', '99']
+2019-10-18 01:49:33:380,command list is<class 'list'>
+2019-10-18 01:49:33:386,Active train address is;4, New speed value is;99
+2019-10-18 01:49:33:404,Packet out; O 04 3F e3 d8
+
+2019-10-18 01:49:33:406,b'P'
+2019-10-18 01:49:33:417,b'>'
+2019-10-18 01:49:33:427,b' '
+2019-10-18 01:49:34:834,PUBSUB Received   b'Tr_4_Speed_114'
+2019-10-18 01:49:34:835,command is
+2019-10-18 01:49:34:836,<class 'bytes'>
+2019-10-18 01:49:34:836,Command list['Tr', '4', 'Speed', '114']
+2019-10-18 01:49:34:837,command list is<class 'list'>
+2019-10-18 01:49:34:843,Active train address is;4, New speed value is;114
+2019-10-18 01:49:34:861,Packet out; O 04 3F f2 c9
+
+2019-10-18 01:49:34:867,b'P'
+2019-10-18 01:49:34:878,b'>'
+2019-10-18 01:49:34:889,b' '
+2019-10-18 01:49:37:515,PUBSUB Received   b'Tr_4_Speed_81'
+2019-10-18 01:49:37:516,command is
+2019-10-18 01:49:37:517,<class 'bytes'>
+2019-10-18 01:49:37:517,Command list['Tr', '4', 'Speed', '81']
+2019-10-18 01:49:37:518,command list is<class 'list'>
+2019-10-18 01:49:37:524,Active train address is;4, New speed value is;81
+2019-10-18 01:49:37:543,Packet out; O 04 3F d1 ea
+
+2019-10-18 01:49:37:545,b'P'
+2019-10-18 01:49:37:555,b'>'
+2019-10-18 01:49:37:566,b' '
+2019-10-18 01:49:41:098,PUBSUB Received   b'Tr_4_Speed_101'
+2019-10-18 01:49:41:099,command is
+2019-10-18 01:49:41:099,<class 'bytes'>
+2019-10-18 01:49:41:100,Command list['Tr', '4', 'Speed', '101']
+2019-10-18 01:49:41:101,command list is<class 'list'>
+2019-10-18 01:49:41:107,Active train address is;4, New speed value is;101
+2019-10-18 01:49:41:125,Packet out; O 04 3F e5 de
+
+2019-10-18 01:49:41:133,b'P'
+2019-10-18 01:49:41:144,b'>'
+2019-10-18 01:49:41:155,b' '
+2019-10-18 01:49:49:908,PUBSUB Received   b'Tr_4_Speed_102'
+2019-10-18 01:49:49:909,command is
+2019-10-18 01:49:49:910,<class 'bytes'>
+2019-10-18 01:49:49:910,Command list['Tr', '4', 'Speed', '102']
+2019-10-18 01:49:49:911,command list is<class 'list'>
+2019-10-18 01:49:49:917,Active train address is;4, New speed value is;102
+2019-10-18 01:49:49:937,Packet out; O 04 3F e6 dd
+
+2019-10-18 01:49:49:944,b'P'
+2019-10-18 01:49:49:955,b'>'
+2019-10-18 01:49:49:966,b' '
+2019-10-18 01:49:50:470,PUBSUB Received   b'Tr_4_Speed_111'
+2019-10-18 01:49:50:471,command is
+2019-10-18 01:49:50:472,<class 'bytes'>
+2019-10-18 01:49:50:472,Command list['Tr', '4', 'Speed', '111']
+2019-10-18 01:49:50:473,command list is<class 'list'>
+2019-10-18 01:49:50:479,Active train address is;4, New speed value is;111
+2019-10-18 01:49:50:497,Packet out; O 04 3F ef d4
+
+2019-10-18 01:49:50:502,b'P'
+2019-10-18 01:49:50:513,b'>'
+2019-10-18 01:49:50:524,b' '
+2019-10-18 01:49:54:757,PUBSUB Received   b'Tr_4_Speed_115'
+2019-10-18 01:49:54:757,command is
+2019-10-18 01:49:54:758,<class 'bytes'>
+2019-10-18 01:49:54:759,Command list['Tr', '4', 'Speed', '115']
+2019-10-18 01:49:54:759,command list is<class 'list'>
+2019-10-18 01:49:54:765,Active train address is;4, New speed value is;115
+2019-10-18 01:49:54:784,Packet out; O 04 3F f3 c8
+
+2019-10-18 01:49:54:789,b'P'
+2019-10-18 01:49:54:800,b'>'
+2019-10-18 01:49:54:812,b' '
+2019-10-18 01:49:55:181,PUBSUB Received   b'Tr_4_Speed_114'
+2019-10-18 01:49:55:181,command is
+2019-10-18 01:49:55:182,<class 'bytes'>
+2019-10-18 01:49:55:183,Command list['Tr', '4', 'Speed', '114']
+2019-10-18 01:49:55:183,command list is<class 'list'>
+2019-10-18 01:49:55:190,Active train address is;4, New speed value is;114
+2019-10-18 01:49:55:208,Packet out; O 04 3F f2 c9
+
+2019-10-18 01:49:55:216,b'P'
+2019-10-18 01:49:55:227,b'>'
+2019-10-18 01:49:55:238,b' '
+2019-10-18 01:50:01:230,PUBSUB Received   b'Tr_4_Speed_124'
+2019-10-18 01:50:01:231,command is
+2019-10-18 01:50:01:232,<class 'bytes'>
+2019-10-18 01:50:01:232,Command list['Tr', '4', 'Speed', '124']
+2019-10-18 01:50:01:233,command list is<class 'list'>
+2019-10-18 01:50:01:239,Active train address is;4, New speed value is;124
+2019-10-18 01:50:01:258,Packet out; O 04 3F fc c7
+
+2019-10-18 01:50:01:261,b'P'
+2019-10-18 01:50:01:272,b'>'
+2019-10-18 01:50:01:282,b' '
+2019-10-18 01:50:06:731,PUBSUB Received   b'Tr_4_Speed_126'
+2019-10-18 01:50:06:751,command is
+2019-10-18 01:50:06:752,<class 'bytes'>
+2019-10-18 01:50:06:752,Command list['Tr', '4', 'Speed', '126']
+2019-10-18 01:50:06:753,command list is<class 'list'>
+2019-10-18 01:50:06:759,Active train address is;4, New speed value is;126
+2019-10-18 01:50:06:776,Packet out; O 04 3F fe c5
+
+2019-10-18 01:50:06:778,b'P'
+2019-10-18 01:50:06:789,b'>'
+2019-10-18 01:50:06:800,b' '
+2019-10-18 01:50:10:650,PUBSUB Received   b'Tr_4_Speed_117'
+2019-10-18 01:50:10:651,command is
+2019-10-18 01:50:10:651,<class 'bytes'>
+2019-10-18 01:50:10:652,Command list['Tr', '4', 'Speed', '117']
+2019-10-18 01:50:10:653,command list is<class 'list'>
+2019-10-18 01:50:10:659,Active train address is;4, New speed value is;117
+2019-10-18 01:50:10:677,Packet out; O 04 3F f5 ce
+
+2019-10-18 01:50:10:679,b'P'
+2019-10-18 01:50:10:690,b'>'
+2019-10-18 01:50:10:701,b' '
+2019-10-18 01:50:12:989,PUBSUB Received   b'Tr_4_Speed_14'
+2019-10-18 01:50:12:990,command is
+2019-10-18 01:50:12:990,<class 'bytes'>
+2019-10-18 01:50:12:991,Command list['Tr', '4', 'Speed', '14']
+2019-10-18 01:50:12:992,command list is<class 'list'>
+2019-10-18 01:50:12:998,Active train address is;4, New speed value is;14
+2019-10-18 01:50:13:016,Packet out; O 04 3F 8e b5
+
+2019-10-18 01:50:13:019,b'P'
+2019-10-18 01:50:13:030,b'>'
+2019-10-18 01:50:13:041,b' '
+2019-10-18 01:50:13:622,PUBSUB Received   b'Tr_4_Speed_15'
+2019-10-18 01:50:13:623,command is
+2019-10-18 01:50:13:624,<class 'bytes'>
+2019-10-18 01:50:13:625,Command list['Tr', '4', 'Speed', '15']
+2019-10-18 01:50:13:625,command list is<class 'list'>
+2019-10-18 01:50:13:631,Active train address is;4, New speed value is;15
+2019-10-18 01:50:13:650,Packet out; O 04 3F 8f b4
+
+2019-10-18 01:50:13:652,b'P'
+2019-10-18 01:50:13:663,b'>'
+2019-10-18 01:50:13:674,b' '
+2019-10-18 01:50:13:968,PUBSUB Received   b'Tr_4_Speed_26'
+2019-10-18 01:50:13:969,command is
+2019-10-18 01:50:13:970,<class 'bytes'>
+2019-10-18 01:50:13:970,Command list['Tr', '4', 'Speed', '26']
+2019-10-18 01:50:13:971,command list is<class 'list'>
+2019-10-18 01:50:13:977,Active train address is;4, New speed value is;26
+2019-10-18 01:50:13:997,Packet out; O 04 3F 9a a1
+
+2019-10-18 01:50:14:005,b'P'
+2019-10-18 01:50:14:015,b'>'
+2019-10-18 01:50:14:026,b' '
+2019-10-18 01:50:14:314,PUBSUB Received   b'Tr_4_Speed_65'
+2019-10-18 01:50:14:315,command is
+2019-10-18 01:50:14:316,<class 'bytes'>
+2019-10-18 01:50:14:316,Command list['Tr', '4', 'Speed', '65']
+2019-10-18 01:50:14:317,command list is<class 'list'>
+2019-10-18 01:50:14:323,Active train address is;4, New speed value is;65
+2019-10-18 01:50:14:342,Packet out; O 04 3F c1 fa
+
+2019-10-18 01:50:14:350,b'P'
+2019-10-18 01:50:14:361,b'>'
+2019-10-18 01:50:14:371,b' '
+2019-10-18 01:50:22:032,PUBSUB Received   b'Tr_4_Speed_114'
+2019-10-18 01:50:22:033,command is
+2019-10-18 01:50:22:033,<class 'bytes'>
+2019-10-18 01:50:22:034,Command list['Tr', '4', 'Speed', '114']
+2019-10-18 01:50:22:034,command list is<class 'list'>
+2019-10-18 01:50:22:041,Active train address is;4, New speed value is;114
+2019-10-18 01:50:22:058,Packet out; O 04 3F f2 c9
+
+2019-10-18 01:50:22:061,b'P'
+2019-10-18 01:50:22:072,b'>'
+2019-10-18 01:50:22:083,b' '
+2019-10-18 01:50:22:823,PUBSUB Received   b'Tr_4_Speed_119'
+2019-10-18 01:50:22:824,command is
+2019-10-18 01:50:22:824,<class 'bytes'>
+2019-10-18 01:50:22:825,Command list['Tr', '4', 'Speed', '119']
+2019-10-18 01:50:22:825,command list is<class 'list'>
+2019-10-18 01:50:22:832,Active train address is;4, New speed value is;119
+2019-10-18 01:50:22:850,Packet out; O 04 3F f7 cc
+
+2019-10-18 01:50:22:857,b'P'
+2019-10-18 01:50:22:868,b'>'
+2019-10-18 01:50:22:879,b' '
+2019-10-18 01:51:24:929,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 01:51:24:930,command is
+2019-10-18 01:51:24:931,<class 'bytes'>
+2019-10-18 01:51:24:931,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 01:51:24:932,command list is<class 'list'>
+2019-10-18 01:51:24:938,Active train address is;4, New speed value is;128
+2019-10-18 01:51:24:956,Packet out; O 04 3F ff c4
+
+2019-10-18 01:51:24:957,b'P'
+2019-10-18 01:51:24:968,b'>'
+2019-10-18 01:51:24:979,b' '
+2019-10-18 01:51:27:764,PUBSUB Received   b'Tr_4_Lights_Off'
+2019-10-18 01:51:27:765,command is
+2019-10-18 01:51:27:765,<class 'bytes'>
+2019-10-18 01:51:27:766,Command list['Tr', '4', 'Lights', 'Off']
+2019-10-18 01:51:27:767,command list is<class 'list'>
+2019-10-18 01:51:27:773,Active train address is;4, New lights value is;Off
+2019-10-18 01:51:27:774,Packet out; O 04 80 84
+
+2019-10-18 01:51:27:775,Invalid command received;['Tr', '4', 'Lights', 'Off']
+2019-10-18 01:51:27:782,b'P'
+2019-10-18 01:51:27:793,b'>'
+2019-10-18 01:51:27:804,b' '
+2019-10-18 01:51:59:822,PUBSUB Received   b'Tr_4_Speed_118'
+2019-10-18 01:51:59:823,command is
+2019-10-18 01:51:59:823,<class 'bytes'>
+2019-10-18 01:51:59:824,Command list['Tr', '4', 'Speed', '118']
+2019-10-18 01:51:59:824,command list is<class 'list'>
+2019-10-18 01:51:59:831,Active train address is;4, New speed value is;118
+2019-10-18 01:51:59:849,Packet out; O 04 3F f6 cd
+
+2019-10-18 01:51:59:857,b'P'
+2019-10-18 01:51:59:868,b'>'
+2019-10-18 01:51:59:879,b' '
+2019-10-18 01:52:07:699,PUBSUB Received   b'Tr_4_Speed_107'
+2019-10-18 01:52:07:699,command is
+2019-10-18 01:52:07:700,<class 'bytes'>
+2019-10-18 01:52:07:701,Command list['Tr', '4', 'Speed', '107']
+2019-10-18 01:52:07:701,command list is<class 'list'>
+2019-10-18 01:52:07:708,Active train address is;4, New speed value is;107
+2019-10-18 01:52:07:726,Packet out; O 04 3F eb d0
+
+2019-10-18 01:52:07:733,b'P'
+2019-10-18 01:52:07:744,b'>'
+2019-10-18 01:52:07:755,b' '
+2019-10-18 01:52:27:524,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 01:52:27:525,command is
+2019-10-18 01:52:27:525,<class 'bytes'>
+2019-10-18 01:52:27:526,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 01:52:27:527,command list is<class 'list'>
+2019-10-18 01:52:27:533,Active train address is;4, New speed value is;128
+2019-10-18 01:52:27:551,Packet out; O 04 3F ff c4
+
+2019-10-18 01:52:27:556,b'P'
+2019-10-18 01:52:27:567,b'>'
+2019-10-18 01:52:27:578,b' '
+2019-10-18 01:52:29:820,PUBSUB Received   b'Tr_4_Speed_115'
+2019-10-18 01:52:29:821,command is
+2019-10-18 01:52:29:822,<class 'bytes'>
+2019-10-18 01:52:29:822,Command list['Tr', '4', 'Speed', '115']
+2019-10-18 01:52:29:823,command list is<class 'list'>
+2019-10-18 01:52:29:829,Active train address is;4, New speed value is;115
+2019-10-18 01:52:29:847,Packet out; O 04 3F f3 c8
+
+2019-10-18 01:52:29:856,b'P'
+2019-10-18 01:52:29:867,b'>'
+2019-10-18 01:52:29:878,b' '
+2019-10-18 01:52:31:077,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 01:52:31:077,command is
+2019-10-18 01:52:31:078,<class 'bytes'>
+2019-10-18 01:52:31:079,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 01:52:31:079,command list is<class 'list'>
+2019-10-18 01:52:31:086,Active train address is;4, New speed value is;128
+2019-10-18 01:52:31:104,Packet out; O 04 3F ff c4
+
+2019-10-18 01:52:31:112,b'P'
+2019-10-18 01:52:31:123,b'>'
+2019-10-18 01:52:31:134,b' '
+2019-10-18 01:52:35:068,PUBSUB Received   b'Tr_4_Lights_On'
+2019-10-18 01:52:35:069,command is
+2019-10-18 01:52:35:069,<class 'bytes'>
+2019-10-18 01:52:35:070,Command list['Tr', '4', 'Lights', 'On']
+2019-10-18 01:52:35:071,command list is<class 'list'>
+2019-10-18 01:52:35:077,Active train address is;4, New lights value is;On
+2019-10-18 01:52:35:078,Packet out; O 04 90 94
+
+2019-10-18 01:52:35:079,Invalid command received;['Tr', '4', 'Lights', 'On']
+2019-10-18 01:52:35:086,b'P'
+2019-10-18 01:52:35:097,b'>'
+2019-10-18 01:52:35:108,b' '
+2019-10-18 01:52:36:176,PUBSUB Received   b'Tr_4_Lights_Off'
+2019-10-18 01:52:36:183,command is
+2019-10-18 01:52:36:184,<class 'bytes'>
+2019-10-18 01:52:36:184,Command list['Tr', '4', 'Lights', 'Off']
+2019-10-18 01:52:36:185,command list is<class 'list'>
+2019-10-18 01:52:36:191,Active train address is;4, New lights value is;Off
+2019-10-18 01:52:36:192,Packet out; O 04 80 84
+
+2019-10-18 01:52:36:193,Invalid command received;['Tr', '4', 'Lights', 'Off']
+2019-10-18 01:52:36:194,b'P'
+2019-10-18 01:52:36:204,b'>'
+2019-10-18 01:52:36:215,b' '
+2019-10-18 01:52:43:678,PUBSUB Received   b'Tr_4_Speed_119'
+2019-10-18 01:52:43:679,command is
+2019-10-18 01:52:43:680,<class 'bytes'>
+2019-10-18 01:52:43:680,Command list['Tr', '4', 'Speed', '119']
+2019-10-18 01:52:43:681,command list is<class 'list'>
+2019-10-18 01:52:43:687,Active train address is;4, New speed value is;119
+2019-10-18 01:52:43:708,Packet out; O 04 3F f7 cc
+
+2019-10-18 01:52:43:716,b'P'
+2019-10-18 01:52:43:727,b'>'
+2019-10-18 01:52:43:738,b' '
+2019-10-18 01:52:45:594,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 01:52:45:594,command is
+2019-10-18 01:52:45:595,<class 'bytes'>
+2019-10-18 01:52:45:596,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 01:52:45:596,command list is<class 'list'>
+2019-10-18 01:52:45:603,Active train address is;4, New speed value is;128
+2019-10-18 01:52:45:621,Packet out; O 04 3F ff c4
+
+2019-10-18 01:52:45:628,b'P'
+2019-10-18 01:52:45:639,b'>'
+2019-10-18 01:52:45:650,b' '
+2019-10-18 01:54:55:054,PUBSUB Received   b'Tr_4_Speed_122'
+2019-10-18 01:54:55:055,command is
+2019-10-18 01:54:55:056,<class 'bytes'>
+2019-10-18 01:54:55:057,Command list['Tr', '4', 'Speed', '122']
+2019-10-18 01:54:55:057,command list is<class 'list'>
+2019-10-18 01:54:55:063,Active train address is;4, New speed value is;122
+2019-10-18 01:54:55:084,Packet out; O 04 3F fa c1
+
+2019-10-18 01:54:55:091,b'P'
+2019-10-18 01:54:55:102,b'>'
+2019-10-18 01:54:55:113,b' '
+2019-10-18 01:54:59:093,PUBSUB Received   b'Tr_4_Lights_On'
+2019-10-18 01:54:59:094,command is
+2019-10-18 01:54:59:094,<class 'bytes'>
+2019-10-18 01:54:59:095,Command list['Tr', '4', 'Lights', 'On']
+2019-10-18 01:54:59:096,command list is<class 'list'>
+2019-10-18 01:54:59:102,Active train address is;4, New lights value is;On
+2019-10-18 01:54:59:103,Packet out; O 04 90 94
+
+2019-10-18 01:54:59:104,Invalid command received;['Tr', '4', 'Lights', 'On']
+2019-10-18 01:54:59:107,b'P'
+2019-10-18 01:54:59:118,b'>'
+2019-10-18 01:54:59:129,b' '
+2019-10-18 01:54:59:829,PUBSUB Received   b'Tr_4_Lights_Off'
+2019-10-18 01:54:59:830,command is
+2019-10-18 01:54:59:830,<class 'bytes'>
+2019-10-18 01:54:59:831,Command list['Tr', '4', 'Lights', 'Off']
+2019-10-18 01:54:59:832,command list is<class 'list'>
+2019-10-18 01:54:59:844,Active train address is;4, New lights value is;Off
+2019-10-18 01:54:59:845,Packet out; O 04 80 84
+
+2019-10-18 01:54:59:846,Invalid command received;['Tr', '4', 'Lights', 'Off']
+2019-10-18 01:54:59:853,b'P'
+2019-10-18 01:54:59:864,b'>'
+2019-10-18 01:54:59:875,b' '
+2019-10-18 01:55:02:516,PUBSUB Received   b'Tr_4_Lights_On'
+2019-10-18 01:55:02:517,command is
+2019-10-18 01:55:02:517,<class 'bytes'>
+2019-10-18 01:55:02:518,Command list['Tr', '4', 'Lights', 'On']
+2019-10-18 01:55:02:519,command list is<class 'list'>
+2019-10-18 01:55:02:525,Active train address is;4, New lights value is;On
+2019-10-18 01:55:02:526,Packet out; O 04 90 94
+
+2019-10-18 01:55:02:527,Invalid command received;['Tr', '4', 'Lights', 'On']
+2019-10-18 01:55:02:529,b'P'
+2019-10-18 01:55:02:540,b'>'
+2019-10-18 01:55:02:551,b' '
+2019-10-18 01:55:03:659,PUBSUB Received   b'Tr_4_Lights_Off'
+2019-10-18 01:55:03:660,command is
+2019-10-18 01:55:03:661,<class 'bytes'>
+2019-10-18 01:55:03:662,Command list['Tr', '4', 'Lights', 'Off']
+2019-10-18 01:55:03:662,command list is<class 'list'>
+2019-10-18 01:55:03:669,Active train address is;4, New lights value is;Off
+2019-10-18 01:55:03:670,Packet out; O 04 80 84
+
+2019-10-18 01:55:03:670,Invalid command received;['Tr', '4', 'Lights', 'Off']
+2019-10-18 01:55:03:678,b'P'
+2019-10-18 01:55:03:689,b'>'
+2019-10-18 01:55:03:701,b' '
+2019-10-18 01:55:05:293,PUBSUB Received   b'Tr_4_Speed_114'
+2019-10-18 01:55:05:293,command is
+2019-10-18 01:55:05:294,<class 'bytes'>
+2019-10-18 01:55:05:295,Command list['Tr', '4', 'Speed', '114']
+2019-10-18 01:55:05:295,command list is<class 'list'>
+2019-10-18 01:55:05:302,Active train address is;4, New speed value is;114
+2019-10-18 01:55:05:321,Packet out; O 04 3F f2 c9
+
+2019-10-18 01:55:05:328,b'P'
+2019-10-18 01:55:05:339,b'>'
+2019-10-18 01:55:05:350,b' '
+2019-10-18 01:55:06:413,PUBSUB Received   b'Tr_4_Speed_112'
+2019-10-18 01:55:06:414,command is
+2019-10-18 01:55:06:414,<class 'bytes'>
+2019-10-18 01:55:06:415,Command list['Tr', '4', 'Speed', '112']
+2019-10-18 01:55:06:416,command list is<class 'list'>
+2019-10-18 01:55:06:422,Active train address is;4, New speed value is;112
+2019-10-18 01:55:06:440,Packet out; O 04 3F f0 cb
+
+2019-10-18 01:55:06:445,b'P'
+2019-10-18 01:55:06:456,b'>'
+2019-10-18 01:55:06:466,b' '
+2019-10-18 01:55:11:284,PUBSUB Received   b'Tr_4_Lights_On'
+2019-10-18 01:55:11:285,command is
+2019-10-18 01:55:11:286,<class 'bytes'>
+2019-10-18 01:55:11:286,Command list['Tr', '4', 'Lights', 'On']
+2019-10-18 01:55:11:287,command list is<class 'list'>
+2019-10-18 01:55:11:294,Active train address is;4, New lights value is;On
+2019-10-18 01:55:11:295,Packet out; O 04 90 94
+
+2019-10-18 01:55:11:295,Invalid command received;['Tr', '4', 'Lights', 'On']
+2019-10-18 01:55:11:298,b'P'
+2019-10-18 01:55:11:309,b'>'
+2019-10-18 01:55:11:320,b' '
+2019-10-18 01:55:11:981,PUBSUB Received   b'Tr_4_Lights_Off'
+2019-10-18 01:55:11:988,command is
+2019-10-18 01:55:11:989,<class 'bytes'>
+2019-10-18 01:55:11:989,Command list['Tr', '4', 'Lights', 'Off']
+2019-10-18 01:55:11:990,command list is<class 'list'>
+2019-10-18 01:55:11:996,Active train address is;4, New lights value is;Off
+2019-10-18 01:55:11:997,Packet out; O 04 80 84
+
+2019-10-18 01:55:11:998,Invalid command received;['Tr', '4', 'Lights', 'Off']
+2019-10-18 01:55:12:003,b'P'
+2019-10-18 01:55:12:014,b'>'
+2019-10-18 01:55:12:025,b' '
+2019-10-18 01:55:15:942,PUBSUB Received   b'Tr_4_Horn_On'
+2019-10-18 01:55:15:942,command is
+2019-10-18 01:55:15:943,<class 'bytes'>
+2019-10-18 01:55:15:944,Command list['Tr', '4', 'Horn', 'On']
+2019-10-18 01:55:15:944,command list is<class 'list'>
+2019-10-18 01:55:15:951,Invalid command received;['Tr', '4', 'Horn', 'On']
+2019-10-18 01:55:17:060,PUBSUB Received   b'Tr_4_Horn_On'
+2019-10-18 01:55:17:065,command is
+2019-10-18 01:55:17:066,<class 'bytes'>
+2019-10-18 01:55:17:067,Command list['Tr', '4', 'Horn', 'On']
+2019-10-18 01:55:17:067,command list is<class 'list'>
+2019-10-18 01:55:17:074,Invalid command received;['Tr', '4', 'Horn', 'On']
+2019-10-18 01:55:17:308,PUBSUB Received   b'Tr_4_Horn_On'
+2019-10-18 01:55:17:309,command is
+2019-10-18 01:55:17:309,<class 'bytes'>
+2019-10-18 01:55:17:310,Command list['Tr', '4', 'Horn', 'On']
+2019-10-18 01:55:17:311,command list is<class 'list'>
+2019-10-18 01:55:17:317,Invalid command received;['Tr', '4', 'Horn', 'On']
+2019-10-18 01:55:17:599,PUBSUB Received   b'Tr_4_Horn_On'
+2019-10-18 01:55:17:599,command is
+2019-10-18 01:55:17:600,<class 'bytes'>
+2019-10-18 01:55:17:601,Command list['Tr', '4', 'Horn', 'On']
+2019-10-18 01:55:17:601,command list is<class 'list'>
+2019-10-18 01:55:17:608,Invalid command received;['Tr', '4', 'Horn', 'On']
+2019-10-18 01:55:19:184,PUBSUB Received   b'Tr_4_SND_0'
+2019-10-18 01:55:19:185,command is
+2019-10-18 01:55:19:185,<class 'bytes'>
+2019-10-18 01:55:19:186,Command list['Tr', '4', 'SND', '0']
+2019-10-18 01:55:19:187,command list is<class 'list'>
+2019-10-18 01:55:19:193,Invalid command received;['Tr', '4', 'SND', '0']
+2019-10-18 01:55:19:500,PUBSUB Received   b'Tr_4_SND_0'
+2019-10-18 01:55:19:501,command is
+2019-10-18 01:55:19:502,<class 'bytes'>
+2019-10-18 01:55:19:503,Command list['Tr', '4', 'SND', '0']
+2019-10-18 01:55:19:503,command list is<class 'list'>
+2019-10-18 01:55:19:509,Invalid command received;['Tr', '4', 'SND', '0']
+2019-10-18 01:55:19:759,PUBSUB Received   b'Tr_4_SND_0'
+2019-10-18 01:55:19:760,command is
+2019-10-18 01:55:19:761,<class 'bytes'>
+2019-10-18 01:55:19:761,Command list['Tr', '4', 'SND', '0']
+2019-10-18 01:55:19:762,command list is<class 'list'>
+2019-10-18 01:55:19:768,Invalid command received;['Tr', '4', 'SND', '0']
+2019-10-18 01:55:20:032,PUBSUB Received   b'Tr_4_SND_0'
+2019-10-18 01:55:20:033,command is
+2019-10-18 01:55:20:033,<class 'bytes'>
+2019-10-18 01:55:20:034,Command list['Tr', '4', 'SND', '0']
+2019-10-18 01:55:20:034,command list is<class 'list'>
+2019-10-18 01:55:20:041,Invalid command received;['Tr', '4', 'SND', '0']
+2019-10-18 01:55:21:406,PUBSUB Received   b'Tr_4_Mute_Off'
+2019-10-18 01:55:21:407,command is
+2019-10-18 01:55:21:408,<class 'bytes'>
+2019-10-18 01:55:21:408,Command list['Tr', '4', 'Mute', 'Off']
+2019-10-18 01:55:21:409,command list is<class 'list'>
+2019-10-18 01:55:21:415,Invalid command received;['Tr', '4', 'Mute', 'Off']
+2019-10-18 01:55:22:643,PUBSUB Received   b'Tr_4_Mute_On'
+2019-10-18 01:55:22:644,command is
+2019-10-18 01:55:22:644,<class 'bytes'>
+2019-10-18 01:55:22:645,Command list['Tr', '4', 'Mute', 'On']
+2019-10-18 01:55:22:645,command list is<class 'list'>
+2019-10-18 01:55:22:652,Invalid command received;['Tr', '4', 'Mute', 'On']
+2019-10-18 01:55:24:968,PUBSUB Received   b'Tr_4_Mute_Off'
+2019-10-18 01:55:24:968,command is
+2019-10-18 01:55:24:969,<class 'bytes'>
+2019-10-18 01:55:24:970,Command list['Tr', '4', 'Mute', 'Off']
+2019-10-18 01:55:24:970,command list is<class 'list'>
+2019-10-18 01:55:24:977,Invalid command received;['Tr', '4', 'Mute', 'Off']
+2019-10-18 01:55:26:261,PUBSUB Received   b'Tr_4_SND_1'
+2019-10-18 01:55:26:262,command is
+2019-10-18 01:55:26:262,<class 'bytes'>
+2019-10-18 01:55:26:263,Command list['Tr', '4', 'SND', '1']
+2019-10-18 01:55:26:264,command list is<class 'list'>
+2019-10-18 01:55:26:270,Invalid command received;['Tr', '4', 'SND', '1']
+2019-10-18 01:55:27:197,PUBSUB Received   b'Tr_4_SND_1'
+2019-10-18 01:55:27:198,command is
+2019-10-18 01:55:27:199,<class 'bytes'>
+2019-10-18 01:55:27:200,Command list['Tr', '4', 'SND', '1']
+2019-10-18 01:55:27:200,command list is<class 'list'>
+2019-10-18 01:55:27:207,Invalid command received;['Tr', '4', 'SND', '1']
+2019-10-18 01:55:27:459,PUBSUB Received   b'Tr_4_SND_1'
+2019-10-18 01:55:27:459,command is
+2019-10-18 01:55:27:460,<class 'bytes'>
+2019-10-18 01:55:27:461,Command list['Tr', '4', 'SND', '1']
+2019-10-18 01:55:27:461,command list is<class 'list'>
+2019-10-18 01:55:27:468,Invalid command received;['Tr', '4', 'SND', '1']
+2019-10-18 01:55:27:686,PUBSUB Received   b'Tr_4_SND_1'
+2019-10-18 01:55:27:691,command is
+2019-10-18 01:55:27:692,<class 'bytes'>
+2019-10-18 01:55:27:692,Command list['Tr', '4', 'SND', '1']
+2019-10-18 01:55:27:693,command list is<class 'list'>
+2019-10-18 01:55:27:699,Invalid command received;['Tr', '4', 'SND', '1']
+2019-10-18 01:55:27:951,PUBSUB Received   b'Tr_4_SND_1'
+2019-10-18 01:55:27:952,command is
+2019-10-18 01:55:27:952,<class 'bytes'>
+2019-10-18 01:55:27:953,Command list['Tr', '4', 'SND', '1']
+2019-10-18 01:55:27:953,command list is<class 'list'>
+2019-10-18 01:55:27:960,Invalid command received;['Tr', '4', 'SND', '1']
+2019-10-18 01:55:28:179,PUBSUB Received   b'Tr_4_SND_1'
+2019-10-18 01:55:28:180,command is
+2019-10-18 01:55:28:180,<class 'bytes'>
+2019-10-18 01:55:28:181,Command list['Tr', '4', 'SND', '1']
+2019-10-18 01:55:28:182,command list is<class 'list'>
+2019-10-18 01:55:28:188,Invalid command received;['Tr', '4', 'SND', '1']
+2019-10-18 01:55:31:128,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 01:55:31:128,command is
+2019-10-18 01:55:31:129,<class 'bytes'>
+2019-10-18 01:55:31:130,Command list['Tr', '4', 'Stop']
+2019-10-18 01:55:31:130,command list is<class 'list'>
+2019-10-18 01:55:31:137,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 01:55:32:317,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 01:55:32:318,command is
+2019-10-18 01:55:32:319,<class 'bytes'>
+2019-10-18 01:55:32:319,Command list['Tr', '4', 'Stop']
+2019-10-18 01:55:32:320,command list is<class 'list'>
+2019-10-18 01:55:32:326,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 01:55:32:782,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 01:55:32:789,command is
+2019-10-18 01:55:32:789,<class 'bytes'>
+2019-10-18 01:55:32:790,Command list['Tr', '4', 'Stop']
+2019-10-18 01:55:32:790,command list is<class 'list'>
+2019-10-18 01:55:32:797,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 01:55:33:017,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 01:55:33:018,command is
+2019-10-18 01:55:33:018,<class 'bytes'>
+2019-10-18 01:55:33:019,Command list['Tr', '4', 'Stop']
+2019-10-18 01:55:33:020,command list is<class 'list'>
+2019-10-18 01:55:33:026,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 01:55:37:951,PUBSUB Received   b'Tr_4_Speed_117'
+2019-10-18 01:55:37:952,command is
+2019-10-18 01:55:37:953,<class 'bytes'>
+2019-10-18 01:55:37:953,Command list['Tr', '4', 'Speed', '117']
+2019-10-18 01:55:37:954,command list is<class 'list'>
+2019-10-18 01:55:37:960,Active train address is;4, New speed value is;117
+2019-10-18 01:55:37:980,Packet out; O 04 3F f5 ce
+
+2019-10-18 01:55:37:986,b'P'
+2019-10-18 01:55:37:997,b'>'
+2019-10-18 01:55:38:008,b' '
+2019-10-18 01:55:40:582,PUBSUB Received   b'Tr_4_Speed_0'
+2019-10-18 01:55:40:582,command is
+2019-10-18 01:55:40:583,<class 'bytes'>
+2019-10-18 01:55:40:584,Command list['Tr', '4', 'Speed', '0']
+2019-10-18 01:55:40:584,command list is<class 'list'>
+2019-10-18 01:55:40:591,Active train address is;4, New speed value is;0
+2019-10-18 01:55:40:609,Packet out; O 04 3F 80 bb
+
+2019-10-18 01:55:40:613,b'P'
+2019-10-18 01:55:40:624,b'>'
+2019-10-18 01:55:40:635,b' '
+2019-10-18 01:55:41:996,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 01:55:41:997,command is
+2019-10-18 01:55:41:998,<class 'bytes'>
+2019-10-18 01:55:41:998,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 01:55:41:999,command list is<class 'list'>
+2019-10-18 01:55:42:005,Active train address is;4, New speed value is;128
+2019-10-18 01:55:42:023,Packet out; O 04 3F ff c4
+
+2019-10-18 01:55:42:026,b'P'
+2019-10-18 01:55:42:037,b'>'
+2019-10-18 01:55:42:048,b' '
+2019-10-18 01:55:44:457,PUBSUB Received   b'Tr_4_Speed_93'
+2019-10-18 01:55:44:458,command is
+2019-10-18 01:55:44:458,<class 'bytes'>
+2019-10-18 01:55:44:459,Command list['Tr', '4', 'Speed', '93']
+2019-10-18 01:55:44:460,command list is<class 'list'>
+2019-10-18 01:55:44:466,Active train address is;4, New speed value is;93
+2019-10-18 01:55:44:484,Packet out; O 04 3F dd e6
+
+2019-10-18 01:55:44:490,b'P'
+2019-10-18 01:55:44:501,b'>'
+2019-10-18 01:55:44:512,b' '
+2019-10-18 01:55:45:445,PUBSUB Received   b'Tr_4_Speed_121'
+2019-10-18 01:55:45:446,command is
+2019-10-18 01:55:45:446,<class 'bytes'>
+2019-10-18 01:55:45:447,Command list['Tr', '4', 'Speed', '121']
+2019-10-18 01:55:45:448,command list is<class 'list'>
+2019-10-18 01:55:45:454,Active train address is;4, New speed value is;121
+2019-10-18 01:55:45:472,Packet out; O 04 3F f9 c2
+
+2019-10-18 01:55:45:475,b'P'
+2019-10-18 01:55:45:486,b'>'
+2019-10-18 01:55:45:496,b' '
+2019-10-18 01:55:45:917,PUBSUB Received   b'Tr_4_Speed_112'
+2019-10-18 01:55:45:918,command is
+2019-10-18 01:55:45:919,<class 'bytes'>
+2019-10-18 01:55:45:919,Command list['Tr', '4', 'Speed', '112']
+2019-10-18 01:55:45:920,command list is<class 'list'>
+2019-10-18 01:55:45:926,Active train address is;4, New speed value is;112
+2019-10-18 01:55:45:945,Packet out; O 04 3F f0 cb
+
+2019-10-18 01:55:45:951,b'P'
+2019-10-18 01:55:45:962,b'>'
+2019-10-18 01:55:45:973,b' '
+2019-10-18 01:55:49:322,PUBSUB Received   b'Tr_4_Lights_On'
+2019-10-18 01:55:49:323,command is
+2019-10-18 01:55:49:323,<class 'bytes'>
+2019-10-18 01:55:49:324,Command list['Tr', '4', 'Lights', 'On']
+2019-10-18 01:55:49:325,command list is<class 'list'>
+2019-10-18 01:55:49:331,Active train address is;4, New lights value is;On
+2019-10-18 01:55:49:332,Packet out; O 04 90 94
+
+2019-10-18 01:55:49:333,Invalid command received;['Tr', '4', 'Lights', 'On']
+2019-10-18 01:55:49:335,b'P'
+2019-10-18 01:55:49:346,b'>'
+2019-10-18 01:55:49:356,b' '
+2019-10-18 01:55:51:419,PUBSUB Received   b'Tr_4_Lights_Off'
+2019-10-18 01:55:51:426,command is
+2019-10-18 01:55:51:427,<class 'bytes'>
+2019-10-18 01:55:51:428,Command list['Tr', '4', 'Lights', 'Off']
+2019-10-18 01:55:51:428,command list is<class 'list'>
+2019-10-18 01:55:51:435,Active train address is;4, New lights value is;Off
+2019-10-18 01:55:51:436,Packet out; O 04 80 84
+
+2019-10-18 01:55:51:436,Invalid command received;['Tr', '4', 'Lights', 'Off']
+2019-10-18 01:55:51:444,b'P'
+2019-10-18 01:55:51:455,b'>'
+2019-10-18 01:55:51:465,b' '
+2019-10-18 01:56:12:380,PUBSUB Received   b'Tr_4_Speed_121'
+2019-10-18 01:56:12:380,command is
+2019-10-18 01:56:12:381,<class 'bytes'>
+2019-10-18 01:56:12:382,Command list['Tr', '4', 'Speed', '121']
+2019-10-18 01:56:12:382,command list is<class 'list'>
+2019-10-18 01:56:12:389,Active train address is;4, New speed value is;121
+2019-10-18 01:56:12:407,Packet out; O 04 3F f9 c2
+
+2019-10-18 01:56:12:409,b'P'
+2019-10-18 01:56:12:420,b'>'
+2019-10-18 01:56:12:431,b' '
+2019-10-18 01:56:13:942,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 01:56:13:943,command is
+2019-10-18 01:56:13:943,<class 'bytes'>
+2019-10-18 01:56:13:944,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 01:56:13:944,command list is<class 'list'>
+2019-10-18 01:56:13:951,Active train address is;4, New speed value is;128
+2019-10-18 01:56:13:969,Packet out; O 04 3F ff c4
+
+2019-10-18 01:56:13:976,b'P'
+2019-10-18 01:56:13:987,b'>'
+2019-10-18 01:56:13:998,b' '
+2019-10-18 01:57:58:927,PUBSUB Received   b'Tr_4_Speed_122'
+2019-10-18 01:57:58:928,command is
+2019-10-18 01:57:58:928,<class 'bytes'>
+2019-10-18 01:57:58:929,Command list['Tr', '4', 'Speed', '122']
+2019-10-18 01:57:58:930,command list is<class 'list'>
+2019-10-18 01:57:58:936,Active train address is;4, New speed value is;122
+2019-10-18 01:57:58:955,Packet out; O 04 3F fa c1
+
+2019-10-18 01:57:58:958,b'P'
+2019-10-18 01:57:58:969,b'>'
+2019-10-18 01:57:58:980,b' '
+2019-10-18 01:58:00:236,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 01:58:00:237,command is
+2019-10-18 01:58:00:237,<class 'bytes'>
+2019-10-18 01:58:00:238,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 01:58:00:239,command list is<class 'list'>
+2019-10-18 01:58:00:245,Active train address is;4, New speed value is;128
+2019-10-18 01:58:00:263,Packet out; O 04 3F ff c4
+
+2019-10-18 01:58:00:265,b'P'
+2019-10-18 01:58:00:275,b'>'
+2019-10-18 01:58:00:286,b' '
+2019-10-18 01:59:14:624,PUBSUB Received   b'Tr_4_Speed_121'
+2019-10-18 01:59:14:625,command is
+2019-10-18 01:59:14:626,<class 'bytes'>
+2019-10-18 01:59:14:626,Command list['Tr', '4', 'Speed', '121']
+2019-10-18 01:59:14:627,command list is<class 'list'>
+2019-10-18 01:59:14:633,Active train address is;4, New speed value is;121
+2019-10-18 01:59:14:651,Packet out; O 04 3F f9 c2
+
+2019-10-18 01:59:14:657,b'P'
+2019-10-18 01:59:14:668,b'>'
+2019-10-18 01:59:14:678,b' '
+2019-10-18 02:00:11:655,PUBSUB Received   b'Tr_4_Speed_120'
+2019-10-18 02:00:11:656,command is
+2019-10-18 02:00:11:657,<class 'bytes'>
+2019-10-18 02:00:11:657,Command list['Tr', '4', 'Speed', '120']
+2019-10-18 02:00:11:658,command list is<class 'list'>
+2019-10-18 02:00:11:664,Active train address is;4, New speed value is;120
+2019-10-18 02:00:11:682,Packet out; O 04 3F f8 c3
+
+2019-10-18 02:00:11:688,b'P'
+2019-10-18 02:00:11:699,b'>'
+2019-10-18 02:00:11:710,b' '
+2019-10-18 02:01:22:158,PUBSUB Received   b'Tr_4_Speed_124'
+2019-10-18 02:01:22:159,command is
+2019-10-18 02:01:22:159,<class 'bytes'>
+2019-10-18 02:01:22:160,Command list['Tr', '4', 'Speed', '124']
+2019-10-18 02:01:22:161,command list is<class 'list'>
+2019-10-18 02:01:22:167,Active train address is;4, New speed value is;124
+2019-10-18 02:01:22:185,Packet out; O 04 3F fc c7
+
+2019-10-18 02:01:22:194,b'P'
+2019-10-18 02:01:22:205,b'>'
+2019-10-18 02:01:22:216,b' '
+2019-10-18 02:01:23:320,PUBSUB Received   b'Tr_4_Speed_116'
+2019-10-18 02:01:23:321,command is
+2019-10-18 02:01:23:322,<class 'bytes'>
+2019-10-18 02:01:23:323,Command list['Tr', '4', 'Speed', '116']
+2019-10-18 02:01:23:323,command list is<class 'list'>
+2019-10-18 02:01:23:330,Active train address is;4, New speed value is;116
+2019-10-18 02:01:23:348,Packet out; O 04 3F f4 cf
+
+2019-10-18 02:01:23:352,b'P'
+2019-10-18 02:01:23:363,b'>'
+2019-10-18 02:01:23:373,b' '
+2019-10-18 02:01:24:863,PUBSUB Received   b'Tr_4_Dir_BWD'
+2019-10-18 02:01:24:864,command is
+2019-10-18 02:01:24:865,<class 'bytes'>
+2019-10-18 02:01:24:866,Command list['Tr', '4', 'Dir', 'BWD']
+2019-10-18 02:01:24:866,command list is<class 'list'>
+2019-10-18 02:01:24:872,Active train address is;4, New direction value is;BWD
+2019-10-18 02:01:24:891,Packet out; O 04 3F 74 4f
+
+2019-10-18 02:01:24:894,b'P'
+2019-10-18 02:01:24:905,b'>'
+2019-10-18 02:01:24:916,b' '
+2019-10-18 02:04:23:348,PUBSUB Received   b'Tr_4_Speed_119'
+2019-10-18 02:04:23:349,command is
+2019-10-18 02:04:23:349,<class 'bytes'>
+2019-10-18 02:04:23:350,Command list['Tr', '4', 'Speed', '119']
+2019-10-18 02:04:23:351,command list is<class 'list'>
+2019-10-18 02:04:23:357,Active train address is;4, New speed value is;119
+2019-10-18 02:04:23:375,Packet out; O 04 3F 77 4c
+
+2019-10-18 02:04:23:377,b'P'
+2019-10-18 02:04:23:388,b'>'
+2019-10-18 02:04:23:399,b' '
+2019-10-18 02:04:24:145,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 02:04:24:145,command is
+2019-10-18 02:04:24:146,<class 'bytes'>
+2019-10-18 02:04:24:147,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 02:04:24:147,command list is<class 'list'>
+2019-10-18 02:04:24:154,Active train address is;4, New speed value is;128
+2019-10-18 02:04:24:172,Packet out; O 04 3F 7f 44
+
+2019-10-18 02:04:24:173,b'P'
+2019-10-18 02:04:24:184,b'>'
+2019-10-18 02:04:24:195,b' '
+2019-10-18 02:04:29:086,PUBSUB Received   b'Tr_4_Dir_FWD'
+2019-10-18 02:04:29:086,command is
+2019-10-18 02:04:29:087,<class 'bytes'>
+2019-10-18 02:04:29:088,Command list['Tr', '4', 'Dir', 'FWD']
+2019-10-18 02:04:29:088,command list is<class 'list'>
+2019-10-18 02:04:29:095,Active train address is;4, New direction value is;FWD
+2019-10-18 02:04:29:113,Packet out; O 04 3F ff c4
+
+2019-10-18 02:04:29:117,b'P'
+2019-10-18 02:04:29:128,b'>'
+2019-10-18 02:04:29:138,b' '
+2019-10-18 02:04:31:950,PUBSUB Received   b'Tr_4_Speed_114'
+2019-10-18 02:04:31:951,command is
+2019-10-18 02:04:31:952,<class 'bytes'>
+2019-10-18 02:04:31:953,Command list['Tr', '4', 'Speed', '114']
+2019-10-18 02:04:31:953,command list is<class 'list'>
+2019-10-18 02:04:31:960,Active train address is;4, New speed value is;114
+2019-10-18 02:04:31:980,Packet out; O 04 3F f2 c9
+
+2019-10-18 02:04:31:982,b'P'
+2019-10-18 02:04:31:993,b'>'
+2019-10-18 02:04:32:004,b' '
+2019-10-18 02:04:37:044,PUBSUB Received   b'Tr_4_Speed_128'
+2019-10-18 02:04:37:051,command is
+2019-10-18 02:04:37:052,<class 'bytes'>
+2019-10-18 02:04:37:053,Command list['Tr', '4', 'Speed', '128']
+2019-10-18 02:04:37:053,command list is<class 'list'>
+2019-10-18 02:04:37:059,Active train address is;4, New speed value is;128
+2019-10-18 02:04:37:077,Packet out; O 04 3F ff c4
+
+2019-10-18 02:04:37:081,b'P'
+2019-10-18 02:04:37:092,b'>'
+2019-10-18 02:04:37:103,b' '
+2019-10-18 02:04:52:815,PUBSUB Received   b'Tr_4_Speed_119'
+2019-10-18 02:04:52:815,command is
+2019-10-18 02:04:52:816,<class 'bytes'>
+2019-10-18 02:04:52:817,Command list['Tr', '4', 'Speed', '119']
+2019-10-18 02:04:52:817,command list is<class 'list'>
+2019-10-18 02:04:52:824,Active train address is;4, New speed value is;119
+2019-10-18 02:04:52:842,Packet out; O 04 3F f7 cc
+
+2019-10-18 02:04:52:848,b'P'
+2019-10-18 02:04:52:859,b'>'
+2019-10-18 02:04:52:870,b' '
+2019-10-18 02:04:56:163,PUBSUB Received   b'Tr_4_Speed_102'
+2019-10-18 02:04:56:164,command is
+2019-10-18 02:04:56:165,<class 'bytes'>
+2019-10-18 02:04:56:165,Command list['Tr', '4', 'Speed', '102']
+2019-10-18 02:04:56:166,command list is<class 'list'>
+2019-10-18 02:04:56:172,Active train address is;4, New speed value is;102
+2019-10-18 02:04:56:193,Packet out; O 04 3F e6 dd
+
+2019-10-18 02:04:56:199,b'P'
+2019-10-18 02:04:56:210,b'>'
+2019-10-18 02:04:56:220,b' '
+2019-10-18 02:08:25:720,PUBSUB Received   b'Tr_4_Lights_On'
+2019-10-18 02:08:25:721,command is
+2019-10-18 02:08:25:721,<class 'bytes'>
+2019-10-18 02:08:25:722,Command list['Tr', '4', 'Lights', 'On']
+2019-10-18 02:08:25:723,command list is<class 'list'>
+2019-10-18 02:08:25:729,Active train address is;4, New lights value is;On
+2019-10-18 02:08:25:730,Packet out; O 04 90 94
+
+2019-10-18 02:08:25:731,Invalid command received;['Tr', '4', 'Lights', 'On']
+2019-10-18 02:08:25:738,b'P'
+2019-10-18 02:08:25:749,b'>'
+2019-10-18 02:08:25:760,b' '
+2019-10-18 02:08:44:973,PUBSUB Received   b'Tr_4_Speed_107'
+2019-10-18 02:08:44:973,command is
+2019-10-18 02:08:44:974,<class 'bytes'>
+2019-10-18 02:08:44:975,Command list['Tr', '4', 'Speed', '107']
+2019-10-18 02:08:44:975,command list is<class 'list'>
+2019-10-18 02:08:44:982,Active train address is;4, New speed value is;107
+2019-10-18 02:08:45:000,Packet out; O 04 3F eb d0
+
+2019-10-18 02:08:45:002,b'P'
+2019-10-18 02:08:45:013,b'>'
+2019-10-18 02:08:45:024,b' '
+2019-10-18 02:08:47:476,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 02:08:47:477,command is
+2019-10-18 02:08:47:478,<class 'bytes'>
+2019-10-18 02:08:47:478,Command list['Tr', '4', 'Stop']
+2019-10-18 02:08:47:479,command list is<class 'list'>
+2019-10-18 02:08:47:485,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 02:08:49:315,PUBSUB Received   b'Tr_4_Stop'
+2019-10-18 02:08:49:316,command is
+2019-10-18 02:08:49:316,<class 'bytes'>
+2019-10-18 02:08:49:317,Command list['Tr', '4', 'Stop']
+2019-10-18 02:08:49:318,command list is<class 'list'>
+2019-10-18 02:08:49:324,Invalid command received;['Tr', '4', 'Stop']
+2019-10-18 02:09:03:931,PUBSUB Received   b'Tr_4_Speed_73'
+2019-10-18 02:09:03:932,command is
+2019-10-18 02:09:03:932,<class 'bytes'>
+2019-10-18 02:09:03:933,Command list['Tr', '4', 'Speed', '73']
+2019-10-18 02:09:03:934,command list is<class 'list'>
+2019-10-18 02:09:03:940,Active train address is;4, New speed value is;73
+2019-10-18 02:09:03:958,Packet out; O 04 3F c9 f2
+
+2019-10-18 02:09:03:963,b'P'
+2019-10-18 02:09:03:974,b'>'
+2019-10-18 02:09:03:985,b' '
+2019-10-18 02:09:05:414,PUBSUB Received   b'Tr_4_Speed_123'
+2019-10-18 02:09:05:415,command is
+2019-10-18 02:09:05:416,<class 'bytes'>
+2019-10-18 02:09:05:416,Command list['Tr', '4', 'Speed', '123']
+2019-10-18 02:09:05:417,command list is<class 'list'>
+2019-10-18 02:09:05:423,Active train address is;4, New speed value is;123
+2019-10-18 02:09:05:441,Packet out; O 04 3F fb c0
+
+2019-10-18 02:09:05:449,b'P'
+2019-10-18 02:09:05:460,b'>'
+2019-10-18 02:09:05:471,b' '
+2019-10-18 02:09:06:707,PUBSUB Received   b'Tr_4_Speed_109'
+2019-10-18 02:09:06:708,command is
+2019-10-18 02:09:06:709,<class 'bytes'>
+2019-10-18 02:09:06:709,Command list['Tr', '4', 'Speed', '109']
+2019-10-18 02:09:06:710,command list is<class 'list'>
+2019-10-18 02:09:06:716,Active train address is;4, New speed value is;109
+2019-10-18 02:09:06:734,Packet out; O 04 3F ed d6
+
+2019-10-18 02:09:06:738,b'P'
+2019-10-18 02:09:06:749,b'>'
+2019-10-18 02:09:06:760,b' '
+2019-10-18 02:12:32:494,PUBSUB Received   b'Tr_3_Speed_124'
+2019-10-18 02:12:32:495,command is
+2019-10-18 02:12:32:495,<class 'bytes'>
+2019-10-18 02:12:32:496,Command list['Tr', '3', 'Speed', '124']
+2019-10-18 02:12:32:497,command list is<class 'list'>
+2019-10-18 02:12:32:503,Active train address is;3, New speed value is;124
+2019-10-18 02:12:32:521,Packet out; O 03 3F fc c0
+
+2019-10-18 02:12:32:527,b'P'
+2019-10-18 02:12:32:538,b'>'
+2019-10-18 02:12:32:549,b' '
+2019-10-18 02:12:34:537,PUBSUB Received   b'Tr_3_Speed_128'
+2019-10-18 02:12:34:538,command is
+2019-10-18 02:12:34:539,<class 'bytes'>
+2019-10-18 02:12:34:539,Command list['Tr', '3', 'Speed', '128']
+2019-10-18 02:12:34:540,command list is<class 'list'>
+2019-10-18 02:12:34:546,Active train address is;3, New speed value is;128
+2019-10-18 02:12:34:564,Packet out; O 03 3F ff c3
+
+2019-10-18 02:12:34:572,b'P'
+2019-10-18 02:12:34:583,b'>'
+2019-10-18 02:12:34:594,b' '
+2019-10-18 02:13:27:321,PUBSUB Received   b'Tr_3_Speed_117'
+2019-10-18 02:13:27:322,command is
+2019-10-18 02:13:27:323,<class 'bytes'>
+2019-10-18 02:13:27:323,Command list['Tr', '3', 'Speed', '117']
+2019-10-18 02:13:27:324,command list is<class 'list'>
+2019-10-18 02:13:27:330,Active train address is;3, New speed value is;117
+2019-10-18 02:13:27:348,Packet out; O 03 3F f5 c9
+
+2019-10-18 02:13:27:357,b'P'
+2019-10-18 02:13:27:368,b'>'
+2019-10-18 02:13:27:379,b' '
+2019-10-18 02:13:30:678,PUBSUB Received   b'Tr_3_Speed_128'
+2019-10-18 02:13:30:679,command is
+2019-10-18 02:13:30:680,<class 'bytes'>
+2019-10-18 02:13:30:681,Command list['Tr', '3', 'Speed', '128']
+2019-10-18 02:13:30:681,command list is<class 'list'>
+2019-10-18 02:13:30:687,Active train address is;3, New speed value is;128
+2019-10-18 02:13:30:707,Packet out; O 03 3F ff c3
+
+2019-10-18 02:13:30:716,b'P'
+2019-10-18 02:13:30:726,b'>'
+2019-10-18 02:13:30:737,b' '
+2019-10-18 02:13:39:063,PUBSUB Received   b'Tr_4_Speed_110'
+2019-10-18 02:13:39:064,command is
+2019-10-18 02:13:39:065,<class 'bytes'>
+2019-10-18 02:13:39:065,Command list['Tr', '4', 'Speed', '110']
+2019-10-18 02:13:39:066,command list is<class 'list'>
+2019-10-18 02:13:39:073,Active train address is;4, New speed value is;110
+2019-10-18 02:13:39:093,Packet out; O 04 3F ee d5
+
+2019-10-18 02:13:39:099,b'P'
+2019-10-18 02:13:39:110,b'>'
+2019-10-18 02:13:39:120,b' '
+2019-10-18 02:13:43:176,PUBSUB Received   b'Tr_4_Dir_BWD'
+2019-10-18 02:13:43:176,command is
+2019-10-18 02:13:43:177,<class 'bytes'>
+2019-10-18 02:13:43:178,Command list['Tr', '4', 'Dir', 'BWD']
+2019-10-18 02:13:43:178,command list is<class 'list'>
+2019-10-18 02:13:43:185,Active train address is;4, New direction value is;BWD
+2019-10-18 02:13:43:203,Packet out; O 04 3F 6e 55
+
+2019-10-18 02:13:43:205,b'P'
+2019-10-18 02:13:43:216,b'>'
+2019-10-18 02:13:43:227,b' '
+2019-10-18 02:13:52:710,PUBSUB Received   b'Tr_4_Speed_2'
+2019-10-18 02:13:52:711,command is
+2019-10-18 02:13:52:712,<class 'bytes'>
+2019-10-18 02:13:52:713,Command list['Tr', '4', 'Speed', '2']
+2019-10-18 02:13:52:713,command list is<class 'list'>
+2019-10-18 02:13:52:719,Active train address is;4, New speed value is;2
+2019-10-18 02:13:52:737,Packet out; O 04 3F 02 39
+
+2019-10-18 02:13:52:739,b'P'
+2019-10-18 02:13:52:750,b'>'
+2019-10-18 02:13:52:761,b' '
+2019-10-18 02:13:59:846,PUBSUB Received   b'Tr_4_Dir_FWD'
+2019-10-18 02:13:59:847,command is
+2019-10-18 02:13:59:848,<class 'bytes'>
+2019-10-18 02:13:59:849,Command list['Tr', '4', 'Dir', 'FWD']
+2019-10-18 02:13:59:849,command list is<class 'list'>
+2019-10-18 02:13:59:856,Active train address is;4, New direction value is;FWD
+2019-10-18 02:13:59:874,Packet out; O 04 3F 82 b9
+
+2019-10-18 02:13:59:875,b'P'
+2019-10-18 02:13:59:886,b'>'
+2019-10-18 02:13:59:897,b' '
+2019-10-18 02:51:16:126,PUBSUB Received   b'Tr_3_Speed_69'
+2019-10-18 02:51:16:127,command is
+2019-10-18 02:51:16:127,<class 'bytes'>
+2019-10-18 02:51:16:128,Command list['Tr', '3', 'Speed', '69']
+2019-10-18 02:51:16:129,command list is<class 'list'>
+2019-10-18 02:51:16:135,Active train address is;3, New speed value is;69
+2019-10-18 02:51:16:152,Packet out; O 03 3F c5 f9
+
+2019-10-18 02:51:16:154,b'P'
+2019-10-18 02:51:16:165,b'>'
+2019-10-18 02:51:16:176,b' '
+2019-10-18 02:51:30:856,PUBSUB Received   b'Tr_3_Speed_35'
+2019-10-18 02:51:30:857,command is
+2019-10-18 02:51:30:858,<class 'bytes'>
+2019-10-18 02:51:30:858,Command list['Tr', '3', 'Speed', '35']
+2019-10-18 02:51:30:859,command list is<class 'list'>
+2019-10-18 02:51:30:865,Active train address is;3, New speed value is;35
+2019-10-18 02:51:30:883,Packet out; O 03 3F a3 9f
+
+2019-10-18 02:51:30:886,b'P'
+2019-10-18 02:51:30:897,b'>'
+2019-10-18 02:51:30:908,b' '
+2019-10-18 02:51:42:467,PUBSUB Received   b'Tr_3_Speed_44'
+2019-10-18 02:51:42:467,command is
+2019-10-18 02:51:42:468,<class 'bytes'>
+2019-10-18 02:51:42:469,Command list['Tr', '3', 'Speed', '44']
+2019-10-18 02:51:42:469,command list is<class 'list'>
+2019-10-18 02:51:42:476,Active train address is;3, New speed value is;44
+2019-10-18 02:51:42:493,Packet out; O 03 3F ac 90
+
+2019-10-18 02:51:42:496,b'P'
+2019-10-18 02:51:42:507,b'>'
+2019-10-18 02:51:42:518,b' '
+2019-10-18 02:51:56:172,PUBSUB Received   b'Tr_3_Speed_59'
+2019-10-18 02:51:56:173,command is
+2019-10-18 02:51:56:174,<class 'bytes'>
+2019-10-18 02:51:56:174,Command list['Tr', '3', 'Speed', '59']
+2019-10-18 02:51:56:175,command list is<class 'list'>
+2019-10-18 02:51:56:181,Active train address is;3, New speed value is;59
+2019-10-18 02:51:56:199,Packet out; O 03 3F bb 87
+
+2019-10-18 02:51:56:202,b'P'
+2019-10-18 02:51:56:213,b'>'
+2019-10-18 02:51:56:224,b' '
+2019-10-18 02:52:00:726,PUBSUB Received   b'Tr_3_Speed_39'
+2019-10-18 02:52:00:727,command is
+2019-10-18 02:52:00:727,<class 'bytes'>
+2019-10-18 02:52:00:728,Command list['Tr', '3', 'Speed', '39']
+2019-10-18 02:52:00:729,command list is<class 'list'>
+2019-10-18 02:52:00:735,Active train address is;3, New speed value is;39
+2019-10-18 02:52:00:753,Packet out; O 03 3F a7 9b
+
+2019-10-18 02:52:00:757,b'P'
+2019-10-18 02:52:00:768,b'>'
+2019-10-18 02:52:00:779,b' '
+2019-10-18 02:52:01:531,PUBSUB Received   b'Tr_3_Speed_31'
+2019-10-18 02:52:01:531,command is
+2019-10-18 02:52:01:532,<class 'bytes'>
+2019-10-18 02:52:01:533,Command list['Tr', '3', 'Speed', '31']
+2019-10-18 02:52:01:533,command list is<class 'list'>
+2019-10-18 02:52:01:540,Active train address is;3, New speed value is;31
+2019-10-18 02:52:01:558,Packet out; O 03 3F 9f a3
+
+2019-10-18 02:52:01:562,b'P'
+2019-10-18 02:52:01:572,b'>'
+2019-10-18 02:52:01:583,b' '
+2019-10-18 02:52:02:744,PUBSUB Received   b'Tr_3_Speed_40'
+2019-10-18 02:52:02:745,command is
+2019-10-18 02:52:02:745,<class 'bytes'>
+2019-10-18 02:52:02:746,Command list['Tr', '3', 'Speed', '40']
+2019-10-18 02:52:02:746,command list is<class 'list'>
+2019-10-18 02:52:02:753,Active train address is;3, New speed value is;40
+2019-10-18 02:52:02:771,Packet out; O 03 3F a8 94
+
+2019-10-18 02:52:02:776,b'P'
+2019-10-18 02:52:02:787,b'>'
+2019-10-18 02:52:02:798,b' '
+2019-10-18 02:52:03:636,PUBSUB Received   b'Tr_3_Speed_36'
+2019-10-18 02:52:03:637,command is
+2019-10-18 02:52:03:638,<class 'bytes'>
+2019-10-18 02:52:03:638,Command list['Tr', '3', 'Speed', '36']
+2019-10-18 02:52:03:639,command list is<class 'list'>
+2019-10-18 02:52:03:645,Active train address is;3, New speed value is;36
+2019-10-18 02:52:03:665,Packet out; O 03 3F a4 98
+
+2019-10-18 02:52:03:671,b'P'
+2019-10-18 02:52:03:682,b'>'
+2019-10-18 02:52:03:693,b' '
+2019-10-18 02:51:26:429,Serial port opened
+2019-10-18 02:51:26:671,Waiting For new redis data
+2019-10-18 02:51:26:672,PUBSUB Received   1
+2019-10-18 02:51:26:673,command is
+2019-10-18 02:51:26:673,<class 'int'>
+2019-10-18 02:51:26:674,Sub connected
+2019-10-18 02:51:26:792,b'P'
+2019-10-18 02:51:26:803,b'>'
+2019-10-18 02:51:26:814,b' '
+2019-10-18 02:51:26:912,b'P'
+2019-10-18 02:51:26:923,b'>'
+2019-10-18 02:51:26:934,b' '
+2019-10-18 02:51:26:945,b'P'
+2019-10-18 02:51:26:956,b'>'
+2019-10-18 02:51:26:968,b' '

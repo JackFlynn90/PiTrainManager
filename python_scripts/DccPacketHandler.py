@@ -87,7 +87,7 @@ class PacketBuilder():
 		else:
 			strAddress = str(address)
 
-		print("before check sum light is;" + str(lightValue) + " , and address is;" + str(address))
+		#print("before check sum light is;" + str(lightValue) + " , and address is;" + str(address))
 
 		#Basic 8 bit checksum xor. only of data sent
 		checksum = address ^ lightValue

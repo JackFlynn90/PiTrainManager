@@ -47,8 +47,7 @@ class SprogDevice():
 			try:
 				while self.ser.inWaiting() > 0:
 					feedback= self.ser.read()
-					self.debug.Print(str(feedback),2)
-					time.sleep(0.01)
+					self.debug.Print(str(feedback),1)
 
 				return True
 			except Exception as e:

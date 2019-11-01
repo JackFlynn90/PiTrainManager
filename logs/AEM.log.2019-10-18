@@ -1,0 +1,872 @@
+2019-10-18 01:12:20:243,b'USB Handshake\r\n'
+2019-10-18 01:12:34:999,b'USB Handshake\r\n'
+2019-10-18 01:12:49:764,b'USB Handshake\r\n'
+2019-10-18 01:13:04:529,b'USB Handshake\r\n'
+2019-10-18 01:13:19:284,b'USB Handshake\r\n'
+2019-10-18 01:13:34:048,b'USB Handshake\r\n'
+2019-10-18 01:13:48:801,b'USB Handshake\r\n'
+2019-10-18 01:14:03:421,b'USB Handshake\r\n'
+2019-10-18 01:14:18:159,b'USB Handshake\r\n'
+2019-10-18 01:14:33:028,b'USB Handshake\r\n'
+2019-10-18 01:14:47:819,b'USB Handshake\r\n'
+2019-10-18 01:15:02:580,b'USB Handshake\r\n'
+2019-10-18 01:15:17:340,b'USB Handshake\r\n'
+2019-10-18 01:15:32:107,b'USB Handshake\r\n'
+2019-10-18 01:15:46:874,b'USB Handshake\r\n'
+2019-10-18 01:16:01:633,b'USB Handshake\r\n'
+2019-10-18 01:16:16:405,b'USB Handshake\r\n'
+2019-10-18 01:16:31:170,b'USB Handshake\r\n'
+2019-10-18 01:16:45:928,b'USB Handshake\r\n'
+2019-10-18 01:17:00:692,b'USB Handshake\r\n'
+2019-10-18 01:17:15:461,b'USB Handshake\r\n'
+2019-10-18 01:17:30:227,b'USB Handshake\r\n'
+2019-10-18 01:17:44:995,b'USB Handshake\r\n'
+2019-10-18 01:17:59:755,b'USB Handshake\r\n'
+2019-10-18 01:18:14:521,b'USB Handshake\r\n'
+2019-10-18 01:18:29:287,b'USB Handshake\r\n'
+2019-10-18 01:18:44:051,b'USB Handshake\r\n'
+2019-10-18 01:18:58:817,b'USB Handshake\r\n'
+2019-10-18 01:19:13:586,b'USB Handshake\r\n'
+2019-10-18 01:19:28:350,b'USB Handshake\r\n'
+2019-10-18 01:19:43:115,b'USB Handshake\r\n'
+2019-10-18 01:19:57:880,b'USB Handshake\r\n'
+2019-10-18 01:20:12:645,b'USB Handshake\r\n'
+2019-10-18 01:20:27:409,b'USB Handshake\r\n'
+2019-10-18 01:20:42:175,b'USB Handshake\r\n'
+2019-10-18 01:20:56:939,b'USB Handshake\r\n'
+2019-10-18 01:21:11:702,b'USB Handshake\r\n'
+2019-10-18 01:21:26:475,b'USB Handshake\r\n'
+2019-10-18 01:21:41:243,b'USB Handshake\r\n'
+2019-10-18 01:21:56:007,b'USB Handshake\r\n'
+2019-10-18 01:22:10:773,b'USB Handshake\r\n'
+2019-10-18 01:22:25:531,b'USB Handshake\r\n'
+2019-10-18 01:22:40:303,b'USB Handshake\r\n'
+2019-10-18 01:22:55:069,b'USB Handshake\r\n'
+2019-10-18 01:23:09:833,b'USB Handshake\r\n'
+2019-10-18 01:23:24:598,b'USB Handshake\r\n'
+2019-10-18 01:23:39:363,b'USB Handshake\r\n'
+2019-10-18 01:23:54:097,b'USB Handshake\r\n'
+2019-10-18 01:24:08:799,b'USB Handshake\r\n'
+2019-10-18 01:24:23:519,b'USB Handshake\r\n'
+2019-10-18 01:24:38:254,b'USB Handshake\r\n'
+2019-10-18 01:24:53:000,b'USB Handshake\r\n'
+2019-10-18 01:25:07:749,b'USB Handshake\r\n'
+2019-10-18 01:25:22:496,b'USB Handshake\r\n'
+2019-10-18 01:25:37:253,b'USB Handshake\r\n'
+2019-10-18 01:25:52:000,b'USB Handshake\r\n'
+2019-10-18 01:26:06:752,b'USB Handshake\r\n'
+2019-10-18 01:26:21:512,b'USB Handshake\r\n'
+2019-10-18 01:26:36:261,b'USB Handshake\r\n'
+2019-10-18 01:26:51:019,b'USB Handshake\r\n'
+2019-10-18 01:27:05:773,b'USB Handshake\r\n'
+2019-10-18 01:27:20:526,b'USB Handshake\r\n'
+2019-10-18 01:27:35:280,b'USB Handshake\r\n'
+2019-10-18 01:27:50:040,b'USB Handshake\r\n'
+2019-10-18 01:28:04:788,b'USB Handshake\r\n'
+2019-10-18 01:28:19:551,b'USB Handshake\r\n'
+2019-10-18 01:28:34:301,b'USB Handshake\r\n'
+2019-10-18 01:28:49:056,b'USB Handshake\r\n'
+2019-10-18 01:29:03:809,b'USB Handshake\r\n'
+2019-10-18 01:29:18:566,b'USB Handshake\r\n'
+2019-10-18 01:29:33:322,b'USB Handshake\r\n'
+2019-10-18 01:29:48:079,b'USB Handshake\r\n'
+2019-10-18 01:30:02:830,b'USB Handshake\r\n'
+2019-10-18 01:30:17:596,b'USB Handshake\r\n'
+2019-10-18 01:30:32:381,b'USB Handshake\r\n'
+2019-10-18 01:30:47:163,b'USB Handshake\r\n'
+2019-10-18 01:31:01:928,b'USB Handshake\r\n'
+2019-10-18 01:31:16:701,b'USB Handshake\r\n'
+2019-10-18 01:31:31:472,b'USB Handshake\r\n'
+2019-10-18 01:31:46:239,b'USB Handshake\r\n'
+2019-10-18 01:32:01:005,b'USB Handshake\r\n'
+2019-10-18 01:32:15:770,b'USB Handshake\r\n'
+2019-10-18 01:32:30:534,b'USB Handshake\r\n'
+2019-10-18 01:32:45:297,b'USB Handshake\r\n'
+2019-10-18 01:33:00:050,b'USB Handshake\r\n'
+2019-10-18 01:33:14:812,b'USB Handshake\r\n'
+2019-10-18 01:33:29:576,b'USB Handshake\r\n'
+2019-10-18 01:33:44:338,b'USB Handshake\r\n'
+2019-10-18 01:33:59:099,b'USB Handshake\r\n'
+2019-10-18 01:34:13:851,b'USB Handshake\r\n'
+2019-10-18 01:34:28:612,b'USB Handshake\r\n'
+2019-10-18 01:34:43:371,b'USB Handshake\r\n'
+2019-10-18 01:34:58:130,b'USB Handshake\r\n'
+2019-10-18 01:35:12:889,b'USB Handshake\r\n'
+2019-10-18 01:35:27:649,b'USB Handshake\r\n'
+2019-10-18 01:35:42:404,b'USB Handshake\r\n'
+2019-10-18 01:35:57:163,b'USB Handshake\r\n'
+2019-10-18 01:36:11:922,b'USB Handshake\r\n'
+2019-10-18 01:36:26:672,b'USB Handshake\r\n'
+2019-10-18 01:36:41:432,b'USB Handshake\r\n'
+2019-10-18 01:36:56:192,b'USB Handshake\r\n'
+2019-10-18 01:37:10:952,b'USB Handshake\r\n'
+2019-10-18 01:37:25:712,b'USB Handshake\r\n'
+2019-10-18 01:37:40:472,b'USB Handshake\r\n'
+2019-10-18 01:37:55:222,b'USB Handshake\r\n'
+2019-10-18 01:38:09:984,b'USB Handshake\r\n'
+2019-10-18 01:38:24:743,b'USB Handshake\r\n'
+2019-10-18 01:38:39:505,b'USB Handshake\r\n'
+2019-10-18 01:38:54:257,b'USB Handshake\r\n'
+2019-10-18 01:39:09:014,b'USB Handshake\r\n'
+2019-10-18 01:39:23:782,b'USB Handshake\r\n'
+2019-10-18 01:39:38:536,b'USB Handshake\r\n'
+2019-10-18 01:39:53:290,b'USB Handshake\r\n'
+2019-10-18 01:40:08:054,b'USB Handshake\r\n'
+2019-10-18 01:40:22:807,b'USB Handshake\r\n'
+2019-10-18 01:40:37:571,b'USB Handshake\r\n'
+2019-10-18 01:40:52:328,b'USB Handshake\r\n'
+2019-10-18 01:41:07:090,b'USB Handshake\r\n'
+2019-10-18 01:41:21:843,b'USB Handshake\r\n'
+2019-10-18 01:41:36:601,b'USB Handshake\r\n'
+2019-10-18 01:41:51:366,b'USB Handshake\r\n'
+2019-10-18 01:42:06:125,b'USB Handshake\r\n'
+2019-10-18 01:42:20:879,b'USB Handshake\r\n'
+2019-10-18 01:42:35:643,b'USB Handshake\r\n'
+2019-10-18 01:42:50:401,b'USB Handshake\r\n'
+2019-10-18 01:43:05:160,b'USB Handshake\r\n'
+2019-10-18 01:43:19:921,b'USB Handshake\r\n'
+2019-10-18 01:43:34:677,b'USB Handshake\r\n'
+2019-10-18 01:43:49:442,b'USB Handshake\r\n'
+2019-10-18 01:44:04:196,b'USB Handshake\r\n'
+2019-10-18 01:44:18:962,b'USB Handshake\r\n'
+2019-10-18 01:44:33:718,b'USB Handshake\r\n'
+2019-10-18 01:44:48:481,b'USB Handshake\r\n'
+2019-10-18 01:45:03:235,b'USB Handshake\r\n'
+2019-10-18 01:45:18:004,b'USB Handshake\r\n'
+2019-10-18 01:45:32:761,b'USB Handshake\r\n'
+2019-10-18 01:45:47:517,b'USB Handshake\r\n'
+2019-10-18 01:46:02:282,b'USB Handshake\r\n'
+2019-10-18 01:46:17:041,b'USB Handshake\r\n'
+2019-10-18 01:46:31:792,b'USB Handshake\r\n'
+2019-10-18 01:46:46:557,b'USB Handshake\r\n'
+2019-10-18 01:47:01:314,b'USB Handshake\r\n'
+2019-10-18 01:47:16:072,b'USB Handshake\r\n'
+2019-10-18 01:47:30:838,b'USB Handshake\r\n'
+2019-10-18 01:47:45:600,b'USB Handshake\r\n'
+2019-10-18 01:48:00:356,b'USB Handshake\r\n'
+2019-10-18 01:48:15:116,b'USB Handshake\r\n'
+2019-10-18 01:48:29:870,b'USB Handshake\r\n'
+2019-10-18 01:48:44:633,b'USB Handshake\r\n'
+2019-10-18 01:48:59:391,b'USB Handshake\r\n'
+2019-10-18 01:49:14:151,b'USB Handshake\r\n'
+2019-10-18 01:49:28:909,b'USB Handshake\r\n'
+2019-10-18 01:49:43:671,b'USB Handshake\r\n'
+2019-10-18 01:49:58:434,b'USB Handshake\r\n'
+2019-10-18 01:50:13:186,b'USB Handshake\r\n'
+2019-10-18 01:50:27:949,b'USB Handshake\r\n'
+2019-10-18 01:50:42:708,b'USB Handshake\r\n'
+2019-10-18 01:50:57:468,b'USB Handshake\r\n'
+2019-10-18 01:51:12:228,b'USB Handshake\r\n'
+2019-10-18 01:51:26:980,b'USB Handshake\r\n'
+2019-10-18 01:51:41:741,b'USB Handshake\r\n'
+2019-10-18 01:51:56:507,b'USB Handshake\r\n'
+2019-10-18 01:52:11:261,b'USB Handshake\r\n'
+2019-10-18 01:52:26:021,b'USB Handshake\r\n'
+2019-10-18 01:52:40:777,b'USB Handshake\r\n'
+2019-10-18 01:52:55:542,b'USB Handshake\r\n'
+2019-10-18 01:53:10:302,b'USB Handshake\r\n'
+2019-10-18 01:53:25:053,b'USB Handshake\r\n'
+2019-10-18 01:53:39:817,b'USB Handshake\r\n'
+2019-10-18 01:53:54:571,b'USB Handshake\r\n'
+2019-10-18 01:54:09:331,b'USB Handshake\r\n'
+2019-10-18 01:54:24:091,b'USB Handshake\r\n'
+2019-10-18 01:54:38:852,b'USB Handshake\r\n'
+2019-10-18 01:54:53:612,b'USB Handshake\r\n'
+2019-10-18 01:55:08:371,b'USB Handshake\r\n'
+2019-10-18 01:55:23:125,b'USB Handshake\r\n'
+2019-10-18 01:55:37:890,b'USB Handshake\r\n'
+2019-10-18 01:55:52:647,b'USB Handshake\r\n'
+2019-10-18 01:56:07:409,b'USB Handshake\r\n'
+2019-10-18 01:56:22:167,b'USB Handshake\r\n'
+2019-10-18 01:56:36:924,b'USB Handshake\r\n'
+2019-10-18 01:56:51:684,b'USB Handshake\r\n'
+2019-10-18 01:57:06:446,b'USB Handshake\r\n'
+2019-10-18 01:57:21:200,b'USB Handshake\r\n'
+2019-10-18 01:57:35:955,b'USB Handshake\r\n'
+2019-10-18 01:57:50:720,b'USB Handshake\r\n'
+2019-10-18 01:58:05:474,b'USB Handshake\r\n'
+2019-10-18 01:58:20:233,b'USB Handshake\r\n'
+2019-10-18 01:58:34:992,b'USB Handshake\r\n'
+2019-10-18 01:58:49:757,b'USB Handshake\r\n'
+2019-10-18 01:59:04:515,b'USB Handshake\r\n'
+2019-10-18 01:59:19:270,b'USB Handshake\r\n'
+2019-10-18 01:59:34:037,b'USB Handshake\r\n'
+2019-10-18 01:59:48:788,b'USB Handshake\r\n'
+2019-10-18 02:00:03:549,b'USB Handshake\r\n'
+2019-10-18 02:00:18:310,b'USB Handshake\r\n'
+2019-10-18 02:00:33:064,b'USB Handshake\r\n'
+2019-10-18 02:00:47:823,b'USB Handshake\r\n'
+2019-10-18 02:01:02:586,b'USB Handshake\r\n'
+2019-10-18 02:01:17:339,b'USB Handshake\r\n'
+2019-10-18 02:01:32:098,b'USB Handshake\r\n'
+2019-10-18 02:01:46:861,b'USB Handshake\r\n'
+2019-10-18 02:02:01:619,b'USB Handshake\r\n'
+2019-10-18 02:02:16:374,b'USB Handshake\r\n'
+2019-10-18 02:02:31:134,b'USB Handshake\r\n'
+2019-10-18 02:02:45:891,b'USB Handshake\r\n'
+2019-10-18 02:03:00:655,b'USB Handshake\r\n'
+2019-10-18 02:03:15:408,b'USB Handshake\r\n'
+2019-10-18 02:03:30:173,b'USB Handshake\r\n'
+2019-10-18 02:03:44:927,b'USB Handshake\r\n'
+2019-10-18 02:03:59:685,b'USB Handshake\r\n'
+2019-10-18 02:04:14:441,b'USB Handshake\r\n'
+2019-10-18 02:04:29:202,b'USB Handshake\r\n'
+2019-10-18 02:04:43:963,b'USB Handshake\r\n'
+2019-10-18 02:04:58:717,b'USB Handshake\r\n'
+2019-10-18 02:05:13:478,b'USB Handshake\r\n'
+2019-10-18 02:05:28:239,b'USB Handshake\r\n'
+2019-10-18 02:05:42:991,b'USB Handshake\r\n'
+2019-10-18 02:05:57:752,b'USB Handshake\r\n'
+2019-10-18 02:06:12:513,b'USB Handshake\r\n'
+2019-10-18 02:06:27:273,b'USB Handshake\r\n'
+2019-10-18 02:06:42:034,b'USB Handshake\r\n'
+2019-10-18 02:06:56:784,b'USB Handshake\r\n'
+2019-10-18 02:07:11:545,b'USB Handshake\r\n'
+2019-10-18 02:07:26:306,b'USB Handshake\r\n'
+2019-10-18 02:07:41:066,b'USB Handshake\r\n'
+2019-10-18 02:07:55:827,b'USB Handshake\r\n'
+2019-10-18 02:08:10:578,b'USB Handshake\r\n'
+2019-10-18 02:08:25:338,b'USB Handshake\r\n'
+2019-10-18 02:08:40:099,b'USB Handshake\r\n'
+2019-10-18 02:08:54:855,b'USB Handshake\r\n'
+2019-10-18 02:09:09:619,b'USB Handshake\r\n'
+2019-10-18 02:09:24:371,b'USB Handshake\r\n'
+2019-10-18 02:09:39:132,b'USB Handshake\r\n'
+2019-10-18 02:09:53:892,b'USB Handshake\r\n'
+2019-10-18 02:10:08:656,b'USB Handshake\r\n'
+2019-10-18 02:10:23:406,b'USB Handshake\r\n'
+2019-10-18 02:10:38:167,b'USB Handshake\r\n'
+2019-10-18 02:10:52:928,b'USB Handshake\r\n'
+2019-10-18 02:11:07:688,b'USB Handshake\r\n'
+2019-10-18 02:11:22:448,b'USB Handshake\r\n'
+2019-10-18 02:11:37:209,b'USB Handshake\r\n'
+2019-10-18 02:11:51:959,b'USB Handshake\r\n'
+2019-10-18 02:12:06:720,b'USB Handshake\r\n'
+2019-10-18 02:12:21:481,b'USB Handshake\r\n'
+2019-10-18 02:12:36:243,b'USB Handshake\r\n'
+2019-10-18 02:12:50:993,b'USB Handshake\r\n'
+2019-10-18 02:13:05:753,b'USB Handshake\r\n'
+2019-10-18 02:13:20:514,b'USB Handshake\r\n'
+2019-10-18 02:13:35:276,b'USB Handshake\r\n'
+2019-10-18 02:13:50:037,b'USB Handshake\r\n'
+2019-10-18 02:14:04:789,b'USB Handshake\r\n'
+2019-10-18 02:14:19:549,b'USB Handshake\r\n'
+2019-10-18 02:14:34:310,b'USB Handshake\r\n'
+2019-10-18 02:14:49:071,b'USB Handshake\r\n'
+2019-10-18 02:15:03:828,b'USB Handshake\r\n'
+2019-10-18 02:15:18:590,b'USB Handshake\r\n'
+2019-10-18 02:15:33:342,b'USB Handshake\r\n'
+2019-10-18 02:15:48:105,b'USB Handshake\r\n'
+2019-10-18 02:16:02:860,b'USB Handshake\r\n'
+2019-10-18 02:16:17:625,b'USB Handshake\r\n'
+2019-10-18 02:16:32:379,b'USB Handshake\r\n'
+2019-10-18 02:16:47:134,b'USB Handshake\r\n'
+2019-10-18 02:17:01:899,b'USB Handshake\r\n'
+2019-10-18 02:17:16:654,b'USB Handshake\r\n'
+2019-10-18 02:17:31:417,b'USB Handshake\r\n'
+2019-10-18 02:17:46:173,b'USB Handshake\r\n'
+2019-10-18 02:18:00:928,b'USB Handshake\r\n'
+2019-10-18 02:18:15:693,b'USB Handshake\r\n'
+2019-10-18 02:18:30:448,b'USB Handshake\r\n'
+2019-10-18 02:18:45:210,b'USB Handshake\r\n'
+2019-10-18 02:18:59:967,b'USB Handshake\r\n'
+2019-10-18 02:19:14:724,b'USB Handshake\r\n'
+2019-10-18 02:19:29:487,b'USB Handshake\r\n'
+2019-10-18 02:19:44:242,b'USB Handshake\r\n'
+2019-10-18 02:19:59:001,b'USB Handshake\r\n'
+2019-10-18 02:20:13:765,b'USB Handshake\r\n'
+2019-10-18 02:20:28:518,b'USB Handshake\r\n'
+2019-10-18 02:20:43:283,b'USB Handshake\r\n'
+2019-10-18 02:20:58:036,b'USB Handshake\r\n'
+2019-10-18 02:21:12:801,b'USB Handshake\r\n'
+2019-10-18 02:21:27:556,b'USB Handshake\r\n'
+2019-10-18 02:21:42:312,b'USB Handshake\r\n'
+2019-10-18 02:21:57:073,b'USB Handshake\r\n'
+2019-10-18 02:22:11:833,b'USB Handshake\r\n'
+2019-10-18 02:22:26:588,b'USB Handshake\r\n'
+2019-10-18 02:22:41:354,b'USB Handshake\r\n'
+2019-10-18 02:22:56:108,b'USB Handshake\r\n'
+2019-10-18 02:23:10:871,b'USB Handshake\r\n'
+2019-10-18 02:23:25:628,b'USB Handshake\r\n'
+2019-10-18 02:23:40:391,b'USB Handshake\r\n'
+2019-10-18 02:23:55:147,b'USB Handshake\r\n'
+2019-10-18 02:24:09:900,b'USB Handshake\r\n'
+2019-10-18 02:24:24:664,b'USB Handshake\r\n'
+2019-10-18 02:24:39:419,b'USB Handshake\r\n'
+2019-10-18 02:24:54:175,b'USB Handshake\r\n'
+2019-10-18 02:25:08:939,b'USB Handshake\r\n'
+2019-10-18 02:25:23:698,b'USB Handshake\r\n'
+2019-10-18 02:25:38:459,b'USB Handshake\r\n'
+2019-10-18 02:25:53:214,b'USB Handshake\r\n'
+2019-10-18 02:26:07:976,b'USB Handshake\r\n'
+2019-10-18 02:26:22:737,b'USB Handshake\r\n'
+2019-10-18 02:26:37:489,b'USB Handshake\r\n'
+2019-10-18 02:26:52:255,b'USB Handshake\r\n'
+2019-10-18 02:27:07:009,b'USB Handshake\r\n'
+2019-10-18 02:27:21:764,b'USB Handshake\r\n'
+2019-10-18 02:27:36:528,b'USB Handshake\r\n'
+2019-10-18 02:27:51:289,b'USB Handshake\r\n'
+2019-10-18 02:28:06:044,b'USB Handshake\r\n'
+2019-10-18 02:28:20:801,b'USB Handshake\r\n'
+2019-10-18 02:28:35:557,b'USB Handshake\r\n'
+2019-10-18 02:28:50:324,b'USB Handshake\r\n'
+2019-10-18 02:29:05:076,b'USB Handshake\r\n'
+2019-10-18 02:29:19:842,b'USB Handshake\r\n'
+2019-10-18 02:29:34:596,b'USB Handshake\r\n'
+2019-10-18 02:29:49:363,b'USB Handshake\r\n'
+2019-10-18 02:30:04:112,b'USB Handshake\r\n'
+2019-10-18 02:30:18:872,b'USB Handshake\r\n'
+2019-10-18 02:30:33:632,b'USB Handshake\r\n'
+2019-10-18 02:30:48:391,b'USB Handshake\r\n'
+2019-10-18 02:31:03:151,b'USB Handshake\r\n'
+2019-10-18 02:31:17:911,b'USB Handshake\r\n'
+2019-10-18 02:31:32:671,b'USB Handshake\r\n'
+2019-10-18 02:31:47:433,b'USB Handshake\r\n'
+2019-10-18 02:32:02:184,b'USB Handshake\r\n'
+2019-10-18 02:32:16:947,b'USB Handshake\r\n'
+2019-10-18 02:32:31:707,b'USB Handshake\r\n'
+2019-10-18 02:32:46:468,b'USB Handshake\r\n'
+2019-10-18 02:33:01:217,b'USB Handshake\r\n'
+2019-10-18 02:33:15:977,b'USB Handshake\r\n'
+2019-10-18 02:33:30:747,b'USB Handshake\r\n'
+2019-10-18 02:33:45:497,b'USB Handshake\r\n'
+2019-10-18 02:34:00:257,b'USB Handshake\r\n'
+2019-10-18 02:34:15:042,b'USB Handshake\r\n'
+2019-10-18 02:34:29:987,b'USB Handshake\r\n'
+2019-10-18 02:34:44:780,b'USB Handshake\r\n'
+2019-10-18 02:34:59:552,b'USB Handshake\r\n'
+2019-10-18 02:35:14:324,b'USB Handshake\r\n'
+2019-10-18 02:35:29:092,b'USB Handshake\r\n'
+2019-10-18 02:35:43:860,b'USB Handshake\r\n'
+2019-10-18 02:35:52:014,PUBSUB Received   b'Light_4_2_3_1_255_0'
+2019-10-18 02:35:52:015,command is
+2019-10-18 02:35:52:015,<class 'bytes'>
+2019-10-18 02:35:52:016,Command list['Light', '4', '2', '3', '1', '255', '0']
+2019-10-18 02:35:52:016,command list is
+2019-10-18 02:35:52:016,<class 'list'>
+2019-10-18 02:35:52:034,Sending Out;:4,3,1,255,0,
+
+2019-10-18 02:35:52:055,b'LED Single Change, Selected pin;3\r\n'
+2019-10-18 02:35:52:058,b'LED Single Change, Selected board;1\r\n'
+2019-10-18 02:35:52:061,b'LED Single Change, brightness ;255\r\n'
+2019-10-18 02:35:52:063,b', enable;Off\r\n'
+2019-10-18 02:35:56:581,PUBSUB Received   b'Light_4_3_2_1_117_0'
+2019-10-18 02:35:56:581,command is
+2019-10-18 02:35:56:582,<class 'bytes'>
+2019-10-18 02:35:56:582,Command list['Light', '4', '3', '2', '1', '117', '0']
+2019-10-18 02:35:56:582,command list is
+2019-10-18 02:35:56:583,<class 'list'>
+2019-10-18 02:35:56:588,Sending Out;:4,2,1,117,0,
+
+2019-10-18 02:35:56:609,b'LED Single Change, Selected pin;2\r\n'
+2019-10-18 02:35:56:612,b'LED Single Change, Selected board;1\r\n'
+2019-10-18 02:35:56:615,b'LED Single Change, brightness ;117\r\n'
+2019-10-18 02:35:56:617,b', enable;Off\r\n'
+2019-10-18 02:35:58:623,b'USB Handshake\r\n'
+2019-10-18 02:35:58:756,PUBSUB Received   b'Light_4_3_2_1_117_1'
+2019-10-18 02:35:58:757,command is
+2019-10-18 02:35:58:757,<class 'bytes'>
+2019-10-18 02:35:58:758,Command list['Light', '4', '3', '2', '1', '117', '1']
+2019-10-18 02:35:58:758,command list is
+2019-10-18 02:35:58:758,<class 'list'>
+2019-10-18 02:35:58:764,Sending Out;:4,2,1,117,1,
+
+2019-10-18 02:35:58:785,b'LED Single Change, Selected pin;2\r\n'
+2019-10-18 02:35:58:788,b'LED Single Change, Selected board;1\r\n'
+2019-10-18 02:35:58:791,b'LED Single Change, brightness ;117\r\n'
+2019-10-18 02:35:58:793,b', enable;On\r\n'
+2019-10-18 02:35:59:867,PUBSUB Received   b'Light_4_2_3_1_255_1'
+2019-10-18 02:35:59:867,command is
+2019-10-18 02:35:59:868,<class 'bytes'>
+2019-10-18 02:35:59:868,Command list['Light', '4', '2', '3', '1', '255', '1']
+2019-10-18 02:35:59:869,command list is
+2019-10-18 02:35:59:869,<class 'list'>
+2019-10-18 02:35:59:874,Sending Out;:4,3,1,255,1,
+
+2019-10-18 02:35:59:895,b'LED Single Change, Selected pin;3\r\n'
+2019-10-18 02:35:59:898,b'LED Single Change, Selected board;1\r\n'
+2019-10-18 02:35:59:901,b'LED Single Change, brightness ;255\r\n'
+2019-10-18 02:35:59:903,b', enable;On\r\n'
+2019-10-18 02:36:13:395,b'USB Handshake\r\n'
+2019-10-18 02:36:28:153,b'USB Handshake\r\n'
+2019-10-18 02:36:28:452,PUBSUB Received   b'Light_4_49_8_4_128_0'
+2019-10-18 02:36:28:453,command is
+2019-10-18 02:36:28:453,<class 'bytes'>
+2019-10-18 02:36:28:454,Command list['Light', '4', '49', '8', '4', '128', '0']
+2019-10-18 02:36:28:454,command list is
+2019-10-18 02:36:28:454,<class 'list'>
+2019-10-18 02:36:28:460,Sending Out;:4,8,4,128,0,
+
+2019-10-18 02:36:28:482,b'LED Single Change, Selected pin;8\r\n'
+2019-10-18 02:36:28:485,b'LED Single Change, Selected board;4\r\n'
+2019-10-18 02:36:28:488,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:36:28:490,b', enable;Off\r\n'
+2019-10-18 02:36:29:584,PUBSUB Received   b'Light_4_49_8_4_128_1'
+2019-10-18 02:36:29:585,command is
+2019-10-18 02:36:29:585,<class 'bytes'>
+2019-10-18 02:36:29:586,Command list['Light', '4', '49', '8', '4', '128', '1']
+2019-10-18 02:36:29:586,command list is
+2019-10-18 02:36:29:586,<class 'list'>
+2019-10-18 02:36:29:592,Sending Out;:4,8,4,128,1,
+
+2019-10-18 02:36:29:612,b'LED Single Change, Selected pin;8\r\n'
+2019-10-18 02:36:29:615,b'LED Single Change, Selected board;4\r\n'
+2019-10-18 02:36:29:618,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:36:29:619,b', enable;On\r\n'
+2019-10-18 02:36:38:090,PUBSUB Received   b'Light_4_43_15_3_128_0'
+2019-10-18 02:36:38:091,command is
+2019-10-18 02:36:38:091,<class 'bytes'>
+2019-10-18 02:36:38:091,Command list['Light', '4', '43', '15', '3', '128', '0']
+2019-10-18 02:36:38:092,command list is
+2019-10-18 02:36:38:092,<class 'list'>
+2019-10-18 02:36:38:098,Sending Out;:4,15,3,128,0,
+
+2019-10-18 02:36:38:118,b'LED Single Change, Selected pin;15\r\n'
+2019-10-18 02:36:38:121,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:36:38:124,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:36:38:126,b', enable;Off\r\n'
+2019-10-18 02:36:40:780,PUBSUB Received   b'Light_4_43_15_3_128_1'
+2019-10-18 02:36:40:781,command is
+2019-10-18 02:36:40:781,<class 'bytes'>
+2019-10-18 02:36:40:782,Command list['Light', '4', '43', '15', '3', '128', '1']
+2019-10-18 02:36:40:782,command list is
+2019-10-18 02:36:40:782,<class 'list'>
+2019-10-18 02:36:40:787,Sending Out;:4,15,3,128,1,
+
+2019-10-18 02:36:40:810,b'LED Single Change, Selected pin;15\r\n'
+2019-10-18 02:36:40:813,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:36:40:816,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:36:40:818,b', enable;On\r\n'
+2019-10-18 02:36:42:926,b'USB Handshake\r\n'
+2019-10-18 02:36:48:345,PUBSUB Received   b'Light_4_42_14_3_128_0'
+2019-10-18 02:36:48:346,command is
+2019-10-18 02:36:48:346,<class 'bytes'>
+2019-10-18 02:36:48:346,Command list['Light', '4', '42', '14', '3', '128', '0']
+2019-10-18 02:36:48:347,command list is
+2019-10-18 02:36:48:347,<class 'list'>
+2019-10-18 02:36:48:352,Sending Out;:4,14,3,128,0,
+
+2019-10-18 02:36:48:373,b'LED Single Change, Selected pin;14\r\n'
+2019-10-18 02:36:48:376,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:36:48:379,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:36:48:380,b', enable;Off\r\n'
+2019-10-18 02:36:49:637,PUBSUB Received   b'Light_4_42_14_3_128_1'
+2019-10-18 02:36:49:638,command is
+2019-10-18 02:36:49:639,<class 'bytes'>
+2019-10-18 02:36:49:639,Command list['Light', '4', '42', '14', '3', '128', '1']
+2019-10-18 02:36:49:639,command list is
+2019-10-18 02:36:49:639,<class 'list'>
+2019-10-18 02:36:49:645,Sending Out;:4,14,3,128,1,
+
+2019-10-18 02:36:49:666,b'LED Single Change, Selected pin;14\r\n'
+2019-10-18 02:36:49:669,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:36:49:672,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:36:49:673,b', enable;On\r\n'
+2019-10-18 02:36:53:381,PUBSUB Received   b'Light_4_41_12_3_128_0'
+2019-10-18 02:36:53:381,command is
+2019-10-18 02:36:53:382,<class 'bytes'>
+2019-10-18 02:36:53:382,Command list['Light', '4', '41', '12', '3', '128', '0']
+2019-10-18 02:36:53:382,command list is
+2019-10-18 02:36:53:383,<class 'list'>
+2019-10-18 02:36:53:388,Sending Out;:4,12,3,128,0,
+
+2019-10-18 02:36:53:409,b'LED Single Change, Selected pin;12\r\n'
+2019-10-18 02:36:53:412,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:36:53:415,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:36:53:417,b', enable;Off\r\n'
+2019-10-18 02:36:56:617,PUBSUB Received   b'Light_4_41_12_3_128_1'
+2019-10-18 02:36:56:617,command is
+2019-10-18 02:36:56:618,<class 'bytes'>
+2019-10-18 02:36:56:618,Command list['Light', '4', '41', '12', '3', '128', '1']
+2019-10-18 02:36:56:618,command list is
+2019-10-18 02:36:56:619,<class 'list'>
+2019-10-18 02:36:56:624,Sending Out;:4,12,3,128,1,
+
+2019-10-18 02:36:56:647,b'LED Single Change, Selected pin;12\r\n'
+2019-10-18 02:36:56:650,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:36:56:653,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:36:56:654,b', enable;On\r\n'
+2019-10-18 02:36:57:667,b'USB Handshake\r\n'
+2019-10-18 02:37:00:229,PUBSUB Received   b'Light_4_43_15_3_128_0'
+2019-10-18 02:37:00:229,command is
+2019-10-18 02:37:00:230,<class 'bytes'>
+2019-10-18 02:37:00:230,Command list['Light', '4', '43', '15', '3', '128', '0']
+2019-10-18 02:37:00:231,command list is
+2019-10-18 02:37:00:231,<class 'list'>
+2019-10-18 02:37:00:236,Sending Out;:4,15,3,128,0,
+
+2019-10-18 02:37:00:257,b'LED Single Change, Selected pin;15\r\n'
+2019-10-18 02:37:00:260,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:37:00:263,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:37:00:265,b', enable;Off\r\n'
+2019-10-18 02:37:01:278,PUBSUB Received   b'Light_4_43_15_3_128_1'
+2019-10-18 02:37:01:278,command is
+2019-10-18 02:37:01:279,<class 'bytes'>
+2019-10-18 02:37:01:279,Command list['Light', '4', '43', '15', '3', '128', '1']
+2019-10-18 02:37:01:280,command list is
+2019-10-18 02:37:01:280,<class 'list'>
+2019-10-18 02:37:01:286,Sending Out;:4,15,3,128,1,
+
+2019-10-18 02:37:01:306,b'LED Single Change, Selected pin;15\r\n'
+2019-10-18 02:37:01:310,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:37:01:313,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:37:01:314,b', enable;On\r\n'
+2019-10-18 02:37:03:541,PUBSUB Received   b'Light_4_39_8_3_128_0'
+2019-10-18 02:37:03:541,command is
+2019-10-18 02:37:03:542,<class 'bytes'>
+2019-10-18 02:37:03:542,Command list['Light', '4', '39', '8', '3', '128', '0']
+2019-10-18 02:37:03:542,command list is
+2019-10-18 02:37:03:543,<class 'list'>
+2019-10-18 02:37:03:548,Sending Out;:4,8,3,128,0,
+
+2019-10-18 02:37:03:569,b'LED Single Change, Selected pin;8\r\n'
+2019-10-18 02:37:03:572,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:37:03:575,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:37:03:576,b', enable;Off\r\n'
+2019-10-18 02:37:06:078,PUBSUB Received   b'Light_4_39_8_3_128_1'
+2019-10-18 02:37:06:079,command is
+2019-10-18 02:37:06:079,<class 'bytes'>
+2019-10-18 02:37:06:079,Command list['Light', '4', '39', '8', '3', '128', '1']
+2019-10-18 02:37:06:080,command list is
+2019-10-18 02:37:06:080,<class 'list'>
+2019-10-18 02:37:06:085,Sending Out;:4,8,3,128,1,
+
+2019-10-18 02:37:06:106,b'LED Single Change, Selected pin;8\r\n'
+2019-10-18 02:37:06:109,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:37:06:112,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:37:06:113,b', enable;On\r\n'
+2019-10-18 02:37:08:526,PUBSUB Received   b'Light_4_38_7_3_128_0'
+2019-10-18 02:37:08:526,command is
+2019-10-18 02:37:08:526,<class 'bytes'>
+2019-10-18 02:37:08:527,Command list['Light', '4', '38', '7', '3', '128', '0']
+2019-10-18 02:37:08:527,command list is
+2019-10-18 02:37:08:527,<class 'list'>
+2019-10-18 02:37:08:533,Sending Out;:4,7,3,128,0,
+
+2019-10-18 02:37:08:553,b'LED Single Change, Selected pin;7\r\n'
+2019-10-18 02:37:08:557,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:37:08:560,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:37:08:561,b', enable;Off\r\n'
+2019-10-18 02:37:10:309,PUBSUB Received   b'Light_4_38_7_3_128_1'
+2019-10-18 02:37:10:309,command is
+2019-10-18 02:37:10:309,<class 'bytes'>
+2019-10-18 02:37:10:310,Command list['Light', '4', '38', '7', '3', '128', '1']
+2019-10-18 02:37:10:310,command list is
+2019-10-18 02:37:10:310,<class 'list'>
+2019-10-18 02:37:10:316,Sending Out;:4,7,3,128,1,
+
+2019-10-18 02:37:10:336,b'LED Single Change, Selected pin;7\r\n'
+2019-10-18 02:37:10:339,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:37:10:342,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:37:10:344,b', enable;On\r\n'
+2019-10-18 02:37:12:355,b'USB Handshake\r\n'
+2019-10-18 02:37:13:872,PUBSUB Received   b'Light_4_40_11_3_128_0'
+2019-10-18 02:37:13:873,command is
+2019-10-18 02:37:13:873,<class 'bytes'>
+2019-10-18 02:37:13:873,Command list['Light', '4', '40', '11', '3', '128', '0']
+2019-10-18 02:37:13:874,command list is
+2019-10-18 02:37:13:874,<class 'list'>
+2019-10-18 02:37:13:879,Sending Out;:4,11,3,128,0,
+
+2019-10-18 02:37:13:900,b'LED Single Change, Selected pin;11\r\n'
+2019-10-18 02:37:13:903,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:37:13:906,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:37:13:908,b', enable;Off\r\n'
+2019-10-18 02:37:17:315,PUBSUB Received   b'Light_4_40_11_3_128_1'
+2019-10-18 02:37:17:316,command is
+2019-10-18 02:37:17:316,<class 'bytes'>
+2019-10-18 02:37:17:316,Command list['Light', '4', '40', '11', '3', '128', '1']
+2019-10-18 02:37:17:317,command list is
+2019-10-18 02:37:17:317,<class 'list'>
+2019-10-18 02:37:17:322,Sending Out;:4,11,3,128,1,
+
+2019-10-18 02:37:17:343,b'LED Single Change, Selected pin;11\r\n'
+2019-10-18 02:37:17:346,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:37:17:349,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:37:17:350,b', enable;On\r\n'
+2019-10-18 02:37:19:687,PUBSUB Received   b'Light_4_37_1_3_128_1'
+2019-10-18 02:37:19:687,command is
+2019-10-18 02:37:19:688,<class 'bytes'>
+2019-10-18 02:37:19:688,Command list['Light', '4', '37', '1', '3', '128', '1']
+2019-10-18 02:37:19:688,command list is
+2019-10-18 02:37:19:689,<class 'list'>
+2019-10-18 02:37:19:694,Sending Out;:4,1,3,128,1,
+
+2019-10-18 02:37:19:716,b'LED Single Change, Selected pin;1\r\n'
+2019-10-18 02:37:19:719,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:37:19:722,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:37:19:723,b', enable;On\r\n'
+2019-10-18 02:37:25:348,PUBSUB Received   b'Light_4_37_1_3_128_0'
+2019-10-18 02:37:25:349,command is
+2019-10-18 02:37:25:349,<class 'bytes'>
+2019-10-18 02:37:25:349,Command list['Light', '4', '37', '1', '3', '128', '0']
+2019-10-18 02:37:25:349,command list is
+2019-10-18 02:37:25:350,<class 'list'>
+2019-10-18 02:37:25:355,Sending Out;:4,1,3,128,0,
+
+2019-10-18 02:37:25:376,b'LED Single Change, Selected pin;1\r\n'
+2019-10-18 02:37:25:379,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:37:25:382,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:37:25:383,b', enable;Off\r\n'
+2019-10-18 02:37:27:095,b'USB Handshake\r\n'
+2019-10-18 02:37:27:692,PUBSUB Received   b'Light_4_36_0_3_128_0'
+2019-10-18 02:37:27:693,command is
+2019-10-18 02:37:27:693,<class 'bytes'>
+2019-10-18 02:37:27:694,Command list['Light', '4', '36', '0', '3', '128', '0']
+2019-10-18 02:37:27:694,command list is
+2019-10-18 02:37:27:694,<class 'list'>
+2019-10-18 02:37:27:699,Sending Out;:4,0,3,128,0,
+
+2019-10-18 02:37:27:720,b'LED Single Change, Selected pin;0\r\n'
+2019-10-18 02:37:27:723,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:37:27:726,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:37:27:728,b', enable;Off\r\n'
+2019-10-18 02:37:29:378,PUBSUB Received   b'Light_4_36_0_3_128_1'
+2019-10-18 02:37:29:379,command is
+2019-10-18 02:37:29:379,<class 'bytes'>
+2019-10-18 02:37:29:380,Command list['Light', '4', '36', '0', '3', '128', '1']
+2019-10-18 02:37:29:380,command list is
+2019-10-18 02:37:29:381,<class 'list'>
+2019-10-18 02:37:29:386,Sending Out;:4,0,3,128,1,
+
+2019-10-18 02:37:29:407,b'LED Single Change, Selected pin;0\r\n'
+2019-10-18 02:37:29:410,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:37:29:413,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:37:29:414,b', enable;On\r\n'
+2019-10-18 02:37:30:811,PUBSUB Received   b'Light_4_37_1_3_128_1'
+2019-10-18 02:37:30:812,command is
+2019-10-18 02:37:30:812,<class 'bytes'>
+2019-10-18 02:37:30:812,Command list['Light', '4', '37', '1', '3', '128', '1']
+2019-10-18 02:37:30:813,command list is
+2019-10-18 02:37:30:813,<class 'list'>
+2019-10-18 02:37:30:818,Sending Out;:4,1,3,128,1,
+
+2019-10-18 02:37:30:849,b'LED Single Change, Selected pin;1\r\n'
+2019-10-18 02:37:30:852,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:37:30:855,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:37:30:857,b', enable;On\r\n'
+2019-10-18 02:37:39:083,PUBSUB Received   b'Light_4_35_3_4_128_0'
+2019-10-18 02:37:39:084,command is
+2019-10-18 02:37:39:084,<class 'bytes'>
+2019-10-18 02:37:39:084,Command list['Light', '4', '35', '3', '4', '128', '0']
+2019-10-18 02:37:39:085,command list is
+2019-10-18 02:37:39:085,<class 'list'>
+2019-10-18 02:37:39:090,Sending Out;:4,3,4,128,0,
+
+2019-10-18 02:37:39:110,b'LED Single Change, Selected pin;3\r\n'
+2019-10-18 02:37:39:113,b'LED Single Change, Selected board;4\r\n'
+2019-10-18 02:37:39:116,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:37:39:118,b', enable;Off\r\n'
+2019-10-18 02:37:41:851,b'USB Handshake\r\n'
+2019-10-18 02:37:42:986,PUBSUB Received   b'Light_4_35_3_4_128_1'
+2019-10-18 02:37:42:986,command is
+2019-10-18 02:37:42:987,<class 'bytes'>
+2019-10-18 02:37:42:987,Command list['Light', '4', '35', '3', '4', '128', '1']
+2019-10-18 02:37:42:987,command list is
+2019-10-18 02:37:42:987,<class 'list'>
+2019-10-18 02:37:42:993,Sending Out;:4,3,4,128,1,
+
+2019-10-18 02:37:43:014,b'LED Single Change, Selected pin;3\r\n'
+2019-10-18 02:37:43:017,b'LED Single Change, Selected board;4\r\n'
+2019-10-18 02:37:43:020,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:37:43:021,b', enable;On\r\n'
+2019-10-18 02:37:56:601,b'USB Handshake\r\n'
+2019-10-18 02:38:08:814,PUBSUB Received   b'Light_4_42_14_3_128_0'
+2019-10-18 02:38:08:815,command is
+2019-10-18 02:38:08:815,<class 'bytes'>
+2019-10-18 02:38:08:816,Command list['Light', '4', '42', '14', '3', '128', '0']
+2019-10-18 02:38:08:816,command list is
+2019-10-18 02:38:08:816,<class 'list'>
+2019-10-18 02:38:08:822,Sending Out;:4,14,3,128,0,
+
+2019-10-18 02:38:08:842,b'LED Single Change, Selected pin;14\r\n'
+2019-10-18 02:38:08:845,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:38:08:848,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:38:08:849,b', enable;Off\r\n'
+2019-10-18 02:38:11:350,b'USB Handshake\r\n'
+2019-10-18 02:38:11:806,PUBSUB Received   b'Light_4_42_14_3_128_1'
+2019-10-18 02:38:11:807,command is
+2019-10-18 02:38:11:807,<class 'bytes'>
+2019-10-18 02:38:11:808,Command list['Light', '4', '42', '14', '3', '128', '1']
+2019-10-18 02:38:11:808,command list is
+2019-10-18 02:38:11:808,<class 'list'>
+2019-10-18 02:38:11:814,Sending Out;:4,14,3,128,1,
+
+2019-10-18 02:38:11:836,b'LED Single Change, Selected pin;14\r\n'
+2019-10-18 02:38:11:839,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:38:11:842,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:38:11:843,b', enable;On\r\n'
+2019-10-18 02:38:16:377,PUBSUB Received   b'Light_4_45_3_4_128_0'
+2019-10-18 02:38:16:377,command is
+2019-10-18 02:38:16:378,<class 'bytes'>
+2019-10-18 02:38:16:378,Command list['Light', '4', '45', '3', '4', '128', '0']
+2019-10-18 02:38:16:379,command list is
+2019-10-18 02:38:16:379,<class 'list'>
+2019-10-18 02:38:16:384,Sending Out;:4,3,4,128,0,
+
+2019-10-18 02:38:16:405,b'LED Single Change, Selected pin;3\r\n'
+2019-10-18 02:38:16:408,b'LED Single Change, Selected board;4\r\n'
+2019-10-18 02:38:16:411,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:38:16:413,b', enable;Off\r\n'
+2019-10-18 02:38:20:096,PUBSUB Received   b'Light_4_45_3_4_128_1'
+2019-10-18 02:38:20:097,command is
+2019-10-18 02:38:20:097,<class 'bytes'>
+2019-10-18 02:38:20:098,Command list['Light', '4', '45', '3', '4', '128', '1']
+2019-10-18 02:38:20:098,command list is
+2019-10-18 02:38:20:098,<class 'list'>
+2019-10-18 02:38:20:104,Sending Out;:4,3,4,128,1,
+
+2019-10-18 02:38:20:124,b'LED Single Change, Selected pin;3\r\n'
+2019-10-18 02:38:20:127,b'LED Single Change, Selected board;4\r\n'
+2019-10-18 02:38:20:130,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:38:20:131,b', enable;On\r\n'
+2019-10-18 02:38:26:102,b'USB Handshake\r\n'
+2019-10-18 02:38:30:849,PUBSUB Received   b'Light_4_35_3_4_128_0'
+2019-10-18 02:38:30:849,command is
+2019-10-18 02:38:30:850,<class 'bytes'>
+2019-10-18 02:38:30:850,Command list['Light', '4', '35', '3', '4', '128', '0']
+2019-10-18 02:38:30:850,command list is
+2019-10-18 02:38:30:850,<class 'list'>
+2019-10-18 02:38:30:856,Sending Out;:4,3,4,128,0,
+
+2019-10-18 02:38:30:876,b'LED Single Change, Selected pin;3\r\n'
+2019-10-18 02:38:30:879,b'LED Single Change, Selected board;4\r\n'
+2019-10-18 02:38:30:882,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:38:30:883,b', enable;Off\r\n'
+2019-10-18 02:38:33:324,PUBSUB Received   b'Light_4_35_3_4_128_1'
+2019-10-18 02:38:33:325,command is
+2019-10-18 02:38:33:325,<class 'bytes'>
+2019-10-18 02:38:33:325,Command list['Light', '4', '35', '3', '4', '128', '1']
+2019-10-18 02:38:33:326,command list is
+2019-10-18 02:38:33:326,<class 'list'>
+2019-10-18 02:38:33:332,Sending Out;:4,3,4,128,1,
+
+2019-10-18 02:38:33:353,b'LED Single Change, Selected pin;3\r\n'
+2019-10-18 02:38:33:356,b'LED Single Change, Selected board;4\r\n'
+2019-10-18 02:38:33:359,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:38:33:361,b', enable;On\r\n'
+2019-10-18 02:38:40:868,b'USB Handshake\r\n'
+2019-10-18 02:38:41:305,PUBSUB Received   b'Light_4_45_3_4_128_0'
+2019-10-18 02:38:41:305,command is
+2019-10-18 02:38:41:306,<class 'bytes'>
+2019-10-18 02:38:41:306,Command list['Light', '4', '45', '3', '4', '128', '0']
+2019-10-18 02:38:41:306,command list is
+2019-10-18 02:38:41:307,<class 'list'>
+2019-10-18 02:38:41:312,Sending Out;:4,3,4,128,0,
+
+2019-10-18 02:38:41:334,b'LED Single Change, Selected pin;3\r\n'
+2019-10-18 02:38:41:337,b'LED Single Change, Selected board;4\r\n'
+2019-10-18 02:38:41:340,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:38:41:341,b', enable;Off\r\n'
+2019-10-18 02:38:46:375,PUBSUB Received   b'Light_4_42_14_3_128_1'
+2019-10-18 02:38:46:382,command is
+2019-10-18 02:38:46:383,<class 'bytes'>
+2019-10-18 02:38:46:383,Command list['Light', '4', '42', '14', '3', '128', '1']
+2019-10-18 02:38:46:383,command list is
+2019-10-18 02:38:46:384,<class 'list'>
+2019-10-18 02:38:46:389,Sending Out;:4,14,3,128,1,
+
+2019-10-18 02:38:46:409,b'LED Single Change, Selected pin;14\r\n'
+2019-10-18 02:38:46:412,b'LED Single Change, Selected board;3\r\n'
+2019-10-18 02:38:46:415,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:38:46:416,b', enable;On\r\n'
+2019-10-18 02:38:50:528,PUBSUB Received   b'Light_4_45_3_4_128_1'
+2019-10-18 02:38:50:529,command is
+2019-10-18 02:38:50:529,<class 'bytes'>
+2019-10-18 02:38:50:530,Command list['Light', '4', '45', '3', '4', '128', '1']
+2019-10-18 02:38:50:530,command list is
+2019-10-18 02:38:50:530,<class 'list'>
+2019-10-18 02:38:50:536,Sending Out;:4,3,4,128,1,
+
+2019-10-18 02:38:50:556,b'LED Single Change, Selected pin;3\r\n'
+2019-10-18 02:38:50:559,b'LED Single Change, Selected board;4\r\n'
+2019-10-18 02:38:50:562,b'LED Single Change, brightness ;128\r\n'
+2019-10-18 02:38:50:564,b', enable;On\r\n'
+2019-10-18 02:38:55:628,b'USB Handshake\r\n'
+2019-10-18 02:39:10:390,b'USB Handshake\r\n'
+2019-10-18 02:39:25:153,b'USB Handshake\r\n'
+2019-10-18 02:39:39:911,b'USB Handshake\r\n'
+2019-10-18 02:39:54:659,b'USB Handshake\r\n'
+2019-10-18 02:40:09:423,b'USB Handshake\r\n'
+2019-10-18 02:40:24:178,b'USB Handshake\r\n'
+2019-10-18 02:40:38:935,b'USB Handshake\r\n'
+2019-10-18 02:40:53:680,b'USB Handshake\r\n'
+2019-10-18 02:41:08:435,b'USB Handshake\r\n'
+2019-10-18 02:41:23:190,b'USB Handshake\r\n'
+2019-10-18 02:41:37:947,b'USB Handshake\r\n'
+2019-10-18 02:41:52:703,b'USB Handshake\r\n'
+2019-10-18 02:42:07:457,b'USB Handshake\r\n'
+2019-10-18 02:42:22:213,b'USB Handshake\r\n'
+2019-10-18 02:42:36:965,b'USB Handshake\r\n'
+2019-10-18 02:42:51:720,b'USB Handshake\r\n'
+2019-10-18 02:43:06:477,b'USB Handshake\r\n'
+2019-10-18 02:43:21:226,b'USB Handshake\r\n'
+2019-10-18 02:43:35:981,b'USB Handshake\r\n'
+2019-10-18 02:43:50:737,b'USB Handshake\r\n'
+2019-10-18 02:44:05:493,b'USB Handshake\r\n'
+2019-10-18 02:44:20:252,b'USB Handshake\r\n'
+2019-10-18 02:44:34:998,b'USB Handshake\r\n'
+2019-10-18 02:44:49:754,b'USB Handshake\r\n'
+2019-10-18 02:45:04:550,b'USB Handshake\r\n'
+2019-10-18 02:45:19:367,b'USB Handshake\r\n'
+2019-10-18 02:45:34:157,b'USB Handshake\r\n'
+2019-10-18 02:45:48:944,b'USB Handshake\r\n'
+2019-10-18 02:46:03:724,b'USB Handshake\r\n'
+2019-10-18 02:46:18:496,b'USB Handshake\r\n'
+2019-10-18 02:46:33:258,b'USB Handshake\r\n'
+2019-10-18 02:46:48:026,b'USB Handshake\r\n'
+2019-10-18 02:47:02:797,b'USB Handshake\r\n'
+2019-10-18 02:47:17:552,b'USB Handshake\r\n'
+2019-10-18 02:47:32:308,b'USB Handshake\r\n'
+2019-10-18 02:47:47:069,b'USB Handshake\r\n'
+2019-10-18 02:48:01:830,b'USB Handshake\r\n'
+2019-10-18 02:48:16:592,b'USB Handshake\r\n'
+2019-10-18 02:48:31:355,b'USB Handshake\r\n'
+2019-10-18 02:48:46:117,b'USB Handshake\r\n'
+2019-10-18 02:49:00:880,b'USB Handshake\r\n'
+2019-10-18 02:49:15:644,b'USB Handshake\r\n'
+2019-10-18 02:49:30:407,b'USB Handshake\r\n'
+2019-10-18 02:49:45:171,b'USB Handshake\r\n'
+2019-10-18 02:49:59:925,b'USB Handshake\r\n'
+2019-10-18 02:50:14:691,b'USB Handshake\r\n'
+2019-10-18 02:50:29:459,b'USB Handshake\r\n'
+2019-10-18 02:50:44:213,b'USB Handshake\r\n'
+2019-10-18 02:50:58:978,b'USB Handshake\r\n'
+2019-10-18 02:51:13:743,b'USB Handshake\r\n'
+2019-10-18 02:51:28:499,b'USB Handshake\r\n'
+2019-10-18 02:51:43:241,b'USB Handshake\r\n'
+2019-10-18 02:51:57:990,b'USB Handshake\r\n'
+2019-10-18 02:52:12:749,b'USB Handshake\r\n'
+2019-10-18 02:52:27:496,b'USB Handshake\r\n'
+2019-10-18 02:52:42:255,b'USB Handshake\r\n'
+2019-10-18 02:52:57:014,b'USB Handshake\r\n'
+2019-10-18 02:53:11:775,b'USB Handshake\r\n'
+2019-10-18 02:53:26:526,b'USB Handshake\r\n'
+2019-10-18 02:53:41:287,b'USB Handshake\r\n'
+2019-10-18 02:53:56:048,b'USB Handshake\r\n'
+2019-10-18 02:54:10:810,b'USB Handshake\r\n'
+2019-10-18 02:54:25:562,b'USB Handshake\r\n'
+2019-10-18 02:54:40:324,b'USB Handshake\r\n'
+2019-10-18 02:54:55:086,b'USB Handshake\r\n'
+2019-10-18 02:55:09:852,b'USB Handshake\r\n'
+2019-10-18 02:55:24:604,b'USB Handshake\r\n'
+2019-10-18 02:55:39:367,b'USB Handshake\r\n'
+2019-10-18 02:55:54:129,b'USB Handshake\r\n'
+2019-10-18 02:56:08:895,b'USB Handshake\r\n'
+2019-10-18 02:56:23:649,b'USB Handshake\r\n'
+2019-10-18 02:56:38:412,b'USB Handshake\r\n'
+2019-10-18 02:56:53:174,b'USB Handshake\r\n'
+2019-10-18 02:51:26:429,Serial port opened
+2019-10-18 02:51:26:437,Waiting For new redis data
+2019-10-18 02:51:26:438,PUBSUB Received   1
+2019-10-18 02:51:26:438,command is
+2019-10-18 02:51:26:438,<class 'int'>
+2019-10-18 02:51:26:439,Sub connected
+2019-10-18 02:51:30:232,b'USB Handshake\r\n'
+2019-10-18 02:51:44:997,b'USB Handshake\r\n'
+2019-10-18 02:51:59:756,b'USB Handshake\r\n'
+2019-10-18 02:52:14:509,b'USB Handshake\r\n'
+2019-10-18 02:52:29:273,b'USB Handshake\r\n'
+2019-10-18 02:52:44:036,b'USB Handshake\r\n'
+2019-10-18 02:52:58:795,b'USB Handshake\r\n'
+2019-10-18 02:53:13:554,b'USB Handshake\r\n'

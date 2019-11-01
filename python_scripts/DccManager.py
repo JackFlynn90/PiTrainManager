@@ -3,6 +3,7 @@ import time
 import redis, traceback
 from DebugPrint import debugging
 
+from threading import Timer
 import re
 import subprocess
 from subprocess import PIPE, run
@@ -27,7 +28,7 @@ byPassSerial = False
 
 sprogPort = '/dev/ttyACM1'
 
-debugLevel = 1
+debugLevel = 2
 debug = debugging()
 
 logFile = '/share/djangoTrain/logs/DCCMan.log'
@@ -41,6 +42,23 @@ p.subscribe('trainCommand')                                           # Subscrib
 sprog = SprogDevice(sprogPort,debugLevel,byPassSerial)
 
 packetMaker = PacketBuilder(debugLevel)
+
+updateRate = 50/1000 #ms updaterate
+
+def trainRefresh():
+	debug.Print("+,Refreshing train state",1)
+
+	for train in Train.objects.all():
+		debug.Print("+,Available train address" + str(train.address), 1)
+		debug.Print("+,Train Speed is:" + str(train.speed), 1)
+		debug.Print("+,Train dir is:" + str(train.direction), 1)
+		debug.Print("+,Light state is:" + str(train.lightsOn), 1)
+									#Send out data to train
+		packet = packetMaker.SpeedDir(train)# creates packet for sprog
+		sprog.WritePacket(packet) # Sending packet to sprog
+		time.sleep(0.010) #10 millis for first packet to send
+		packet = packetMaker.Functions(train)# creates packet for sprog
+		sprog.WritePacket(packet) # Sending packet to sprog
 
 while True:
 	try:
@@ -128,6 +146,10 @@ while True:
 							debug.Print("Invalid command received;" + str(commandList), 4)
 
 				RUN = sprog.PrintFeedback()
+
+				trainRefresh()
+
+				time.sleep(updateRate)
 
 			except Exception as e:
 				debug.Print("!!!!!!!!!! EXCEPTION !!!!!!!!!", 4)
