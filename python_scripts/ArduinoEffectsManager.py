@@ -126,24 +126,16 @@ while True:
 
 							if commandList[1] == "4": #On/Off state change database value
 								if commandList[6] == "1":
-									print("Light state is on")
 									activeLight.lightsState = True
 								else:
-									print("Light state is off")
 									activeLight.lightsState = False
-
 							elif commandList[1] == "5": #Brigthness change database value
 								activeLight.brightness = commandList[5]
 
-							lightbright = activeLight.brightness
-							strLight = str(lightbright)
-							
-							if commandList[1] == "4":
-								print("Sending on/off packet")
-								dataOut = ":" + commandList[1] + "," + commandList[3] + "," + commandList[4] + "," + strLight +"," + commandList[6] + ",\n" #construct packet
-							else:
-								print("Sending brightness packet")
-								dataOut = ":" + commandList[1] + "," + commandList[3] + "," + commandList[4] + "," + strLight + "," + "1" + ",\n" #construct packet
+							lightbright = str(activeLight.brightness)
+							lightstate = str(int(activeLight.lightsState))
+
+							dataOut = ":" + commandList[1] + "," + commandList[3] + "," + commandList[4] + "," + lightbright + "," + lightstate + ",\n" #construct packet
 
 
 							debug.Print("Sending Out;" + dataOut,4)
