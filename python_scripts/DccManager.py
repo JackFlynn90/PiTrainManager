@@ -56,7 +56,7 @@ def trainRefresh():
 									#Send out data to train
 		packet = packetMaker.SpeedDir(train)# creates packet for sprog
 		sprog.WritePacket(packet) # Sending packet to sprog
-		time.sleep(0.010) #10 millis for first packet to send
+		time.sleep(updateRate) #10 millis for first packet to send
 		packet = packetMaker.Functions(train)# creates packet for sprog
 		sprog.WritePacket(packet) # Sending packet to sprog
 
@@ -102,6 +102,8 @@ while True:
 							speed = commandList[3]
 							debug.Print("Active train address is;" + str(activeTrain.address) + ", New speed value is;" + str(speed),3)
 							activeTrain.speed = speed
+							packet = packetMaker.SpeedDir(activeTrain)# creates packet for sprog
+							debug.Print("Packet out; " + packet,3)
 
 						#Direction command parse data and updates database
 						if commandList[2] == "Dir":
@@ -113,10 +115,14 @@ while True:
 							debug.Print("Active train address is;" + str(activeTrain.address) + ", New direction value is;" + str(commandList[3]),3)
 							activeTrain.direction = dir
 
+							packet = packetMaker.SpeedDir(activeTrain)# creates packet for sprog
+							debug.Print("Packet out; " + packet,3)
+
 						#Train light command parse data and updates database
 						if commandList[2] == "Lights":
 
-							#commandisValid = True
+							commandisValid = True
+
 							if commandList[3] == "On":
 								lightState = True
 							elif commandList[3] == "Off":
@@ -128,16 +134,11 @@ while True:
 
 							packet = packetMaker.Functions(activeTrain)# creates packet for sprog
 
-							RUN = sprog.WritePacket(packet) # Sending packet to sprog
-
 							debug.Print("Packet out; " + packet,3)
 
 						if commandisValid is True:
 							#Save changes to db
 							activeTrain.save()
-
-							#Send out data to train
-							packet = packetMaker.SpeedDir(activeTrain)# creates packet for sprog
 
 							RUN = sprog.WritePacket(packet) # Sending packet to sprog
 

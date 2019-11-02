@@ -16,7 +16,7 @@ os.environ['DJANGO_SETTINGS_MODULE'] = 'mysite.settings'
 import django
 from django.conf import settings
 django.setup()
-from  trains.models import Light, Servo
+from  trains.models import Light, Servo, LightGroup
 
 debugLevel = 2 #Debug print class used to handle what level of debug statements we want
 debug = debugging()
@@ -122,26 +122,64 @@ while True:
 						#LED Light group command
 						elif commandList[0] == "Light":
 							Lightaddress = commandList[2] # get light address from packet
-
-											#command, pk, led number, board number, brightness, enable
-							dataOut = ":" + commandList[1] + "," + commandList[3] + "," + commandList[4] + "," + commandList[5] + "," + commandList[6] + ",\n" #construct packet
-
 							activeLight = Light.objects.get(pk = Lightaddress) #database object
-
 
 							if commandList[1] == "4": #On/Off state change database value
 								if commandList[6] == "1":
+									print("Light state is on")
 									activeLight.lightsState = True
 								else:
+									print("Light state is off")
 									activeLight.lightsState = False
 
 							elif commandList[1] == "5": #Brigthness change database value
 								activeLight.brightness = commandList[5]
 
+							lightbright = activeLight.brightness
+							strLight = str(lightbright)
+							
+							if commandList[1] == "4":
+								print("Sending on/off packet")
+								dataOut = ":" + commandList[1] + "," + commandList[3] + "," + commandList[4] + "," + strLight +"," + commandList[6] + ",\n" #construct packet
+							else:
+								print("Sending brightness packet")
+								dataOut = ":" + commandList[1] + "," + commandList[3] + "," + commandList[4] + "," + strLight + "," + "1" + ",\n" #construct packet
+
+
 							debug.Print("Sending Out;" + dataOut,4)
 							SendSerial(dataOut) #Send out data to arduino
 
 							activeLight.save()# Save database changes
+
+							#LED Light group command
+						elif commandList[0] == "LightGroup":
+								LightGroupaddress = commandList[2] # get light address from packet
+								activeGroup = LightGroup.objects.get(pk = Lightaddress) #database object
+
+								state = commandList[2]
+
+								for lights in LightGroup:
+									if state == 4:
+															#command, pk, led number, board number, brightness, enable
+										dataOut = ":" + commandList[1] + "," + commandList[3] + "," + commandList[4] + ",", str(lightbright),"," + commandList[6] + ",\n" #construct packet
+									else:
+										dataOut = ":" + commandList[1] + "," + commandList[3] + "," + commandList[4] + "," + commandList[5] + "," + "1" + ",\n" #construct packet
+
+
+
+								if commandList[1] == "4": #On/Off state change database value
+									if commandList[6] == "1":
+										activeGroup.state = True
+									else:
+										activeGroup.state = False
+
+								elif commandList[1] == "5": #Brigthness change database value
+									activeGroup.brightness = commandList[3]
+
+								debug.Print("Sending Out;" + dataOut,4)
+								SendSerial(dataOut) #Send out data to arduino
+
+								activeLight.save()# Save database changes
 
 						#Servo positional on/off command
 						elif commandList[0] == "Servo":

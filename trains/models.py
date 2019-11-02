@@ -32,6 +32,15 @@ class Light(models.Model):
 	def __str__(self):
 		return self.title
 
+class LightGroup(models.Model):
+	title = models.CharField(max_length=200)
+	description = models.TextField()
+	lights = models.ManyToManyField(Light)
+	brightness = models.PositiveSmallIntegerField()
+	lightsState = models.BooleanField(default=True)
+	def __str__(self):
+		return self.title
+		
 class Servo(models.Model):
 	title = models.CharField(max_length=200)
 	description = models.TextField()
