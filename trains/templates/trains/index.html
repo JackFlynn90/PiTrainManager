@@ -92,19 +92,19 @@
 																				{% else %}
 																						<label class="btn btn-light active" >
 																				{% endif %}
-																						<input type="radio" class="LightingButton" name="options" autocomplete="off" id="lightgroup_{{lightgroup.pk}}_0">Off
+																						<input type="radio" class="LightingButton" name="options" autocomplete="off" id="lightgroup_4_{{lightgroup.pk}}_0">Off
 																					</label>
 																				{% if lightgroup.lightsState is True %}
 																					<label class="btn btn-light active" >
 																				{% else %}
 																					<label class="btn btn-light" >
 																				{% endif %}
-																					<input type="radio" class="LightingButton" name="options" id="lightgroup_{{lightgroup.pk}}_1" autocomplete="off"> On
+																					<input type="radio" class="LightingButton" name="options" id="lightgroup_4_{{lightgroup.pk}}_1" autocomplete="off"> On
 																				</label>
 																			</div>
 																			 <h5>Brightness:</h5>
 																			<div class="slidecontainer">
-																				<input type="range" min="0" max="255" value="{{lightgroup.brightness}}" class="slider" id="lightgroup_{{lightgroup.pk}}">
+																				<input type="range" min="0" max="255" value="{{lightgroup.brightness}}" class="slider" id="lightgroup_5_{{lightgroup.pk}}">
 																			</div>
 																	</li>
 

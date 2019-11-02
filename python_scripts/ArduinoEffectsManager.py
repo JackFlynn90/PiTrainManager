@@ -144,34 +144,59 @@ while True:
 							activeLight.save()# Save database changes
 
 							#LED Light group command
-						elif commandList[0] == "LightGroup":
+						elif commandList[0] == "lightgroup":
+								#Packet example - lightgroup_4_{{lightgroup.pk}}_0
 								LightGroupaddress = commandList[2] # get light address from packet
-								activeGroup = LightGroup.objects.get(pk = Lightaddress) #database object
+								activeGroup = LightGroup.objects.get(pk = LightGroupaddress) #database object
 
-								state = commandList[2]
+								commandType = commandList[1] # either 4 or 5 for on/off command or brigthness
 
-								for lights in LightGroup:
-									if state == 4:
+								if commandType == "4":
+									debug.Print("Light Group, command is on/off", 2)
+
+									if commandList[3] == "1": #change group state to match command value
+										activeGroup.lightsState = True
+									else:
+										activeGroup.lightsState = False
+								else:
+									debug.Print("Light Group, command is brightness", 2)
+									activeGroup.brightness = commandList[3] #brightness value
+
+								activeGroup.save() #save all changes to database
+
+								groupState = str(int(activeGroup.lightsState))
+								groupBrightness = str(int(activeGroup.brightness))
+
+								debug.Print("Light Group, State is;" + groupState, 1)
+								debug.Print("Light Group, Brigthness is;" + groupBrightness, 1)
+
+								#get all lights in the grouping
+								debug.Print("Lights in Group;", 5)
+								lightsinGroup = Light.objects.filter(lightgroup__pk=LightGroupaddress)
+								debug.Print(str(lightsinGroup), 5)
+
+								#cycle through lights in group and send out data to teensy
+								for lights in lightsinGroup:
+									debug.Print(str(lights.title), 2)
+
+									newLightState = str(groupState)
+									newLightBrighness = str(groupBrightness)
+
+									lightBoard = str(lights.boardAddress)
+									lightAddress = str(lights.address)
+
+									lights.lightsState = newLightState
+									lights.brightness = newLightBrighness
+
+
 															#command, pk, led number, board number, brightness, enable
-										dataOut = ":" + commandList[1] + "," + commandList[3] + "," + commandList[4] + ",", str(lightbright),"," + commandList[6] + ",\n" #construct packet
-									else:
-										dataOut = ":" + commandList[1] + "," + commandList[3] + "," + commandList[4] + "," + commandList[5] + "," + "1" + ",\n" #construct packet
+									dataOut = ":" + commandType + "," + lightAddress + "," + lightBoard + "," + newLightBrighness + "," + newLightState + ",\n" #construct packet
 
+									debug.Print("Sending Out for " + str(lights.title) + ";" + dataOut,4)
 
+									SendSerial(dataOut) #Send out data to arduino
 
-								if commandList[1] == "4": #On/Off state change database value
-									if commandList[6] == "1":
-										activeGroup.state = True
-									else:
-										activeGroup.state = False
-
-								elif commandList[1] == "5": #Brigthness change database value
-									activeGroup.brightness = commandList[3]
-
-								debug.Print("Sending Out;" + dataOut,4)
-								SendSerial(dataOut) #Send out data to arduino
-
-								activeLight.save()# Save database changes
+									lights.save()# Save database changes
 
 						#Servo positional on/off command
 						elif commandList[0] == "Servo":
