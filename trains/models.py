@@ -40,13 +40,15 @@ class LightGroup(models.Model):
 	lightsState = models.BooleanField(default=True)
 	def __str__(self):
 		return self.title
-		
+
 class Servo(models.Model):
 	title = models.CharField(max_length=200)
 	description = models.TextField()
+	boardAddress = models.PositiveSmallIntegerField()
 	address = models.PositiveSmallIntegerField()
 	type = models.CharField(max_length=200)
 	state = models.BooleanField(default=True)
+	throwPosition = models.PositiveSmallIntegerField(default = 128)
 	created_date = models.DateTimeField(
             default=timezone.now)
 	def __str__(self):

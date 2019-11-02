@@ -195,7 +195,7 @@
 													{% else %}
 														<label class="btn btn-light active" >
 													{% endif %}
-															<input type="radio" class="ServoButton" name="options" autocomplete="off" id="Servo_7_{{servo.address}}_0">Off
+															<input type="radio" class="ServoButton" name="options" autocomplete="off" id="Servo_7_{{servo.pk}}_0">Off
 														</label>
 
 													{% if servo.state is True %}
@@ -203,7 +203,7 @@
 													{% else %}
 														<label class="btn btn-light">
 													{% endif %}
-														<input type="radio" class="ServoButton" name="options" id="Servo_7_{{servo.address}}_1" autocomplete="off"> On
+														<input type="radio" class="ServoButton" name="options" id="Servo_7_{{servo.pk}}_1" autocomplete="off"> On
 													</label>
 												</div>
 

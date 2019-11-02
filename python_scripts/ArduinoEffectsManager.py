@@ -201,16 +201,22 @@ while True:
 						#Servo positional on/off command
 						elif commandList[0] == "Servo":
 
-							Servoaddress = commandList[2] # get servo address from packet
+							Servopk = commandList[2] # get servo address from packet
+							activeServo = Servo.objects.get(pk = Servopk) #get related database object
 
-							activeServo = Servo.objects.get(address = Servoaddress) #get related database object
-
-							dataOut = ":" + commandList[1] + "," + commandList[2] + "," + commandList[3] + ",\n" # Construct packet
-
-							if commandList[3] == "1": #Update database values
+							if commandList[3] == "1":
 								activeServo.state = True
 							else:
 								activeServo.state = False
+
+							activeServo.save()
+
+							ServoBoard = str(int(activeServo.boardAddress))
+							ServoAddress = str(int(activeServo.address))
+							ServoPosThrown = str(int(activeServo.throwPosition))
+							ServoState = str(int(activeServo.state))
+
+							dataOut = ":" + commandType + "," + ServoAddress + "," + ServoBoard + "," + ServoPosThrown + "," + ServoState + ",\n" #construct packet
 
 							debug.Print("Sending Out;" + dataOut,4)
 							SendSerial(dataOut) #Send out serial command
